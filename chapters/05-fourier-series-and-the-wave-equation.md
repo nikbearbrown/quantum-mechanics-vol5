@@ -91,6 +91,9 @@ This complex form is what quantum mechanics actually uses. The spatial Bloch fac
 
 <!-- → [FIGURE: three-panel diagram showing (1) an arbitrary initial wavefunction in an infinite square well; (2) its decomposition into Fourier sine modes n=1,2,3,4, each shown as a separate standing wave with its amplitude; (3) the reconstituted sum of the first four modes overlaid on the original function; the visual goal is to make the Fourier-series-as-eigenstate-decomposition connection concrete before any quantum notation appears] -->
 
+![three-panel diagram showing (1) an arbitrary initial wavefunction in an infinite square well](../images/05-fourier-series-and-the-wave-equation-fig-01.png)
+*Figure 5.1 — three-panel diagram showing (1) an arbitrary initial wavefunction in an infinite square well*
+
 ---
 
 ## Worked Example: A Parabolic Initial State in the Square Well
@@ -130,6 +133,9 @@ $$\psi_k(x) = \sum_n A_n\,e^{i(k+G_n)x}.$$
 The energy bands and gaps at the Brillouin zone boundary ($k = \pm\pi/a$) arise where two plane waves — with momenta $\hbar k$ and $\hbar(k - G_1) = \hbar(k - 2\pi/a)$ — are degenerate in the free-particle case and get mixed by the Fourier component $V_1$ of the potential. The gap width is $2|V_1|$: the magnitude of the relevant Fourier coefficient of $V$, and nothing else. The entire band-gap theory is linear algebra applied to a $2\times2$ matrix whose off-diagonal element is a Fourier coefficient.
 
 <!-- → [FIGURE: schematic of the nearly-free-electron band structure at the first Brillouin zone boundary — showing the parabolic free-electron dispersion, then the avoided crossing at k = ±π/a with gap width labeled 2|V₁|; below, show the real-space potential V(x) and its Fourier decomposition with V₁ highlighted; the visual goal is to connect the size of the gap directly to the Fourier coefficient of the potential] -->
+
+![schematic of the nearly-free-electron band structure at the first Brillouin zone boundary — showing the parabolic free-electron dispersion,…](../images/05-fourier-series-and-the-wave-equation-fig-02.png)
+*Figure 5.2 — schematic of the nearly-free-electron band structure at the first Brillouin zone boundary — showing the parabolic free-electron dispersion,…*
 
 ---
 
