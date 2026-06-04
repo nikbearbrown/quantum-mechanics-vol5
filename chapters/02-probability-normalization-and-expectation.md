@@ -1,185 +1,202 @@
 # Module M-02 — Probability, Normalization, and Expectation Values
+*Why $|\psi(x)|^2$ is not a probability, and what to do instead.*
 
-**When you need this:** QM Vol. I Ch. 3 introduces Born's rule and $\langle x \rangle$ on page one; Ch. I·9 defines $\Delta x$ and $\Delta p$ as standard deviations; Ch. IV·1 frames all of measurement theory as a probability distribution over outcomes.
+The Born rule says that $|\psi(x,t)|^2$ is the probability density for finding a particle at position $x$. The first word students misread is "density." They compute $|\psi(x_0)|^2$ at some point $x_0$ and treat the result as a probability. It is not. A density evaluated at a point is not a probability — it is a density. The probability lives in the integral.
+
+This module builds the probability machinery that Born's rule requires: probability densities, normalization, expectation values, and standard deviations. Everything here appears verbatim in the quantum mechanics that follows, dressed in $\psi$ notation.
 
 ---
 
-## The refresher
-
-### Probability density vs. probability
+## Probability Density versus Probability
 
 For a continuous random variable $X$, a **probability density function** (PDF) $f(x)$ satisfies:
 
-$$f(x) \geq 0, \qquad \int_{-\infty}^{\infty} f(x)\,dx = 1,$$
+$$f(x) \geq 0, \qquad \int_{-\infty}^{\infty} f(x)\,dx = 1.$$
 
-and the probability that $X$ falls in the interval $[a,b]$ is
+The probability that $X$ falls in the interval $[a, b]$ is
 
 $$P(a \leq X \leq b) = \int_a^b f(x)\,dx.$$
 
-$f(x)$ is **not** a probability. It is a density — it can exceed 1. Only the integral of $f$ over an interval is a probability, and that is bounded between 0 and 1. A single point has probability zero; only intervals have nonzero probability. This distinction is the foundational pitfall with Born's rule.
+Three things to keep straight. First, $f(x)$ is not a probability — it is a density, and it can exceed 1. The function $f(x) = 2$ for $x\in[0, \frac{1}{2}]$ and zero elsewhere is a perfectly valid PDF. Second, the probability of finding $X$ at exactly one specific value $x_0$ is zero. Only intervals carry nonzero probability. Third, the integral of $f$ over any interval is a number between 0 and 1; the function $f$ itself is not so constrained.
 
-### Mean, expectation value, and variance
+This distinction is the foundational pitfall with Born's rule. The probability of finding the particle at the single point $x_0$ is zero — not $|\psi(x_0)|^2$. The probability of finding it between $x_0$ and $x_0 + dx$ is $|\psi(x_0)|^2\,dx$ — a density times a width. Normalization requires integrating the density to one, not setting the density equal to one at some point.
+
+---
+
+## Mean, Expectation Value, and Variance
 
 The **mean** (expectation value) of $X$ is the probability-weighted average:
 
-$$\mu \equiv \langle X \rangle = \int_{-\infty}^{\infty} x\, f(x)\, dx.$$
+$$\mu \equiv \langle X\rangle = \int_{-\infty}^{\infty} x\,f(x)\,dx.$$
 
-The expectation of any function $g(X)$ follows the same weighting:
+The expectation of any function $g(X)$:
 
-$$\langle g(X) \rangle = \int_{-\infty}^{\infty} g(x)\, f(x)\, dx.$$
+$$\langle g(X)\rangle = \int_{-\infty}^{\infty} g(x)\,f(x)\,dx.$$
 
-Expectation is **linear**: $\langle aX + b \rangle = a\langle X\rangle + b$.
+Expectation is **linear**: $\langle aX + b\rangle = a\langle X\rangle + b$ for any constants $a$, $b$. This follows immediately from linearity of the integral and does not require any special property of $f$.
 
 The **variance** measures spread as the mean squared deviation from the mean:
 
-$$\sigma^2 = \langle (X - \mu)^2 \rangle = \langle X^2 \rangle - \langle X \rangle^2.$$
+$$\sigma^2 = \langle(X - \mu)^2\rangle = \langle X^2\rangle - \langle X\rangle^2.$$
 
-"The mean of the square minus the square of the mean" — expand $(X-\mu)^2 = X^2 - 2\mu X + \mu^2$, take the expectation, and the cross term gives $-2\mu\cdot\mu = -2\mu^2$, so $\sigma^2 = \langle X^2\rangle - \mu^2$. The **standard deviation** $\sigma = \sqrt{\sigma^2}$ has the same units as $X$ and is the natural measure of the width of the distribution.
+The second form — "mean of the square minus the square of the mean" — comes from expanding $(X-\mu)^2 = X^2 - 2\mu X + \mu^2$ and taking the expectation:
 
-For independent random variables, variances add: $\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y)$.
+$$\langle X^2 - 2\mu X + \mu^2\rangle = \langle X^2\rangle - 2\mu\langle X\rangle + \mu^2 = \langle X^2\rangle - 2\mu^2 + \mu^2 = \langle X^2\rangle - \mu^2.$$
 
-### Normalization as a constraint on $\psi$
+The **standard deviation** $\sigma = \sqrt{\sigma^2}$ has the same units as $X$. It is the natural measure of the width of the distribution, not $\sigma^2$.
 
-The QM normalization condition is
+The mean is not the same as the most probable value. For a symmetric, unimodal distribution they coincide — and most textbook examples are symmetric — but for asymmetric distributions they can differ substantially. The expectation value $\langle x\rangle$ is the probability-weighted average position, not the location where $|\psi|^2$ peaks.
 
-$$\int_{-\infty}^{\infty} |\psi(x,t)|^2\, dx = 1.$$
+---
 
-This is an integral equation fixing the overall amplitude of the wave function. Solving the Schrödinger equation yields $\psi$ up to a free multiplicative constant $N$; normalization determines $|N|$. The time-dependent Schrödinger equation with a Hermitian Hamiltonian preserves normalization: if $\psi$ is normalized at $t=0$, it remains normalized for all $t$.
+## The Gaussian Integral
 
-### The Gaussian integral (used everywhere)
+The single most-used integral in normalization and expectation-value calculations is
 
-The single most-used integral in normalization and expectation-value calculations:
+$$\int_{-\infty}^{\infty} e^{-\alpha x^2}\,dx = \sqrt{\frac{\pi}{\alpha}}, \qquad \alpha > 0.$$
 
-$$\int_{-\infty}^{\infty} e^{-\alpha x^2}\, dx = \sqrt{\frac{\pi}{\alpha}}, \qquad \alpha > 0.$$
+The proof is one of the cleverest in analysis. Let $I = \int_{-\infty}^\infty e^{-\alpha x^2}dx$. Square it:
 
-**Derivation.** Let $I = \int_{-\infty}^\infty e^{-\alpha x^2}dx$. Then
+$$I^2 = \left(\int_{-\infty}^\infty e^{-\alpha x^2}dx\right)\!\left(\int_{-\infty}^\infty e^{-\alpha y^2}dy\right) = \int_{-\infty}^\infty\int_{-\infty}^\infty e^{-\alpha(x^2+y^2)}\,dx\,dy.$$
 
-$$I^2 = \left(\int_{-\infty}^\infty e^{-\alpha x^2}dx\right)\!\left(\int_{-\infty}^\infty e^{-\alpha y^2}dy\right) = \int_{-\infty}^\infty\!\int_{-\infty}^\infty e^{-\alpha(x^2+y^2)}dx\,dy.$$
+Switch to polar coordinates: $x^2+y^2 = r^2$, $dx\,dy = r\,dr\,d\theta$, with $r\in[0,\infty)$ and $\theta\in[0,2\pi)$:
 
-Switch to polar coordinates: $x = r\cos\theta$, $y = r\sin\theta$, $dx\,dy = r\,dr\,d\theta$, with $r$ running from $0$ to $\infty$ and $\theta$ from $0$ to $2\pi$:
+$$I^2 = \int_0^{2\pi}d\theta\int_0^\infty e^{-\alpha r^2}r\,dr = 2\pi\cdot\frac{1}{2\alpha} = \frac{\pi}{\alpha}.$$
 
-$$I^2 = \int_0^{2\pi} d\theta \int_0^\infty e^{-\alpha r^2} r\,dr = 2\pi \cdot \frac{1}{2\alpha} = \frac{\pi}{\alpha}.$$
-
-(The $r$-integral uses the substitution $u = \alpha r^2$, $du = 2\alpha r\,dr$: $\int_0^\infty e^{-\alpha r^2}r\,dr = \frac{1}{2\alpha}$.) Therefore $I = \sqrt{\pi/\alpha}$.
+The $r$-integral is elementary via $u = \alpha r^2$: $\int_0^\infty e^{-\alpha r^2}r\,dr = 1/(2\alpha)$. Therefore $I = \sqrt{\pi/\alpha}$.
 
 Two extensions follow by differentiating with respect to $\alpha$:
 
-$$\int_{-\infty}^{\infty} x^2\, e^{-\alpha x^2}\, dx = \frac{\sqrt{\pi}}{2\alpha^{3/2}}, \qquad \int_{-\infty}^{\infty} x^4\, e^{-\alpha x^2}\, dx = \frac{3\sqrt{\pi}}{4\alpha^{5/2}}.$$
+$$\int_{-\infty}^{\infty} x^2 e^{-\alpha x^2}\,dx = \frac{\sqrt{\pi}}{2\alpha^{3/2}}, \qquad \int_{-\infty}^{\infty} x^4 e^{-\alpha x^2}\,dx = \frac{3\sqrt{\pi}}{4\alpha^{5/2}}.$$
 
-Odd-powered integrands ($x^{2n+1} e^{-\alpha x^2}$) vanish by symmetry.
-
-### Dirac-delta normalization of plane waves
-
-The plane wave $\psi_k(x) = e^{ikx}$ is not square-integrable in the usual sense — $\int |e^{ikx}|^2 dx = \int dx$ diverges. Free-particle states are handled by **Dirac-delta normalization**:
-
-$$\int_{-\infty}^{\infty} e^{ik'x} e^{-ikx}\, dx = 2\pi\,\delta(k' - k),$$
-
-or, with the symmetric convention $\psi_k(x) = e^{ikx}/\sqrt{2\pi}$:
-
-$$\langle \psi_{k'} | \psi_k \rangle = \delta(k' - k).$$
-
-The delta function $\delta(k'-k)$ replaces the Kronecker delta $\delta_{n'n}$ of discrete (bound) states. Physical observables are still well-defined as distributions over a wave packet: a packet $\psi(x) = \int \phi(k) e^{ikx} dk/\sqrt{2\pi}$ normalized in position space ($\int|\psi|^2 dx = 1$) has $\phi(k)$ normalized in momentum space ($\int|\phi|^2 dk = 1$) by Parseval's theorem.
-
-### Worked example: Gaussian wave packet
-
-A Gaussian wave function (not yet normalized) in position space:
-
-$$\psi(x) = N e^{-x^2/(4\sigma^2)}.$$
-
-**Step 1 — Normalize.** Use $|\psi|^2 = N^2 e^{-x^2/(2\sigma^2)}$:
-
-$$\int_{-\infty}^{\infty} N^2 e^{-x^2/(2\sigma^2)}\, dx = N^2 \sqrt{\frac{\pi}{1/(2\sigma^2)}} = N^2 \sigma\sqrt{2\pi} = 1 \implies N = \frac{1}{(2\pi\sigma^2)^{1/4}}.$$
-
-**Step 2 — Compute $\langle x \rangle$.** The integrand $x|\psi|^2 = N^2 x e^{-x^2/(2\sigma^2)}$ is odd; the integral over the symmetric domain vanishes: $\langle x \rangle = 0$.
-
-**Step 3 — Compute $\langle x^2 \rangle$ and $\Delta x$.** Using $\int x^2 e^{-\alpha x^2}dx = \sqrt{\pi}/(2\alpha^{3/2})$ with $\alpha = 1/(2\sigma^2)$:
-
-$$\langle x^2 \rangle = N^2 \cdot \frac{\sqrt{\pi}}{2(1/2\sigma^2)^{3/2}} = \sigma^2.$$
-
-Therefore $\Delta x = \sqrt{\langle x^2\rangle - \langle x\rangle^2} = \sigma$.
-
-The width $\sigma$ of the Gaussian is literally the standard deviation of the position distribution. The Gaussian saturates the uncertainty principle: the Gaussian is the **minimum-uncertainty state**, achieving $\Delta x\,\Delta p = \hbar/2$.
+Odd-powered integrands $x^{2n+1}e^{-\alpha x^2}$ vanish by symmetry — the integrand is an odd function on a symmetric domain.
 
 ---
 
-## In the quantum series
+## Delta-Function Normalization for Plane Waves
 
-### Vol. I, Ch. 3 — Born's rule and the meaning of $|\psi|^2$
+The plane wave $\psi_k(x) = e^{ikx}$ is not square-integrable — $\int|e^{ikx}|^2\,dx = \int dx$ diverges. Free-particle states cannot be normalized with a finite constant. They are handled by **Dirac-delta normalization**:
 
-Born's rule states that $|\psi(x,t)|^2$ is the probability *density* for position. The entire structure of Ch. I·3 is the continuous-distribution formalism of this module applied to $|\psi|^2$:
+$$\int_{-\infty}^\infty e^{ik'x}e^{-ikx}\,dx = 2\pi\,\delta(k'-k),$$
 
-- The probability of finding the particle in $[a,b]$ is $\int_a^b |\psi|^2 dx$ — a probability density integrated over an interval, not $|\psi(x)|^2$ evaluated at a point.
-- The expectation value of position is $\langle x\rangle = \int x|\psi|^2 dx$ — the mean of the position distribution.
-- Normalization $\int|\psi|^2 dx = 1$ is enforced as an initial condition; the Schrödinger equation guarantees it is preserved in time.
+or, with the convention $\psi_k(x) = e^{ikx}/\sqrt{2\pi}$: $\langle\psi_{k'}|\psi_k\rangle = \delta(k'-k)$.
 
-The complex modulus $|\psi|^2 = \psi^*\psi$ requires the complex-number tools of M-01. Without those, the Born rule cannot be applied.
+The delta function replaces the Kronecker delta of discrete bound states: $\langle m|n\rangle = \delta_{mn}$ for a complete orthonormal basis of bound states becomes $\langle k'|k\rangle = \delta(k'-k)$ for free-particle states. Physical observables involve wave packets rather than individual plane waves. A wave packet $\psi(x) = \int\phi(k)e^{ikx}dk/\sqrt{2\pi}$ normalized in position space ($\int|\psi|^2\,dx = 1$) has $\phi(k)$ normalized in momentum space ($\int|\phi|^2\,dk = 1$) by Parseval's theorem. Each plane wave contributes to the integral with weight $|\phi(k)|^2$; no individual plane wave is a physical state, but the superposition is.
 
-### Vol. I, Ch. 9 — The uncertainty principle: $\Delta x$ and $\Delta p$ are standard deviations
+---
 
-The quantities $\Delta x$ and $\Delta p$ in the inequality
+## Worked Example: The Gaussian Wave Packet
 
-$$\Delta x \,\Delta p \geq \frac{\hbar}{2}$$
+The Gaussian is the central example in quantum mechanics because it minimizes the product $\Delta x\,\Delta p$. Computing its normalization and standard deviation is the template for every expectation-value calculation.
 
-are the **standard deviations** of the position and momentum probability distributions in a given quantum state:
+**The wave function.** Take
+
+$$\psi(x) = N\,e^{-x^2/(4\sigma^2)},$$
+
+where $\sigma$ is a given length scale and $N$ is the normalization constant.
+
+**Normalization.** Compute $\int|\psi|^2\,dx = N^2\int e^{-x^2/(2\sigma^2)}\,dx$. Apply the Gaussian integral with $\alpha = 1/(2\sigma^2)$:
+
+$$N^2\sqrt{\frac{\pi}{1/(2\sigma^2)}} = N^2\sigma\sqrt{2\pi} = 1 \implies N = \frac{1}{(2\pi\sigma^2)^{1/4}}.$$
+
+**Mean position.** The integrand $x|\psi|^2 = N^2 x\,e^{-x^2/(2\sigma^2)}$ is an odd function of $x$ on the symmetric domain $(-\infty, \infty)$. The integral vanishes: $\langle x\rangle = 0$.
+
+**Mean squared position.** Apply $\int x^2 e^{-\alpha x^2}\,dx = \sqrt{\pi}/(2\alpha^{3/2})$ with $\alpha = 1/(2\sigma^2)$:
+
+$$\langle x^2\rangle = N^2\cdot\frac{\sqrt{\pi}}{2(1/(2\sigma^2))^{3/2}} = \frac{1}{(2\pi\sigma^2)^{1/2}}\cdot\frac{\sqrt{\pi}}{2}\cdot(2\sigma^2)^{3/2} = \sigma^2.$$
+
+**Standard deviation.** $\Delta x = \sqrt{\langle x^2\rangle - \langle x\rangle^2} = \sqrt{\sigma^2 - 0} = \sigma$.
+
+The width parameter $\sigma$ in the exponent of the Gaussian is literally the standard deviation of the position distribution. The Gaussian is the minimum-uncertainty state: its momentum-space wavefunction $\phi(k)$ (the Fourier transform of $\psi(x)$) is also Gaussian with width $1/(2\sigma)$, giving $\Delta p = \hbar/(2\sigma)$ and therefore $\Delta x\,\Delta p = \sigma\cdot\hbar/(2\sigma) = \hbar/2$ — the lower bound in the uncertainty principle.
+
+---
+
+## Normalization Is Preserved in Time
+
+The Schrödinger equation with a Hermitian Hamiltonian $\hat{H} = \hat{H}^\dagger$ preserves normalization: if $\int|\psi(x,0)|^2\,dx = 1$, then $\int|\psi(x,t)|^2\,dx = 1$ for all $t$. The proof uses the continuity equation — the probability current $j = (\hbar/2mi)(\psi^*\partial_x\psi - \psi\partial_x\psi^*)$ satisfies $\partial_t|\psi|^2 + \partial_x j = 0$, and integrating over all space with $j\to0$ at $\pm\infty$ gives $d/dt\int|\psi|^2\,dx = 0$.
+
+This means normalization is an initial condition, not something you must re-impose at every time step. Approximation methods or numerical truncations can violate it; checking that $\int|\psi|^2\,dx$ remains 1 after an approximation is a useful diagnostic for whether anything has gone wrong.
+
+---
+
+## Where This Appears in the Quantum Series
+
+**Vol. I, Ch. 3 — Born's rule.** The entire chapter is the continuous-distribution formalism of this module applied to $|\psi|^2$: the probability of finding the particle in $[a,b]$ is $\int_a^b|\psi|^2\,dx$; the expectation value of position is $\langle x\rangle = \int x|\psi|^2\,dx$; normalization is $\int|\psi|^2\,dx = 1$. The complex modulus $|\psi|^2 = \psi^*\psi$ requires the complex-number tools of M-01.
+
+**Vol. I, Ch. 9 — The uncertainty principle.** The quantities $\Delta x$ and $\Delta p$ in $\Delta x\,\Delta p \geq \hbar/2$ are standard deviations of position and momentum distributions:
 
 $$(\Delta x)^2 = \langle x^2\rangle - \langle x\rangle^2, \qquad (\Delta p)^2 = \langle p^2\rangle - \langle p\rangle^2.$$
 
-This is $\sigma^2 = \langle X^2\rangle - \langle X\rangle^2$ from this module, applied twice. The uncertainty principle is a theorem about Fourier transform pairs (position and momentum wave functions are related by a Fourier transform — see M-06); the Gaussian saturates it because the Fourier transform of a Gaussian is a Gaussian, as computed in the worked example above.
+This is $\sigma^2 = \langle X^2\rangle - \langle X\rangle^2$ from this module, applied twice. The Gaussian saturates the bound because the Fourier transform of a Gaussian is a Gaussian, and Fourier transform pairs obey the product inequality $\Delta x\,\Delta k \geq 1/2$ as a theorem of harmonic analysis.
 
-The $\Delta$ notation in QM carries two distinct meanings: finite differences (e.g., $\Delta E = E_2 - E_1$) and standard deviations (as above). In the uncertainty principle, $\Delta$ always means standard deviation.
-
-### Vol. IV, Ch. 1 — Measurement theory: expectation values of observables
-
-The expectation value of a general observable $\hat{A}$ in state $\psi$ is
-
-$$\langle \hat{A}\rangle = \langle\psi|\hat{A}|\psi\rangle = \int \psi^*(x)\,\hat{A}\,\psi(x)\, dx.$$
-
-This is the mean of the probability distribution over measurement outcomes, with the distribution given by the Born rule generalized to eigenstates of $\hat{A}$. The squared uncertainty is
-
-$$(\Delta A)^2 = \langle \hat{A}^2\rangle - \langle \hat{A}\rangle^2,$$
-
-exactly the variance formula $\sigma^2 = \langle X^2\rangle - \mu^2$ from this module. The completeness of the eigenstates of $\hat{A}$ ensures that the distribution over outcomes is a proper probability distribution (non-negative, summing to 1). The formalism of observable measurement in QM is continuous-distribution probability theory in function-space clothing.
+**Vol. IV, Ch. 1 — Measurement theory.** The expectation value of a general observable $\hat{A}$ in state $\psi$ is $\langle\hat{A}\rangle = \langle\psi|\hat{A}|\psi\rangle = \int\psi^*(x)\hat{A}\psi(x)\,dx$. The squared uncertainty is $(\Delta A)^2 = \langle\hat{A}^2\rangle - \langle\hat{A}\rangle^2$ — exactly the variance formula $\sigma^2 = \langle X^2\rangle - \mu^2$. Observable measurement in QM is continuous-distribution probability theory in function-space notation.
 
 ---
 
-## Conventions and pitfalls
+## Exercises
 
-**$|\psi(x)|^2$ is a density, not a probability.** The probability that the particle is found at position $x$ is zero — no probability is assigned to a single point for a continuous variable. The probability that the particle is found between $x$ and $x + dx$ is $|\psi(x)|^2\,dx$. Normalizing by setting $|\psi(x_0)|^2 = 1$ at a special point is wrong; normalization requires an integral equal to 1.
+**Warm-up**
 
-**$\langle x\rangle$ is the mean, not the most probable $x$.** For a symmetric distribution the mean and the mode (peak) coincide. For asymmetric wave functions they differ. The expectation value is the probability-weighted average, not the location where $|\psi|^2$ peaks.
+1. *Difficulty: Warm-up — tests the density vs. probability distinction.*
+   A wave function has $|\psi(x_0)|^2 = 3\,\text{nm}^{-1}$ at a particular point $x_0$. (a) Is this a probability? Explain why or why not. (b) What is the probability of finding the particle in the interval $[x_0, x_0 + 0.01\,\text{nm}]$, assuming $|\psi|^2$ is approximately constant over this tiny interval? (c) Can $|\psi(x)|^2 > 1$? If so, give an example.
+   *Tests: the density-vs-probability distinction and the role of the integration measure.*
 
-**$\Delta$ means standard deviation in the uncertainty principle.** In the same QM text, $\Delta$ also appears as a finite difference ($\Delta E$). Context distinguishes the two uses; the uncertainty principle $\Delta$ always means $\sqrt{\langle X^2\rangle - \langle X\rangle^2}$.
+2. *Difficulty: Warm-up — tests linearity of expectation and the variance formula.*
+   A random variable $X$ has $\langle X\rangle = 3$ and $\langle X^2\rangle = 13$. (a) Compute $\sigma^2 = \langle X^2\rangle - \langle X\rangle^2$ and $\sigma$. (b) Compute $\langle 2X + 5\rangle$ using linearity. (c) Compute $\text{Var}(2X + 5)$ using $\text{Var}(aX + b) = a^2\text{Var}(X)$.
+   *Tests: variance formula; linearity of expectation; how variance transforms under linear rescaling.*
 
-**Plane waves require delta-function normalization.** Free-particle plane waves $e^{ikx}$ are not square-integrable and cannot be normalized with a finite constant. They are handled by Dirac-delta normalization $\langle k'|k\rangle = \delta(k'-k)$, or confined to a box of length $L$ (which gives a discrete set of $k$-values and standard $L^2$ normalization). Physical observables involve wave packets, not individual plane waves.
+3. *Difficulty: Warm-up — tests the Gaussian integral.*
+   Evaluate the following integrals directly from the Gaussian integral formula $\int_{-\infty}^\infty e^{-\alpha x^2}\,dx = \sqrt{\pi/\alpha}$ and its derivatives: (a) $\int_{-\infty}^\infty e^{-3x^2}\,dx$; (b) $\int_{-\infty}^\infty x^2 e^{-3x^2}\,dx$; (c) $\int_{-\infty}^\infty x\,e^{-3x^2}\,dx$. For (c), explain why the result is zero without computing the integral.
+   *Tests: applying the Gaussian integral formula and its extensions; symmetry argument for odd integrands.*
 
-**Normalization is preserved by the Schrödinger equation.** If $\psi$ is normalized at $t=0$ and the Hamiltonian is Hermitian ($\hat{H}^\dagger = \hat{H}$), then $\int|\psi|^2 dx = 1$ for all $t$. Approximations or truncations can violate this; checking normalization after approximation is a useful diagnostic.
+**Application**
+
+4. *Difficulty: Application — normalization and expectation values for a double-exponential.*
+   For the wave function $\psi(x) = Ne^{-\alpha|x|}$ with $\alpha > 0$: (a) find $N$ by normalization (split the integral at $x = 0$); (b) compute $\langle x\rangle$ (explain why it vanishes without computing); (c) compute $\langle x^2\rangle$ and hence $\Delta x = \sqrt{\langle x^2\rangle - \langle x\rangle^2}$; (d) compare the shape of $|\psi|^2$ to the Gaussian — which falls off faster at large $|x|$, and how does this affect the width?
+   *Tests: normalization with absolute value; using symmetry to avoid computation; comparison of Gaussian vs. exponential tails.*
+
+5. *Difficulty: Application — two-state superposition and energy uncertainty.*
+   A two-state superposition $|\psi\rangle = \tfrac{1}{\sqrt{2}}(|\psi_1\rangle + |\psi_2\rangle)$, where $\langle\psi_m|\psi_n\rangle = \delta_{mn}$ and $\hat{H}|\psi_n\rangle = E_n|\psi_n\rangle$. (a) Show $|\psi\rangle$ is normalized. (b) Compute $\langle\hat{H}\rangle$. (c) Compute $\langle\hat{H}^2\rangle = \langle\psi|\hat{H}^2|\psi\rangle$. (d) Compute $(\Delta H)^2 = \langle\hat{H}^2\rangle - \langle\hat{H}\rangle^2$. (e) The variance is nonzero even though each $|\psi_n\rangle$ is an energy eigenstate. Explain physically: what does a nonzero $\Delta H$ mean about a measurement of energy on this state?
+   *Tests: expectation values for superpositions; why energy variance is nonzero for non-eigenstates; connecting algebra to physical interpretation.*
+
+6. *Difficulty: Application — Cauchy distribution and the failure of the mean.*
+   The Cauchy-Lorentz distribution $f(x) = 1/(\pi(1+x^2))$ is normalized: $\int_{-\infty}^\infty f(x)\,dx = 1$. (a) Verify the normalization using the antiderivative $\arctan(x)$. (b) Attempt to compute the mean $\langle x\rangle = \int_{-\infty}^\infty x/(\pi(1+x^2))\,dx$ by splitting into $\int_{-\infty}^0$ and $\int_0^\infty$. What goes wrong? (c) This is a distribution with heavy tails ($f(x) \sim 1/x^2$ for large $|x|$). What does this tell you about whether a normalized distribution always has a finite mean? What does it imply for the uncertainty principle if $|\psi|^2$ has heavy tails?
+   *Tests: normalization via antiderivative; recognizing a conditionally convergent integral; heavy tails and infinite moments.*
+
+**Synthesis**
+
+7. *Difficulty: Synthesis — Gaussian as the minimum-uncertainty state.*
+   For the Gaussian $\psi(x) = (2\pi\sigma^2)^{-1/4}e^{-x^2/(4\sigma^2)}$: (a) the position standard deviation is $\Delta x = \sigma$ (derived in the text); compute $\Delta p$ by Fourier transforming $\psi(x)$ to get $\phi(k)$ and computing $\Delta k$, then using $p = \hbar k$; (b) verify $\Delta x\,\Delta p = \hbar/2$; (c) now shift the Gaussian in momentum space: $\psi(x) = (2\pi\sigma^2)^{-1/4}e^{-x^2/(4\sigma^2)}e^{ik_0 x}$ for real $k_0$. Compute $\langle x\rangle$, $\langle p\rangle$, $\Delta x$, and $\Delta p$. Does $k_0$ change the uncertainty product?
+   *Tests: Fourier transform of the Gaussian; the uncertainty product; how a momentum boost shifts the mean without changing the spread.*
+
+8. *Difficulty: Synthesis — preserving normalization under the Schrödinger equation.*
+   Let $\psi(x,t)$ satisfy $i\hbar\partial_t\psi = \hat{H}\psi$ with $\hat{H}$ Hermitian. (a) Compute $d/dt\int|\psi|^2\,dx$ by differentiating under the integral and substituting the Schrödinger equation and its complex conjugate. (b) Show the result is $-i/\hbar\int(\psi^*\hat{H}\psi - (\hat{H}\psi)^*\psi)\,dx = 0$ using the definition of Hermiticity $\langle\phi|\hat{H}\psi\rangle = \langle\hat{H}\phi|\psi\rangle$. (c) Identify what would go wrong with normalization conservation if $\hat{H}$ were not Hermitian — give a toy example.
+   *Tests: the preservation of normalization as a consequence of Hermiticity; identifying what breaks when Hermiticity fails.*
+
+**Challenge**
+
+9. *Difficulty: Challenge — delta-function normalization and the Parseval bridge.*
+   A wave packet is $\psi(x) = \int_{-\infty}^\infty \phi(k)e^{ikx}dk/\sqrt{2\pi}$. (a) Compute $\int|\psi(x)|^2\,dx$ by substituting the Fourier representation and using the Dirac-delta formula $\int e^{i(k'-k)x}\,dx = 2\pi\delta(k'-k)$. Show the result is $\int|\phi(k)|^2\,dk$. This is Parseval's theorem: $L^2$ norm is preserved by the Fourier transform. (b) If $\psi(x)$ is normalized in position space, what does Parseval say about $\phi(k)$? (c) The plane wave $\psi_k(x) = e^{ikx}/\sqrt{2\pi}$ is not in $L^2(\mathbb{R})$ but satisfies $\langle k'|k\rangle = \delta(k'-k)$. Compute $\langle k'|k\rangle$ explicitly by evaluating $\int\psi_{k'}^*(x)\psi_k(x)\,dx$ and identifying the result as a Dirac delta. (d) Explain in one sentence why individual plane waves are not physical states but wave packets are.
+   *Tests: Parseval's theorem from the Fourier integral; Dirac-delta normalization by direct calculation; the physical status of plane waves.*
 
 ---
 
-## Quick practice
+## Quick Practice
 
-1. Show that $f(x) = \frac{1}{\pi(1+x^2)}$ (the Cauchy–Lorentz distribution) is normalized. Then attempt to compute the mean $\langle x\rangle$; what goes wrong, and what does this tell you about the expectation value?
+1. Show that $f(x) = 1/(\pi(1+x^2))$ (the Cauchy-Lorentz distribution) is normalized. Then attempt to compute $\langle x\rangle = \int x/(\pi(1+x^2))\,dx$. What goes wrong, and what does this tell you about whether every normalized distribution has a finite mean?
 
-2. For the wave function $\psi(x) = N e^{-\alpha|x|}$ (with $\alpha > 0$), find the normalization constant $N$, and compute $\langle x\rangle$ and $\langle x^2\rangle$ by explicit integration. What is $\Delta x$?
+2. For the wave function $\psi(x) = Ne^{-\alpha|x|}$ with $\alpha > 0$: find $N$ by normalization, compute $\langle x\rangle$ and $\langle x^2\rangle$ by explicit integration (split the domain at $x=0$), and give $\Delta x$.
 
-3. A two-state superposition has $\psi = \frac{1}{\sqrt{2}}(\psi_1 + \psi_2)$, where $\langle\psi_1|\psi_1\rangle = \langle\psi_2|\psi_2\rangle = 1$ and $\langle\psi_1|\psi_2\rangle = 0$. Show that $\psi$ is normalized. Then, if $\hat{H}\psi_n = E_n\psi_n$, compute $\langle\hat{H}\rangle$ and $(\Delta H)^2$. What does the variance tell you about the energy of this state?
-
----
-
-## Go deeper
-
-The derivation here condenses *Mathematics for Physics*, Vol. 2, Ch. 8, "Probability and Statistics for Physics." That chapter derives the Gaussian as the large-$N$ limit of the binomial (de Moivre–Laplace theorem), covers the Poisson distribution, and derives the law of propagation of uncertainty. The integral techniques underlying normalization and expectation integrals — substitution, integration by parts, and setting up integrals over continuous distributions — are in *Mathematics for Physics*, Vol. 1, Chs. 8 and 9.
-
-For the QM application, see Griffiths, *Introduction to Quantum Mechanics*, 3rd ed., Sec. 1.2–1.5 (the statistical interpretation and expectation values) and Shankar, *Principles of Quantum Mechanics*, Ch. 4 (postulates of QM and measurement). Cohen-Tannoudji, *Quantum Mechanics*, Vol. 1, Ch. III discusses the physical interpretation of $|\psi|^2$ carefully.
+3. A two-state superposition $\psi = \tfrac{1}{\sqrt{2}}(\psi_1 + \psi_2)$, where $\langle\psi_m|\psi_n\rangle = \delta_{mn}$ and $\hat{H}\psi_n = E_n\psi_n$. Show $\psi$ is normalized. Compute $\langle\hat{H}\rangle$ and $(\Delta H)^2$. The variance is nonzero even though each $\psi_n$ is an energy eigenstate — explain physically what this means about a measurement of energy on this state.
 
 ---
 
 ## References
 
-- A. de Moivre, *Approximatio ad Summam Terminorum Binomii $(a+b)^n$ in Seriem expansi* (1733); *The Doctrine of Chances*, 2nd ed. (1738) — the Gaussian as the large-$N$ limit of the binomial. [verify]
-- P.-S. Laplace, *Théorie analytique des probabilités* (1812) — broad statement of the central limit theorem.
-- M. Born, "Zur Quantenmechanik der Stoßvorgänge," *Zeitschrift für Physik* **37**, 863 (1926) — the probabilistic interpretation of $|\psi|^2$. [verify]
-- D. J. Griffiths, *Introduction to Quantum Mechanics*, 3rd ed. (Cambridge, 2018), Secs. 1.2–1.6.
-- R. Shankar, *Principles of Quantum Mechanics*, 2nd ed. (Plenum, 1994), Ch. 4.
-- C. Cohen-Tannoudji, B. Diu, F. Laloë, *Quantum Mechanics*, Vol. 1 (Wiley, 1977), Ch. III.
-- *Mathematics for Physics*, Vol. 2, Ch. 8 (primary source for this module); Vol. 1, Chs. 8–9 (integral mechanics).
+Born, M. (1926). Zur Quantenmechanik der Stoßvorgänge. *Zeitschrift für Physik*, 37, 863.
+
+Griffiths, D. J. (2018). *Introduction to Quantum Mechanics* (3rd ed.). Cambridge University Press. Sections 1.2–1.6.
+
+Shankar, R. (1994). *Principles of Quantum Mechanics* (2nd ed.). Plenum. Chapter 4.
+
+Cohen-Tannoudji, C., Diu, B., & Laloë, F. (1977). *Quantum Mechanics*, Vol. 1. Wiley. Chapter III.
