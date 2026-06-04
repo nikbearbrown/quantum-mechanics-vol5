@@ -6,7 +6,7 @@
 
 ## Complex Arithmetic
 
-A complex number is a pair of real numbers packaged as $z = a + bi$, where $i^2 = -1$. The real part is $\operatorname{Re}(z) = a$; the imaginary part is $\operatorname{Im}(z) = b$. The **complex conjugate** reverses the sign of the imaginary part: $z^* = a - bi$. The **modulus** is
+A complex number is a pair of real numbers packaged as $z = a + bi$, where $i^2 = -1$. The real part is $\text{Re}(z) = a$; the imaginary part is $\text{Im}(z) = b$. The **complex conjugate** reverses the sign of the imaginary part: $z^* = a - bi$. The **modulus** is
 
 $$|z| = \sqrt{z z^*} = \sqrt{a^2 + b^2} \geq 0.$$
 
@@ -24,7 +24,7 @@ That converts a complex denominator into a real one. That is the only genuinely 
 
 ## Polar Form and Euler's Formula
 
-Plot $z$ as a point $(a, b)$ in the complex plane. The number is equally described by its distance from the origin $r = |z|$ and its angle $\theta = \operatorname{atan2}(b, a)$ from the positive real axis. Multiplication in polar form is particularly clean: lengths multiply and angles add. This is proved directly once Euler's formula is in hand.
+Plot $z$ as a point $(a, b)$ in the complex plane. The number is equally described by its distance from the origin $r = |z|$ and its angle $\theta = \text{atan2}(b, a)$ from the positive real axis. Multiplication in polar form is particularly clean: lengths multiply and angles add. This is proved directly once Euler's formula is in hand.
 
 Substitute $x = i\theta$ into the Maclaurin series $e^x = \sum_{n=0}^\infty x^n/n!$, sort even and odd powers using the cycle $i^2 = -1$, $i^3 = -i$, $i^4 = 1$, $\ldots$:
 
@@ -36,7 +36,7 @@ $$\boxed{e^{i\theta} = \cos\theta + i\sin\theta.}$$
 
 This is Euler's formula — derived, not announced. Any complex number is $z = re^{i\theta}$. The unit circle is the set of all $e^{i\theta}$ for real $\theta$; every point on it has modulus 1.
 
-Key corollaries: $\cos\theta = \operatorname{Re}(e^{i\theta})$; $\sin\theta = \operatorname{Im}(e^{i\theta})$; $|e^{i\theta}| = 1$ for all real $\theta$.
+Key corollaries: $\cos\theta = \text{Re}(e^{i\theta})$; $\sin\theta = \text{Im}(e^{i\theta})$; $|e^{i\theta}| = 1$ for all real $\theta$.
 
 ---
 
@@ -48,7 +48,7 @@ $$e^{rt} = e^{-\gamma t}(\cos\omega t + i\sin\omega t).$$
 
 The real part of the exponent governs the decay envelope; the imaginary part is the oscillation frequency. The two phenomena — damping and oscillation — are a single complex exponential. A **complex amplitude** $\tilde A = Ae^{i\phi}$ packages magnitude and phase into one number:
 
-$$A\cos(\omega t + \phi) = \operatorname{Re}(\tilde A\, e^{i\omega t}).$$
+$$A\cos(\omega t + \phi) = \text{Re}(\tilde A\, e^{i\omega t}).$$
 
 Adding two oscillations of the same frequency reduces to adding two complex numbers — one vector addition in the plane — rather than a page of trigonometric identities.
 
@@ -74,15 +74,15 @@ Result: $x_1 + x_2 = 5\cos(\omega t + 53.1°)$. Amplitude and phase from one rig
 
 $$i\hbar\frac{\partial\psi}{\partial t} = \hat H\psi.$$
 
-A real function cannot satisfy an equation requiring its time derivative to equal an imaginary multiple of itself. There is no "take the real part at the end" step. Both $\operatorname{Re}(\psi)$ and $\operatorname{Im}(\psi)$ are physically active.
+A real function cannot satisfy an equation requiring its time derivative to equal an imaginary multiple of itself. There is no "take the real part at the end" step. Both $\text{Re}(\psi)$ and $\text{Im}(\psi)$ are physically active.
 
 The time-dependent factor for a stationary state of energy $E$ is $e^{-iEt/\hbar}$ — a phasor rotating at rate $E/\hbar$. Because $|e^{-iEt/\hbar}| = 1$, the probability density $|\psi(x,t)|^2 = |\psi(x)|^2$ is time-independent even though $\psi$ itself is rotating. This is why stationary states have definite energy but still evolve in the complex plane.
 
 Born's rule gives $|\psi|^2 = \psi^*\psi$. For a superposition $\psi = \psi_1 + \psi_2$:
 
-$$|\psi_1 + \psi_2|^2 = |\psi_1|^2 + |\psi_2|^2 + 2\operatorname{Re}(\psi_1^*\psi_2).$$
+$$|\psi_1 + \psi_2|^2 = |\psi_1|^2 + |\psi_2|^2 + 2\text{Re}(\psi_1^*\psi_2).$$
 
-The cross-term $2\operatorname{Re}(\psi_1^*\psi_2)$ is the **interference term** — real and nonzero because $\psi$ is complex. The double-slit fringe pattern is this term made visible; it vanishes only when the relative phase is $\pm 90°$.
+The cross-term $2\text{Re}(\psi_1^*\psi_2)$ is the **interference term** — real and nonzero because $\psi$ is complex. The double-slit fringe pattern is this term made visible; it vanishes only when the relative phase is $\pm 90°$.
 
 **Vol. I, Ch. 8 — Wave packets: superposing complex exponentials.** A free-particle wave packet is
 
@@ -104,7 +104,7 @@ Because the phases are $e^{\pm i\phi/2}$, a full $2\pi$ rotation gives $e^{\pm i
 
 **Physics vs. engineering time convention.** Physicists write $e^{-i\omega t}$ for a positive-frequency mode. Engineers often write $e^{+j\omega t}$. The QM series uses $e^{-i\omega t}$ throughout. A formula copied from an engineering source may have its phase conjugated — verify the sign before importing it.
 
-**$\psi$ is not the real part of anything.** In classical oscillation problems the standard procedure is: complexify, compute, take $\operatorname{Re}(\cdot)$ at the end. In QM that final step does not exist. $\psi$ is genuinely complex; discarding $\operatorname{Im}(\psi)$ loses physical information (interference, Berry phases, the Aharonov-Bohm effect).
+**$\psi$ is not the real part of anything.** In classical oscillation problems the standard procedure is: complexify, compute, take $\text{Re}(\cdot)$ at the end. In QM that final step does not exist. $\psi$ is genuinely complex; discarding $\text{Im}(\psi)$ loses physical information (interference, Berry phases, the Aharonov-Bohm effect).
 
 **Modulus squared, not modulus.** The probability density is $|\psi|^2$, not $|\psi|$. Normalization is $\int|\psi|^2\,dx = 1$.
 
