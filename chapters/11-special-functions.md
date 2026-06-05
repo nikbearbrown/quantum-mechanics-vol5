@@ -137,7 +137,7 @@ $$\int_0^\infty R_{n\ell}(r)\,R_{n'\ell}(r)\,r^2\,dr = \delta_{nn'}.$$
 
 **First two explicit radial functions:**
 
-$$R_{10} = 2\left(\frac{1}{a_0}\right)^{3/2}e^{-r/a_0}, \quad R_{20} = \frac{1}{\sqrt{2}}\!\left(\frac{1}{2a_0}\right)^{3/2}\!\!\left(1-\frac{r}{2a_0}\right)e^{-r/2a_0}.$$
+$$R_{10} = 2\left(\frac{1}{a_0}\right)^{3/2}e^{-r/a_0}, \quad R_{20} = 2\left(\frac{1}{2a_0}\right)^{3/2}\!\!\left(1-\frac{r}{2a_0}\right)e^{-r/2a_0}.$$
 
 $R_{10}$ has no radial nodes; $R_{20}$ has one node at $r = 2a_0$. In general, $R_{n\ell}$ has $n-\ell-1$ radial nodes.
 
