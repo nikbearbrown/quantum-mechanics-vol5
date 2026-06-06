@@ -6,27 +6,27 @@
 
 ## Complex Arithmetic
 
-A complex number is a pair of real numbers written as $z = a + bi$, where $i^2 = -1$. The real part is $\text{Re}(z) = a$ and the imaginary part is $\text{Im}(z) = b$. The **complex conjugate** reverses the sign of the imaginary part: $z^* = a - bi$. The **modulus** is
+A complex number is a pair of real numbers packaged as $z = a + bi$, where $i^2 = -1$. The real part is $\text{Re}(z) = a$; the imaginary part is $\text{Im}(z) = b$. The **complex conjugate** reverses the sign of the imaginary part: $z^* = a - bi$. The **modulus** is
 
 $$|z| = \sqrt{z z^*} = \sqrt{a^2 + b^2} \geq 0.$$
 
-Addition is performed componentwise. Multiplication follows ordinary algebra with $i^2 = -1$ substituted wherever it appears:
+Addition is componentwise. Multiplication uses ordinary algebra with $i^2 = -1$ wherever it appears:
 
 $$(a + bi)(c + di) = (ac - bd) + (ad + bc)i.$$
 
-For division, we multiply both numerator and denominator by the conjugate of the denominator:
+Division: multiply numerator and denominator by the conjugate of the denominator,
 
 $$\frac{1}{c + di} = \frac{c - di}{c^2 + d^2}.$$
 
-This converts a complex denominator into a real one. That substitution is the only genuinely new arithmetic move; everything else is ordinary algebra with one rule.
+That converts a complex denominator into a real one. That is the only genuinely new arithmetic move; everything else is ordinary algebra with one substitution rule.
 
 ---
 
 ## Polar Form and Euler's Formula
 
-We can plot $z$ as a point $(a, b)$ in the complex plane. The number is equally described by its distance from the origin $r = |z|$ and its angle $\theta = \text{atan2}(b, a)$ from the positive real axis. In polar form, multiplication is straightforward: lengths multiply and angles add. We can see this directly once Euler's formula is established.
+Plot $z$ as a point $(a, b)$ in the complex plane. The number is equally described by its distance from the origin $r = |z|$ and its angle $\theta = \text{atan2}(b, a)$ from the positive real axis. Multiplication in polar form is particularly clean: lengths multiply and angles add. This is proved directly once Euler's formula is in hand.
 
-Substituting $x = i\theta$ into the Maclaurin series $e^x = \sum_{n=0}^\infty x^n/n!$ and sorting even and odd powers using the cycle $i^2 = -1$, $i^3 = -i$, $i^4 = 1$, $\ldots$ gives
+Substitute $x = i\theta$ into the Maclaurin series $e^x = \sum_{n=0}^\infty x^n/n!$, sort even and odd powers using the cycle $i^2 = -1$, $i^3 = -i$, $i^4 = 1$, $\ldots$:
 
 $$e^{i\theta} = 1 + i\theta - \frac{\theta^2}{2!} - i\frac{\theta^3}{3!} + \frac{\theta^4}{4!} + \cdots = \underbrace{\left(1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - \cdots\right)}_{\cos\theta} + i\underbrace{\left(\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \cdots\right)}_{\sin\theta}.$$
 
@@ -34,9 +34,9 @@ Therefore:
 
 $$\boxed{e^{i\theta} = \cos\theta + i\sin\theta.}$$
 
-This is Euler's formula. Any complex number can be written as $z = re^{i\theta}$. The unit circle consists of all points $e^{i\theta}$ for real $\theta$; every such point has modulus 1.
+This is Euler's formula — derived, not announced. Any complex number is $z = re^{i\theta}$. The unit circle is the set of all $e^{i\theta}$ for real $\theta$; every point on it has modulus 1.
 
-Key results that follow directly: $\cos\theta = \text{Re}(e^{i\theta})$; $\sin\theta = \text{Im}(e^{i\theta})$; $|e^{i\theta}| = 1$ for all real $\theta$.
+Key corollaries: $\cos\theta = \text{Re}(e^{i\theta})$; $\sin\theta = \text{Im}(e^{i\theta})$; $|e^{i\theta}| = 1$ for all real $\theta$.
 
 ---
 
@@ -46,11 +46,11 @@ A complex exponent $r = -\gamma + i\omega$ gives
 
 $$e^{rt} = e^{-\gamma t}(\cos\omega t + i\sin\omega t).$$
 
-The real part of the exponent governs the decay envelope; the imaginary part gives the oscillation frequency. Both phenomena — damping and oscillation — are captured in a single complex exponential. A **complex amplitude** $\tilde A = Ae^{i\phi}$ packages magnitude and phase into one number:
+The real part of the exponent governs the decay envelope; the imaginary part is the oscillation frequency. The two phenomena — damping and oscillation — are a single complex exponential. A **complex amplitude** $\tilde A = Ae^{i\phi}$ packages magnitude and phase into one number:
 
 $$A\cos(\omega t + \phi) = \text{Re}(\tilde A\, e^{i\omega t}).$$
 
-Adding two oscillations of the same frequency then reduces to adding two complex numbers — one vector addition in the plane — rather than applying trigonometric identities.
+Adding two oscillations of the same frequency reduces to adding two complex numbers — one vector addition in the plane — rather than a page of trigonometric identities.
 
 ---
 
@@ -64,7 +64,7 @@ Sum: $\tilde A = 3 + 4i$.
 
 $$|\tilde A| = \sqrt{9 + 16} = 5, \qquad \phi = \arctan(4/3) \approx 53.1°.$$
 
-Result: $x_1 + x_2 = 5\cos(\omega t + 53.1°)$. We obtain the amplitude and phase from one right-triangle calculation, without expanding angle-sum formulas.
+Result: $x_1 + x_2 = 5\cos(\omega t + 53.1°)$. Amplitude and phase from one right-triangle calculation, not from expanding angle-sum formulas.
 
 ---
 
@@ -90,13 +90,13 @@ $$\psi(x,t) = \int_{-\infty}^\infty\phi(k)\,e^{i(kx-\omega(k)t)}\,dk.$$
 
 Every term is a complex exponential in both $x$ and $t$. The **envelope** travels at the group velocity $v_g = d\omega/dk$, which emerges from constructive interference of neighboring $k$-values — a Fourier argument stated entirely in complex-exponential language.
 
-To find the group velocity, we expand $\omega(k)$ around the central wave number $k_0$: $\omega(k) \approx \omega_0 + v_g(k - k_0)$. Substituting and factoring $e^{i(k_0 x - \omega_0 t)}$, the remaining integral is a shape function that translates rigidly at speed $v_g$. The entire argument is a manipulation of complex exponential integrals; there is no real-valued version.
+To see the group velocity, expand $\omega(k)$ around the central wave number $k_0$: $\omega(k) \approx \omega_0 + v_g(k - k_0)$. Substituting and factoring $e^{i(k_0 x - \omega_0 t)}$, the remaining integral is a shape function that translates rigidly at speed $v_g$. The whole argument is a manipulation of complex exponential integrals; there is no real-valued version.
 
 **Vol. II, Ch. 7 — Spin: phase factors and spinors.** A spin-½ state is a two-component complex vector. A rotation by angle $\phi$ about the $z$-axis acts with the operator
 
 $$R_z(\phi) = \begin{pmatrix}e^{-i\phi/2} & 0 \\ 0 & e^{i\phi/2}\end{pmatrix}.$$
 
-Because the phases are $e^{\pm i\phi/2}$, a full $2\pi$ rotation gives $e^{\pm i\pi} = -1$ — the spinor changes sign. It takes $720°$ to return a spin-½ spinor to its original value. This follows directly from the argument of $e^{i\phi/2}$ shifting by $\pi$ when $\phi \to \phi + 2\pi$.
+Because the phases are $e^{\pm i\phi/2}$, a full $2\pi$ rotation gives $e^{\pm i\pi} = -1$ — the spinor changes sign. It takes $720°$ to return a spin-½ spinor to its original value. This is purely a statement about the argument of $e^{i\phi/2}$ shifting by $\pi$ under $\phi \to \phi + 2\pi$.
 
 ---
 

@@ -1,7 +1,7 @@
 # Module M-08 — Eigenvalues and Diagonalization
 *Why every measurement outcome in quantum mechanics is a real number — and why that is a theorem, not an assumption.*
 
-The observable postulate of quantum mechanics states that physical measurement outcomes are real numbers. Most introductions declare this as a postulate, then separately state that observables are Hermitian operators. The second statement implies the first — real eigenvalues are a consequence of Hermiticity, and the proof fits in four lines. This module establishes that result as a derivation.
+The observable postulate of quantum mechanics says that physical measurement outcomes are real numbers. Most introductions state this as a postulate, then separately declare that observables are Hermitian operators. The second statement implies the first — real eigenvalues are a consequence of Hermiticity, and the proof fits in four lines. Students who arrive at the spectral decomposition of a quantum observable without the underlying linear algebra are forced to accept "real eigenvalues" as an unexplained axiom. This module makes it a derivation.
 
 ---
 
@@ -17,15 +17,15 @@ The scalar $\lambda$ is the corresponding **eigenvalue**. Most vectors get rotat
 
 ## The Characteristic Equation
 
-Rearranging the eigenvalue equation:
+Rearrange the eigenvalue equation:
 
 $$A\mathbf{v} = \lambda\mathbf{v} \implies (A - \lambda I)\mathbf{v} = \mathbf{0}.$$
 
-This is a homogeneous linear system. It always has the trivial solution $\mathbf{v} = \mathbf{0}$, which we exclude. A nonzero solution exists if and only if $A - \lambda I$ is singular — that is, it has a nontrivial nullspace — which happens precisely when its determinant vanishes:
+This is a homogeneous linear system. It always has the trivial solution $\mathbf{v} = \mathbf{0}$, which we forbid. A nonzero solution exists if and only if $A - \lambda I$ is singular — that is, it has a nontrivial nullspace — which happens precisely when its determinant vanishes:
 
 $$\boxed{\det(A - \lambda I) = 0.}$$
 
-This is the **characteristic equation**. Setting the determinant to zero is the literal condition for a nonzero eigenvector to exist: a nonzero vector in the nullspace of $A - \lambda I$ requires that matrix to be non-invertible, which requires its determinant to vanish. The same structure appears in degenerate perturbation theory, expressed as $\det(M - E^{(1)}I) = 0$ for the matrix of perturbation matrix elements.
+This is the **characteristic equation**. Setting the determinant to zero is not a recipe to memorize but the literal condition for a nonzero eigenvector to exist: a nonzero vector in the nullspace of $A - \lambda I$ requires that matrix to be non-invertible, which requires its determinant to vanish. Students who treat this as a rule-to-memorize cannot recognize the same structure when it appears in degenerate perturbation theory, dressed as $\det(M - E^{(1)}I) = 0$ for the matrix of perturbation matrix elements.
 
 Expanding the determinant gives the **characteristic polynomial** $p(\lambda) = \det(A - \lambda I)$, degree $n$ for an $n\times n$ matrix. Its $n$ roots (over $\mathbb{C}$, counted with multiplicity) are the eigenvalues. For each eigenvalue $\lambda_j$, solving $(A - \lambda_j I)\mathbf{v} = \mathbf{0}$ gives the eigenvector(s).
 
@@ -33,11 +33,11 @@ Expanding the determinant gives the **characteristic polynomial** $p(\lambda) = 
 
 ## Diagonalization
 
-Suppose $A$ has $n$ linearly independent eigenvectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$ with eigenvalues $\lambda_1, \ldots, \lambda_n$. We stack the eigenvectors as columns of a matrix $P = [\mathbf{v}_1\;\cdots\;\mathbf{v}_n]$. Then $AP = PD$ where $D = \text{diag}(\lambda_1, \ldots, \lambda_n)$. Since the eigenvectors are independent, $P$ is invertible:
+Suppose $A$ has $n$ linearly independent eigenvectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$ with eigenvalues $\lambda_1, \ldots, \lambda_n$. Stack the eigenvectors as columns of a matrix $P = [\mathbf{v}_1\;\cdots\;\mathbf{v}_n]$. Then $AP = PD$ where $D = \text{diag}(\lambda_1, \ldots, \lambda_n)$. Since the eigenvectors are independent, $P$ is invertible:
 
 $$\boxed{A = PDP^{-1}, \qquad D = P^{-1}AP.}$$
 
-The matrix $D$ is $A$ expressed in the eigenbasis — diagonal, with all couplings eliminated. Diagonalization is a change of coordinates that makes the action of $A$ maximally transparent: in the eigenbasis, $A$ multiplies each coordinate independently by the corresponding eigenvalue.
+The matrix $D$ is $A$ *expressed in the eigenbasis* — diagonal, with all couplings eliminated. Diagonalization is a change of coordinates that makes the action of $A$ maximally transparent: in the eigenbasis, $A$ multiplies each coordinate independently by the corresponding eigenvalue.
 
 Not every matrix is diagonalizable. A **defective** matrix has fewer than $n$ independent eigenvectors; the simplest example is $\bigl[\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\bigr]$, which has only one eigenvector for its repeated eigenvalue $\lambda = 1$. Such matrices reduce only to Jordan form. In quantum mechanics, however, operators that arise as observables are guaranteed never to be defective — the spectral theorem below ensures it.
 
@@ -45,17 +45,17 @@ Not every matrix is diagonalizable. A **defective** matrix has fewer than $n$ in
 
 ## The Spectral Theorem for Hermitian Matrices
 
-A complex matrix is **Hermitian** if $A^\dagger = A$ (conjugate transpose equals itself). For real matrices the condition is symmetry, $A^T = A$; over $\mathbb{C}$ it must be $A^\dagger = A$. The $\sigma_y$ Pauli matrix is complex but Hermitian; it is not symmetric. Keeping the two conditions distinct is important for complex quantum mechanics.
+A complex matrix is **Hermitian** if $A^\dagger = A$ (conjugate transpose equals itself). For real matrices the condition is symmetry, $A^T = A$; over $\mathbb{C}$ it must be $A^\dagger = A$. The $\sigma_y$ Pauli matrix is complex but Hermitian; it is not symmetric. Keeping the two conditions distinct is the first prerequisite for complex quantum mechanics.
 
 **Theorem.** Every Hermitian matrix $A$ has: (i) all eigenvalues real; (ii) eigenvectors belonging to distinct eigenvalues are orthogonal (with respect to the inner product $\langle\mathbf{u}|\mathbf{v}\rangle = \mathbf{u}^\dagger\mathbf{v}$); (iii) a complete orthonormal eigenbasis exists — $A$ is diagonalizable by a unitary matrix $U$ ($U^\dagger = U^{-1}$): $A = UDU^\dagger$ with $D$ real diagonal.
 
-**Proof of real eigenvalues.** Let $A\mathbf{v} = \lambda\mathbf{v}$, $\mathbf{v} \neq \mathbf{0}$. Multiplying on the left by $\mathbf{v}^\dagger$:
+**Proof of real eigenvalues.** Let $A\mathbf{v} = \lambda\mathbf{v}$, $\mathbf{v} \neq \mathbf{0}$. Multiply on the left by $\mathbf{v}^\dagger$:
 
 $$\mathbf{v}^\dagger A\mathbf{v} = \lambda\,\mathbf{v}^\dagger\mathbf{v} = \lambda\|\mathbf{v}\|^2.$$
 
 The scalar $\mathbf{v}^\dagger A\mathbf{v}$ is its own complex conjugate: $(\mathbf{v}^\dagger A\mathbf{v})^* = \mathbf{v}^\dagger A^\dagger\mathbf{v} = \mathbf{v}^\dagger A\mathbf{v}$, using $A^\dagger = A$. A number equal to its own conjugate is real. Since $\|\mathbf{v}\|^2 > 0$, $\lambda = (\mathbf{v}^\dagger A\mathbf{v})/\|\mathbf{v}\|^2$ is real. $\square$
 
-**Proof of orthogonal eigenvectors.** Take distinct real eigenvalues $\lambda_1 \neq \lambda_2$, with $A\mathbf{v}_1 = \lambda_1\mathbf{v}_1$ and $A\mathbf{v}_2 = \lambda_2\mathbf{v}_2$. We compute $\mathbf{v}_2^\dagger A\mathbf{v}_1$ two ways:
+**Proof of orthogonal eigenvectors.** Take distinct real eigenvalues $\lambda_1 \neq \lambda_2$, with $A\mathbf{v}_1 = \lambda_1\mathbf{v}_1$ and $A\mathbf{v}_2 = \lambda_2\mathbf{v}_2$. Compute $\mathbf{v}_2^\dagger A\mathbf{v}_1$ two ways:
 
 Acting right: $\mathbf{v}_2^\dagger A\mathbf{v}_1 = \lambda_1\,\mathbf{v}_2^\dagger\mathbf{v}_1$.
 
@@ -79,7 +79,7 @@ This is the **spectral decomposition**: the operator is the sum of each eigenval
 
 ## Functions of Operators
 
-The spectral decomposition makes it straightforward to apply any function to an operator: we apply the function to each eigenvalue separately.
+The spectral decomposition makes it trivial to apply any function to an operator: apply the function to each eigenvalue separately.
 
 $$f(A) = \sum_n f(\lambda_n)\,|\lambda_n\rangle\langle\lambda_n|.$$
 
@@ -87,7 +87,7 @@ The time-evolution operator in quantum mechanics is defined exactly this way:
 
 $$\hat{U}(t) = e^{-i\hat{H}t/\hbar} = \sum_n e^{-iE_n t/\hbar}|E_n\rangle\langle E_n|.$$
 
-Computing $e^{\hat{H}}$ by brute-force power series is laborious; in the eigenbasis it reduces to exponentiating each eigenvalue separately. The same works for $\sin(\hat{A})$, $\ln(\hat{A})$, or any analytic function: spectral decomposition reduces $f(A)$ to applying $f$ to a list of numbers. This is why energy eigenvalue problems are so central in quantum mechanics: knowing the eigenbasis of $\hat{H}$ is the prerequisite for computing the time evolution of any state.
+Computing $e^{\hat{H}}$ by brute-force power series is arduous; in the eigenbasis it is trivial — exponentiate each eigenvalue separately. The same works for $\sin(\hat{A})$, $\ln(\hat{A})$, or any analytic function: spectral decomposition reduces $f(A)$ to applying $f$ to a list of numbers. This is why energy eigenvalue problems are so central in quantum mechanics: knowing the eigenbasis of $\hat{H}$ is the prerequisite for computing the time evolution of any state.
 
 ---
 
@@ -97,7 +97,7 @@ Two Hermitian operators $\hat{A}$ and $\hat{B}$ share a common orthonormal eigen
 
 $$[\hat{A},\hat{B}] \equiv \hat{A}\hat{B} - \hat{B}\hat{A} = 0 \;\Longleftrightarrow\; \hat{A}\text{ and }\hat{B}\text{ are simultaneously diagonalizable.}$$
 
-When they commute, each eigenvector of $\hat{A}$ is also an eigenvector of $\hat{B}$, and states can be labeled simultaneously by both eigenvalues. This is the mathematical basis of quantum numbers: the hydrogen atom's states can be labeled by $(n, \ell, m_\ell, m_s)$ because $\hat{H}$, $\hat{L}^2$, $\hat{L}_z$, and $\hat{S}_z$ all mutually commute.
+When they commute, each eigenvector of $\hat{A}$ is also an eigenvector of $\hat{B}$, and states can be labeled simultaneously by both eigenvalues. This is the mathematical backbone of quantum numbers: the hydrogen atom's states can be labeled by $(n, \ell, m_\ell, m_s)$ because $\hat{H}$, $\hat{L}^2$, $\hat{L}_z$, and $\hat{S}_z$ all mutually commute.
 
 ---
 
@@ -109,19 +109,19 @@ The correct framework is the **rigged Hilbert space**: a chain $\Phi\subset\math
 
 $$\hat{I} = \int_{-\infty}^\infty|x\rangle\langle x|\,dx, \qquad \langle x|x'\rangle = \delta(x-x').$$
 
-In practice, whenever we write $\int|x\rangle\langle x|\,dx = \hat{I}$ or $\langle p|p'\rangle = \delta(p-p')$, we are using the generalized spectral theorem. The Dirac delta replaces the Kronecker delta; probability becomes probability density; no individual eigenstate is normalizable, but superpositions (wave packets) are.
+In practice, whenever you see $\int|x\rangle\langle x|\,dx = \hat{I}$ or $\langle p|p'\rangle = \delta(p-p')$, you are using the generalized spectral theorem. The Dirac delta replaces the Kronecker delta; probability becomes probability density; no individual eigenstate is normalizable, but superpositions (wave packets) are.
 
 ---
 
 ## Worked Example: Diagonalizing $\sigma_y$
 
-Let $\sigma_y = \bigl[\begin{smallmatrix}0&-i\\i&0\end{smallmatrix}\bigr]$. First we check Hermiticity: $(\sigma_y^\dagger)_{ij} = (\sigma_y^*)_{ji}$, so $(\sigma_y^\dagger)_{12} = (\sigma_y^*)_{21} = (i)^* = -i = (\sigma_y)_{12}$. Hermitian.
+Let $\sigma_y = \bigl[\begin{smallmatrix}0&-i\\i&0\end{smallmatrix}\bigr]$. First check Hermiticity: $(\sigma_y^\dagger)_{ij} = (\sigma_y^*)_{ji}$, so $(\sigma_y^\dagger)_{12} = (\sigma_y^*)_{21} = (i)^* = -i = (\sigma_y)_{12}$. Hermitian.
 
 **Characteristic equation:**
 
 $$\det(\sigma_y - \lambda I) = \det\begin{pmatrix}-\lambda & -i \\ i & -\lambda\end{pmatrix} = \lambda^2 - (-i)(i) = \lambda^2 - 1 = 0 \implies \lambda = \pm1.$$
 
-Real eigenvalues despite complex entries — the spectral theorem applied.
+Real eigenvalues despite complex entries — the spectral theorem delivered.
 
 **Eigenvectors.** For $\lambda = +1$: from $(\sigma_y - I)\mathbf{v} = 0$, the first row gives $-v_1 - iv_2 = 0$, so $v_1 = -iv_2$. Taking $v_2 = 1$ and normalizing:
 
@@ -135,7 +135,7 @@ $$|\lambda = -1\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}i\\1\end{pmatrix}.$$
 
 $$\langle\lambda{=}{-1}|\lambda{=}{+1}\rangle = \frac{1}{2}\bigl[(i)^*(-i) + (1)^*(1)\bigr] = \frac{1}{2}\bigl[(-i)(-i) + 1\bigr] = \frac{1}{2}[-1+1] = 0. \checkmark$$
 
-These are the spin-$\frac{1}{2}$ eigenstates along the $\pm y$ direction. The physical content: a particle whose spin is measured along $y$ will return $+\hbar/2$ in the state $|\lambda = +1\rangle$ and $-\hbar/2$ in the state $|\lambda = -1\rangle$, with certainty.
+These are the spin-$\frac{1}{2}$ eigenstates along the $\pm y$ direction. The physical content: a particle whose spin is measured along $y$ will return $+\hbar/2$ if it is in the state $|\lambda = +1\rangle$ and $-\hbar/2$ in the state $|\lambda = -1\rangle$, with certainty.
 
 **Spectral decomposition.** $\sigma_y = (+1)|\lambda{=}+1\rangle\langle\lambda{=}+1| + (-1)|\lambda{=}-1\rangle\langle\lambda{=}-1|$. One verifies this reconstructs $\bigl[\begin{smallmatrix}0&-i\\i&0\end{smallmatrix}\bigr]$ by expanding the outer products.
 

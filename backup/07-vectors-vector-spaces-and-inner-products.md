@@ -16,7 +16,7 @@ Vectors add component-by-component; the dot product gives a number measuring ali
 
 $$\vec A\cdot\vec B = A_xB_x + A_yB_y + A_zB_z = |\vec A||\vec B|\cos\varphi.$$
 
-The Vol. 2 picture abstracts this. A **vector space** $V$ over a field $\mathbb{F}$ ($\mathbb{R}$ or $\mathbb{C}$) is any set of objects that can be added and scaled, with the arithmetic obeying the standard rules: commutativity and associativity of addition, a zero vector, additive inverses, distributivity. The elements do not need to be arrows. Column vectors in $\mathbb{C}^n$ qualify. Polynomials qualify. Square-integrable functions on $\mathbb{R}$, with $(f+g)(x) = f(x)+g(x)$ and $(cf)(x) = c\,f(x)$, qualify — and this last example is where quantum mechanics lives.
+The Vol. 2 picture abstracts this. A **vector space** $V$ over a field $\mathbb{F}$ ($\mathbb{R}$ or $\mathbb{C}$) is any set of objects that can be added and scaled, with the arithmetic obeying the standard rules: commutativity and associativity of addition, a zero vector, additive inverses, distributivity. The elements need not be arrows. Column vectors in $\mathbb{C}^n$ qualify. Polynomials qualify. Square-integrable functions on $\mathbb{R}$, with $(f+g)(x) = f(x)+g(x)$ and $(cf)(x) = c\,f(x)$, qualify — and this last example is where quantum mechanics lives.
 
 ---
 
@@ -24,13 +24,13 @@ The Vol. 2 picture abstracts this. A **vector space** $V$ over a field $\mathbb{
 
 A set $\{\mathbf v_1,\ldots,\mathbf v_k\}$ is **linearly independent** if $c_1\mathbf v_1 + \cdots + c_k\mathbf v_k = \mathbf 0$ forces all $c_i = 0$. No vector in the set can be built from the others. A **basis** is a linearly independent set that also spans the space — every $\mathbf v \in V$ has a unique expansion $\mathbf v = \sum_i c_i\mathbf e_i$. The number of basis vectors is the **dimension** of $V$, independent of which basis is chosen.
 
-Choosing a basis is choosing coordinates. The same abstract vector looks different in different bases; this is why the matrix representing a linear operator changes when we change basis, even though the operator itself does not.
+Choosing a basis is choosing coordinates. The same abstract vector looks different in different bases; this is why the matrix representing a linear operator changes when you change basis, even though the operator itself does not.
 
 ---
 
 ## Inner Products: The Complex Case
 
-An **inner product** on a complex vector space assigns to each ordered pair $(\phi, \psi)$ a complex number $\langle\phi|\psi\rangle$ satisfying three axioms. We use the **physicist's convention** throughout — conjugate-linear in the *first* argument:
+An **inner product** on a complex vector space assigns to each ordered pair $(\phi, \psi)$ a complex number $\langle\phi|\psi\rangle$ satisfying three axioms. The **physicist's convention** throughout — conjugate-linear in the *first* argument:
 
 1. **Conjugate symmetry:** $\langle\phi|\psi\rangle = \langle\psi|\phi\rangle^*$
 2. **Linearity in the second argument:** $\langle\phi\,|\,a\psi_1 + b\psi_2\rangle = a\langle\phi|\psi_1\rangle + b\langle\phi|\psi_2\rangle$
@@ -46,7 +46,7 @@ The conjugate is on the first entry. Without it, $\langle\psi|\psi\rangle = \sum
 
 **Function space ($L^2$):**
 $$\langle\phi|\psi\rangle = \int_{-\infty}^{\infty}\phi^*(x)\,\psi(x)\,dx.$$
-This is the continuum analogue. The real 3D dot product is the special case $\mathbb{R}^3$ where no conjugate is needed.
+The continuum analogue. The real 3D dot product is the special case $\mathbb{R}^3$ where no conjugate is needed.
 
 ---
 
@@ -74,13 +74,13 @@ Since this holds for every $|\psi\rangle$, the operator in parentheses must be t
 
 $$\boxed{\sum_n|n\rangle\langle n| = \hat I.}$$
 
-This is the **resolution of the identity** — one of the most-used identities in quantum mechanics. Each term $|n\rangle\langle n|$ is the **projector** onto the $n$-th basis direction. The whole sum reconstructs the identity because the projectors tile the space without overlap. Inserting this form of $\hat I$ into any expression is the standard technique for changing basis, computing matrix elements, and deriving the Born rule.
+This is the **resolution of the identity** — the most-used identity in quantum mechanics. Each term $|n\rangle\langle n|$ is the **projector** onto the $n$-th basis direction. The whole sum reconstructs the identity because the projectors tile the space without overlap. Inserting this form of $\hat I$ into any expression is the standard technique for changing basis, computing matrix elements, and deriving the Born rule.
 
 ---
 
 ## Worked Example: Gram–Schmidt in $\mathbb{C}^2$
 
-We start with $|\mathbf u_1\rangle = (1, i)^T$ and $|\mathbf u_2\rangle = (1, 0)^T$.
+Start with $|\mathbf u_1\rangle = (1, i)^T$ and $|\mathbf u_2\rangle = (1, 0)^T$.
 
 **Step 1.** Normalize $|\mathbf u_1\rangle$:
 
@@ -108,7 +108,7 @@ The state space of quantum mechanics is $L^2(\mathbb{R})$ or a tensor product of
 
 $$\int_{-\infty}^{\infty}|x\rangle\langle x|\,dx = \hat I, \qquad \langle x|x'\rangle = \delta(x-x'),$$
 
-where the Kronecker delta has been replaced by the Dirac delta (Module M-06). The wavefunction is the component of the state in the continuous position basis: $\psi(x) = \langle x|\psi\rangle$.
+where the Kronecker delta has been replaced by the Dirac delta (Module M-06). The wavefunction is just the component of the state in the continuous position basis: $\psi(x) = \langle x|\psi\rangle$.
 
 ### The Born Rule as a Projection
 
@@ -116,7 +116,7 @@ The expansion $|\psi\rangle = \sum_n c_n|a_n\rangle$ in an eigenbasis, with $c_n
 
 $$P(a_n) = |c_n|^2 = |\langle a_n|\psi\rangle|^2.$$
 
-This is the squared projection of the state onto the eigenstate — a geometric statement about inner-product spaces. Normalization ensures $\sum_n|c_n|^2 = 1$, which is the Pythagorean theorem in Hilbert space.
+This is the squared projection of the state onto the eigenstate — a geometric fact about inner-product spaces. Normalization ensures $\sum_n|c_n|^2 = 1$, which is just the Pythagorean theorem in Hilbert space.
 
 ### Entanglement and the Tensor-Product Inner Product
 
@@ -124,7 +124,7 @@ For a two-particle system, the state space is the **tensor product** $\mathcal H
 
 $$\langle a_m\otimes b_n\,|\,a_{m'}\otimes b_{n'}\rangle = \langle a_m|a_{m'}\rangle\,\langle b_n|b_{n'}\rangle = \delta_{mm'}\delta_{nn'}.$$
 
-A general state $|\Psi\rangle = \sum_{m,n}c_{mn}|a_m\rangle\otimes|b_n\rangle$ is **entangled** if it cannot be written as a single product $|\alpha\rangle\otimes|\beta\rangle$. The **Schmidt decomposition** — a singular-value decomposition applied to the coefficient matrix $c_{mn}$ — identifies this: a state is entangled if and only if its Schmidt rank exceeds one. The concepts of bases, orthonormality, and expansion coefficients are essential to give entanglement any mathematical content.
+A general state $|\Psi\rangle = \sum_{m,n}c_{mn}|a_m\rangle\otimes|b_n\rangle$ is **entangled** if it cannot be written as a single product $|\alpha\rangle\otimes|\beta\rangle$. The **Schmidt decomposition** — a singular-value decomposition applied to the coefficient matrix $c_{mn}$ — identifies this: a state is entangled if and only if its Schmidt rank exceeds one. Without comfort with bases, orthonormality, and expansion coefficients, entanglement has no mathematical content.
 
 ---
 
@@ -132,11 +132,11 @@ A general state $|\Psi\rangle = \sum_{m,n}c_{mn}|a_m\rangle\otimes|b_n\rangle$ i
 
 **Physicist vs. mathematician convention.** Physicists put the conjugate on the *first* slot: $\langle\phi|\psi\rangle = \sum\phi_i^*\psi_i$. Mathematicians often put it on the second. The quantum series uses the physicist's convention exclusively.
 
-**Forgetting the conjugate.** Writing $\langle a\phi|\psi\rangle = a\langle\phi|\psi\rangle$ instead of $a^*\langle\phi|\psi\rangle$ is the most common error. Scalars pulled out of the bra (first slot) get conjugated; pulled out of the ket, they are unchanged.
+**Forgetting the conjugate.** Writing $\langle a\phi|\psi\rangle = a\langle\phi|\psi\rangle$ instead of $a^*\langle\phi|\psi\rangle$ is the single most common error. Scalars pulled out of the bra (first slot) get conjugated; pulled out of the ket, they are unchanged.
 
-**Real vs. complex orthogonality.** For real vectors, $\langle\phi|\psi\rangle = 0$ corresponds to geometric perpendicularity. For complex vectors, it is an algebraic condition without a simple visual interpretation. We should not try to picture it as perpendicular arrows.
+**Real vs. complex orthogonality.** For real vectors, $\langle\phi|\psi\rangle = 0$ corresponds to geometric perpendicularity. For complex vectors, it is an algebraic condition with no visual meaning. Do not try to picture it as perpendicular arrows.
 
-**Infinite dimension.** Finite-dimensional basis intuition generalizes, but completeness requires careful treatment of limits. $L^2(\mathbb{R})$ is complete; not every inner-product space is. The distinction matters when we want to guarantee that a Cauchy sequence of states converges to a state.
+**Infinite dimension.** Finite-dimensional basis intuition generalizes, but completeness requires limits. $L^2(\mathbb{R})$ is complete; not every inner-product space is. The distinction matters if you want to guarantee that a Cauchy sequence of states converges to a state.
 
 ---
 

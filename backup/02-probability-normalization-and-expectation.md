@@ -1,9 +1,9 @@
 # Module M-02 — Probability, Normalization, and Expectation Values
-*Understanding what $|\psi(x)|^2$ represents and how to work with it.*
+*Why $|\psi(x)|^2$ is not a probability, and what to do instead.*
 
-The Born rule tells us that $|\psi(x,t)|^2$ is the probability density for finding a particle at position $x$. The key word here is "density." A density evaluated at a single point is not a probability — it is a density. The probability lives in the integral over a region.
+The Born rule says that $|\psi(x,t)|^2$ is the probability density for finding a particle at position $x$. The first word students misread is "density." They compute $|\psi(x_0)|^2$ at some point $x_0$ and treat the result as a probability. It is not. A density evaluated at a point is not a probability — it is a density. The probability lives in the integral.
 
-This module develops the probability tools that Born's rule requires: probability densities, normalization, expectation values, and standard deviations. These concepts appear throughout the quantum mechanics that follows, expressed in $\psi$ notation.
+This module builds the probability machinery that Born's rule requires: probability densities, normalization, expectation values, and standard deviations. Everything here appears verbatim in the quantum mechanics that follows, dressed in $\psi$ notation.
 
 ---
 
@@ -17,9 +17,9 @@ The probability that $X$ falls in the interval $[a, b]$ is
 
 $$P(a \leq X \leq b) = \int_a^b f(x)\,dx.$$
 
-There are three important points to keep in mind. First, $f(x)$ is not itself a probability — it is a density, and it can exceed 1. For example, $f(x) = 2$ for $x\in[0, \frac{1}{2}]$ and zero elsewhere is a perfectly valid PDF. Second, the probability of finding $X$ at exactly one specific value $x_0$ is zero. Only intervals carry nonzero probability. Third, the integral of $f$ over any interval is a number between 0 and 1; the function $f$ itself is not so constrained.
+Three things to keep straight. First, $f(x)$ is not a probability — it is a density, and it can exceed 1. The function $f(x) = 2$ for $x\in[0, \frac{1}{2}]$ and zero elsewhere is a perfectly valid PDF. Second, the probability of finding $X$ at exactly one specific value $x_0$ is zero. Only intervals carry nonzero probability. Third, the integral of $f$ over any interval is a number between 0 and 1; the function $f$ itself is not so constrained.
 
-This distinction is fundamental when applying Born's rule. The probability of finding the particle at the single point $x_0$ is zero — not $|\psi(x_0)|^2$. The probability of finding it between $x_0$ and $x_0 + dx$ is $|\psi(x_0)|^2\,dx$ — a density times a width. Normalization requires integrating the density to one, not setting the density equal to one at some point.
+This distinction is the foundational pitfall with Born's rule. The probability of finding the particle at the single point $x_0$ is zero — not $|\psi(x_0)|^2$. The probability of finding it between $x_0$ and $x_0 + dx$ is $|\psi(x_0)|^2\,dx$ — a density times a width. Normalization requires integrating the density to one, not setting the density equal to one at some point.
 
 ---
 
@@ -29,11 +29,11 @@ The **mean** (expectation value) of $X$ is the probability-weighted average:
 
 $$\mu \equiv \langle X\rangle = \int_{-\infty}^{\infty} x\,f(x)\,dx.$$
 
-The expectation of any function $g(X)$ is:
+The expectation of any function $g(X)$:
 
 $$\langle g(X)\rangle = \int_{-\infty}^{\infty} g(x)\,f(x)\,dx.$$
 
-Expectation is **linear**: $\langle aX + b\rangle = a\langle X\rangle + b$ for any constants $a$, $b$. This follows directly from linearity of the integral and does not require any special property of $f$.
+Expectation is **linear**: $\langle aX + b\rangle = a\langle X\rangle + b$ for any constants $a$, $b$. This follows immediately from linearity of the integral and does not require any special property of $f$.
 
 The **variance** measures spread as the mean squared deviation from the mean:
 
@@ -43,27 +43,27 @@ The second form — "mean of the square minus the square of the mean" — comes 
 
 $$\langle X^2 - 2\mu X + \mu^2\rangle = \langle X^2\rangle - 2\mu\langle X\rangle + \mu^2 = \langle X^2\rangle - 2\mu^2 + \mu^2 = \langle X^2\rangle - \mu^2.$$
 
-The **standard deviation** $\sigma = \sqrt{\sigma^2}$ has the same units as $X$ and is the natural measure of the width of a distribution.
+The **standard deviation** $\sigma = \sqrt{\sigma^2}$ has the same units as $X$. It is the natural measure of the width of the distribution, not $\sigma^2$.
 
-The mean is not the same as the most probable value. For a symmetric, unimodal distribution they coincide — and many textbook examples are symmetric — but for asymmetric distributions they can differ substantially. The expectation value $\langle x\rangle$ is the probability-weighted average position, not the location where $|\psi|^2$ peaks.
+The mean is not the same as the most probable value. For a symmetric, unimodal distribution they coincide — and most textbook examples are symmetric — but for asymmetric distributions they can differ substantially. The expectation value $\langle x\rangle$ is the probability-weighted average position, not the location where $|\psi|^2$ peaks.
 
 ---
 
 ## The Gaussian Integral
 
-The most frequently used integral in normalization and expectation-value calculations is
+The single most-used integral in normalization and expectation-value calculations is
 
 $$\int_{-\infty}^{\infty} e^{-\alpha x^2}\,dx = \sqrt{\frac{\pi}{\alpha}}, \qquad \alpha > 0.$$
 
-To derive this, let $I = \int_{-\infty}^\infty e^{-\alpha x^2}dx$. We square it:
+The proof is one of the cleverest in analysis. Let $I = \int_{-\infty}^\infty e^{-\alpha x^2}dx$. Square it:
 
 $$I^2 = \left(\int_{-\infty}^\infty e^{-\alpha x^2}dx\right)\!\left(\int_{-\infty}^\infty e^{-\alpha y^2}dy\right) = \int_{-\infty}^\infty\int_{-\infty}^\infty e^{-\alpha(x^2+y^2)}\,dx\,dy.$$
 
-Switching to polar coordinates with $x^2+y^2 = r^2$ and $dx\,dy = r\,dr\,d\theta$, where $r\in[0,\infty)$ and $\theta\in[0,2\pi)$:
+Switch to polar coordinates: $x^2+y^2 = r^2$, $dx\,dy = r\,dr\,d\theta$, with $r\in[0,\infty)$ and $\theta\in[0,2\pi)$:
 
 $$I^2 = \int_0^{2\pi}d\theta\int_0^\infty e^{-\alpha r^2}r\,dr = 2\pi\cdot\frac{1}{2\alpha} = \frac{\pi}{\alpha}.$$
 
-The $r$-integral follows via $u = \alpha r^2$: $\int_0^\infty e^{-\alpha r^2}r\,dr = 1/(2\alpha)$. Therefore $I = \sqrt{\pi/\alpha}$.
+The $r$-integral is elementary via $u = \alpha r^2$: $\int_0^\infty e^{-\alpha r^2}r\,dr = 1/(2\alpha)$. Therefore $I = \sqrt{\pi/\alpha}$.
 
 Two extensions follow by differentiating with respect to $\alpha$:
 
@@ -87,27 +87,27 @@ The delta function replaces the Kronecker delta of discrete bound states: $\lang
 
 ## Worked Example: The Gaussian Wave Packet
 
-The Gaussian is the central example in quantum mechanics because it minimizes the product $\Delta x\,\Delta p$. Computing its normalization and standard deviation illustrates the template for every expectation-value calculation.
+The Gaussian is the central example in quantum mechanics because it minimizes the product $\Delta x\,\Delta p$. Computing its normalization and standard deviation is the template for every expectation-value calculation.
 
-**The wave function.** We take
+**The wave function.** Take
 
 $$\psi(x) = N\,e^{-x^2/(4\sigma^2)},$$
 
-where $\sigma$ is a given length scale and $N$ is the normalization constant to be determined.
+where $\sigma$ is a given length scale and $N$ is the normalization constant.
 
-**Normalization.** We compute $\int|\psi|^2\,dx = N^2\int e^{-x^2/(2\sigma^2)}\,dx$. Applying the Gaussian integral with $\alpha = 1/(2\sigma^2)$:
+**Normalization.** Compute $\int|\psi|^2\,dx = N^2\int e^{-x^2/(2\sigma^2)}\,dx$. Apply the Gaussian integral with $\alpha = 1/(2\sigma^2)$:
 
 $$N^2\sqrt{\frac{\pi}{1/(2\sigma^2)}} = N^2\sigma\sqrt{2\pi} = 1 \implies N = \frac{1}{(2\pi\sigma^2)^{1/4}}.$$
 
 **Mean position.** The integrand $x|\psi|^2 = N^2 x\,e^{-x^2/(2\sigma^2)}$ is an odd function of $x$ on the symmetric domain $(-\infty, \infty)$. The integral vanishes: $\langle x\rangle = 0$.
 
-**Mean squared position.** Applying $\int x^2 e^{-\alpha x^2}\,dx = \sqrt{\pi}/(2\alpha^{3/2})$ with $\alpha = 1/(2\sigma^2)$:
+**Mean squared position.** Apply $\int x^2 e^{-\alpha x^2}\,dx = \sqrt{\pi}/(2\alpha^{3/2})$ with $\alpha = 1/(2\sigma^2)$:
 
 $$\langle x^2\rangle = N^2\cdot\frac{\sqrt{\pi}}{2(1/(2\sigma^2))^{3/2}} = \frac{1}{(2\pi\sigma^2)^{1/2}}\cdot\frac{\sqrt{\pi}}{2}\cdot(2\sigma^2)^{3/2} = \sigma^2.$$
 
 **Standard deviation.** $\Delta x = \sqrt{\langle x^2\rangle - \langle x\rangle^2} = \sqrt{\sigma^2 - 0} = \sigma$.
 
-The width parameter $\sigma$ in the exponent of the Gaussian is the standard deviation of the position distribution. The Gaussian is the minimum-uncertainty state: its momentum-space wavefunction $\phi(k)$ (the Fourier transform of $\psi(x)$) is also Gaussian with width $1/(2\sigma)$, giving $\Delta p = \hbar/(2\sigma)$ and therefore $\Delta x\,\Delta p = \sigma\cdot\hbar/(2\sigma) = \hbar/2$ — the lower bound in the uncertainty principle.
+The width parameter $\sigma$ in the exponent of the Gaussian is literally the standard deviation of the position distribution. The Gaussian is the minimum-uncertainty state: its momentum-space wavefunction $\phi(k)$ (the Fourier transform of $\psi(x)$) is also Gaussian with width $1/(2\sigma)$, giving $\Delta p = \hbar/(2\sigma)$ and therefore $\Delta x\,\Delta p = \sigma\cdot\hbar/(2\sigma) = \hbar/2$ — the lower bound in the uncertainty principle.
 
 ---
 
@@ -115,7 +115,7 @@ The width parameter $\sigma$ in the exponent of the Gaussian is the standard dev
 
 The Schrödinger equation with a Hermitian Hamiltonian $\hat{H} = \hat{H}^\dagger$ preserves normalization: if $\int|\psi(x,0)|^2\,dx = 1$, then $\int|\psi(x,t)|^2\,dx = 1$ for all $t$. The proof uses the continuity equation — the probability current $j = (\hbar/2mi)(\psi^*\partial_x\psi - \psi\partial_x\psi^*)$ satisfies $\partial_t|\psi|^2 + \partial_x j = 0$, and integrating over all space with $j\to0$ at $\pm\infty$ gives $d/dt\int|\psi|^2\,dx = 0$.
 
-This means normalization is an initial condition, not something we must re-impose at every time step. Approximation methods or numerical truncations can violate it; checking that $\int|\psi|^2\,dx$ remains 1 after an approximation is a useful diagnostic.
+This means normalization is an initial condition, not something you must re-impose at every time step. Approximation methods or numerical truncations can violate it; checking that $\int|\psi|^2\,dx$ remains 1 after an approximation is a useful diagnostic for whether anything has gone wrong.
 
 ---
 

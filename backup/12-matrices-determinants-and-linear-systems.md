@@ -3,7 +3,7 @@
 
 Spin-½ is the simplest non-trivial quantum system, and all of Chapter II·7 is $2\times 2$ matrix algebra. The Pauli matrices are the spin operators (up to $\hbar/2$); states are two-component column vectors; measurements are eigenvalue computations; time evolution is matrix exponentiation. Chapter IV·1 adds the trace and the concept of a mixed state. Chapter IV·4 adds unitary matrices and the tensor product for multi-qubit systems.
 
-The *Mathematics for Physics* Vol 1 foundation covers real matrices with classical mechanics examples. This module extends those foundations into the complex matrix language that quantum mechanics requires: the Hermitian conjugate, Hermitian and unitary matrices, and the Pauli matrices as a concrete worked system.
+The *Mathematics for Physics* Vol 1 foundation covers real matrices with classical mechanics examples. This module lifts those foundations into the complex matrix language quantum mechanics requires: Hermitian conjugate, Hermitian and unitary matrices, and the Pauli matrices as a concrete worked system.
 
 ---
 
@@ -39,7 +39,7 @@ Key properties: $\det(AB) = \det(A)\det(B)$; $\det(A^\dagger) = (\det A)^*$; $\d
 
 ## Complex Matrices: The Hermitian Conjugate
 
-QM requires matrices with complex entries. Three operations are important:
+QM requires matrices with complex entries. Three operations matter:
 
 **Complex conjugate** $A^*$: replace each entry $A_{ij}$ with $A_{ij}^*$.
 
@@ -51,7 +51,7 @@ A matrix is **Hermitian** if $A^\dagger = A$ — each entry equals the complex c
 
 A matrix is **unitary** if $U^\dagger U = UU^\dagger = I$. Unitary matrices preserve inner products and norms; they represent time evolution, rotations, and quantum gates.
 
-These three operations are distinct. For real matrices, $A^\dagger = A^T$. For a real symmetric matrix, $A^\dagger = A$, so it is automatically Hermitian. For $\sigma_y$: the $(1,2)$ entry is $-i$; its conjugate is $+i$; the $(1,2)$ entry of $A^\dagger$ (which is the $(2,1)$ entry of $A^*$) is $+i$, and indeed $\sigma_y^\dagger = \sigma_y$.
+Keep these three operations distinct. For real matrices, $A^\dagger = A^T$. For a real symmetric matrix, $A^\dagger = A$, so it is automatically Hermitian. For $\sigma_y$: the $(1,2)$ entry is $-i$; its conjugate is $+i$; the $(1,2)$ entry of $A^\dagger$ (which is the $(2,1)$ entry of $A^*$) is $+i$, and indeed $\sigma_y^\dagger = \sigma_y$.
 
 ---
 
@@ -205,7 +205,7 @@ $$\langle{+x}|{-x}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1&1\end{pmatrix}\cd
 
 **QM IV·4 — Quantum Gates.** Every single-qubit gate is a $2\times 2$ unitary matrix. Gate composition is matrix multiplication; the inverse of a unitary gate is its Hermitian conjugate. Two-qubit gates are $4\times 4$ unitary matrices, constructed as Kronecker products for separable operations or directly (as the CNOT) for entangling operations.
 
-A simple circuit to verify by hand: $H\,X\,H = Z$. Computing step by step:
+A simple circuit to verify by hand: $H\,X\,H = Z$. Compute step by step:
 
 $$X\,H = \begin{pmatrix}0&1\\1&0\end{pmatrix}\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix} = \frac{1}{\sqrt{2}}\begin{pmatrix}1&-1\\1&1\end{pmatrix},$$
 

@@ -1,10 +1,11 @@
 # Module M-11 — Special Functions: Hermite, Legendre, Laguerre, Spherical Harmonics, Bessel
+*Four families of exotic polynomials that are actually one theorem in disguise.*
 
-When we solve the quantum harmonic oscillator, the angular momentum problem, the hydrogen atom, and the scattering problem, we encounter four different families of functions — Hermite polynomials, Legendre polynomials and spherical harmonics, associated Laguerre polynomials, and spherical Bessel functions. A student working through the series encounters all four in succession and may conclude they are four unrelated collections of exotic formulas to memorize.
+When you solve the quantum harmonic oscillator, the angular momentum problem, the hydrogen atom, and the scattering problem, you encounter four different families of functions — Hermite polynomials, Legendre polynomials and spherical harmonics, associated Laguerre polynomials, and spherical Bessel functions. A student working through the series encounters all four in succession and may conclude they are four unrelated collections of exotic formulas to memorize.
 
 They are not. Every family is the set of orthogonal eigenfunctions of a self-adjoint second-order differential operator. One theorem — the Sturm-Liouville theorem — explains why all of them are orthogonal, why arbitrary functions expand in them, and why their eigenvalues are real. The same two-line proof applies to all four families; only the weight function changes.
 
-The explicit polynomial coefficients are available in any reference table. What we focus on here is the structure — how each family arises, why it is orthogonal, and what its orthogonality weight is.
+The explicit polynomial coefficients: look them up. The structure — how each family arises, why it is orthogonal, and what its orthogonality weight is — is what to understand.
 
 ---
 
@@ -30,7 +31,7 @@ so $\int_a^b y_m\,y_n\,w\,dx = 0$. This is the same two lines of algebra every t
 
 $$f(x) = \sum_n c_n\,y_n(x), \qquad c_n = \frac{\langle y_n, f\rangle}{\langle y_n, y_n\rangle} = \frac{\int f\,y_n\,w\,dx}{\int y_n^2\,w\,dx}.$$
 
-We project onto each basis function in turn, using the weighted inner product. The ordinary Fourier series is the special case with a trigonometric basis; every special-function expansion is the same idea, adapted to the geometry of the problem.
+Project onto each basis function in turn, using the weighted inner product. The ordinary Fourier series is the special case with a trigonometric basis; every special-function expansion is the same idea, adapted to the geometry of the problem.
 
 <!-- → [TABLE: special function catalogue — columns: family name, defining ODE, interval and weight w, QM role; rows for each of the seven families (Hermite, Legendre, Associated Legendre, Spherical harmonics, Associated Laguerre, Spherical Bessel, Cylindrical Bessel); this is the reference table students will consult when identifying which family a new ODE belongs to] -->
 
@@ -42,7 +43,7 @@ The 1D harmonic oscillator in the dimensionless variable $\xi = \sqrt{m\omega/\h
 
 $$-\frac{d^2\psi}{d\xi^2} + \xi^2\psi = \frac{2E}{\hbar\omega}\psi.$$
 
-The asymptotic behavior as $|\xi|\to\infty$ is Gaussian, so we factor it out: writing $\psi(\xi) = H(\xi)\,e^{-\xi^2/2}$ and substituting gives **Hermite's equation** for $H$:
+The asymptotic behavior as $|\xi|\to\infty$ is Gaussian, so factor it out: write $\psi(\xi) = H(\xi)\,e^{-\xi^2/2}$. Substituting gives **Hermite's equation** for $H$:
 
 $$H'' - 2\xi H' + 2nH = 0, \qquad n = \frac{E}{\hbar\omega} - \frac{1}{2}.$$
 
@@ -50,7 +51,7 @@ The power-series solution to this equation has infinitely many terms in general.
 
 $$\boxed{E_n = \hbar\omega\!\left(n+\tfrac{1}{2}\right), \qquad n = 0,1,2,\ldots}$$
 
-The evenly spaced energy ladder, including zero-point energy $E_0 = \tfrac{1}{2}\hbar\omega$, follows from the termination condition alone.
+The evenly spaced energy ladder, including zero-point energy $E_0 = \tfrac{1}{2}\hbar\omega$, follows from the termination condition alone. Nothing else is needed.
 
 **First few polynomials** (physicist's convention, leading coefficient $2^n$):
 
@@ -66,9 +67,9 @@ $$\int_{-\infty}^\infty H_m(\xi)\,H_n(\xi)\,e^{-\xi^2}\,d\xi = \sqrt{\pi}\,2^n\,
 
 $$H_{n+1}(\xi) = 2\xi\,H_n(\xi) - 2n\,H_{n-1}(\xi).$$
 
-Combined with $\xi H_n = \tfrac{1}{2}H_{n+1} + nH_{n-1}$, this allows us to compute $\langle n|\hat{x}|n'\rangle$ and $\langle n|\hat{p}|n'\rangle$ algebraically, without evaluating a Gaussian integral.
+Combined with $\xi H_n = \tfrac{1}{2}H_{n+1} + nH_{n-1}$, this lets you compute $\langle n|\hat{x}|n'\rangle$ and $\langle n|\hat{p}|n'\rangle$ algebraically, without evaluating a Gaussian integral.
 
-One convention note: the physicist's $H_n$ has leading coefficient $2^n$ and weight $e^{-\xi^2}$. The probabilist's $\text{He}_n$ has leading coefficient 1 and weight $e^{-\xi^2/2}$. QM uniformly uses the physicist's convention. To verify, check $H_1$: the physicist's convention gives $2\xi$; the probabilist's gives $\xi$. Using the wrong convention changes normalization constants by powers of 2.
+One convention note: the physicist's $H_n$ has leading coefficient $2^n$ and weight $e^{-\xi^2}$. The probabilist's $\text{He}_n$ has leading coefficient 1 and weight $e^{-\xi^2/2}$. QM uniformly uses the physicist's convention. Verify by checking $H_1$: physicist's gives $2\xi$; probabilist's gives $\xi$. Using the wrong convention changes normalization constants by powers of 2.
 
 ---
 
@@ -78,7 +79,7 @@ Separating the spherical Laplacian produces the polar equation. With $u = \cos\t
 
 $$\frac{d}{du}\!\left[(1-u^2)\frac{dP}{du}\right] + \ell(\ell+1)\,P = 0.$$
 
-This is the **Legendre equation**. Requiring finiteness at $u = \pm1$ (the poles $\theta = 0,\pi$) forces $\ell\in\{0,1,2,\ldots\}$ and gives the **Legendre polynomials**:
+This is the **Legendre equation**. Demanding finiteness at $u = \pm1$ (the poles $\theta = 0,\pi$) forces $\ell\in\{0,1,2,\ldots\}$ and gives the **Legendre polynomials**:
 
 $$P_0(u) = 1, \quad P_1(u) = u, \quad P_2(u) = \tfrac{1}{2}(3u^2-1), \quad P_3(u) = \tfrac{1}{2}(5u^3-3u).$$
 
@@ -104,15 +105,15 @@ $$\int_0^{2\pi}\!\int_0^\pi Y_{\ell'm'}^*\,Y_{\ell m}\,\sin\theta\,d\theta\,d\ph
 
 $$Y_{00} = \frac{1}{\sqrt{4\pi}}, \quad Y_{10} = \sqrt{\frac{3}{4\pi}}\cos\theta, \quad Y_{1,\pm1} = \mp\sqrt{\frac{3}{8\pi}}\sin\theta\,e^{\pm i\phi}.$$
 
-$Y_{00}$ is spherically symmetric (the $s$-orbital shape). $Y_{10}$ corresponds to the $p_z$ lobe. Linear combinations of $Y_{1,\pm1}$ give $p_x$ and $p_y$.
+$Y_{00}$ is spherically symmetric (the $s$-orbital shape). $Y_{10}$ is the $p_z$ lobe. Linear combinations of $Y_{1,\pm1}$ give $p_x$ and $p_y$.
 
 **Angular momentum eigenvalue equations:**
 
 $$\hat{L}^2 Y_{\ell m} = \hbar^2\ell(\ell+1)Y_{\ell m}, \qquad \hat{L}_z Y_{\ell m} = \hbar m\,Y_{\ell m}.$$
 
-The separation constant $\ell(\ell+1)$ from the PDE is the eigenvalue of $\hat{L}^2$. The quantum number $m$ from the azimuthal separation is the eigenvalue of $\hat{L}_z$. The PDE separation and the operator eigenvalue problem are the same thing, viewed from two angles.
+The separation constant $\ell(\ell+1)$ from the PDE is the eigenvalue of $\hat{L}^2$. The quantum number $m$ from the azimuthal separation is the eigenvalue of $\hat{L}_z$. The PDE separation and the operator eigenvalue problem are the same thing, seen from two angles.
 
-The $(-1)^m$ factor in the associated Legendre functions for $m > 0$ is the **Condon-Shortley convention**, standard in physics. [verify: Condon & Shortley, The Theory of Atomic Spectra, 1935] Some mathematical tables omit it. Mixing conventions produces incorrect phases in angular momentum matrix elements and selection rules.
+The $(-1)^m$ factor in the associated Legendre functions for $m > 0$ is the **Condon-Shortley convention**, standard in physics. [verify: Condon & Shortley, The Theory of Atomic Spectra, 1935] Some mathematical tables omit it. Mixing conventions produces wrong phases in angular momentum matrix elements and selection rules.
 
 ---
 
@@ -132,7 +133,7 @@ $$\boxed{E_n = -\frac{13.6\;\text{eV}}{n^2}, \qquad n = 1,2,3,\ldots}$$
 
 $$\int_0^\infty R_{n\ell}(r)\,R_{n'\ell}(r)\,r^2\,dr = \delta_{nn'}.$$
 
-**Degeneracy.** For fixed $n$, $\ell$ runs from 0 to $n-1$, and $m$ runs from $-\ell$ to $+\ell$. The total spatial states at energy $E_n$: $\sum_{\ell=0}^{n-1}(2\ell+1) = n^2$, doubled by spin: $2n^2$ states per level. Every quantum number, and the degeneracy count, follows from the three separation conditions.
+**Degeneracy.** For fixed $n$, $\ell$ runs from 0 to $n-1$, and $m$ runs from $-\ell$ to $+\ell$. The total spatial states at energy $E_n$: $\sum_{\ell=0}^{n-1}(2\ell+1) = n^2$, doubled by spin: $2n^2$ states per level. Every quantum number, and the degeneracy count, falls out of the three separation conditions. Nothing is postulated.
 
 **First two explicit radial functions:**
 
@@ -158,13 +159,13 @@ $$j_0(x) = \frac{\sin x}{x}, \qquad j_1(x) = \frac{\sin x}{x^2} - \frac{\cos x}{
 
 **Asymptotic forms** ($kr\to\infty$):
 
-$$j_\ell(kr) \overset{kr\to\infty}{\longrightarrow} \frac{\sin(kr-\ell\pi/2)}{kr}, \qquad n_\ell(kr) \overset{kr\to\infty}{\longrightarrow} -\frac{\cos(kr-\ell\pi/2)}{kr}.$$
+$$j_\ell(kr) \xrightarrow{kr\to\infty} \frac{\sin(kr-\ell\pi/2)}{kr}, \qquad n_\ell(kr) \xrightarrow{kr\to\infty} -\frac{\cos(kr-\ell\pi/2)}{kr}.$$
 
 Outside the interaction region, the general radial solution is $j_\ell\cos\delta_\ell - n_\ell\sin\delta_\ell$. The **phase shift** $\delta_\ell$ encodes how much the potential has displaced the asymptotic wave from the free-particle solution $j_\ell$. The total cross section:
 
 $$\sigma = \frac{4\pi}{k^2}\sum_\ell(2\ell+1)\sin^2\delta_\ell.$$
 
-For a hard sphere of radius $a$: $\tan\delta_\ell = j_\ell(ka)/n_\ell(ka)$, with the $\ell = 0$ phase shift dominating at low energy ($ka\ll1$). We use $j_\ell$ because the free particle solution must be regular at the origin; $n_\ell$ appears in scattering because the scatterer occupies the interior and both solutions are allowed outside it.
+For a hard sphere of radius $a$: $\tan\delta_\ell = j_\ell(ka)/n_\ell(ka)$, with the $\ell = 0$ phase shift dominating at low energy ($ka\ll1$). $j_\ell$ appears because the free particle solution must be regular at the origin; $n_\ell$ appears in scattering because the scatterer occupies the interior and both solutions are allowed outside it.
 
 **Cylindrical Bessel functions** $J_m(x)$ arise in cylindrical-symmetry problems (waveguides, optical fibers, quantum wires). For a hard-wall cylinder of radius $a$, the condition $J_m(ka) = 0$ quantizes the allowed modes. The factor 1.22 in the Rayleigh resolution limit $\theta_\text{min} = 1.22\lambda/D$ is $j_{1,1}/\pi$ where $j_{1,1}\approx3.832$ is the first zero of $J_1$.
 
@@ -172,7 +173,7 @@ For a hard sphere of radius $a$: $\tan\delta_\ell = j_\ell(ka)/n_\ell(ka)$, with
 
 ## Worked Example: Which Special Function and Why
 
-The diagnostic logic follows five steps: (1) choose the coordinate system that makes the potential or boundary conditions separable; (2) apply the product ansatz; (3) recognize the ODE by its form; (4) apply the regularity or termination condition that quantizes the eigenvalue; (5) the special function is the name of the regular solution.
+The diagnostic logic is always five steps: (1) choose the coordinate system that makes the potential or boundary conditions separable; (2) apply the product ansatz; (3) recognize the ODE by its form; (4) apply the regularity or termination condition that quantizes the eigenvalue; (5) the special function is the name of the regular solution.
 
 <!-- → [TABLE: worked example table — columns: QM system, coordinate system, separated ODE, quantization mechanism, special function; rows: (1) 1D harmonic oscillator, Cartesian, Hermite equation, series termination (normalizability), H_n(ξ); (2) any central potential angular, spherical (θ,φ), associated Legendre, finiteness at poles, Y_ℓm; (3) hydrogen radial, spherical (r), associated Laguerre, series termination, L^(2ℓ+1)_(n-ℓ-1)(ρ); (4) free particle or scattering radial, spherical (r), spherical Bessel, regularity at origin or asymptotic form, j_ℓ(kr) and n_ℓ(kr); (5) cylindrical geometry, cylindrical (ρ), Bessel equation, zeros at wall J_m(ka)=0, J_m(kρ)] -->
 

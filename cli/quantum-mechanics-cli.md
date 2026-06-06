@@ -9,7 +9,7 @@
 ## Chapter 00: Quantum Mechanics
 *Source: `chapters/00-frontmatter.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -17,7 +17,7 @@
 ## Chapter 01: Module M-01 — Complex Numbers and the Complex Exponential
 *Source: `chapters/01-complex-numbers-and-the-complex-exponential.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -25,7 +25,7 @@
 ## Chapter 02: Module M-02 — Probability, Normalization, and Expectation Values
 *Source: `chapters/02-probability-normalization-and-expectation.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -33,7 +33,7 @@
 ## Chapter 03: Module M-03 — Ordinary Differential Equations and Boundary Conditions
 *Source: `chapters/03-ordinary-differential-equations.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -41,7 +41,7 @@
 ## Chapter 04: Module M-04 — Series Expansions and Approximation
 *Source: `chapters/04-series-expansions-and-approximation.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -49,7 +49,7 @@
 ## Chapter 05: Module M-05 — Fourier Series and the Wave Equation
 *Source: `chapters/05-fourier-series-and-the-wave-equation.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -57,7 +57,7 @@
 ## Chapter 06: Module M-06 — The Fourier Transform
 *Source: `chapters/06-the-fourier-transform.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -65,7 +65,7 @@
 ## Chapter 07: Module M-07 — Vectors, Vector Spaces, and Inner Products
 *Source: `chapters/07-vectors-vector-spaces-and-inner-products.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -73,7 +73,7 @@
 ## Chapter 08: Module M-08 — Eigenvalues and Diagonalization
 *Source: `chapters/08-eigenvalues-and-diagonalization.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -81,7 +81,7 @@
 ## Chapter 09: Module M-09 — Operators and Dirac Notation
 *Source: `chapters/09-operators-and-dirac-notation.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -89,7 +89,7 @@
 ## Chapter 10: Module M-10 — Multivariable Calculus and Separation of Variables
 *Source: `chapters/10-multivariable-calculus-and-separation-of-variables.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -97,7 +97,7 @@
 ## Chapter 11: Module M-11 — Special Functions: Hermite, Legendre, Laguerre, Spherical Harmonics, Bessel
 *Source: `chapters/11-special-functions.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -105,7 +105,7 @@
 ## Chapter 12: Module M-12 — Matrices, Determinants, and Linear Systems
 *Source: `chapters/12-matrices-determinants-and-linear-systems.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -113,7 +113,7 @@
 ## Chapter 13: Module M-13 — Logarithms, Exponentials, and Scales
 *Source: `chapters/13-logarithms-exponentials-and-scales.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -121,7 +121,7 @@
 ## Chapter 14: Module M-14 — Combinatorics and Multiplicity
 *Source: `chapters/14-combinatorics-and-multiplicity.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -129,7 +129,7 @@
 ## Chapter 15: Module M-15 — Calculus of Variations and Stationarity
 *Source: `chapters/15-calculus-of-variations.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -137,7 +137,7 @@
 ## Chapter 16: Module M-16 — Tensor Products and Composite-System Linear Algebra
 *Source: `chapters/16-tensor-products-and-composite-systems.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -145,7 +145,7 @@
 ## Chapter 17: Module M-17 — Units, Dimensions, and Estimation
 *Source: `chapters/17-units-dimensions-and-estimation.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
@@ -153,15 +153,15 @@
 ## Chapter 18: Module M-18 — Trigonometry, Waves, and the Harmonic Model
 *Source: `chapters/18-trigonometry-waves-and-the-harmonic-model.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---
 
-## Chapter 99: 99 Back Matter
+## Chapter 99: 99-back-matter.md
 *Source: `chapters/99-back-matter.md`*
 
-> **Section not yet authored.** No `### Exercise 4 — CLI Exercise` block found in this chapter file.
+> **Section not yet authored.** No `### Exercise R4 — CLI Exercise` block found in this chapter file.
 > To add this section, edit the source chapter file directly.
 
 ---

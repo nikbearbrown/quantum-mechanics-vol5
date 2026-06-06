@@ -1,7 +1,7 @@
 # Module M-05 — Fourier Series and the Wave Equation
-*How an arbitrary initial wavefunction can be written as a sum of eigenstates, and why that sum carries all the physics.*
+*Why an arbitrary initial wavefunction can be written as a sum of eigenstates, and why that sum carries all the physics.*
 
-The infinite square well requires writing an arbitrary initial wavefunction as a superposition of energy eigenstates and time-evolving it. That calculation, stripped of its quantum notation, is a Fourier sine series on an interval. The Bloch theorem for electrons in a crystal rests on the fact that a periodic potential can be expanded in spatial harmonics, and each harmonic couples a definite pair of momentum states. Both are Fourier analysis. This module builds the machinery so those chapters become derivations rather than assertions.
+The infinite square well asks you to write an arbitrary initial wavefunction as a superposition of energy eigenstates and time-evolve it. That calculation, stripped of its quantum notation, is a Fourier sine series on an interval. The Bloch theorem for electrons in a crystal rests on the fact that a periodic potential can be expanded in spatial harmonics, and each harmonic couples a definite pair of momentum states. Both are Fourier analysis, wearing different clothes. This module builds the machinery so those chapters are derivations rather than assertions.
 
 ---
 
@@ -13,7 +13,7 @@ $$\frac{\partial y}{\partial x} = Ak\cos(kx - \omega t) \quad\text{(slope of the
 
 $$\frac{\partial y}{\partial t} = -A\omega\cos(kx - \omega t) \quad\text{(transverse velocity of one point)}.$$
 
-These are physically different — a slope (dimensionless) and a velocity (m/s) — measured from the same function at the same instant. The curly $\partial$ is the notation that distinguishes them.
+These are physically different — a slope (dimensionless) and a velocity (m/s) — measured from the same function at the same instant. The curly $\partial$ is the notation that prevents them from being confused.
 
 ---
 
@@ -23,19 +23,19 @@ Newton's second law applied to a small element of string under tension $F_T$ wit
 
 $$\frac{\partial^2 y}{\partial t^2} = v^2\frac{\partial^2 y}{\partial x^2}, \qquad v = \sqrt{\frac{F_T}{\mu}}.$$
 
-Stated physically: curvature in space drives acceleration in time. Where the string is most bent, the tension mismatch is largest, and the string accelerates back hardest. The wave speed $v$ is a property of the medium alone.
+Read it physically: curvature in space drives acceleration in time. Where the string is most bent, the tension mismatch is largest, and the string accelerates back hardest. The wave speed $v$ is a property of the medium alone.
 
-The important property is **linearity**: every term in the equation is first-degree in $y$ and its derivatives. If $y_1$ and $y_2$ both satisfy the equation, so does $c_1 y_1 + c_2 y_2$ for any constants $c_1$, $c_2$. **Superposition is a direct consequence of linearity.** The Schrödinger equation has exactly this property: $i\hbar\partial_t\psi = \hat{H}\psi$ is linear in $\psi$, so any superposition of solutions is a solution, and the energy-eigenstate expansion is the Fourier series of the wavefunction.
+The crucial property is **linearity**: every term in the equation is first-degree in $y$ and its derivatives. If $y_1$ and $y_2$ both satisfy the equation, so does $c_1 y_1 + c_2 y_2$ for any constants $c_1$, $c_2$. **Superposition is a direct consequence of linearity.** This is not a separate principle — it is what linearity means. The Schrödinger equation has exactly this property: $i\hbar\partial_t\psi = \hat{H}\psi$ is linear in $\psi$, so any superposition of solutions is a solution, and the energy-eigenstate expansion is the Fourier series of the wavefunction.
 
 ---
 
 ## Separation of Variables: Two ODEs from One PDE
 
-We look for solutions of the form $y(x, t) = X(x)\,T(t)$. Substituting into the wave equation and dividing by $X(x)T(t)$:
+Look for solutions of the form $y(x, t) = X(x)\,T(t)$. Substituting into the wave equation and dividing by $X(x)T(t)$:
 
 $$\frac{T''(t)}{v^2 T(t)} = \frac{X''(x)}{X(x)}.$$
 
-The left side depends only on $t$; the right side depends only on $x$. For this to hold for all $x$ and $t$, both sides must equal the same constant. Calling it $-k^2$ (the negative sign anticipates the oscillatory solutions we want), we obtain two ordinary differential equations:
+The left side depends only on $t$; the right side depends only on $x$. For this to hold for all $x$ and $t$, both sides must equal the same constant. Call it $-k^2$ (choosing the negative sign anticipates the oscillatory solutions we want). This splits into two ordinary differential equations:
 
 $$X'' = -k^2 X \implies X(x) = A\sin(kx) + B\cos(kx),$$
 
@@ -49,13 +49,13 @@ The allowed frequencies are $\omega_n = vk_n = n\pi v/L$. The general standing-w
 
 $$y_n(x,t) = \sin\!\left(\frac{n\pi x}{L}\right)\!\left[C_n\sin(\omega_n t) + D_n\cos(\omega_n t)\right].$$
 
-This pattern repeats in quantum mechanics. The energy eigenstates of the infinite square well are found by separating the Schrödinger equation into time and space parts, imposing $\psi(0) = \psi(L) = 0$, and recovering the discrete set $k_n = n\pi/L$. The eigenstates are $\psi_n(x) = \sqrt{2/L}\sin(n\pi x/L)$. The mathematics is not analogous to the string — it is the same mathematics.
+This pattern repeats verbatim in quantum mechanics. The energy eigenstates of the infinite square well are found by separating the Schrödinger equation into time and space parts, imposing $\psi(0) = \psi(L) = 0$, and recovering the discrete set $k_n = n\pi/L$. The eigenstates are $\psi_n(x) = \sqrt{2/L}\sin(n\pi x/L)$. The mathematics is not analogous to the string — it is the same mathematics.
 
 ---
 
 ## Fourier Series: The General Solution
 
-By superposition, the **general solution** is a sum over all modes:
+By superposition — linearity gives it free — the **general solution** is a sum over all modes:
 
 $$y(x, t) = \sum_{n=1}^\infty \sin\!\left(\frac{n\pi x}{L}\right)\!\left[C_n\sin(\omega_n t) + D_n\cos(\omega_n t)\right].$$
 
@@ -63,7 +63,7 @@ At $t = 0$ this reduces to $y(x,0) = \sum_{n=1}^\infty D_n\sin(n\pi x/L)$ — an
 
 $$\int_0^L \sin\!\left(\frac{n\pi x}{L}\right)\sin\!\left(\frac{m\pi x}{L}\right)dx = \frac{L}{2}\,\delta_{nm}.$$
 
-Multiplying both sides of $y(x,0) = \sum_m D_m\sin(m\pi x/L)$ by $\sin(n\pi x/L)$ and integrating from 0 to $L$, orthogonality eliminates every term except $m = n$:
+Multiply both sides of $y(x,0) = \sum_m D_m\sin(m\pi x/L)$ by $\sin(n\pi x/L)$ and integrate from 0 to $L$. The orthogonality kills every term except $m = n$:
 
 $$\int_0^L y(x,0)\sin\!\left(\frac{n\pi x}{L}\right)dx = D_n\cdot\frac{L}{2} \implies D_n = \frac{2}{L}\int_0^L y(x,0)\sin\!\left(\frac{n\pi x}{L}\right)dx.$$
 
@@ -85,9 +85,9 @@ Using Euler's formula $e^{in\omega_0 t} = \cos(n\omega_0 t) + i\sin(n\omega_0 t)
 
 $$f(t) = \sum_{n=-\infty}^\infty c_n\,e^{in\omega_0 t}, \qquad c_n = \frac{1}{T}\int_0^T f(t)\,e^{-in\omega_0 t}\,dt.$$
 
-The sum runs over all integers — positive, zero, and negative — corresponding to positive and negative frequencies. For real-valued $f$, the coefficients satisfy $c_{-n} = c_n^*$, so no information is lost by working in complex form; the real and imaginary parts of each $c_n$ carry the cosine and sine amplitudes.
+The sum runs over all integers — positive, zero, and negative — corresponding to positive and negative frequencies. For real-valued $f$, the coefficients satisfy $c_{-n} = c_n^*$, so no information is lost by going complex; the real and imaginary parts of each $c_n$ carry the cosine and sine amplitudes.
 
-This complex form is what quantum mechanics uses in practice. The spatial Bloch factor $e^{ikx}$ is a complex Fourier mode. The time-evolution factor $e^{-iE_n t/\hbar}$ is a complex phase. As the period $T\to\infty$, the discrete sum over $n$ becomes an integral over continuous frequency, connecting to the Fourier transform (M-06).
+This complex form is what quantum mechanics actually uses. The spatial Bloch factor $e^{ikx}$ is a complex Fourier mode. The time-evolution factor $e^{-iE_n t/\hbar}$ is a complex phase. Writing quantum expansions in the real sin/cos form is possible but awkward; the complex form is the right language — and as the period $T\to\infty$, the discrete sum over $n$ becomes an integral over continuous frequency, connecting to the Fourier transform (M-06).
 
 <!-- → [FIGURE: three-panel diagram showing (1) an arbitrary initial wavefunction in an infinite square well; (2) its decomposition into Fourier sine modes n=1,2,3,4, each shown as a separate standing wave with its amplitude; (3) the reconstituted sum of the first four modes overlaid on the original function; the visual goal is to make the Fourier-series-as-eigenstate-decomposition connection concrete before any quantum notation appears] -->
 
@@ -108,13 +108,13 @@ Before computing: $x(L-x)$ is symmetric about $x = L/2$, and so is $\sin(n\pi x/
 
 For odd $n$, the integral is nonzero and decreases as $1/n^3$ for large $n$. The state is dominated by the ground state ($n = 1$), with small contributions from $n = 3, 5, 7, \ldots$
 
-Time evolution: we multiply each coefficient by its independent phase:
+Time evolution: multiply each coefficient by its independent phase:
 
 $$\psi(x,t) = \sum_{n\,\text{odd}} c_n\,e^{-iE_n t/\hbar}\,\psi_n(x).$$
 
-The probability density $|\psi(x,t)|^2$ oscillates because different modes advance their phases at rates $\omega_n = E_n/\hbar = n^2\pi^2\hbar/2mL^2$. The beating between modes — interference between terms at different frequencies — produces an oscillating probability density. At special revival times, many modes return to nearly the same relative phase they had at $t = 0$, and the original parabola approximately reforms. This **quantum revival** is a Fourier phenomenon: constructive interference between incommensurable frequencies.
+The probability density $|\psi(x,t)|^2$ oscillates because different modes advance their phases at rates $\omega_n = E_n/\hbar = n^2\pi^2\hbar/2mL^2$. The beating between modes — interference between terms at different frequencies — produces the oscillating probability density. At special revival times, many modes return to nearly the same relative phase they had at $t = 0$, and the original parabola approximately reforms. This **quantum revival** is a purely Fourier phenomenon: constructive interference between incommensurable frequencies.
 
-The quantum dynamics of this problem is the Fourier series of $\psi(x,0)$ in the eigenstate basis, with each term acquiring an independent time-dependent phase. The quantum content is in $E_n$ and the phases $e^{-iE_n t/\hbar}$.
+The lesson: the quantum dynamics of this problem is the Fourier series of $\psi(x,0)$ in the eigenstate basis, with each term acquiring an independent time-dependent phase. No new quantum mechanics is required; the quantum content is in $E_n$ and the phases $e^{-iE_n t/\hbar}$.
 
 ---
 
@@ -130,7 +130,7 @@ Bloch's theorem — that eigenstates of a periodic Hamiltonian take the form $\p
 
 $$\psi_k(x) = \sum_n A_n\,e^{i(k+G_n)x}.$$
 
-The energy bands and gaps at the Brillouin zone boundary ($k = \pm\pi/a$) arise where two plane waves — with momenta $\hbar k$ and $\hbar(k - G_1) = \hbar(k - 2\pi/a)$ — are degenerate in the free-particle case and get mixed by the Fourier component $V_1$ of the potential. The gap width is $2|V_1|$: the magnitude of the relevant Fourier coefficient of $V$. The entire band-gap theory is linear algebra applied to a $2\times2$ matrix whose off-diagonal element is a Fourier coefficient.
+The energy bands and gaps at the Brillouin zone boundary ($k = \pm\pi/a$) arise where two plane waves — with momenta $\hbar k$ and $\hbar(k - G_1) = \hbar(k - 2\pi/a)$ — are degenerate in the free-particle case and get mixed by the Fourier component $V_1$ of the potential. The gap width is $2|V_1|$: the magnitude of the relevant Fourier coefficient of $V$, and nothing else. The entire band-gap theory is linear algebra applied to a $2\times2$ matrix whose off-diagonal element is a Fourier coefficient.
 
 <!-- → [FIGURE: schematic of the nearly-free-electron band structure at the first Brillouin zone boundary — showing the parabolic free-electron dispersion, then the avoided crossing at k = ±π/a with gap width labeled 2|V₁|; below, show the real-space potential V(x) and its Fourier decomposition with V₁ highlighted; the visual goal is to connect the size of the gap directly to the Fourier coefficient of the potential] -->
 

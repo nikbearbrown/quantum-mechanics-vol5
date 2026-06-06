@@ -1,19 +1,19 @@
 # Module M-15 — Calculus of Variations and Stationarity
 *When you need this: QM Series Vol. III, Chapter 3 (The Variational Method)*
 
-Ordinary calculus extremizes a function: we have $f(x)$ depending on a number $x$, and we find the best $x$ by setting $f'(x) = 0$. The calculus of variations is the exact conceptual extension: we extremize a **functional** — a machine that takes an entire function $y(x)$ and returns a single number. The canonical example is:
+Ordinary calculus extremizes a function: you have $f(x)$ depending on a number $x$, and you find the best $x$ by setting $f'(x) = 0$. The calculus of variations is the exact conceptual upgrade: you extremize a **functional** — a machine that takes an entire function $y(x)$ and returns a single number. The canonical example is:
 
 $$S[y] = \int_{x_1}^{x_2} L\bigl(y,\, y',\, x\bigr)\,dx,$$
 
 where $L$ is a given function of the path's value $y$, its slope $y' = dy/dx$, and $x$. The functional $S[y]$ depends on the whole shape of $y(x)$, not on a single number.
 
-**Terminology.** The quantity $S$ is called the **action** in mechanics. The correct statement of the principle is *stationarity* of the action ($\delta S = 0$), not minimization — the true path may be a saddle point, not a minimum. "Least action" is the traditional name and is often literally true, but "stationary action" is the precise statement.
+**Terminology.** The quantity $S$ is called the **action** in mechanics. The correct statement of the principle is *stationarity* of the action ($\delta S = 0$), not minimization — the true path may be a saddle point, not a minimum. "Least action" is the traditional name and is often literally true, but "stationary action" is the honest word.
 
 ---
 
 ## The Variation
 
-To extremize $S[y]$, we follow the same logic as ordinary calculus: nudge the whole path and require the first-order change to vanish. Let $y(x)$ be the candidate stationary path and consider a neighboring trial path:
+To extremize $S[y]$, mimic ordinary calculus: nudge the whole path and demand the first-order change vanish. Let $y(x)$ be the candidate stationary path and consider a neighboring trial path:
 
 $$\bar{y}(x) = y(x) + \varepsilon\,\eta(x),$$
 
@@ -31,15 +31,15 @@ Stationarity means $\delta S = 0$ for every allowed wiggle $\eta$.
 
 ## Derivation of the Euler–Lagrange Equation
 
-Differentiating under the integral (the chain rule gives $\partial\bar{y}/\partial\varepsilon = \eta$ and $\partial\bar{y}'/\partial\varepsilon = \eta'$):
+Differentiate under the integral (the chain rule gives $\partial\bar{y}/\partial\varepsilon = \eta$ and $\partial\bar{y}'/\partial\varepsilon = \eta'$):
 
 $$\frac{d}{d\varepsilon}S\bigg|_0 = \int_{x_1}^{x_2}\!\left(\frac{\partial L}{\partial y}\,\eta + \frac{\partial L}{\partial y'}\,\eta'\right)dx = 0.$$
 
-The first term already has the bare $\eta$ needed. The second has $\eta'$ — we integrate it by parts:
+The first term already has the bare $\eta$ needed. The second has $\eta'$ — integrate it by parts:
 
 $$\int_{x_1}^{x_2}\frac{\partial L}{\partial y'}\,\eta'\,dx = \underbrace{\left[\frac{\partial L}{\partial y'}\,\eta\right]_{x_1}^{x_2}}_{= \;0\;\text{(endpoint condition)}} - \int_{x_1}^{x_2}\frac{d}{dx}\!\left(\frac{\partial L}{\partial y'}\right)\eta\,dx.$$
 
-The boundary term vanishes because $\eta(x_1) = \eta(x_2) = 0$. Forgetting this step is the single most common error in the derivation. What remains:
+The boundary term vanishes because $\eta(x_1) = \eta(x_2) = 0$. Forgetting this is the single most common student error in the derivation. What remains:
 
 $$\int_{x_1}^{x_2}\!\left[\frac{\partial L}{\partial y} - \frac{d}{dx}\!\left(\frac{\partial L}{\partial y'}\right)\right]\eta(x)\,dx = 0.$$
 
@@ -53,13 +53,13 @@ This is the **Euler–Lagrange equation**. Any path that makes $S$ stationary mu
 
 ## Recovering Newton's Second Law
 
-Replacing $x \to t$, $y \to q$ (a generalized coordinate), $y' \to \dot q$, and defining the **Lagrangian** $L = T - V$ (kinetic minus potential energy), the Euler–Lagrange equation becomes:
+Replace $x \to t$, $y \to q$ (a generalized coordinate), $y' \to \dot q$, and define the **Lagrangian** $L = T - V$ (kinetic minus potential energy). The Euler–Lagrange equation becomes:
 
 $$\frac{d}{dt}\!\left(\frac{\partial L}{\partial \dot q}\right) - \frac{\partial L}{\partial q} = 0.$$
 
 For a particle in one dimension: $L = \tfrac{1}{2}m\dot x^2 - V(x)$. Then $\partial L/\partial\dot x = m\dot x$, so $d(m\dot x)/dt = m\ddot x$, and $\partial L/\partial x = -dV/dx$. The equation reads $m\ddot x = -dV/dx = F$ — Newton's second law, recovered from a variational principle.
 
-**Why $L = T - V$?** It cannot be derived from within classical mechanics without circularity. It is justified by what it produces: it reproduces Newton's laws, as just demonstrated. The deep reason is Feynman's path integral (see below), where the classical path emerges as the stationary-phase limit of a sum over all paths with weight $e^{iS/\hbar}$. We assert the form, verify it gives Newton, and point onward.
+**Why $L = T - V$?** It cannot be derived from within classical mechanics without circularity. It is justified by what it produces: it reproduces Newton's laws, as just demonstrated. The deep "why" is Feynman's path integral (see below), where the classical path emerges as the stationary-phase limit of a sum over all paths with weight $e^{iS/\hbar}$. Assert the form, verify it gives Newton, and point onward.
 
 ---
 
@@ -79,17 +79,17 @@ For a conservative system with time-independent $L$, the Hamiltonian equals the 
 
 ## Noether's Theorem
 
-Emmy Noether proved in 1918 that every continuous symmetry of the action corresponds to a conserved quantity. The simplest case: if $L$ does not depend on coordinate $q$ (it is "cyclic" or "ignorable"), then $\partial L/\partial q = 0$, and the Euler–Lagrange equation collapses to $d(\partial L/\partial\dot q)/dt = 0$, meaning $p = \text{constant}$. Spatial translation symmetry gives conserved linear momentum; rotational symmetry gives conserved angular momentum; time translation symmetry (no explicit $t$ dependence) gives conserved energy. Conservation laws are not separate postulates — they are consequences of symmetries, and Noether's theorem is the precise statement of this connection.
+Emmy Noether proved in 1918 that every continuous symmetry of the action corresponds to a conserved quantity. The simplest case: if $L$ does not depend on coordinate $q$ (it is "cyclic" or "ignorable"), then $\partial L/\partial q = 0$, and the Euler–Lagrange equation collapses to $d(\partial L/\partial\dot q)/dt = 0$, meaning $p = \text{constant}$. Spatial translation symmetry gives conserved linear momentum; rotational symmetry gives conserved angular momentum; time translation symmetry (no explicit $t$ dependence) gives conserved energy. Conservation laws are not separate postulates — they are shadows of symmetries, and Noether's theorem is the lamp.
 
 ---
 
 ## Worked Example: The Pendulum Without Constraint Forces
 
-A simple pendulum of mass $m$ and length $\ell$, angle $\theta$ from vertical. In Cartesian coordinates the tension must be computed explicitly. In Lagrangian mechanics, we choose $\theta$ as the single generalized coordinate respecting the rigid-rod constraint. The kinetic and potential energies are:
+A simple pendulum of mass $m$ and length $\ell$, angle $\theta$ from vertical. In Cartesian coordinates the tension must be computed explicitly. In Lagrangian mechanics, choose $\theta$ as the single generalized coordinate respecting the rigid-rod constraint. The kinetic and potential energies are:
 
 $$T = \tfrac{1}{2}m\ell^2\dot\theta^2, \qquad V = -mg\ell\cos\theta,$$
 
-so $L = \tfrac{1}{2}m\ell^2\dot\theta^2 + mg\ell\cos\theta$. Computing each term:
+so $L = \tfrac{1}{2}m\ell^2\dot\theta^2 + mg\ell\cos\theta$. Compute:
 
 $$\frac{\partial L}{\partial\dot\theta} = m\ell^2\dot\theta, \qquad \frac{d}{dt}\!\left(\frac{\partial L}{\partial\dot\theta}\right) = m\ell^2\ddot\theta, \qquad \frac{\partial L}{\partial\theta} = -mg\ell\sin\theta.$$
 
@@ -107,7 +107,7 @@ $$E_0 \leq \frac{\langle\psi|\hat H|\psi\rangle}{\langle\psi|\psi\rangle}$$
 
 for any $\psi$. This is precisely the statement that $\langle H\rangle$ is a functional whose minimum over all $\psi$ is $E_0$. The calculus of variations machinery — extremize a functional by demanding its variation vanish — is the background mechanism.
 
-**The normalization constraint and the energy eigenvalue as a Lagrange multiplier.** Trial wavefunctions are required to be normalized: $\langle\psi|\psi\rangle = 1$. We handle the constraint with a Lagrange multiplier $\lambda$: extremize the unconstrained functional:
+**The normalization constraint and the energy eigenvalue as a Lagrange multiplier.** Trial wavefunctions are required to be normalized: $\langle\psi|\psi\rangle = 1$. Handle the constraint with a Lagrange multiplier $\lambda$: extremize the unconstrained functional:
 
 $$G[\psi] = \langle\psi|\hat H|\psi\rangle - \lambda\,\langle\psi|\psi\rangle.$$
 
@@ -131,11 +131,11 @@ using $E_n \geq E_0$ for all $n$. The lower bound $E_0$ is achieved only when $\
 
 ### The Path Integral: Why $L = T - V$ and the Classical Limit
 
-The deep reason for the Lagrangian formulation is Feynman's path integral: in quantum mechanics, the amplitude to go from $(q_1, t_1)$ to $(q_2, t_2)$ is the sum over all paths $q(t)$ connecting those endpoints, each weighted by $e^{iS[q]/\hbar}$ where $S[q] = \int_{t_1}^{t_2} L\,dt$:
+The deep "why" of the Lagrangian formulation is Feynman's path integral: in quantum mechanics, the amplitude to go from $(q_1, t_1)$ to $(q_2, t_2)$ is the sum over all paths $q(t)$ connecting those endpoints, each weighted by $e^{iS[q]/\hbar}$ where $S[q] = \int_{t_1}^{t_2} L\,dt$:
 
 $$K(q_2, t_2; q_1, t_1) = \int\mathcal{D}q(t)\; e^{iS[q]/\hbar}.$$
 
-For paths far from the stationary point, the phase $S/\hbar$ varies rapidly and the contributions cancel by destructive interference. Near the stationary path ($\delta S = 0$), the phase is nearly constant and the contributions add constructively. In the classical limit $\hbar \to 0$, only the stationary path survives — the classical trajectory is the path of stationary action because it dominates the quantum sum. This is the honest answer to why nature extremizes the action: it does not, exactly. Quantum mechanics sums over all paths, and the classical path is the one that wins.
+For paths far from the stationary point, the phase $S/\hbar$ varies rapidly and the contributions cancel by destructive interference. Near the stationary path ($\delta S = 0$), the phase is nearly constant and the contributions add constructively. In the classical limit $\hbar \to 0$, only the stationary path survives — the classical trajectory is the path of stationary action because it dominates the quantum sum. This is the honest answer to "why does nature extremize the action": it does not, exactly. Quantum mechanics sums over all paths, and the classical path is just the one that wins.
 
 ---
 
@@ -143,7 +143,7 @@ For paths far from the stationary point, the phase $S/\hbar$ varies rapidly and 
 
 **"Stationary," not "least."** The principle of stationary action is the correct statement. The true path may be a saddle point rather than a minimum, particularly for paths traversing caustics or in systems with conjugate points. The quantum variational method does give a genuine minimum ($\langle H\rangle \geq E_0$), but the underlying Euler–Lagrange machinery is about stationarity.
 
-**The boundary term vanishes because $\eta = 0$ at the endpoints.** This is the most commonly dropped step in derivations. In quantum mechanics, the analogous condition is that trial wavefunctions vanish at the boundary (or decay to zero at infinity for bound states). Without boundary conditions, the integration-by-parts argument fails and the Euler–Lagrange equation picks up extra surface terms.
+**The boundary term vanishes because $\eta = 0$ at the endpoints.** This is the most commonly dropped step in student derivations. In quantum mechanics, the analogous condition is that trial wavefunctions vanish at the boundary (or decay to zero at infinity for bound states). Without boundary conditions, the integration-by-parts argument fails and the Euler–Lagrange equation picks up extra surface terms.
 
 **$L = T - V$ is not derived within classical mechanics; it is postulated.** It is justified by producing Newton's laws. The Feynman path integral is the honest explanation for why $T - V$ rather than $T + V$.
 
@@ -151,7 +151,7 @@ For paths far from the stationary point, the phase $S/\hbar$ varies rapidly and 
 
 **Functional derivative notation.** Some QM texts write the stationarity condition as $\delta\langle H\rangle/\delta\psi^* = 0$, using the functional derivative. This is the variational machinery in Dirac notation; the Euler–Lagrange equation is the special case. The notation changes; the idea does not.
 
-**Do not confuse Lagrange multipliers algebraically with the variational result.** The Lagrange multiplier $\lambda$ (enforcing $\langle\psi|\psi\rangle = 1$) turns out to equal the energy eigenvalue $E$ — a result that requires working through the stationarity condition explicitly.
+**Do not confuse Lagrange multipliers algebraically with the variational result.** The Lagrange multiplier $\lambda$ (enforcing $\langle\psi|\psi\rangle = 1$) turns out to equal the energy eigenvalue $E$ — a non-obvious result that requires working through the stationarity condition explicitly.
 
 ---
 

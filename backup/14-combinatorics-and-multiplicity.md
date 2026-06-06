@@ -1,12 +1,13 @@
 # Module M-14 — Combinatorics and Multiplicity
+*Why equilibrium is not imposed from outside — it is just where the microstates are.*
 
-Thermodynamics is often presented as a set of laws. Counting is often presented as a set of formulas. The connection between them is that equilibrium is not a law — it is a counting result. The most probable macrostate is the one with the most microstates. Temperature is a derivative of a logarithm. Entropy is a logarithm of a count. All of this follows from arithmetic, once we are precise about what we are counting.
+Thermodynamics gets taught as a set of laws. Counting gets taught as a set of formulas. The connection between them is that equilibrium is not a law — it is a counting result. The most probable macrostate is the one with the most microstates. Temperature is a derivative of a logarithm. Entropy is a logarithm of a count. All of this follows from arithmetic, once you are precise about what you are counting.
 
 ---
 
 ## The Load-Bearing Distinction
 
-Every counting error in physics begins with confusing three terms. Establishing these clearly before any formula will save considerable trouble.
+Every counting error in physics begins with confusing three terms. Fix them before any formula.
 
 A **microstate** is one fully-specified arrangement — which specific spins are up, which exact qubits are $|0\rangle$, which precise molecules occupy which box.
 
@@ -22,11 +23,11 @@ Many microstates map to one macrostate. The number that map is $\Omega$. Everyth
 
 A **permutation** counts ordered arrangements. The number of ordered arrangements of $k$ chosen from $n$ is $P(n,k) = n!/(n-k)!$.
 
-A **combination** counts unordered selections. When we choose $k$ from $n$ and the order of the chosen set does not matter, we divide out the $k!$ internal orderings:
+A **combination** counts unordered selections. When you choose $k$ from $n$ and the order of the chosen set does not matter, divide out the $k!$ internal orderings:
 
 $$\boxed{\binom{n}{k} = \frac{n!}{k!\,(n-k)!}.}$$
 
-The single decision that determines which formula to use: *does order matter?* For spin counting — we care which spins are up, not which one we labeled "first" — order does not matter. Use combinations. The binomial coefficient satisfies the Pascal recursion $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ and appears in the binomial theorem $(a+b)^n = \sum_{k=0}^n\binom{n}{k}a^k b^{n-k}$.
+The single decision that determines which formula: *does order matter?* For spin counting — you care which spins are up, not which one you labeled "first" — order does not matter. Use combinations. The binomial coefficient satisfies the Pascal recursion $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ and appears in the binomial theorem $(a+b)^n = \sum_{k=0}^n\binom{n}{k}a^k b^{n-k}$.
 
 Pascal's triangle appears in Yang Hui's 13th-century work and in al-Karaji's earlier Islamic mathematics, centuries before Pascal's 1665 treatise. The Western name is an artifact of citation history, not priority.
 
@@ -38,19 +39,19 @@ $N$ labeled objects, each in one of two states (up/down, $|0\rangle$/$|1\rangle$
 
 $$\Omega(N, N_\uparrow) = \binom{N}{N_\uparrow} = \frac{N!}{N_\uparrow!\,(N-N_\uparrow)!}$$
 
-for the macrostate with exactly $N_\uparrow$ objects up. This peaks at $N_\uparrow = N/2$ and the peak sharpens with increasing $N$. At thermodynamic scale $N\sim10^{23}$, the peak is a needle: the system is overwhelmingly found at the most probable macrostate. Equilibrium is not imposed from outside. It is simply where the microstates are concentrated.
+for the macrostate with exactly $N_\uparrow$ objects up. This peaks at $N_\uparrow = N/2$ and the peak sharpens with increasing $N$. At thermodynamic scale $N\sim10^{23}$, the peak is a needle: the system is overwhelmingly found at the most probable macrostate. Equilibrium is not imposed from outside. It is just where the microstates are concentrated.
 
 **Stars and bars.** When distributing $q$ *indistinguishable* quanta among $N$ *distinguishable* bins (the Einstein solid), the counting is:
 
 $$\Omega(N,q) = \binom{q+N-1}{q}.$$
 
-This applies when the objects being distributed are identical. It should not be confused with the spin counting above, where the $N$ spins are distinguishable. The formulas address different physical situations.
+This applies when the objects being distributed are identical. Do not confuse it with the spin counting above, where the $N$ spins are distinguishable. The formulas address different physical situations.
 
 ---
 
 ## Stirling's Approximation
 
-For $N\sim10^{23}$, the factorial $N!$ has more digits than atoms in a room and cannot be evaluated directly. More importantly, we need to *differentiate* $\ln\Omega$ with respect to $N$ — and a factorial is not differentiable. We approximate the sum $\ln N! = \sum_{m=1}^N\ln m$ by an integral:
+For $N\sim10^{23}$, the factorial $N!$ has more digits than atoms in a room and cannot be evaluated directly. More importantly, we need to *differentiate* $\ln\Omega$ with respect to $N$ — and a factorial is not differentiable. Approximate the sum $\ln N! = \sum_{m=1}^N\ln m$ by an integral:
 
 $$\ln N! = \sum_{m=1}^N\ln m \approx \int_1^N\ln x\,dx = [x\ln x - x]_1^N = N\ln N - N + 1.$$
 
@@ -60,7 +61,7 @@ $$\boxed{\ln N! \approx N\ln N - N.}$$
 
 The refined form is $N!\approx\sqrt{2\pi N}(N/e)^N$, giving $\ln N!\approx N\ln N - N + \tfrac{1}{2}\ln(2\pi N)$.
 
-**Why dropping the $\tfrac{1}{2}\ln(2\pi N)$ term is valid at thermodynamic scale.** For $N = 10^{23}$: the kept term $N\ln N\approx5\times10^{24}$; the dropped term $\approx27$. The relative error is one part in $10^{23}$. No experiment could resolve it. For small $N$ — a 5-qubit code — the error matters; use the refined form or exact factorials.
+**Why dropping the $\tfrac{1}{2}\ln(2\pi N)$ term is not cheating.** For $N = 10^{23}$: the kept term $N\ln N\approx5\times10^{24}$; the dropped term $\approx27$. The relative error is one part in $10^{23}$. No experiment could resolve it. For small $N$ — a 5-qubit code — the error matters; use the refined form or exact factorials.
 
 **Stirling applied to the binomial coefficient.** Using $\ln\Omega = \ln N! - \ln N_\uparrow! - \ln(N-N_\uparrow)!$ and applying the leading Stirling form to each factorial:
 
@@ -74,13 +75,13 @@ This is the fundamental formula: a smooth, differentiable function of $N_\uparro
 
 Two interlocking arguments explain why entropy is the logarithm of the count.
 
-**Multiplicities multiply; entropy must add.** If system $A$ has $\Omega_A$ microstates and system $B$ has $\Omega_B$, the combined system has $\Omega_A\Omega_B$ microstates. Thermodynamic entropy is extensive — it adds when we combine systems. The only function that converts multiplication to addition is the logarithm:
+**Multiplicities multiply; entropy must add.** If system $A$ has $\Omega_A$ microstates and system $B$ has $\Omega_B$, the combined system has $\Omega_A\Omega_B$ microstates. Thermodynamic entropy is extensive — it adds when you combine systems. The only function that converts multiplication to addition is the logarithm:
 
 $$\ln(\Omega_A\Omega_B) = \ln\Omega_A + \ln\Omega_B.$$
 
 So if entropy is a function of multiplicity and must be additive, it must be proportional to $\ln\Omega$.
 
-**Temperature follows by differentiating.** With $S = k\ln\Omega$ a differentiable function of energy (Stirling makes this possible), we define temperature through
+**Temperature falls out by differentiating.** With $S = k\ln\Omega$ a differentiable function of energy (Stirling makes this possible), define temperature through
 
 $$\frac{1}{T} \equiv \frac{\partial S}{\partial E}.$$
 
@@ -92,7 +93,7 @@ One notation note: Boltzmann wrote $S = k\log W$ with $W$ for Wahrscheinlichkeit
 
 ## Identical Particles: When Counting Changes
 
-The distinction between bosons and fermions in Chapter 10 is, at its mathematical root, a counting distinction. Placing two quantum particles into two available single-particle states gives:
+The Chapter 10 distinction between bosons and fermions is, at its mathematical root, a counting distinction. Put two quantum particles into two available single-particle states:
 
 | Statistics | Rule | Distinct microstates |
 |---|---|:---:|
@@ -106,7 +107,7 @@ $$|\psi\rangle = \frac{1}{\sqrt{2}}\bigl(\phi_a(1)\phi_b(2) - \phi_b(1)\phi_a(2)
 
 vanishes identically when $\phi_a = \phi_b$ — two fermions in the same state give zero amplitude. Pauli exclusion is the algebraic statement that $\Omega_\text{FD} = 0$ for doubly-occupied single-particle states. The determinant structure is the counting rule made antisymmetric.
 
-A parallel issue arises in classical statistical mechanics. For $N$ identical classical particles, the naive multiplicity must be divided by $N!$ to avoid counting permutations of identical molecules as distinct microstates — the Gibbs paradox. Quantum mechanics handles this automatically via symmetrization. If you are working with a classical gas of identical molecules and your entropy is non-extensive, the $N!$ factor has been omitted.
+A parallel issue arises in classical statistical mechanics. For $N$ identical classical particles, you must divide the naive multiplicity by $N!$ to avoid counting permutations of identical molecules as distinct microstates — the Gibbs paradox. Quantum mechanics handles this automatically via symmetrization. If you are working with a classical gas of identical molecules and your entropy is non-extensive, you forgot the $N!$.
 
 <!-- → [TABLE: three-row comparison of Maxwell-Boltzmann, Bose-Einstein, and Fermi-Dirac counting for 2 particles in 2 states — showing all allowed configurations explicitly for each statistics, with the microstates listed and the count; this makes the counting difference visceral before any wavefunctions are introduced] -->
 
@@ -114,7 +115,7 @@ A parallel issue arises in classical statistical mechanics. For $N$ identical cl
 
 ## Quantum Error Correction: Syndrome as Macrostate
 
-An $[[n,k,d]]$ quantum error-correcting code encodes $k$ logical qubits in $n$ physical qubits and can correct any error on up to $t = \lfloor(d-1)/2\rfloor$ physical qubits. The combinatorics enters directly.
+An $[[n,k,d]]$ quantum error-correcting code encodes $k$ logical qubits in $n$ physical qubits and can correct any error on up to $t = \lfloor(d-1)/2\rfloor$ physical qubits. The combinatorics enters immediately.
 
 **Counting errors.** The number of distinct weight-$t$ Pauli errors on $n$ qubits (errors affecting exactly $t$ sites) is
 
@@ -150,7 +151,7 @@ Total microstates: $2^6 = 64$. Fraction: $15/64 \approx 23.4\%$.
 
 The peak macrostate is $N_\uparrow = 3$: $\binom{6}{3} = 20$, giving $20/64\approx31.3\%$. The peak is not yet dominant at $N = 6$; at $N = 10^{23}$ it is a knife-edge.
 
-**Stirling check at small $N$.** Exact: $\ln15\approx2.71$. Stirling: $6\ln6 - 6 - (2\ln2 - 2) - (4\ln4 - 4)\approx3.81$. A 40% error. Stirling is inaccurate for small $N$ and becomes reliable only in the thermodynamic limit. Note which regime you are in before applying it.
+**Stirling check at small $N$.** Exact: $\ln15\approx2.71$. Stirling: $6\ln6 - 6 - (2\ln2 - 2) - (4\ln4 - 4)\approx3.81$. A 40% error. Stirling is poor for small $N$ and exact only in the thermodynamic limit. Always note which regime you are in.
 
 ---
 

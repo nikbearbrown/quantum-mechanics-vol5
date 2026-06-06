@@ -1,8 +1,9 @@
 # Module M-17 — Units, Dimensions, and Estimation
+*How to derive the size of a hydrogen atom without solving a differential equation.*
 
-The hydrogen atom has a characteristic radius. Classical electrodynamics predicts no such radius: a classically radiating electron spirals inward continuously, with no preferred stopping point, until it reaches zero. Quantum mechanics predicts one. The size of that radius follows from dimensional analysis alone — three constants, one length, no differential equation required. This module builds toward that argument.
+The hydrogen atom has a characteristic radius. Classical electrodynamics predicts no such radius: a classically radiating electron spirals inward continuously, with no preferred stopping point, until it reaches zero. Quantum mechanics predicts one. The size of that radius follows from dimensional analysis alone — three constants, one length, no differential equation required. That is the argument this module builds toward.
 
-Read it before Chapter I·1, which argues from the breakdown of classical predictions. Every argument there is at root a statement about scales. To see why classical physics fails at the atomic scale, we need to know what sets that scale.
+Read it before Chapter I·1, which argues from the breakdown of classical predictions. Every argument there is at root a statement about scales. To see why classical physics fails at the atomic scale, you need to know what sets that scale.
 
 ---
 
@@ -20,7 +21,7 @@ A pure number ($\tfrac{1}{2}$, $\pi$, $e$) carries no dimension and can never in
 
 ## The Method: Dimensional Analysis
 
-**Worked derivation — the pendulum period.** The period $T_p$ plausibly depends on the length $\ell$, gravitational acceleration $g$, and bob mass $m$. We assume $T_p = C\ell^a g^b m^c$ and match dimensions (both sides must equal $T^1 L^0 M^0$):
+**Worked derivation — the pendulum period.** The period $T_p$ plausibly depends on the length $\ell$, gravitational acceleration $g$, and bob mass $m$. Assume $T_p = C\ell^a g^b m^c$. Match dimensions (both sides must equal $T^1 L^0 M^0$):
 
 - Mass: $c = 0$ — mass is irrelevant.
 - Time: $-2b = 1 \implies b = -\tfrac{1}{2}$.
@@ -42,13 +43,13 @@ $$[\hbar] = \text{J·s} = ML^2T^{-1} = \text{action} = \text{energy}\times\text{
 
 $\hbar$ is an action, not an energy. It quantizes angular momentum (orbital angular momentum is $\ell$ in units of $\hbar$) and sets the scale of the uncertainty principle $\Delta x\,\Delta p\geq\hbar/2$.
 
-Recognizing $\hbar$ as an action — not just "a small number" — is the conceptual step that makes quantization feel systematic. Whenever the relevant action in a physical problem is much larger than $\hbar$, quantum effects are negligible; when the action is comparable to $\hbar$, quantum effects dominate. This is the single comparison that separates classical from quantum physics, and it is dimensional.
+Seeing $\hbar$ as an action — not just "a small number" — is the conceptual step that makes quantization feel inevitable. Whenever the relevant action in a physical problem is much larger than $\hbar$, quantum effects are negligible; when the action is comparable to $\hbar$, quantum effects dominate. This is the single comparison that separates classical from quantum physics, and it is dimensional.
 
 ---
 
 ## The Bohr Radius by Dimensional Analysis
 
-The hydrogen ground state has a characteristic length set by the constants that appear in the problem: $\hbar$ (quantum of action), $m_e$ (electron mass), and $e^2/4\pi\epsilon_0$ (the electromagnetic coupling, with dimension $ML^3T^{-2}$). We want a length from these three. Assuming $a_0 = \hbar^\alpha m_e^\beta(e^2/4\pi\epsilon_0)^\gamma$ and matching dimensions:
+The hydrogen ground state has a characteristic length set by the constants that appear in the problem: $\hbar$ (quantum of action), $m_e$ (electron mass), and $e^2/4\pi\epsilon_0$ (the electromagnetic coupling, with dimension $ML^3T^{-2}$). We want a length from these three. Assume $a_0 = \hbar^\alpha m_e^\beta(e^2/4\pi\epsilon_0)^\gamma$ and match dimensions:
 
 - Mass $M$: $\beta + \gamma = 0$
 - Length $L$: $2\alpha + 3\gamma = 1$
@@ -74,7 +75,7 @@ Above $\lambda_C$, non-relativistic QM is adequate. Below it, pair production an
 
 ## Order-of-Magnitude Estimation
 
-We decompose the unknown into factors each estimable to within a factor of ten, then combine. Only the exponent of the result is to be trusted; the leading digit is not. When we have a plausible low bound $x_\text{lo}$ and high bound $x_\text{hi}$, the natural midpoint on a log scale is the geometric mean $\sqrt{x_\text{lo}\cdot x_\text{hi}}$.
+Decompose the unknown into factors each estimable to within a factor of ten. Combine. Only the exponent of the result is to be trusted; the leading digit is not. When you have a plausible low bound $x_\text{lo}$ and high bound $x_\text{hi}$, the natural midpoint on a log scale is the geometric mean $\sqrt{x_\text{lo}\cdot x_\text{hi}}$.
 
 **De Broglie wavelength of a 1 eV electron.** Using $\lambda = h/p = h/\sqrt{2m_eE}$:
 
@@ -96,7 +97,7 @@ $$\frac{\delta q}{q} = \sqrt{\left(m\frac{\delta A}{A}\right)^2 + \left(n\frac{\
 
 The exponent amplifies the relative uncertainty of its factor. An exponent of 3 amplifies threefold. For the Bohr radius $a_0\propto\hbar^2/m_e$: a 1% error in $\hbar$ produces a 2% error in $a_0$.
 
-The least precise input dominates in a chain of multiplications. A result quoted to three significant figures is known to $\pm0.5\%$. Quoting more digits than the inputs justify does not add precision.
+The sloppiest input dominates in a chain of multiplications. A result quoted to three significant figures is known to $\pm0.5\%$. Quoting more digits than the inputs justify is not precision — it is false confidence.
 
 ---
 
@@ -108,7 +109,7 @@ $$\hbar c\approx197.3\text{ MeV·fm.}$$
 
 To restore SI factors from a natural-units result: count the powers of $\hbar$ and $c$ needed to give the right dimension. A cross-section $\sigma$ has dimension $L^2 = (\hbar c)^2/\text{energy}^2$; a lifetime $\tau$ has dimension $T = \hbar/\text{energy}$.
 
-Natural units are a precision tool, not a shortcut. A student who sets $\hbar = c = 1$ without being able to restore the factors is not working with full understanding. Practice the restoration: if you compute a length in natural units and get a number in MeV$^{-1}$, multiply by $\hbar c\approx197$ MeV·fm to recover meters.
+Natural units are a precision tool, not a shortcut. A student who sets $\hbar = c = 1$ without being able to restore the factors is flying blind. Practice the restoration: if you compute a length in natural units and get a number in MeV$^{-1}$, multiply by $\hbar c\approx197$ MeV·fm to recover meters.
 
 One notational hazard: $\hbar$ vs. $h$. The de Broglie relation is $\lambda = h/p$; written with wavenumber $k = 2\pi/\lambda$, this is $k = p/\hbar$. Confusing $h$ and $\hbar$ introduces a factor of $2\pi$ — a silent error with no dimensional signal.
 

@@ -8,7 +8,7 @@
 
 ## When You Need This
 
-Read this module before **IV·2** (entanglement), **IV·4** (quantum gates), or **IV·5** (teleportation). All three chapters open with multi-qubit states — vectors in a composite Hilbert space — and the tensor product is the only way to build that space. Without it, we can follow individual equations but not understand why the structure is the way it is.
+Read this module before **IV·2** (entanglement), **IV·4** (quantum gates), or **IV·5** (teleportation). All three chapters open with multi-qubit states — vectors in a composite Hilbert space — and the tensor product is the only way to build that space. Without it, you will follow individual equations but not understand why the structure is the way it is.
 
 Prerequisite: Module M-07 — basis, dimension, linear independence, inner product, and operators as matrices. The tensor product is a new construction *on* vector spaces; it extends that machinery rather than replacing it.
 
@@ -76,7 +76,7 @@ Measuring the two qubits are independent operations.
 
 $$\text{CNOT} = |0\rangle\langle0|\otimes I + |1\rangle\langle1|\otimes X = \begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.$$
 
-Applying to $|{+}\rangle|0\rangle$:
+Apply to $|{+}\rangle|0\rangle$:
 
 $$\text{CNOT}\,\frac{1}{\sqrt{2}}(|00\rangle+|10\rangle) = \frac{1}{\sqrt{2}}(|00\rangle+|11\rangle) = |\Phi^+\rangle.$$
 

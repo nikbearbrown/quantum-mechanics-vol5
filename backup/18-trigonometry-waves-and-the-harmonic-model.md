@@ -1,7 +1,7 @@
 # Module M-18 — Trigonometry, Waves, and the Harmonic Model
 *Refresher for QM chapters: I·2 (matter waves)*
 
-Read this module before Chapter I·2. The sinusoidal wave $\psi(x,t) = Ae^{i(kx-\omega t)}$ appears in the first pages of that chapter, and every result — de Broglie's hypothesis, the double-slit interference pattern, the distinction between phase and group velocity — is a direct application of the wave model. Without fluency with $k$, $\omega$, phase, and superposition, matter waves remain a notational exercise rather than a physical picture. This module also builds the small-angle approximation ($\sin\theta \approx \theta$) that appears throughout the series in interference geometry.
+Read this module before Chapter I·2. The sinusoidal wave $\psi(x,t) = Ae^{i(kx-\omega t)}$ appears in the first pages of that chapter, and every result — de Broglie's hypothesis, the double-slit interference pattern, the distinction between phase and group velocity — is a direct application of the wave model. Without fluency with $k$, $\omega$, phase, and superposition, matter waves are a notational exercise rather than a physical picture. This module also builds the small-angle approximation ($\sin\theta \approx \theta$) that appears throughout the series in interference geometry.
 
 ---
 
@@ -19,7 +19,7 @@ These are dimensionless — pure numbers depending only on the angle, not the tr
 
 For any angle $\theta$ measured counterclockwise from the positive $x$-axis, the point on the unit circle is $(\cos\theta, \sin\theta)$. This extends the functions to all angles and makes periodicity manifest: period $2\pi$.
 
-The **radian** measures angle by arc length on the unit circle: one radian subtends an arc equal to the radius. Radians are dimensionless (arc length divided by radius). The calculus identities $d\sin\theta/d\theta = \cos\theta$ and $d\cos\theta/d\theta = -\sin\theta$ hold only in radians — they depend on $\lim_{\theta\to 0}(\sin\theta)/\theta = 1$, which equals 1 only in radians (in degrees the limit is $\pi/180$). Always use radians in wave formulas and differential equations.
+The **radian** measures angle by arc length on the unit circle: one radian subtends an arc equal to the radius. Radians are dimensionless (arc length divided by radius). The calculus identities $d\sin\theta/d\theta = \cos\theta$ and $d\cos\theta/d\theta = -\sin\theta$ hold only in radians — they depend on $\lim_{\theta\to 0}(\sin\theta)/\theta = 1$, which equals 1 only in radians (in degrees the limit is $\pi/180$). Never feed degrees into a wave formula or a differential equation.
 
 ---
 
@@ -48,7 +48,7 @@ The geometric picture: for a small angle on the unit circle, the arc length $\th
 
 $$\sin\theta = \theta - \frac{\theta^3}{6} + \frac{\theta^5}{120} - \cdots, \qquad \cos\theta = 1 - \frac{\theta^2}{2} + \frac{\theta^4}{24} - \cdots.$$
 
-The approximation $\sin\theta \approx \theta$ is good to $\sim 1\%$ for $|\theta| < 0.14$ rad ($\approx 8°$); to $\sim 10\%$ for $|\theta| < 0.45$ rad ($\approx 26°$). State the domain of validity when using it.
+The approximation $\sin\theta \approx \theta$ is good to $\sim 1\%$ for $|\theta| < 0.14$ rad ($\approx 8°$); to $\sim 10\%$ for $|\theta| < 0.45$ rad ($\approx 26°$). Always state the domain of validity when you use it.
 
 ---
 
@@ -122,7 +122,7 @@ $$\omega = \frac{\hbar k^2}{2m}, \qquad v_\text{ph} = \frac{\omega}{k} = \frac{\
 
 The phase velocity is half the particle's speed. The phase pattern moves at half-speed — it is not the particle.
 
-**Group velocity of a de Broglie wave.** $v_g = d\omega/dk = \hbar k/m = p/m = v$. The group velocity equals the particle's classical speed. The envelope of the wave packet is what moves with the particle. Without the beats analysis, $v_\text{ph} = v/2$ seems surprising; with it, there is no paradox.
+**Group velocity of a de Broglie wave.** $v_g = d\omega/dk = \hbar k/m = p/m = v$. The group velocity equals the particle's classical speed. The envelope of the wave packet is what moves with the particle. Without the beats analysis, $v_\text{ph} = v/2$ seems bizarre; with it, there is no paradox.
 
 ### Worked Example: De Broglie Double-Slit Interference
 
@@ -160,7 +160,7 @@ The faster the electrons (larger $p$, smaller $\lambda$), the finer the fringes.
 
 **Sign convention for direction.** $\psi = Ae^{i(kx-\omega t)}$ travels in the $+x$ direction. $\psi = Ae^{i(kx+\omega t)}$ travels in the $-x$ direction. Fix the convention at the start of any calculation.
 
-**$|\psi|^2$, not $\psi^2$.** The probability density is $|\psi|^2 = \psi^*\psi$. For a complex wave $Ae^{ikx}$, $|Ae^{ikx}|^2 = A^2$ — a constant. Writing $\psi^2$ instead gives $A^2e^{2ikx}$, which is incorrect.
+**$|\psi|^2$, not $\psi^2$.** The probability density is $|\psi|^2 = \psi^*\psi$. For a complex wave $Ae^{ikx}$, $|Ae^{ikx}|^2 = A^2$ — a constant. If you write $\psi^2$ instead, you get $A^2e^{2ikx}$, which is wrong.
 
 **$\lambda = 2\pi/k$, not $1/k$.** The factor of $2\pi$ is the source of most off-by-$2\pi$ errors. Wavenumber $k$ counts radians per unit length; one wavelength is $2\pi$ radians.
 

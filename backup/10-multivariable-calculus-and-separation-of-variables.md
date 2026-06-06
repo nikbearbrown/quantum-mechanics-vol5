@@ -8,9 +8,9 @@
 
 ## When You Need This
 
-When we move from one-dimensional quantum mechanics to three-dimensional problems, the Schrödinger equation becomes a partial differential equation in three variables. Chapter II·5 presents this equation; working with it requires the technique of **separation of variables**, which breaks a PDE in three coordinates into three independent ODEs.
+The moment you move from one-dimensional QM to the real world, the Schrödinger equation becomes a partial differential equation in three variables. Chapter II·5 writes it down; you immediately need to know how to handle it. The central skill is **separation of variables** — the technique that breaks a PDE in three coordinates into three independent ODEs.
 
-Chapter II·9 (hydrogen) shows the payoff most clearly: three coordinate separations produce three quantum numbers $(n, \ell, m)$, each arising from a boundary or regularity condition on the separated equation for that coordinate. This module develops the tools needed to follow that logic — including why $m$ must be an integer and where the centrifugal barrier comes from.
+Chapter II·9 (hydrogen) is where it pays off most visibly: three coordinate separations produce three quantum numbers $(n, \ell, m)$, each arising from a boundary or regularity condition on the separated equation for that coordinate. If the logic of "why $m$ must be an integer" or "where the centrifugal barrier comes from" is opaque, this module is the fix.
 
 ---
 
@@ -26,7 +26,7 @@ The **total differential** accounts for all directions:
 
 $$df = \frac{\partial f}{\partial x}\,dx + \frac{\partial f}{\partial y}\,dy + \frac{\partial f}{\partial z}\,dz.$$
 
-**Equality of mixed partials (Clairaut–Schwarz).** For any smooth function, $\partial^2 f/\partial y\,\partial x = \partial^2 f/\partial x\,\partial y$. The order of differentiation does not matter. The self-adjointness of the separated operators ultimately traces back to this property.
+**Equality of mixed partials (Clairaut–Schwarz).** For any smooth function, $\partial^2 f/\partial y\,\partial x = \partial^2 f/\partial x\,\partial y$. The order of differentiation does not matter. The self-adjointness of the separated operators ultimately traces back to this.
 
 ---
 
@@ -44,7 +44,7 @@ The 3D time-independent Schrödinger equation is:
 
 $$\boxed{-\frac{\hbar^2}{2m}\nabla^2\psi + V(\mathbf{r})\,\psi = E\psi.}$$
 
-Solving it requires expressing $\nabla^2$ in a coordinate system matched to the geometry of $V$, then separating variables. For a central potential $V = V(r)$, spherical coordinates are the appropriate choice.
+Solving it requires expressing $\nabla^2$ in a coordinate system matched to the geometry of $V$, then separating variables. For a central potential $V = V(r)$, spherical coordinates are the right choice.
 
 ---
 
@@ -54,21 +54,21 @@ In spherical coordinates $(r,\theta,\phi)$ — where $\theta\in[0,\pi]$ is the p
 
 $$\nabla^2 = \frac{1}{r^2}\frac{\partial}{\partial r}\!\left(r^2\frac{\partial}{\partial r}\right) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\!\left(\sin\theta\,\frac{\partial}{\partial\theta}\right) + \frac{1}{r^2\sin^2\theta}\frac{\partial^2}{\partial\phi^2}.$$
 
-The three terms correspond to radial, polar, and azimuthal variation. Their different $r$-prefactors are what allow the radial and angular parts to separate cleanly.
+The three terms correspond to radial, polar, and azimuthal variation. Their different $r$-prefactors are what make the radial and angular parts separate cleanly.
 
 ---
 
 ## Separation of Variables: The Method in Four Steps
 
-The approach is to assume the solution is a **product of single-variable functions**, substitute, and show the equation splits into independent parts. Working through this once carefully makes the pattern clear.
+The strategy is to assume the solution is a **product of single-variable functions**, substitute, and show the equation splits. Done once carefully, the pattern is clear forever.
 
 **Illustration: the 3D infinite square well** (Cartesian coordinates, $V = 0$ inside $[0,L]^3$, $\psi = 0$ on the walls).
 
-**Step 1 — product ansatz.** We assume $\psi(x,y,z) = X(x)\,Y(y)\,Z(z)$. Substituting into $-(\hbar^2/2m)\nabla^2\psi = E\psi$:
+**Step 1 — product ansatz.** Guess $\psi(x,y,z) = X(x)\,Y(y)\,Z(z)$. Substitute into $-(\hbar^2/2m)\nabla^2\psi = E\psi$:
 
 $$-\frac{\hbar^2}{2m}(X''YZ + XY''Z + XYZ'') = EXYZ.$$
 
-**Step 2 — divide by the product.** Dividing through by $XYZ$:
+**Step 2 — divide by the product.** Divide through by $XYZ$:
 
 $$-\frac{\hbar^2}{2m}\left(\frac{X''}{X} + \frac{Y''}{Y} + \frac{Z''}{Z}\right) = E.$$
 
@@ -78,19 +78,19 @@ $$\frac{X''}{X} = -k_x^2, \qquad \frac{Y''}{Y} = -k_y^2, \qquad \frac{Z''}{Z} = 
 
 with the constraint $\hbar^2(k_x^2+k_y^2+k_z^2)/(2m) = E$.
 
-The sign $-k^2$ (negative) is chosen deliberately: it gives oscillatory solutions $\sin(k_x x)$ and $\cos(k_x x)$, which can satisfy zero-at-walls boundary conditions. A positive constant would give growing and decaying exponentials, which cannot vanish at both walls simultaneously. Choosing the wrong sign is the single most common error in separation of variables.
+The sign $-k^2$ (negative) is chosen deliberately: it gives oscillatory solutions $\sin(k_x x)$ and $\cos(k_x x)$, which can satisfy zero-at-walls boundary conditions. A positive constant would give growing/decaying exponentials, which cannot vanish at both walls simultaneously. Choosing the wrong sign is the single most common error in separation of variables.
 
 **Step 4 — boundary conditions quantize.** The condition $X(0) = X(L) = 0$ forces $X_{n_x}(x) = \sin(n_x\pi x/L)$ with $k_x = n_x\pi/L$, $n_x = 1,2,3,\ldots$ The separation constant is not arbitrary — it is quantized by the boundary condition. The PDE has produced discrete eigenvalues:
 
 $$E_{n_x n_y n_z} = \frac{\hbar^2\pi^2}{2mL^2}(n_x^2+n_y^2+n_z^2), \qquad n_x,n_y,n_z = 1,2,3,\ldots$$
 
-A sum of product solutions is also a solution, by linearity of the Schrödinger equation. The general solution is a superposition over all allowed $(n_x,n_y,n_z)$.
+A sum of product solutions is also a solution (linearity of the Schrödinger equation). The general solution is a superposition over all allowed $(n_x,n_y,n_z)$.
 
 ---
 
 ## Separation in Spherical Coordinates: The Central-Force Split
 
-For a central potential $V = V(r)$, we substitute $\psi(r,\theta,\phi) = R(r)\,\Theta(\theta)\,\Phi(\phi)$ into the Schrödinger equation with the spherical Laplacian. Multiplying through by $r^2/(R\Theta\Phi)$, the $\phi$ dependence appears only in the last term of the Laplacian; setting it equal to a constant $-m^2$ gives the **azimuthal equation**:
+For a central potential $V = V(r)$, substitute $\psi(r,\theta,\phi) = R(r)\,\Theta(\theta)\,\Phi(\phi)$ into the Schrödinger equation with the spherical Laplacian. Multiply through by $r^2/(R\Theta\Phi)$. The $\phi$ dependence appears only in the last term of the Laplacian; setting it equal to a constant $-m^2$ gives the **azimuthal equation**:
 
 $$\frac{d^2\Phi}{d\phi^2} = -m^2\Phi \;\Longrightarrow\; \Phi(\phi) = e^{im\phi}.$$
 
@@ -126,7 +126,7 @@ This is the first appearance in the series of degeneracy from spatial symmetry: 
 
 ## In the Quantum Series
 
-**QM II·5 — The 3D Schrödinger Equation.** The chapter opens with the full spherical Laplacian and the product ansatz $\psi = R(r)\Theta(\theta)\Phi(\phi)$. The material above provides the mechanics: substitution, division-by-product, why each resulting ratio must be constant, and where quantum numbers come from. Working through the Cartesian (box) separation completely before tackling the spherical case is recommended.
+**QM II·5 — The 3D Schrödinger Equation.** The chapter opens with the full spherical Laplacian and the product ansatz $\psi = R(r)\Theta(\theta)\Phi(\phi)$. The module above gives you the mechanics: substitution, division-by-product, why each resulting ratio must be constant, and where quantum numbers come from. Work through the Cartesian (box) separation completely before tackling the spherical case.
 
 **QM II·9 — The Hydrogen Atom.** The central-force problem with $V(r) = -e^2/(4\pi\varepsilon_0 r)$. The angular separation is identical to the general case — $Y_{\ell m}$ regardless of the potential. The new content is the radial equation for the Coulomb potential, whose solutions are the associated Laguerre polynomials (Module M-11). The principal quantum number $n$ arises from a termination condition on the radial power series, exactly as the energy eigenvalues of the 1D harmonic oscillator arise from terminating the Hermite series.
 
@@ -141,13 +141,13 @@ No number is postulated. Every one is a boundary or regularity condition in disg
 
 ## Conventions and Pitfalls
 
-**Sign of the separation constant.** A negative separation constant $-k^2$ gives oscillatory solutions; a positive one gives exponentials. The choice is dictated by which boundary condition must be met: zero-at-walls requires oscillation, so the constant must be negative. Choose the sign before writing the ODE.
+**Sign of the separation constant.** A negative separation constant $-k^2$ gives oscillatory solutions; a positive one gives exponentials. The choice is dictated by which boundary condition must be met: zero-at-walls requires oscillation, so the constant must be negative. Choose the sign before you write the ODE.
 
 **Spherical coordinate conventions.** The QM series uses the physics convention: $\theta\in[0,\pi]$ is the polar angle (colatitude, from the $z$-axis) and $\phi\in[0,2\pi)$ is the azimuthal angle. Mathematics texts and some engineering references reverse $\theta$ and $\phi$. Verify the convention before consulting any external source. Mixing them makes $Y_{10}\propto\sin\theta$ instead of $\cos\theta$.
 
 **The angular equation does not see the potential.** The $Y_{\ell m}$ functions are universal for central potentials because $V(r)$ factors out when dividing by $\psi = R\Theta\Phi$. The hydrogen wavefunctions are not hydrogen's angular functions — they are the angular functions of every spherically symmetric problem.
 
-**Termination vs. regularity quantization.** Two distinct mechanisms produce discrete eigenvalues: (1) a power series that must *terminate* to remain normalizable (Hermite, Laguerre polynomials), and (2) finiteness at a *singular endpoint* of the ODE (Legendre at $u = \pm 1$). Both are regularity conditions, but they arise at different stages and should not be conflated.
+**Termination vs. regularity quantization.** Two distinct mechanisms produce discrete eigenvalues: (1) a power series that must *terminate* to remain normalizable (Hermite, Laguerre polynomials), and (2) finiteness at a *singular endpoint* of the ODE (Legendre at $u = \pm 1$). Do not conflate them. Both are regularity conditions, but they arise at different stages.
 
 ---
 
