@@ -58,6 +58,9 @@ Both terms are present inside a finite forbidden region. Only when the forbidden
 
 The sign of $E - V$ determines which case applies. This parallels the three damping regimes of the classical oscillator, with the quantum allowed and forbidden regions corresponding to the classical underdamped (oscillatory) and overdamped (real-exponential) regimes respectively.
 
+![Two-panel figure: oscillatory sinusoidal solution and evanescent exponential solutions](../images/03-ordinary-differential-equations-fig-01.png)
+*Figure 3.1 — Two solution families of the TISE: (left) oscillatory sinusoidal solution in the classically allowed region (E > V); (right) decaying normalizable exponential (solid) and growing non-normalizable exponential (dashed) in the classically forbidden region (E < V).*
+
 ---
 
 ## Boundary Conditions and Quantization
@@ -76,6 +79,9 @@ The ODE provides the solution families; the boundary conditions select the allow
 **Matching conditions at potential interfaces.** At a finite step in the potential, both $\psi(x)$ and $\psi'(x)$ must be continuous. This gives two matching conditions at each interface. Combined with the boundary conditions at the edges, the resulting linear system has non-trivial solutions only for specific $E$ values.
 
 If the potential has an infinite jump — the infinite square well — only $\psi$ is matched (to zero at the wall); $\psi'$ may be discontinuous there. A finite-step potential can supply only finite force, requiring $\psi'$ to be continuous; an infinite-step potential can supply an infinite impulse and allows $\psi'$ to jump.
+
+![Step potential with oscillatory ψ for x<0 smoothly matched to decaying ψ for x>0](../images/03-ordinary-differential-equations-fig-03.png)
+*Figure 3.3 — Matching conditions at a potential step: oscillatory ψ arriving from the left joins a decaying exponential on the right with equal value and slope at the interface, marked by a junction dot.*
 
 ---
 
@@ -102,6 +108,9 @@ $$\boxed{E_n = \frac{\hbar^2 k_n^2}{2m} = \frac{n^2\pi^2\hbar^2}{2mL^2}.}$$
 The constant $A$ is fixed separately by normalization, not by the ODE or boundary conditions.
 
 The energy grows as $n^2$ — a result that follows directly from $k_n = n\pi/L$ and $E \propto k^2$. The discrete energy levels emerge from requiring a standing wave to fit exactly $n$ half-wavelengths into the box.
+
+![Infinite square well with three accepted standing-wave eigenfunctions and one rejected solution](../images/03-ordinary-differential-equations-fig-02.png)
+*Figure 3.2 — Quantization from boundary conditions: n = 1, 2, 3 standing waves each touching zero at both walls, placed on baselines at heights proportional to n², and one dashed rejected curve that fails to vanish at the right wall.*
 
 ---
 

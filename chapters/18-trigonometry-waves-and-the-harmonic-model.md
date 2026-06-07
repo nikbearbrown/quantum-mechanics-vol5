@@ -86,6 +86,9 @@ The resultant is a wave at the same frequency with amplitude $2A|\cos(\delta/2)|
 - $\delta = \pi$ (anti-phase): amplitude $0$ — destructive interference.
 - General $\delta$: amplitude interpolates between 0 and $2A$.
 
+![Three superposition cases showing constructive, destructive, and partial interference](../images/18-trigonometry-waves-and-the-harmonic-model-fig-01.png)
+*Figure 18.1 — Wave superposition: $\delta = 0$ gives amplitude $2A$ (constructive), $\delta = \pi$ gives amplitude $0$ (destructive), and $\delta = \pi/2$ gives amplitude $A\sqrt{2}$ (partial), all consistent with the formula $2A|\cos(\delta/2)|$.*
+
 ---
 
 ## Group Velocity and Beats
@@ -99,6 +102,9 @@ The fast carrier oscillates at $k$, $\omega$; the slow envelope moves at:
 $$v_g = \frac{d\omega}{dk}.$$
 
 The **group velocity** $v_g$ is the speed of the envelope — the speed at which energy and information travel. For a non-dispersive medium, $\omega \propto k$ and $v_g = v_\text{ph}$. For a dispersive medium (like matter waves), $v_g \neq v_\text{ph}$, and a wave packet spreads as it travels.
+
+![Group velocity vs phase velocity: carrier and envelope at two time snapshots](../images/18-trigonometry-waves-and-the-harmonic-model-fig-03.png)
+*Figure 18.3 — Group versus phase velocity: the fast carrier advances at phase velocity $v_\text{ph} = v/2$ while the slow envelope travels at group velocity $v_g = v$ (twice as fast for a non-relativistic matter wave), shown at two successive times with a reference line anchored at the initial envelope peak.*
 
 ---
 
@@ -149,6 +155,9 @@ This is the standard double-slit condition — exactly the same as for light, wi
 $$\Delta y = \frac{\lambda L}{d} = \frac{hL}{pd}.$$
 
 The faster the electrons (larger $p$, smaller $\lambda$), the finer the fringes.
+
+![Double-slit fringe intensity pattern for two de Broglie wavelengths](../images/18-trigonometry-waves-and-the-harmonic-model-fig-02.png)
+*Figure 18.2 — Double-slit intensity $I(\theta) = 4A^2\cos^2(\pi d\sin\theta/\lambda)$ showing seven peaks for wavelength $\lambda$ (solid) and twice as many peaks for $\lambda/2$ (dashed), illustrating that higher particle momentum produces finer fringes.*
 
 **Historical note.** The electron double-slit experiment was first performed with a biprism by Jönsson (1961); later with actual double slits by Merli, Missiroli, and Pozzi (1976); and, in the single-electron regime, by Tonomura et al. (1989). The buildup of the interference pattern one electron at a time — a particle landing at one spot, yet the ensemble forming a wave pattern — remains one of the most striking demonstrations in physics.
 

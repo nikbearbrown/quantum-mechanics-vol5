@@ -26,6 +26,9 @@ This converts a complex denominator into a real one. That substitution is the on
 
 We can plot $z$ as a point $(a, b)$ in the complex plane. The number is equally described by its distance from the origin $r = |z|$ and its angle $\theta = \text{atan2}(b, a)$ from the positive real axis. In polar form, multiplication is straightforward: lengths multiply and angles add. We can see this directly once Euler's formula is established.
 
+![Complex plane showing z, its modulus, argument, and conjugate z*](../images/01-complex-numbers-and-the-complex-exponential-fig-01.png)
+*Figure 1.1 — The complex plane: point z in the first quadrant with radial line r, angle arc θ, right-triangle projections a and b, and conjugate z* reflected across the real axis.*
+
 Substituting $x = i\theta$ into the Maclaurin series $e^x = \sum_{n=0}^\infty x^n/n!$ and sorting even and odd powers using the cycle $i^2 = -1$, $i^3 = -i$, $i^4 = 1$, $\ldots$ gives
 
 $$e^{i\theta} = 1 + i\theta - \frac{\theta^2}{2!} - i\frac{\theta^3}{3!} + \frac{\theta^4}{4!} + \cdots = \underbrace{\left(1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - \cdots\right)}_{\cos\theta} + i\underbrace{\left(\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \cdots\right)}_{\sin\theta}.$$
@@ -46,7 +49,12 @@ A complex exponent $r = -\gamma + i\omega$ gives
 
 $$e^{rt} = e^{-\gamma t}(\cos\omega t + i\sin\omega t).$$
 
-The real part of the exponent governs the decay envelope; the imaginary part gives the oscillation frequency. Both phenomena — damping and oscillation — are captured in a single complex exponential. A **complex amplitude** $\tilde A = Ae^{i\phi}$ packages magnitude and phase into one number:
+The real part of the exponent governs the decay envelope; the imaginary part gives the oscillation frequency. Both phenomena — damping and oscillation — are captured in a single complex exponential.
+
+![Inward spiral in the complex plane representing a decaying complex exponential](../images/01-complex-numbers-and-the-complex-exponential-fig-03.png)
+*Figure 1.3 — Decaying complex exponential e^(rt) with r = −γ + iω: a spiral starting on the positive real axis and winding counterclockwise inward as t increases, converging toward the origin.*
+
+A **complex amplitude** $\tilde A = Ae^{i\phi}$ packages magnitude and phase into one number:
 
 $$A\cos(\omega t + \phi) = \text{Re}(\tilde A\, e^{i\omega t}).$$
 
@@ -66,6 +74,9 @@ $$|\tilde A| = \sqrt{9 + 16} = 5, \qquad \phi = \arctan(4/3) \approx 53.1°.$$
 
 Result: $x_1 + x_2 = 5\cos(\omega t + 53.1°)$. We obtain the amplitude and phase from one right-triangle calculation, without expanding angle-sum formulas.
 
+![Phasor addition of two oscillations as vector addition in the complex plane](../images/01-complex-numbers-and-the-complex-exponential-fig-02.png)
+*Figure 1.2 — Phasor addition: first phasor of magnitude 3 along the real axis, second of magnitude 4 placed tip-to-tail along the imaginary axis, and resultant of magnitude 5 from the origin.*
+
 ---
 
 ## In the Quantum Series
@@ -77,6 +88,9 @@ $$i\hbar\frac{\partial\psi}{\partial t} = \hat H\psi.$$
 A real function cannot satisfy an equation requiring its time derivative to equal an imaginary multiple of itself. There is no "take the real part at the end" step. Both $\text{Re}(\psi)$ and $\text{Im}(\psi)$ are physically active.
 
 The time-dependent factor for a stationary state of energy $E$ is $e^{-iEt/\hbar}$ — a phasor rotating at rate $E/\hbar$. Because $|e^{-iEt/\hbar}| = 1$, the probability density $|\psi(x,t)|^2 = |\psi(x)|^2$ is time-independent even though $\psi$ itself is rotating. This is why stationary states have definite energy but still evolve in the complex plane.
+
+![Two-panel figure: stationary-state phasor rotating on the unit circle and corresponding constant |ψ|² bars](../images/01-complex-numbers-and-the-complex-exponential-fig-04.png)
+*Figure 1.4 — Stationary-state phasor: (left) three phasor snapshots at different angles, all on the unit circle; (right) three equal-height bars showing |ψ|² = constant regardless of the rotation angle.*
 
 Born's rule gives $|\psi|^2 = \psi^*\psi$. For a superposition $\psi = \psi_1 + \psi_2$:
 

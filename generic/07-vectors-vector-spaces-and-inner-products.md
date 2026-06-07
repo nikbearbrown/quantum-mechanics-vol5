@@ -18,6 +18,9 @@ $$\vec A\cdot\vec B = A_xB_x + A_yB_y + A_zB_z = |\vec A||\vec B|\cos\varphi.$$
 
 The Vol. 2 picture abstracts this. A **vector space** $V$ over a field $\mathbb{F}$ ($\mathbb{R}$ or $\mathbb{C}$) is any set of objects that can be added and scaled, with the arithmetic obeying the standard rules: commutativity and associativity of addition, a zero vector, additive inverses, distributivity. The elements do not need to be arrows. Column vectors in $\mathbb{C}^n$ qualify. Polynomials qualify. Square-integrable functions on $\mathbb{R}$, with $(f+g)(x) = f(x)+g(x)$ and $(cf)(x) = c\,f(x)$, qualify — and this last example is where quantum mechanics lives.
 
+![Three-panel figure: geometric arrow with component projections, column vector addition, and function addition](../images/07-vectors-vector-spaces-and-inner-products-fig-01.png)
+*Figure 7.1 — Three realizations of the same abstract vector space: (left) a geometric arrow in ℝ² with dashed component projections; (middle) column vector addition shown as two stacks plus a sum stack; (right) two smooth functions and their pointwise sum — unified by the same addition and scaling axioms.*
+
 ---
 
 ## Linear Independence, Basis, Dimension
@@ -66,6 +69,9 @@ This inequality is the engine of the Robertson uncertainty relation (Module M-09
 
 A basis $\{|n\rangle\}$ is **orthonormal** if $\langle m|n\rangle = \delta_{mn}$. From any independent set, the **Gram–Schmidt** procedure builds an orthonormal one: take vectors in turn, subtract each one's projections onto the already-orthonormalized vectors, then normalize. In an orthonormal basis, expansion coefficients are just inner products: if $|\psi\rangle = \sum_n c_n|n\rangle$ then $c_n = \langle n|\psi\rangle$.
 
+![Three-panel figure showing Gram-Schmidt steps from non-orthogonal pair to orthonormal pair](../images/07-vectors-vector-spaces-and-inner-products-fig-02.png)
+*Figure 7.2 — Gram–Schmidt orthonormalization: (left) two non-orthonormal vectors at an acute angle; (middle) first vector normalized with unit-circle arc, projection dashed onto it, and residual arrow perpendicular to it; (right) completed orthonormal pair with right-angle square.*
+
 Substituting back:
 
 $$|\psi\rangle = \sum_n|n\rangle\langle n|\psi\rangle = \left(\sum_n|n\rangle\langle n|\right)|\psi\rangle.$$
@@ -75,6 +81,9 @@ Since this holds for every $|\psi\rangle$, the operator in parentheses must be t
 $$\boxed{\sum_n|n\rangle\langle n| = \hat I.}$$
 
 This is the **resolution of the identity** — one of the most-used identities in quantum mechanics. Each term $|n\rangle\langle n|$ is the **projector** onto the $n$-th basis direction. The whole sum reconstructs the identity because the projectors tile the space without overlap. Inserting this form of $\hat I$ into any expression is the standard technique for changing basis, computing matrix elements, and deriving the Born rule.
+
+![Vector diagram: two orthonormal basis arrows, state vector with dashed projections, component arrows, and parallelogram closure](../images/07-vectors-vector-spaces-and-inner-products-fig-03.png)
+*Figure 7.3 — Resolution of the identity geometrically: a general state vector projected onto two orthonormal basis directions, the two component arrows reconstructing the original state via parallelogram addition.*
 
 ---
 

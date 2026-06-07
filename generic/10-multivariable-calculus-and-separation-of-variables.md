@@ -86,6 +86,9 @@ $$E_{n_x n_y n_z} = \frac{\hbar^2\pi^2}{2mL^2}(n_x^2+n_y^2+n_z^2), \qquad n_x,n_
 
 A sum of product solutions is also a solution, by linearity of the Schrödinger equation. The general solution is a superposition over all allowed $(n_x,n_y,n_z)$.
 
+![Four-step Cartesian separation-of-variables cascade](../images/10-multivariable-calculus-and-separation-of-variables-fig-01.png)
+*Figure 10.1 — The four-step separation-of-variables cascade: product ansatz, division by the product, three independent ODEs, and boundary conditions that quantize each separation constant.*
+
 ---
 
 ## Separation in Spherical Coordinates: The Central-Force Split
@@ -109,6 +112,9 @@ The **radial equation**, with the angular part separated and contributing the co
 $$-\frac{\hbar^2}{2m}\frac{1}{r^2}\frac{d}{dr}\!\left(r^2\frac{dR}{dr}\right) + \left[\frac{\hbar^2\ell(\ell+1)}{2mr^2} + V(r)\right]R = ER.$$
 
 The term $\hbar^2\ell(\ell+1)/(2mr^2)$ is the **centrifugal barrier** — it comes not from any classical assumption but directly from the angular separation constant. The angular equation never involved $V(r)$. The spherical harmonics $Y_{\ell m}$ are therefore the angular eigenfunctions for **every** central potential — hydrogen, the 3D harmonic oscillator, and the free particle alike. What differs between problems is the radial equation and its solutions.
+
+![Spherical separation cascade producing three quantum numbers](../images/10-multivariable-calculus-and-separation-of-variables-fig-02.png)
+*Figure 10.2 — Spherical separation cascade: one central-potential equation branches into three independent ODEs, each generating one quantum number through its own regularity or single-valuedness constraint.*
 
 ---
 
@@ -142,6 +148,9 @@ No number is postulated. Every one is a boundary or regularity condition in disg
 ## Conventions and Pitfalls
 
 **Sign of the separation constant.** A negative separation constant $-k^2$ gives oscillatory solutions; a positive one gives exponentials. The choice is dictated by which boundary condition must be met: zero-at-walls requires oscillation, so the constant must be negative. Choose the sign before writing the ODE.
+
+![Decision fork for the sign of the separation constant](../images/10-multivariable-calculus-and-separation-of-variables-fig-03.png)
+*Figure 10.3 — Sign-of-separation-constant decision fork: a negative constant yields an oscillatory solution that can satisfy zero-at-walls, while a positive constant yields exponentials that cannot.*
 
 **Spherical coordinate conventions.** The QM series uses the physics convention: $\theta\in[0,\pi]$ is the polar angle (colatitude, from the $z$-axis) and $\phi\in[0,2\pi)$ is the azimuthal angle. Mathematics texts and some engineering references reverse $\theta$ and $\phi$. Verify the convention before consulting any external source. Mixing them makes $Y_{10}\propto\sin\theta$ instead of $\cos\theta$.
 

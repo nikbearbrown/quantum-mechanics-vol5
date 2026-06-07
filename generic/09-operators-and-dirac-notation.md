@@ -20,6 +20,9 @@ Type discipline — knowing what each expression is — prevents most algebraic 
 
 The order matters: $\langle\phi|\psi\rangle$ is a number; $|\psi\rangle\langle\phi|$ is an operator.
 
+![Two-row diagram: bra-ket inner product yielding a scalar versus ket-bra outer product yielding an operator](../images/09-operators-and-dirac-notation-fig-01.png)
+*Figure 9.1 — Bra–ket type grammar: (top row) bra⟩⟨ket with open ends facing each other collapses to a scalar; (bottom row) ket⟩⟨bra with open ends facing outward produces an operator that maps kets to kets.*
+
 ---
 
 ## The Adjoint
@@ -35,6 +38,9 @@ $$(c\hat A)^\dagger = c^*\hat A^\dagger,$$
 $$(|\psi\rangle\langle\phi|)^\dagger = |\phi\rangle\langle\psi|.$$
 
 The order-reversal rule is the analogue of the transpose rule for products. Writing $(\hat A\hat B)^\dagger = \hat A^\dagger\hat B^\dagger$ by analogy with scalars is incorrect for operators that do not commute.
+
+![Diagram showing the adjoint flip: operator moving from ket side to bra side with dagger marker, plus three manipulation rule panels](../images/09-operators-and-dirac-notation-fig-02.png)
+*Figure 9.2 — The adjoint as a flip across the inner product: (main) an operator on the ket side transfers to the bra side with a dagger marker; (lower strip) three rules — order reversal (AB)† = B†A†, scalar conjugation (cA)† = c*A†, and ket-bra adjoint swap.*
 
 ---
 
@@ -129,6 +135,9 @@ For any two observables $\hat A$ and $\hat B$ in state $|\psi\rangle$, we define
 $$\boxed{\sigma_A\,\sigma_B \geq \tfrac{1}{2}\,|\langle[\hat A,\hat B]\rangle|.}$$
 
 Robertson's uncertainty relation (1929). Applied to $[\hat x,\hat p] = i\hbar$: $\sigma_x\sigma_p \geq \hbar/2$.
+
+![Four-stage vertical flowchart: Cauchy-Schwarz geometry → squared-norm inequality → real/imaginary decomposition → Robertson bound](../images/09-operators-and-dirac-notation-fig-03.png)
+*Figure 9.3 — Robertson uncertainty from Cauchy–Schwarz: four-stage logical chain from the geometric overlap of two vectors through the squared inner product inequality, decomposition into real and imaginary parts with the commutator in the imaginary sub-box, to the final σ_A σ_B ≥ ½|⟨[Â,B̂]⟩| bound.*
 
 This is a statement about **state preparation** — how narrowly concentrated a single quantum state can simultaneously be in two incompatible observables — derived from Cauchy–Schwarz and Hermiticity. It says nothing about what happens to a particle when it is measured. The disturbance version (Heisenberg's microscope) is a separate and weaker result, formalized by Ozawa in 2003. Conflating them is a well-documented error in physics education.
 

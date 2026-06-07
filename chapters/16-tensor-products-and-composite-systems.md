@@ -20,6 +20,9 @@ When two classical systems are combined, the number of joint states is the *prod
 
 This is not the direct sum $V\oplus W$ (dimension $m+n$). It is a new, larger space whose dimension is $mn$. That multiplicative growth is the engine behind both quantum entanglement and the exponential state-space of quantum computing.
 
+![Direct sum vs tensor product dimension contrast](../images/16-tensor-products-and-composite-systems-fig-01.png)
+*Figure 16.1 — Dimension contrast: the direct sum $V \oplus W$ stacks basis elements independently (addition), while the tensor product $V \otimes W$ pairs every basis element of $V$ with every basis element of $W$ (multiplication), and also contains non-product entangled elements.*
+
 ---
 
 ## The Tensor Product of Vector Spaces
@@ -45,6 +48,9 @@ $$\{|00\rangle,\ |01\rangle,\ |10\rangle,\ |11\rangle\}.$$
 The convention here — and throughout Nielsen and Chuang — is **lexicographic**: the first (left) index varies slowest. This is what gives the Kronecker product its standard block form; deviating from it changes every gate matrix.
 
 For $N$ qubits: $\dim = 2^N$. Thirty qubits require $\sim10^9$ complex amplitudes ($\sim 16$ GB) to represent classically. Fifty qubits require $\sim 16$ petabytes. This exponential growth is simultaneously the source of quantum computing's potential power and of the difficulty in simulating it classically.
+
+![Exponential growth of qubit state-space with qubit count N](../images/16-tensor-products-and-composite-systems-fig-02.png)
+*Figure 16.2 — Exponential state-space growth: the number of complex amplitudes $2^N$ required to represent an $N$-qubit state grows from 4 at $N = 2$ to 1024 at $N = 10$, making classical simulation exponentially intractable.*
 
 ---
 
@@ -119,6 +125,9 @@ where $\{|j\rangle\}$ is any orthonormal basis for $W$. This is the quantum anal
 $$\rho_A = \frac{1}{2}|0\rangle\langle0| + \frac{1}{2}|1\rangle\langle1| = \frac{I}{2}.$$
 
 The reduced state of $A$ is the maximally mixed state — an observer with access to qubit $A$ alone sees a perfectly random coin, despite the global state $|\Phi^+\rangle$ being pure. The information is in the *correlations*, not the individual qubits. This is the linear-algebra signature of maximal entanglement.
+
+![Partial trace from Bell state joint density matrix to maximally mixed reduced state](../images/16-tensor-products-and-composite-systems-fig-03.png)
+*Figure 16.3 — Partial trace: tracing out subsystem $B$ from the Bell state $|\Phi^+\rangle\langle\Phi^+|$ (left, four nonzero entries) collapses the joint density matrix to the maximally mixed state $\rho_A = I/2$ (center, uniform diagonal), showing that all correlation information is lost when only one subsystem is accessible.*
 
 **Contrast with a product state.** For $\rho_{AB} = \rho_A\otimes\rho_B$, the partial trace gives $\text{Tr}_B[\rho_A\otimes\rho_B] = \rho_A\cdot\text{Tr}[\rho_B] = \rho_A$. No information is lost.
 

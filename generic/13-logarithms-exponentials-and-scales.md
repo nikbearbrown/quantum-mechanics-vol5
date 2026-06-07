@@ -47,6 +47,9 @@ Two functional forms, two types of axes, two straight-line tests:
 
 Power law gives a line on log–log axes. Exponential gives a line on semi-log axes. Which transformation straightens the data identifies which kind of law is present.
 
+![Log-log vs semi-log linearization diagnostic](../images/13-logarithms-exponentials-and-scales-fig-01.png)
+*Figure 13.1 — Linearization diagnostic: a power law $y = Ax^k$ appears as a straight line on log–log axes (slope $k$), while an exponential $y = Ae^{kx}$ appears as a straight line on semi-log axes.*
+
 ---
 
 ## Worked Example — Half-Life from a Semi-Log Plot
@@ -104,6 +107,9 @@ This has the same $e^{-\lambda t}$ structure as radioactive decay, but in the *s
 
 Rule of thumb: each 2.3 units of $2\kappa L$ reduces $T$ by one order of magnitude ($e^{-2.303} = 10^{-1}$).
 
+![Tunneling transmission T vs barrier width on semi-log axes](../images/13-logarithms-exponentials-and-scales-fig-02.png)
+*Figure 13.2 — Transmission probability $T = e^{-2\kappa L}$ versus barrier width $L$ on semi-log axes: each curve for a different $\kappa$ is a straight line, and equal increments of $L$ produce equal multiplicative drops in $T$.*
+
 ### The WKB Generalization — The Exponent Becomes an Integral
 
 For a non-rectangular barrier where $V(x)$ varies (Vol. III, Ch. 4), the WKB approximation gives
@@ -115,6 +121,9 @@ where $x_1, x_2$ are the classical turning points. The form is identical to the 
 $$\ln T = -\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\,dx.$$
 
 The **Gamow factor** for alpha decay is exactly this integral applied to the Coulomb barrier. The decay rate $\lambda \propto e^{-G}$ where $G = (2/\hbar)\int_R^{R_c}\sqrt{2m(V_\text{Coulomb}(r)-E)}\,dr$. Small changes in nuclear charge $Z$ or decay energy $E$ produce large changes in $\lambda$ — because they enter the *exponent*. This exponential sensitivity is why nuclear half-lives span nanoseconds to $10^{10}$ years: a range of $10^{26}$, compressed to manageable numbers on a log scale.
+
+![WKB tunneling geometry: classically allowed and forbidden regions](../images/13-logarithms-exponentials-and-scales-fig-03.png)
+*Figure 13.3 — WKB tunneling geometry: the particle's wavefunction oscillates in the classically allowed regions ($E > V$), decays exponentially through the classically forbidden region ($E < V$) between turning points $x_1$ and $x_2$, and emerges as a lower-amplitude wave on the far side.*
 
 ### Order-of-Magnitude Estimation
 

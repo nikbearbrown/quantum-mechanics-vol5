@@ -19,6 +19,9 @@ $$\boxed{f(x) = \frac{1}{2\pi}\int_{-\infty}^{\infty} \tilde f(k)\, e^{ikx}\,dk}
 
 The Fourier transform is the Fourier series taken to continuous frequency. The function $\tilde f(k)$ is the continuous spectrum of $f$ — it describes how much of each pure wave $e^{ikx}$ the function contains.
 
+![Three stacked panels showing discrete Fourier series comb densifying into continuous Fourier transform](../images/06-the-fourier-transform-fig-01.png)
+*Figure 6.1 — Fourier series to Fourier transform as L → ∞: (top) sparse discrete comb at large spacing Δk; (middle) denser comb at Δk/2; (bottom) smooth continuous envelope with faint ghost comb, illustrating the limit in which the sum becomes an integral.*
+
 ---
 
 ## The Quantum Convention: Position and Momentum
@@ -87,6 +90,9 @@ The proof: complete the square in the exponent of $\int e^{-x^2/2a^2}e^{-ikx}\,d
 
 The Gaussian is the unique shape that saturates the bandwidth bound: $\Delta x\,\Delta k = \tfrac{1}{2}$ exactly. For the normalized QM Gaussian $\psi(x) = (\pi a^2)^{-1/4}e^{-x^2/2a^2}$, the position width is $\Delta x = a/\sqrt{2}$ and the momentum width is $\Delta p = \hbar/(a\sqrt{2})$, giving $\Delta x\,\Delta p = \hbar/2$. This is why the Gaussian wave packet is the **minimum-uncertainty state** — the most classical-like quantum state, with position and momentum uncertainties balanced as tightly as nature permits. Small $a$ (localized in $x$) forces large $\Delta p$, and vice versa, in exact reciprocal proportion.
 
+![2×2 grid: narrow x-space Gaussian paired with wide p-space Gaussian, and wide x-space Gaussian paired with narrow p-space Gaussian](../images/06-the-fourier-transform-fig-02.png)
+*Figure 6.2 — Position–momentum trade-off: (top-left) narrow |ψ(x)|² and (bottom-left) correspondingly wide |φ̃(p)|² for a localized state; (top-right) wide |ψ(x)|² and (bottom-right) narrow |φ̃(p)|² for a delocalized state — Fourier reciprocity enforces the uncertainty product.*
+
 ---
 
 ## The Dirac Delta: The Continuous Kronecker
@@ -149,6 +155,9 @@ Time evolution is simplest in momentum space: each component $\tilde\psi(p)$ acq
 
 Wave packet spreading follows from the Fourier bandwidth relation: a narrow $\Delta x$ at $t=0$ requires a wide $\Delta p$, and different momentum components travel at different speeds $v = p/m$, so the packet broadens. This is kinematics plus Fourier, not a new quantum principle.
 
+![Three-panel figure showing Gaussian wave packet broadening at successive times](../images/06-the-fourier-transform-fig-03.png)
+*Figure 6.3 — Wave packet spreading in time: three snapshots at t₁ < t₂ < t₃ showing the Gaussian broadening and flattening while the center advances at constant group velocity, with width brackets growing at each step.*
+
 The group velocity of the packet, $v_g = d\omega/dk|_{k_0}$, gives the speed of the packet center. For a quantum particle $\omega = \hbar k^2/2m$, so $v_g = \hbar k_0/m = p_0/m$ (the classical particle velocity) while the phase velocity $v_\phi = \hbar k_0/2m = p_0/2m$ — half the classical speed. The packet center moves classically; the individual wave crests do not.
 
 **Transitions and the time–frequency bandwidth (III·5).** Time-dependent perturbation theory computes transition amplitudes as:
@@ -162,6 +171,9 @@ For a perturbation of duration $T$, its Fourier spectrum has width $\Delta\omega
 **The Born amplitude is a Fourier transform (III·8).** As derived above, $f(\theta) \propto \tilde V(\mathbf{q})$. Every feature of the Born cross-section is a feature of the potential's Fourier transform. Forward scattering ($q = 0$): $\tilde V(0) = \int V(\mathbf{r})\,d^3r$ — the spatial integral of the potential. Large-angle scattering (large $q$): determined by the $\text{high-}q$ components, which fall off rapidly for smooth potentials and persist for sharp ones. Diffraction dips in nuclear scattering (e.g., $^{12}\text{C}$): the Fourier transform of a uniform sphere is $\propto j_1(qR)/qR$, a spherical Bessel function with zeros at definite angles — the same mathematics as single-slit diffraction.
 
 Reading Born scattering through the Fourier lens converts an opaque integral into a physical picture: we are measuring the spatial frequency content of the potential at the spatial frequency set by the momentum transfer.
+
+![Two-panel figure: scattering geometry with incident and scattered vectors and the differential cross-section curve](../images/06-the-fourier-transform-fig-04.png)
+*Figure 6.4 — Born scattering as a Fourier transform: (left) incident k_i and scattered k_f vectors with momentum transfer arc q and scattering angle θ; (right) forward-peaked differential cross-section dσ/dΩ falling monotonically from θ = 0 to π, reflecting the high-q suppression of the potential's Fourier transform.*
 
 ---
 

@@ -70,6 +70,9 @@ $$\lambda_C = \frac{\hbar}{m_e c}\approx3.86\times10^{-13}\text{ m.}$$
 
 Above $\lambda_C$, non-relativistic QM is adequate. Below it, pair production and quantum field effects dominate. The Compton effect — the shift in X-ray wavelength upon scattering from electrons — is explained by treating photons as particles and using $\lambda_C$ as the relevant scale.
 
+![Hierarchy of atomic length scales on a logarithmic ruler](../images/17-units-dimensions-and-estimation-fig-01.png)
+*Figure 17.1 — Hierarchy of atomic length scales: the Bohr radius $a_0 \approx 0.529$ Å, the Compton wavelength $\lambda_C \approx 3.86 \times 10^{-3}$ Å, and the classical electron radius $r_e \approx 2.8 \times 10^{-5}$ Å are separated by equal factors of $\alpha^{-1} \approx 137$ on a logarithmic ruler.*
+
 ---
 
 ## Order-of-Magnitude Estimation
@@ -85,6 +88,9 @@ This is atomic scale — consistent with why electron diffraction in crystals (D
 **When classical physics fails.** At room temperature, $k_BT\approx25$ meV. For a macroscopic oscillator of frequency 1 kHz, the quantum $h\nu\approx6.6\times10^{-31}$ J. Ratio: $h\nu/k_BT\approx10^{-10}$ — classical physics is completely adequate.
 
 For an atomic electron in hydrogen, the relevant energy is the Rydberg $\approx13.6$ eV. At room temperature, $k_BT\approx0.025$ eV, so $E_1/k_BT\approx540$ — quantum effects dominate entirely. The crossover between classical and quantum behavior is the dimensional comparison $k_BT$ vs. $\hbar\omega$. Chapter I·1 returns to this comparison repeatedly.
+
+![Classical vs quantum crossover axis showing k_BT vs hbar-omega ratio](../images/17-units-dimensions-and-estimation-fig-02.png)
+*Figure 17.2 — Classical-versus-quantum crossover: a logarithmic axis of the ratio $\hbar\omega/k_BT$ spanning from the macroscopic pendulum ($\approx 10^{-10}$, deep classical) to hydrogen at room temperature ($\approx 540$, deep quantum), with the threshold at ratio $= 1$ dividing the two regimes.*
 
 ---
 

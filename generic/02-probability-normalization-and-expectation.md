@@ -21,6 +21,9 @@ There are three important points to keep in mind. First, $f(x)$ is not itself a 
 
 This distinction is fundamental when applying Born's rule. The probability of finding the particle at the single point $x_0$ is zero — not $|\psi(x_0)|^2$. The probability of finding it between $x_0$ and $x_0 + dx$ is $|\psi(x_0)|^2\,dx$ — a density times a width. Normalization requires integrating the density to one, not setting the density equal to one at some point.
 
+![Gaussian PDF with mean dashed line, σ bracket, and shaded probability strip](../images/02-probability-normalization-and-expectation-fig-01.png)
+*Figure 2.1 — Probability density function: Gaussian curve with mean marked by a dashed vertical line, standard deviation σ indicated by a bracket, and a shaded strip showing that probability is the area under the curve over an interval, not the function value at a point.*
+
 ---
 
 ## Mean, Expectation Value, and Variance
@@ -46,6 +49,9 @@ $$\langle X^2 - 2\mu X + \mu^2\rangle = \langle X^2\rangle - 2\mu\langle X\rangl
 The **standard deviation** $\sigma = \sqrt{\sigma^2}$ has the same units as $X$ and is the natural measure of the width of a distribution.
 
 The mean is not the same as the most probable value. For a symmetric, unimodal distribution they coincide — and many textbook examples are symmetric — but for asymmetric distributions they can differ substantially. The expectation value $\langle x\rangle$ is the probability-weighted average position, not the location where $|\psi|^2$ peaks.
+
+![Two-panel figure: symmetric distribution where mean equals peak, and skewed distribution where they differ](../images/02-probability-normalization-and-expectation-fig-02.png)
+*Figure 2.2 — Mean versus mode: (left) symmetric distribution where the peak and mean coincide; (right) right-skewed distribution with separate dashed lines for the mode and the mean, showing they need not coincide.*
 
 ---
 
@@ -108,6 +114,9 @@ $$\langle x^2\rangle = N^2\cdot\frac{\sqrt{\pi}}{2(1/(2\sigma^2))^{3/2}} = \frac
 **Standard deviation.** $\Delta x = \sqrt{\langle x^2\rangle - \langle x\rangle^2} = \sqrt{\sigma^2 - 0} = \sigma$.
 
 The width parameter $\sigma$ in the exponent of the Gaussian is the standard deviation of the position distribution. The Gaussian is the minimum-uncertainty state: its momentum-space wavefunction $\phi(k)$ (the Fourier transform of $\psi(x)$) is also Gaussian with width $1/(2\sigma)$, giving $\Delta p = \hbar/(2\sigma)$ and therefore $\Delta x\,\Delta p = \sigma\cdot\hbar/(2\sigma) = \hbar/2$ — the lower bound in the uncertainty principle.
+
+![Two-panel figure: narrow Gaussian in position space paired with wide Gaussian in momentum space](../images/02-probability-normalization-and-expectation-fig-03.png)
+*Figure 2.3 — Gaussian wave packet as a Fourier pair: (left) narrow, tall |ψ(x)|² localized in position; (right) broad, flat |φ̃(p)|² spread in momentum — the reciprocal-width trade-off that saturates the uncertainty bound.*
 
 ---
 

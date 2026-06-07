@@ -13,6 +13,9 @@ $$A\mathbf{v} = \lambda\mathbf{v}, \qquad \mathbf{v} \neq \mathbf{0}.$$
 
 The scalar $\lambda$ is the corresponding **eigenvalue**. Most vectors get rotated when $A$ acts; eigenvectors are the invariant directions. The name comes from the German *eigen* ("own" or "characteristic"), introduced into the mathematical language by David Hilbert around 1904 in his work on integral equations. [verify: Hilbert 1904 Göttingen Nachrichten]
 
+![Two-panel figure: general vectors rotated and stretched by an operator, versus eigenvectors scaled in place](../images/08-eigenvalues-and-diagonalization-fig-01.png)
+*Figure 8.1 — Eigenvectors as invariant directions: (left) a fan of general vectors rotated and stretched by the operator; (right) two eigenvectors that are only scaled — their direction unchanged — with collinearity ticks and scale brackets.*
+
 ---
 
 ## The Characteristic Equation
@@ -39,7 +42,8 @@ $$\boxed{A = PDP^{-1}, \qquad D = P^{-1}AP.}$$
 
 The matrix $D$ is $A$ expressed in the eigenbasis — diagonal, with all couplings eliminated. Diagonalization is a change of coordinates that makes the action of $A$ maximally transparent: in the eigenbasis, $A$ multiplies each coordinate independently by the corresponding eigenvalue.
 
-Not every matrix is diagonalizable. A **defective** matrix has fewer than $n$ independent eigenvectors; the simplest example is $\bigl[\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\bigr]$, which has only one eigenvector for its repeated eigenvalue $\lambda = 1$. Such matrices reduce only to Jordan form. In quantum mechanics, however, operators that arise as observables are guaranteed never to be defective — the spectral theorem below ensures it.
+![Three-panel sequence: original oblique basis with full matrix, change-of-basis arc to eigenvectors, and diagonal matrix in eigenbasis](../images/08-eigenvalues-and-diagonalization-fig-02.png)
+*Figure 8.2 — Diagonalization as coordinate change: (left) original basis with all four matrix cells filled; (middle) transformation arc to the eigenvector basis; (right) diagonal matrix with only the two diagonal cells filled, off-diagonal cells empty.* A **defective** matrix has fewer than $n$ independent eigenvectors; the simplest example is $\bigl[\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\bigr]$, which has only one eigenvector for its repeated eigenvalue $\lambda = 1$. Such matrices reduce only to Jordan form. In quantum mechanics, however, operators that arise as observables are guaranteed never to be defective — the spectral theorem below ensures it.
 
 ---
 
@@ -74,6 +78,9 @@ Once $A$ is diagonalized in an orthonormal eigenbasis $\{|\lambda_n\rangle\}$ wi
 $$A = UDU^\dagger = \sum_n \lambda_n\,|\lambda_n\rangle\langle\lambda_n|.$$
 
 This is the **spectral decomposition**: the operator is the sum of each eigenvalue times the projector onto the corresponding eigenstate. It carries every fact about $A$ without coordinates.
+
+![Single panel: full operator matrix equals sum of eigenvalue-scaled rank-1 projector matrices, with geometric lobe interpretation](../images/08-eigenvalues-and-diagonalization-fig-03.png)
+*Figure 8.3 — Spectral decomposition: the full operator (left, all cells filled) equals eigenvalue-scale marker times first projector (one filled cell) plus eigenvalue-scale marker times second projector (other filled cell); geometrically, two perpendicular eigenvector arrows each with a projector lobe scaled by the corresponding eigenvalue.*
 
 ---
 

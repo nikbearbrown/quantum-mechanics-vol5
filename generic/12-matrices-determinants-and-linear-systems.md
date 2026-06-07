@@ -53,6 +53,9 @@ A matrix is **unitary** if $U^\dagger U = UU^\dagger = I$. Unitary matrices pres
 
 These three operations are distinct. For real matrices, $A^\dagger = A^T$. For a real symmetric matrix, $A^\dagger = A$, so it is automatically Hermitian. For $\sigma_y$: the $(1,2)$ entry is $-i$; its conjugate is $+i$; the $(1,2)$ entry of $A^\dagger$ (which is the $(2,1)$ entry of $A^*$) is $+i$, and indeed $\sigma_y^\dagger = \sigma_y$.
 
+![Three conjugate operations on a complex matrix](../images/12-matrices-determinants-and-linear-systems-fig-01.png)
+*Figure 12.1 — Three conjugate operations: complex conjugate $A^*$ (same positions, conjugated entries), transpose $A^T$ (swapped off-diagonal positions), and Hermitian conjugate $A^\dagger$ (both operations combined), which is the primary operation in quantum mechanics.*
+
 ---
 
 ## The Trace
@@ -99,6 +102,9 @@ $$[\sigma_i, \sigma_j] = 2i\,\varepsilon_{ijk}\,\sigma_k.$$
 
 Explicitly: $[\sigma_x, \sigma_y] = 2i\sigma_z$, $[\sigma_y, \sigma_z] = 2i\sigma_x$, $[\sigma_z, \sigma_x] = 2i\sigma_y$.
 
+![Pauli matrix commutation cycle](../images/12-matrices-determinants-and-linear-systems-fig-03.png)
+*Figure 12.3 — Pauli matrix commutation cycle: the three Pauli operators form a closed clockwise cycle under the commutation relation $[\sigma_i, \sigma_j] = 2i\varepsilon_{ijk}\sigma_k$, reflecting the SU(2) algebra of angular momentum.*
+
 **Anticommutation:** $\{\sigma_i, \sigma_j\} = 2\delta_{ij}I$.
 
 Combined: $\sigma_i\sigma_j = \delta_{ij}I + i\varepsilon_{ijk}\sigma_k$.
@@ -134,6 +140,9 @@ $$\rho = \frac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma}), \qquad |\mathbf{r}
 The vector $\mathbf{r}$ is the Bloch vector; its coordinates are the spin expectation values: $r_i = \operatorname{tr}(\rho\sigma_i)$. Pure states live on the Bloch sphere ($|\mathbf{r}| = 1$); mixed states live inside it.
 
 Properties encoded in the density matrix: $\operatorname{tr}(\rho) = 1$ (normalization); $\rho^\dagger = \rho$ (Hermiticity — $\mathbf{r}$ must be real); $\rho \geq 0$ (positive semi-definite — equivalent to $|\mathbf{r}| \leq 1$); $\operatorname{tr}(\rho^2) = (1 + |\mathbf{r}|^2)/2$ (equals 1 iff pure).
+
+![Bloch sphere cross-section showing pure and mixed states](../images/12-matrices-determinants-and-linear-systems-fig-02.png)
+*Figure 12.2 — Bloch sphere: pure states live on the surface ($|\mathbf{r}| = 1$), mixed states occupy the interior ($|\mathbf{r}| < 1$), and the maximally mixed state $\rho = I/2$ sits at the center.*
 
 The expectation value of any observable $\hat A$:
 

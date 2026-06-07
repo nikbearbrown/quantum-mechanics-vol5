@@ -46,6 +46,9 @@ $$\Omega(N,q) = \binom{q+N-1}{q}.$$
 
 This applies when the objects being distributed are identical. It should not be confused with the spin counting above, where the $N$ spins are distinguishable. The formulas address different physical situations.
 
+![Multiplicity peak and Gaussian sharpening for N=6, 20, 100](../images/14-combinatorics-and-multiplicity-fig-01.png)
+*Figure 14.1 — Multiplicity peak sharpening: the normalized binomial distribution $\Omega(N, N_\uparrow)/\Omega_\text{max}$ (top) and its Gaussian envelope (bottom) for $N = 6$, $20$, and $100$, showing how the peak at $N_\uparrow/N = 0.5$ narrows dramatically with increasing $N$.*
+
 ---
 
 ## Stirling's Approximation
@@ -67,6 +70,9 @@ The refined form is $N!\approx\sqrt{2\pi N}(N/e)^N$, giving $\ln N!\approx N\ln 
 $$\ln\Omega = N\ln N - N_\uparrow\ln N_\uparrow - (N-N_\uparrow)\ln(N-N_\uparrow).$$
 
 This is the fundamental formula: a smooth, differentiable function of $N_\uparrow$ that can be maximized analytically and differentiated with respect to energy.
+
+![Stirling approximation relative error vs N](../images/14-combinatorics-and-multiplicity-fig-03.png)
+*Figure 14.3 — Stirling approximation accuracy: the relative error of the leading form $N\ln N - N$ (solid) drops from roughly 40% at $N = 6$ to negligible above $N \approx 30$; the refined form with $\tfrac{1}{2}\ln(2\pi N)$ (dashed) converges faster.*
 
 ---
 
@@ -99,6 +105,9 @@ The distinction between bosons and fermions in Chapter 10 is, at its mathematica
 | Maxwell-Boltzmann (distinguishable) | any occupancy | 4 |
 | Bose-Einstein (identical bosons) | any occupancy per state | 3 |
 | Fermi-Dirac (identical fermions) | at most 1 per state (Pauli) | 1 |
+
+![Three statistics microstate enumeration for 2 particles in 2 states](../images/14-combinatorics-and-multiplicity-fig-02.png)
+*Figure 14.2 — Three statistics compared: Maxwell-Boltzmann (4 microstates, distinguishable particles), Bose-Einstein (3 microstates, identical bosons), and Fermi-Dirac (1 microstate, identical fermions) for two particles occupying two single-particle states.*
 
 The Fermi-Dirac count is 1 because the only allowed configuration for two identical fermions in two states is "one in each state." The wavefunction antisymmetry enforces exactly this: a Slater determinant
 

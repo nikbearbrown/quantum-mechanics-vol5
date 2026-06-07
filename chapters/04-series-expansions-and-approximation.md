@@ -42,6 +42,9 @@ We can keep the first few terms and treat the result as an approximation. The fi
 
 **Small-angle:** From the sine series, $\sin\theta \approx \theta$. The next term is $-\theta^3/6$, so the relative error is approximately $\theta^2/6$ (radians). At $15° = 0.262$ rad this is about 1%; at $5°$ it is 0.1%. The approximation is the series truncated after one term, with a computable error.
 
+![Two-panel figure: Taylor approximations to sin(x) and their error curves](../images/04-series-expansions-and-approximation-fig-01.png)
+*Figure 4.1 — Taylor truncation of sin(x): (upper) exact sin(x) with linear, cubic, and quintic approximations diverging progressively from the exact curve; (lower) absolute error of each approximation rising from zero, with reference verticals at 5° and 15°.*
+
 From the cosine series: $\cos\theta \approx 1 - \theta^2/2$.
 
 **Binomial approximation:** For $|x| \ll 1$ and any real $n$:
@@ -59,6 +62,9 @@ This is one of the most important applications of Taylor expansion in physics. E
 $$V(x) = V(x_0) + \underbrace{V'(x_0)}_{=\,0}(x-x_0) + \tfrac{1}{2}V''(x_0)(x-x_0)^2 + \cdots$$
 
 The linear term vanishes at a minimum. Dropping cubic and higher terms (valid for small displacements) gives a harmonic potential with spring constant $k_\text{eff} = V''(x_0)$ and oscillation frequency $\omega = \sqrt{V''(x_0)/m}$. Every molecular bond, every lattice site, every potential well behaves like a quantum harmonic oscillator to leading order — which is why QHO perturbation theory serves as the universal reference system.
+
+![Asymmetric anharmonic potential well with harmonic parabola overlaid and agreement region shaded](../images/04-series-expansions-and-approximation-fig-02.png)
+*Figure 4.2 — Every smooth potential minimum is locally a harmonic oscillator: an asymmetric anharmonic well (blue) with the quadratic approximation (orange) tangent at the minimum, diverging at large displacements, and a shaded band marking the region of close agreement.*
 
 ---
 
@@ -99,6 +105,9 @@ Recognizing this as a Taylor series tells us when the method is valid: the expan
 $$\left|\frac{\langle m^{(0)}|\hat H'|n^{(0)}\rangle}{E_n^{(0)} - E_m^{(0)}}\right| \ll 1 \quad \text{for all }m\neq n.$$
 
 This is the convergence check of the underlying series. Degenerate perturbation theory is required precisely when a denominator vanishes — the series has reached the boundary of its radius of convergence, and the expansion must be reorganized before truncating. Every formula in III·1 is a Taylor coefficient; understanding this converts the perturbation expansion from a list of results to memorize into a structure to understand.
+
+![Two-panel figure: well-separated energy levels with small perturbative shifts, and nearly degenerate levels with large mixing](../images/04-series-expansions-and-approximation-fig-03.png)
+*Figure 4.3 — Perturbation theory convergence: (left) well-separated levels with small first-order shifts; (right) nearly degenerate levels driven far apart by the same perturbation, with mixing brackets showing the large level repulsion when the energy denominator becomes small.*
 
 ### WKB Is an Asymptotic Series in $\hbar$
 

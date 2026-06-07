@@ -27,6 +27,9 @@ $$\delta S = \varepsilon\,\frac{d}{d\varepsilon}S[y + \varepsilon\eta]\bigg|_{\v
 
 Stationarity means $\delta S = 0$ for every allowed wiggle $\eta$.
 
+![Varied paths and fixed endpoints in the calculus of variations](../images/15-calculus-of-variations-fig-01.png)
+*Figure 15.1 — Varied paths with fixed endpoints: the candidate stationary path (solid) connects two pinned endpoints, while trial variations (dashed) wiggle around it with $\varepsilon\eta(x)$ indicating the displacement at an interior point.*
+
 ---
 
 ## Derivation of the Euler–Lagrange Equation
@@ -136,6 +139,9 @@ The deep reason for the Lagrangian formulation is Feynman's path integral: in qu
 $$K(q_2, t_2; q_1, t_1) = \int\mathcal{D}q(t)\; e^{iS[q]/\hbar}.$$
 
 For paths far from the stationary point, the phase $S/\hbar$ varies rapidly and the contributions cancel by destructive interference. Near the stationary path ($\delta S = 0$), the phase is nearly constant and the contributions add constructively. In the classical limit $\hbar \to 0$, only the stationary path survives — the classical trajectory is the path of stationary action because it dominates the quantum sum. This is the honest answer to why nature extremizes the action: it does not, exactly. Quantum mechanics sums over all paths, and the classical path is the one that wins.
+
+![Path-integral phase cancellation and constructive interference near the stationary path](../images/15-calculus-of-variations-fig-02.png)
+*Figure 15.2 — Path-integral phase cancellation: paths far from the stationary action have scattered phasor directions and cancel by destructive interference, while near-stationary paths have coherent phases that add constructively, so the classical trajectory dominates.*
 
 ---
 

@@ -32,6 +32,9 @@ $$f(x) = \sum_n c_n\,y_n(x), \qquad c_n = \frac{\langle y_n, f\rangle}{\langle y
 
 We project onto each basis function in turn, using the weighted inner product. The ordinary Fourier series is the special case with a trigonometric basis; every special-function expansion is the same idea, adapted to the geometry of the problem.
 
+![Sturm-Liouville taxonomy of seven special-function families](../images/11-special-functions-fig-01.png)
+*Figure 11.1 — Sturm–Liouville taxonomy: all seven special-function families descend from the same self-adjoint operator structure, differentiated by their quantization mechanism (series termination, regularity at endpoint, or asymptotic boundary condition).*
+
 <!-- → [TABLE: special function catalogue — columns: family name, defining ODE, interval and weight w, QM role; rows for each of the seven families (Hermite, Legendre, Associated Legendre, Spherical harmonics, Associated Laguerre, Spherical Bessel, Cylindrical Bessel); this is the reference table students will consult when identifying which family a new ODE belongs to] -->
 
 ---
@@ -67,6 +70,9 @@ $$\int_{-\infty}^\infty H_m(\xi)\,H_n(\xi)\,e^{-\xi^2}\,d\xi = \sqrt{\pi}\,2^n\,
 $$H_{n+1}(\xi) = 2\xi\,H_n(\xi) - 2n\,H_{n-1}(\xi).$$
 
 Combined with $\xi H_n = \tfrac{1}{2}H_{n+1} + nH_{n-1}$, this allows us to compute $\langle n|\hat{x}|n'\rangle$ and $\langle n|\hat{p}|n'\rangle$ algebraically, without evaluating a Gaussian integral.
+
+![Hermite polynomial eigenstates for n=0 to 3 showing node count](../images/11-special-functions-fig-02.png)
+*Figure 11.2 — Harmonic oscillator eigenstates for $n = 0$ to $3$: each wavefunction has exactly $n$ nodes, with positive and negative lobes enveloped by the Gaussian factor $e^{-\xi^2/2}$.*
 
 One convention note: the physicist's $H_n$ has leading coefficient $2^n$ and weight $e^{-\xi^2}$. The probabilist's $\text{He}_n$ has leading coefficient 1 and weight $e^{-\xi^2/2}$. QM uniformly uses the physicist's convention. To verify, check $H_1$: the physicist's convention gives $2\xi$; the probabilist's gives $\xi$. Using the wrong convention changes normalization constants by powers of 2.
 
