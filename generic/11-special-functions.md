@@ -100,7 +100,7 @@ $$Y_{\ell m}(\theta,\phi) = \sqrt{\frac{(2\ell+1)}{4\pi}\frac{(\ell-|m|)!}{(\ell
 
 $$\int_0^{2\pi}\!\int_0^\pi Y_{\ell'm'}^*\,Y_{\ell m}\,\sin\theta\,d\theta\,d\phi = \delta_{\ell\ell'}\delta_{mm'}.$$
 
-**Key $\text{low-}\ell$ harmonics:**
+**Key** $\text{low-}\ell$ **harmonics:**
 
 $$Y_{00} = \frac{1}{\sqrt{4\pi}}, \quad Y_{10} = \sqrt{\frac{3}{4\pi}}\cos\theta, \quad Y_{1,\pm1} = \mp\sqrt{\frac{3}{8\pi}}\sin\theta\,e^{\pm i\phi}.$$
 
@@ -178,7 +178,7 @@ The diagnostic logic follows five steps: (1) choose the coordinate system that m
 
 **The ground state of the harmonic oscillator.** With $n = 0$, $H_0(\xi) = 1$ — a constant — so $\psi_0\propto e^{-\xi^2/2}$: a pure Gaussian with no nodes. Energy $E_0 = \tfrac{1}{2}\hbar\omega$. The zero-point energy is nonzero because the termination condition's minimum is $n = 0$, not $n = -1$.
 
-**Normalization of $\psi_0$.** With $\psi_0 = N_0 e^{-\xi^2/2}$ and $d\xi = \sqrt{m\omega/\hbar}\,dx$:
+**Normalization of** $\psi_0$. With $\psi_0 = N_0 e^{-\xi^2/2}$ and $d\xi = \sqrt{m\omega/\hbar}\,dx$:
 
 $$N_0^2\sqrt{\frac{\hbar}{m\omega}}\int_{-\infty}^\infty e^{-\xi^2}\,d\xi = N_0^2\sqrt{\frac{\hbar}{m\omega}}\cdot\sqrt{\pi} = 1 \implies N_0 = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4}.$$
 

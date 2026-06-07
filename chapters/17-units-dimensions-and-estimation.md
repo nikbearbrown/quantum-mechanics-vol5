@@ -134,7 +134,7 @@ One notational hazard: $\hbar$ vs. $h$. The de Broglie relation is $\lambda = h/
    Each of the following expressions contains a dimensional error. Identify the error in each case and state what corrected form would be dimensionally consistent: (a) $v = at^2$ (where $v$ is speed, $a$ is acceleration, $t$ is time); (b) $E = p/m$ (where $E$ is energy, $p$ is momentum, $m$ is mass); (c) $\omega = \sqrt{k}$ (where $\omega$ is angular frequency in rad/s and $k$ is spring stiffness in N/m).
    *Tests: dimensional homogeneity as a consistency check; identifying and correcting dimensional errors.*
 
-2. *Difficulty: Warm-up — tests the $\hbar$ vs. $h$ distinction.*
+2. *Difficulty: Warm-up — tests the* $\hbar$ *vs.* $h$ *distinction.*
    The de Broglie wavelength is $\lambda = h/p$ and the Bohr radius is $a_0 = \hbar^2/(m_ee^2/4\pi\epsilon_0)$. (a) Write the de Broglie relation using $\hbar$ and wavenumber $k = 2\pi/\lambda$; verify dimensional consistency. (b) A student accidentally uses $h$ instead of $\hbar$ in the Bohr radius formula. By what factor does their answer differ from the correct one? (c) Compute the de Broglie wavelength of an electron with kinetic energy 10 eV in nm.
    *Tests: the h vs. ħ distinction; propagation of the error; a numerical calculation.*
 

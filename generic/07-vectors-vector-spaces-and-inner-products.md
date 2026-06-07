@@ -40,11 +40,11 @@ The **norm** is $\|\psi\| = \sqrt{\langle\psi|\psi\rangle}$. Two vectors are **o
 
 The two canonical examples:
 
-**Finite-dimensional ($\mathbb{C}^n$):**
+**Finite-dimensional (**$\mathbb{C}^n$):
 $$\langle\phi|\psi\rangle = \sum_{i=1}^n\phi_i^*\,\psi_i.$$
 The conjugate is on the first entry. Without it, $\langle\psi|\psi\rangle = \sum\psi_i^2$ need not be real.
 
-**Function space ($L^2$):**
+**Function space (**$L^2$):
 $$\langle\phi|\psi\rangle = \int_{-\infty}^{\infty}\phi^*(x)\,\psi(x)\,dx.$$
 This is the continuum analogue. The real 3D dot product is the special case $\mathbb{R}^3$ where no conjugate is needed.
 
@@ -146,7 +146,7 @@ A general state $|\Psi\rangle = \sum_{m,n}c_{mn}|a_m\rangle\otimes|b_n\rangle$ i
 
 2. A normalized state $|\psi\rangle = \frac{3}{5}|0\rangle + \frac{4i}{5}|1\rangle$ in an orthonormal basis $\{|0\rangle,|1\rangle\}$. Use the resolution of the identity to find $\langle0|\psi\rangle$ and $\langle1|\psi\rangle$, then verify $|\langle0|\psi\rangle|^2 + |\langle1|\psi\rangle|^2 = 1$.
 
-3. Show that $|\alpha\rangle = (1,0,i)^T/\sqrt{2}$ and $|\beta\rangle = (0,1,0)^T$ are orthonormal in $\mathbb{C}^3$. Find a third vector $|\gamma\rangle$ orthonormal to both. (*Hint: apply Gram–Schmidt to $(i,0,1)^T$, then normalize.*)
+3. Show that $|\alpha\rangle = (1,0,i)^T/\sqrt{2}$ and $|\beta\rangle = (0,1,0)^T$ are orthonormal in $\mathbb{C}^3$. Find a third vector $|\gamma\rangle$ orthonormal to both. (*Hint: apply Gram–Schmidt to* $(i,0,1)^T$, *then normalize.*)
 
 ---
 

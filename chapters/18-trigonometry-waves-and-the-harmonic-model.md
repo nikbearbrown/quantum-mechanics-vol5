@@ -160,11 +160,11 @@ The faster the electrons (larger $p$, smaller $\lambda$), the finer the fringes.
 
 **Sign convention for direction.** $\psi = Ae^{i(kx-\omega t)}$ travels in the $+x$ direction. $\psi = Ae^{i(kx+\omega t)}$ travels in the $-x$ direction. Fix the convention at the start of any calculation.
 
-**$|\psi|^2$, not $\psi^2$.** The probability density is $|\psi|^2 = \psi^*\psi$. For a complex wave $Ae^{ikx}$, $|Ae^{ikx}|^2 = A^2$ — a constant. Writing $\psi^2$ instead gives $A^2e^{2ikx}$, which is incorrect.
+$|\psi|^2$, **not** $\psi^2$. The probability density is $|\psi|^2 = \psi^*\psi$. For a complex wave $Ae^{ikx}$, $|Ae^{ikx}|^2 = A^2$ — a constant. Writing $\psi^2$ instead gives $A^2e^{2ikx}$, which is incorrect.
 
-**$\lambda = 2\pi/k$, not $1/k$.** The factor of $2\pi$ is the source of most $\text{off-}\text{by-}2\pi$ errors. Wavenumber $k$ counts radians per unit length; one wavelength is $2\pi$ radians.
+$\lambda = 2\pi/k$, **not** $1/k$. The factor of $2\pi$ is the source of most $\text{off-}\text{by-}2\pi$ errors. Wavenumber $k$ counts radians per unit length; one wavelength is $2\pi$ radians.
 
-**$\hbar$ vs. $h$ in de Broglie relations.** $\lambda = h/p$ uses $h$. The wavenumber form $k = p/\hbar$ uses $\hbar = h/2\pi$. Both are correct. The confusion arises when one mixes the formulas: $k = p/h$ (wrong by $2\pi$) or $\lambda = \hbar/p$ (wrong by $2\pi$).
+$\hbar$ **vs.** $h$ **in de Broglie relations.** $\lambda = h/p$ uses $h$. The wavenumber form $k = p/\hbar$ uses $\hbar = h/2\pi$. Both are correct. The confusion arises when one mixes the formulas: $k = p/h$ (wrong by $2\pi$) or $\lambda = \hbar/p$ (wrong by $2\pi$).
 
 **Phase velocity is not the particle velocity.** For a non-relativistic matter wave, $v_\text{ph} = v/2$. The particle's physical speed equals the group velocity. Do not use $v_\text{ph}$ to predict where the particle is.
 

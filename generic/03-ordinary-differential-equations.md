@@ -35,7 +35,7 @@ The method is algorithmic. Propose an exponential, substitute, get a polynomial,
 
 In quantum mechanics, the potential $V(x)$ divides the real line into regions where $E > V$ and regions where $E < V$. The TISE has a different character in each.
 
-**Oscillatory solution: classically allowed region ($E > V$).**
+**Oscillatory solution: classically allowed region (**$E > V$).
 
 $$u'' = -k^2 u, \qquad k^2 = \frac{2m(E-V)}{\hbar^2} > 0.$$
 
@@ -46,7 +46,7 @@ $$= Ce^{ikx} + De^{-ikx} \quad\text{(exponential basis)}$$
 
 Both span the same two-dimensional space. The trigonometric basis is convenient when boundary conditions are at specific points (a condition $u(0) = 0$ immediately eliminates the cosine). The exponential basis is more natural for traveling waves and scattering states.
 
-**Evanescent solution: classically forbidden region ($E < V$).**
+**Evanescent solution: classically forbidden region (**$E < V$).
 
 $$u'' = +\kappa^2 u, \qquad \kappa^2 = \frac{2m(V-E)}{\hbar^2} > 0.$$
 
@@ -89,9 +89,9 @@ Characteristic equation: $r^2 + k^2 = 0$, roots $r = \pm ik$. General solution:
 
 $$\psi(x) = A\sin(kx) + B\cos(kx).$$
 
-**Boundary condition at $x = 0$:** $\psi(0) = B = 0$. So $\psi(x) = A\sin(kx)$.
+**Boundary condition at** $x = 0$: $\psi(0) = B = 0$. So $\psi(x) = A\sin(kx)$.
 
-**Boundary condition at $x = L$:** $\psi(L) = A\sin(kL) = 0$. For $A \neq 0$: $kL = n\pi$, $n = 1, 2, 3, \ldots$
+**Boundary condition at** $x = L$: $\psi(L) = A\sin(kL) = 0$. For $A \neq 0$: $kL = n\pi$, $n = 1, 2, 3, \ldots$
 
 Allowed wave numbers: $k_n = n\pi/L$.
 
@@ -123,13 +123,13 @@ For **scattering states** ($E > 0$), both regions have oscillatory solutions. Th
 
 ## Conventions and Pitfalls
 
-**The sign of the $\psi''$ coefficient determines oscillatory vs. evanescent.** Write the TISE as $\psi'' = f(x)\psi$. If $f < 0$ (i.e., $E > V$): oscillatory, use $\sin$ and $\cos$. If $f > 0$ (i.e., $E < V$): evanescent, use $e^{\pm\kappa x}$. The sign is determined by the sign of $E - V$, which changes at the classical turning points.
+**The sign of the** $\psi''$ **coefficient determines oscillatory vs. evanescent.** Write the TISE as $\psi'' = f(x)\psi$. If $f < 0$ (i.e., $E > V$): oscillatory, use $\sin$ and $\cos$. If $f > 0$ (i.e., $E < V$): evanescent, use $e^{\pm\kappa x}$. The sign is determined by the sign of $E - V$, which changes at the classical turning points.
 
 **Both constants are needed inside a finite well.** Inside a finite square well the solution is oscillatory, and both $\sin(kx)$ and $\cos(kx)$ appear in the general solution. Dropping the cosine by analogy with the infinite well is a common error — in the finite well there is no boundary condition at the center that forces it out. Both terms survive until the matching conditions at the edges are applied.
 
 **Two separate steps: boundary conditions, then normalization.** The ODE gives a two-parameter family; boundary conditions fix one or both constants and select the eigenvalue $E_n$; normalization fixes the remaining overall amplitude. These steps are sequential, not simultaneous. Normalizing before applying boundary conditions is a common source of confusion.
 
-**Continuity of $\psi'$ is required at every finite step.** At a finite discontinuity in $V$, both $\psi$ and $\psi'$ must match. At an infinite wall, only $\psi$ matches (to zero); $\psi'$ may jump. Forgetting to match $\psi'$ — not just $\psi$ — is the most common error in finite-well and barrier problems.
+**Continuity of** $\psi'$ **is required at every finite step.** At a finite discontinuity in $V$, both $\psi$ and $\psi'$ must match. At an infinite wall, only $\psi$ matches (to zero); $\psi'$ may jump. Forgetting to match $\psi'$ — not just $\psi$ — is the most common error in finite-well and barrier problems.
 
 **Quantization from boundary conditions, not the ODE.** The ODE is satisfied for every value of $E > V_\text{min}$. Discrete energy levels emerge only when the boundary conditions are imposed.
 

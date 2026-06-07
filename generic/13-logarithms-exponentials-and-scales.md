@@ -90,9 +90,9 @@ $$\boxed{T \approx e^{-2\kappa L}, \qquad \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar
 
 This has the same $e^{-\lambda t}$ structure as radioactive decay, but in the *spatial* variable $x$. The "decay constant" is $\kappa$ (units: $\text{m}^{-1}$) and the "lifetime" is $1/\kappa$ — the spatial scale over which the wavefunction falls to $1/e$.
 
-**Evaluate the exponent before computing $T$.** If $2\kappa L = 10$, then $T \approx e^{-10} \approx 4.5\times10^{-5}$ — five orders of magnitude suppression — without touching a calculator. If $2\kappa L = 0.1$, then $T \approx 1 - 0.1 \approx 0.9$ — essentially no suppression. Identifying the regime before doing algebra is a useful first step.
+**Evaluate the exponent before computing** $T$. If $2\kappa L = 10$, then $T \approx e^{-10} \approx 4.5\times10^{-5}$ — five orders of magnitude suppression — without touching a calculator. If $2\kappa L = 0.1$, then $T \approx 1 - 0.1 \approx 0.9$ — essentially no suppression. Identifying the regime before doing algebra is a useful first step.
 
-**Useful numbers for electrons with $V_0 - E = 1\ \text{eV}$:** $\kappa \approx 5.1\ \text{nm}^{-1}$. Barriers narrower than $\sim 0.2\ \text{nm}$ give significant tunneling ($\kappa L \lesssim 1$); barriers wider than $\sim 2\ \text{nm}$ are effectively opaque ($\kappa L \gtrsim 10$, $T \lesssim 10^{-9}$).
+**Useful numbers for electrons with** $V_0 - E = 1\ \text{eV}$: $\kappa \approx 5.1\ \text{nm}^{-1}$. Barriers narrower than $\sim 0.2\ \text{nm}$ give significant tunneling ($\kappa L \lesssim 1$); barriers wider than $\sim 2\ \text{nm}$ are effectively opaque ($\kappa L \gtrsim 10$, $T \lesssim 10^{-9}$).
 
 | $2\kappa L$ | $T = e^{-2\kappa L}$ | Qualitative |
 |---|---|---|
@@ -136,11 +136,11 @@ This corresponds to a 1 eV effective barrier for an electron. The exponential se
 
 **Sign of the exponent.** In the classically forbidden region ($E < V$), the wavefunction is a real decaying exponential with *negative* exponent. If a calculation gives $e^{+|\kappa|x}$ as the physical solution inside the barrier, the growing exponential is not normalizable and must be rejected.
 
-**$T \leq 1$ is a hard constraint.** If a calculation gives $T > 1$, the exponent has the wrong sign. Quick check: is $2\kappa L > 0$? If yes, $e^{-2\kappa L} < 1$.
+$T \leq 1$ **is a hard constraint.** If a calculation gives $T > 1$, the exponent has the wrong sign. Quick check: is $2\kappa L > 0$? If yes, $e^{-2\kappa L} < 1$.
 
-**$\ln$ versus $\log_{10}$.** The WKB formula uses the natural exponential $e$ throughout. "Take the log to linearize" means take $\ln$, which gives the rate constant directly as the slope. Using $\log_{10}$ gives slope $= -2\kappa/\ln10 \approx -2\kappa/2.303$ — correct but requires a conversion step.
+$\ln$ **versus** $\log_{10}$. The WKB formula uses the natural exponential $e$ throughout. "Take the log to linearize" means take $\ln$, which gives the rate constant directly as the slope. Using $\log_{10}$ gives slope $= -2\kappa/\ln10 \approx -2\kappa/2.303$ — correct but requires a conversion step.
 
-**$e^{a+b} = e^a\cdot e^b$, not $e^a + e^b$.** For a barrier in two segments, the total transmission is $T = e^{-2\kappa_1 L_1}\cdot e^{-2\kappa_2 L_2} = e^{-2(\kappa_1 L_1 + \kappa_2 L_2)}$ — exponents add, transmissions multiply. This is the log law $\log(ac) = \log a + \log c$ running in reverse.
+$e^{a+b} = e^a\cdot e^b$, **not** $e^a + e^b$. For a barrier in two segments, the total transmission is $T = e^{-2\kappa_1 L_1}\cdot e^{-2\kappa_2 L_2} = e^{-2(\kappa_1 L_1 + \kappa_2 L_2)}$ — exponents add, transmissions multiply. This is the log law $\log(ac) = \log a + \log c$ running in reverse.
 
 ---
 

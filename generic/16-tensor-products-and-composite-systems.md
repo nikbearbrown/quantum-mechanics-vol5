@@ -82,7 +82,7 @@ $$\text{CNOT}\,\frac{1}{\sqrt{2}}(|00\rangle+|10\rangle) = \frac{1}{\sqrt{2}}(|0
 
 $|00\rangle$ is unchanged (control $|0\rangle$); $|10\rangle$ becomes $|11\rangle$ (control $|1\rangle$, target flips).
 
-**Step 3: verify $|\Phi^+\rangle$ is entangled.** Suppose $|\Phi^+\rangle = (\alpha|0\rangle+\beta|1\rangle)\otimes(\gamma|0\rangle+\delta|1\rangle)$. Expanding and matching coefficients with $\frac{1}{\sqrt{2}}(|00\rangle+|11\rangle)$:
+**Step 3: verify** $|\Phi^+\rangle$ **is entangled.** Suppose $|\Phi^+\rangle = (\alpha|0\rangle+\beta|1\rangle)\otimes(\gamma|0\rangle+\delta|1\rangle)$. Expanding and matching coefficients with $\frac{1}{\sqrt{2}}(|00\rangle+|11\rangle)$:
 
 $$\alpha\gamma = \tfrac{1}{\sqrt{2}}, \quad \alpha\delta = 0, \quad \beta\gamma = 0, \quad \beta\delta = \tfrac{1}{\sqrt{2}}.$$
 
@@ -142,9 +142,9 @@ Non-local gates (CNOT, CZ, SWAP) cannot be written as $A\otimes B$. Understandin
 
 **Basis ordering must be fixed and stated.** The Kronecker product formula above assumes lexicographic ordering: $|00\rangle,|01\rangle,|10\rangle,|11\rangle$. Some texts reverse this, making the formula $B\otimes A$ instead. Before any numerical calculation, state your ordering convention explicitly.
 
-**$A\otimes B \neq B\otimes A$ in general.** Tensor product is not commutative. Swapping subsystems requires the swap operator $\text{SWAP}|ij\rangle = |ji\rangle$.
+$A\otimes B \neq B\otimes A$ **in general.** Tensor product is not commutative. Swapping subsystems requires the swap operator $\text{SWAP}|ij\rangle = |ji\rangle$.
 
-**Not every element of $V\otimes W$ is a simple tensor.** The space is spanned by simple tensors $|v\rangle\otimes|w\rangle$ but contains vectors — the entangled states — that are not themselves simple tensors. The dimension count confirms this: $\dim(V\otimes W) = mn$, but the set of simple tensors is parametrized by only $m+n$ complex numbers (up to normalization), not $mn$. The extra elements are the entangled ones.
+**Not every element of** $V\otimes W$ **is a simple tensor.** The space is spanned by simple tensors $|v\rangle\otimes|w\rangle$ but contains vectors — the entangled states — that are not themselves simple tensors. The dimension count confirms this: $\dim(V\otimes W) = mn$, but the set of simple tensors is parametrized by only $m+n$ complex numbers (up to normalization), not $mn$. The extra elements are the entangled ones.
 
 **The partial trace is basis-independent; trace order is not.** $\text{Tr}_B\neq\text{Tr}_A$ in general — they trace over different subsystems and give different reduced states. Always specify which subsystem you are tracing out.
 

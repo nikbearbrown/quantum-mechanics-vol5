@@ -163,7 +163,7 @@ The energy bands and gaps at the Brillouin zone boundary ($k = \pm\pi/a$) arise 
 
 3. *Difficulty: Warm-up — tests the complex Fourier series.*
    The function $f(t) = e^{i\omega_0 t}$ is periodic with period $T = 2\pi/\omega_0$. (a) Write its complex Fourier series $f(t) = \sum_n c_n e^{in\omega_0 t}$ by inspection and identify all $c_n$. (b) Now for $f(t) = \cos(\omega_0 t)$: write $\cos(\omega_0 t)$ in terms of complex exponentials and read off all nonzero $c_n$. (c) Verify $c_{-1} = c_1^*$ for the cosine case.
-   *Tests: reading complex Fourier coefficients directly from exponential form; the $c_{-n} = c_n^*$ property for real functions.*
+   *Tests: reading complex Fourier coefficients directly from exponential form; the* $c_{-n} = c_n^*$ *property for real functions.*
 
 **Application**
 

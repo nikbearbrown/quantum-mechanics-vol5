@@ -94,13 +94,13 @@ For a central potential $V = V(r)$, we substitute $\psi(r,\theta,\phi) = R(r)\,\
 
 $$\frac{d^2\Phi}{d\phi^2} = -m^2\Phi \;\Longrightarrow\; \Phi(\phi) = e^{im\phi}.$$
 
-**Regularity quantizes $m$:** the wavefunction must be single-valued — $\Phi(\phi+2\pi) = \Phi(\phi)$ — which forces $e^{2\pi im} = 1$, hence $m\in\mathbb{Z}$. This is not a postulate. The integer character of the orbital magnetic quantum number $m$ is a consequence of single-valuedness of a function defined on the sphere. (Spin escapes this argument because spinors transform under SU(2), which admits half-integer representations — they are not ordinary functions on the sphere.)
+**Regularity quantizes** $m$: the wavefunction must be single-valued — $\Phi(\phi+2\pi) = \Phi(\phi)$ — which forces $e^{2\pi im} = 1$, hence $m\in\mathbb{Z}$. This is not a postulate. The integer character of the orbital magnetic quantum number $m$ is a consequence of single-valuedness of a function defined on the sphere. (Spin escapes this argument because spinors transform under SU(2), which admits half-integer representations — they are not ordinary functions on the sphere.)
 
 The remaining radial-plus-polar equation separates again. The polar part, with $u = \cos\theta$, becomes the **associated Legendre equation** with separation constant $\ell(\ell+1)$:
 
 $$\frac{d}{du}\!\left[(1-u^2)\frac{dP}{du}\right] + \left[\ell(\ell+1) - \frac{m^2}{1-u^2}\right]P = 0.$$
 
-**Regularity quantizes $\ell$:** finiteness at the poles $u = \pm 1$ forces $\ell$ to be a non-negative integer with $|m|\leq\ell$. The solutions are the associated Legendre functions $P_\ell^m(\cos\theta)$. The full angular factor is the **spherical harmonic**:
+**Regularity quantizes** $\ell$: finiteness at the poles $u = \pm 1$ forces $\ell$ to be a non-negative integer with $|m|\leq\ell$. The solutions are the associated Legendre functions $P_\ell^m(\cos\theta)$. The full angular factor is the **spherical harmonic**:
 
 $$Y_{\ell m}(\theta,\phi) = N_{\ell m}\,P_\ell^m(\cos\theta)\,e^{im\phi}.$$
 
@@ -157,7 +157,7 @@ No number is postulated. Every one is a boundary or regularity condition in disg
 
 2. **Degeneracy count.** For the 3D infinite square well of side $L$, list all $(n_x,n_y,n_z)$ triples at the second excited energy level (the third distinct energy value). What is the degeneracy, and what symmetry of the box causes it?
 
-3. **Where $m$ comes from.** Starting from $\Phi'' = -m^2\Phi$ with solution $\Phi = e^{im\phi}$, state the regularity condition that forces $m\in\mathbb{Z}$, and explain in one sentence why this argument fails for $\text{spin-}\tfrac{1}{2}$.
+3. **Where** $m$ **comes from.** Starting from $\Phi'' = -m^2\Phi$ with solution $\Phi = e^{im\phi}$, state the regularity condition that forces $m\in\mathbb{Z}$, and explain in one sentence why this argument fails for $\text{spin-}\tfrac{1}{2}$.
 
 ---
 

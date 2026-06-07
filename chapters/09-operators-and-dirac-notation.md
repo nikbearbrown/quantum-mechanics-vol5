@@ -79,7 +79,7 @@ In an orthonormal basis $\{|n\rangle\}$:
 
 $$\hat I = \sum_n |n\rangle\langle n|.$$
 
-Each term $|n\rangle\langle n|$ is the projector onto the $n$-th basis direction. **Inserting $\hat I$ in this form** is the standard technique for: extracting components ($\langle n|\psi\rangle = c_n$), changing basis (insert between two operators), deriving the Born rule ($P(a_n) = |\langle a_n|\psi\rangle|^2$), and computing matrix elements ($A_{mn} = \langle m|\hat A|n\rangle$).
+Each term $|n\rangle\langle n|$ is the projector onto the $n$-th basis direction. **Inserting** $\hat I$ **in this form** is the standard technique for: extracting components ($\langle n|\psi\rangle = c_n$), changing basis (insert between two operators), deriving the Born rule ($P(a_n) = |\langle a_n|\psi\rangle|^2$), and computing matrix elements ($A_{mn} = \langle m|\hat A|n\rangle$).
 
 ---
 

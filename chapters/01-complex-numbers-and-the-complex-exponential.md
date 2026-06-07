@@ -70,7 +70,7 @@ Result: $x_1 + x_2 = 5\cos(\omega t + 53.1°)$. We obtain the amplitude and phas
 
 ## In the Quantum Series
 
-**Vol. I, Ch. 3 — $\psi$ is intrinsically complex.** The Schrödinger equation carries an explicit $i$:
+**Vol. I, Ch. 3 —** $\psi$ **is intrinsically complex.** The Schrödinger equation carries an explicit $i$:
 
 $$i\hbar\frac{\partial\psi}{\partial t} = \hat H\psi.$$
 
@@ -104,13 +104,13 @@ Because the phases are $e^{\pm i\phi/2}$, a full $2\pi$ rotation gives $e^{\pm i
 
 **Physics vs. engineering time convention.** Physicists write $e^{-i\omega t}$ for a positive-frequency mode. Engineers often write $e^{+j\omega t}$. The QM series uses $e^{-i\omega t}$ throughout. A formula copied from an engineering source may have its phase conjugated — verify the sign before importing it.
 
-**$\psi$ is not the real part of anything.** In classical oscillation problems the standard procedure is: complexify, compute, take $\text{Re}(\cdot)$ at the end. In QM that final step does not exist. $\psi$ is genuinely complex; discarding $\text{Im}(\psi)$ loses physical information (interference, Berry phases, the Aharonov-Bohm effect).
+$\psi$ **is not the real part of anything.** In classical oscillation problems the standard procedure is: complexify, compute, take $\text{Re}(\cdot)$ at the end. In QM that final step does not exist. $\psi$ is genuinely complex; discarding $\text{Im}(\psi)$ loses physical information (interference, Berry phases, the Aharonov-Bohm effect).
 
 **Modulus squared, not modulus.** The probability density is $|\psi|^2$, not $|\psi|$. Normalization is $\int|\psi|^2\,dx = 1$.
 
 **Overall phase vs. relative phase.** The global phase of a state $e^{i\alpha}|\psi\rangle$ is unobservable: $|e^{i\alpha}\psi|^2 = |\psi|^2$. But the relative phase between two components of a superposition is observable and produces interference. Concluding "phase doesn't matter" from the former is exactly wrong for the latter.
 
-**Argument is defined modulo $2\pi$.** The argument of $e^{i\phi}$ is not unique. For spinors the $2\pi$ ambiguity is physically meaningful: $e^{i(\phi+2\pi)/2} = -e^{i\phi/2}$.
+**Argument is defined modulo** $2\pi$. The argument of $e^{i\phi}$ is not unique. For spinors the $2\pi$ ambiguity is physically meaningful: $e^{i(\phi+2\pi)/2} = -e^{i\phi/2}$.
 
 ---
 

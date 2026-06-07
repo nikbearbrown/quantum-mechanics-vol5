@@ -59,7 +59,7 @@ $$\frac{d}{dt}\!\left(\frac{\partial L}{\partial \dot q}\right) - \frac{\partial
 
 For a particle in one dimension: $L = \tfrac{1}{2}m\dot x^2 - V(x)$. Then $\partial L/\partial\dot x = m\dot x$, so $d(m\dot x)/dt = m\ddot x$, and $\partial L/\partial x = -dV/dx$. The equation reads $m\ddot x = -dV/dx = F$ — Newton's second law, recovered from a variational principle.
 
-**Why $L = T - V$?** It cannot be derived from within classical mechanics without circularity. It is justified by what it produces: it reproduces Newton's laws, as just demonstrated. The deep reason is Feynman's path integral (see below), where the classical path emerges as the stationary-phase limit of a sum over all paths with weight $e^{iS/\hbar}$. We assert the form, verify it gives Newton, and point onward.
+**Why** $L = T - V$? It cannot be derived from within classical mechanics without circularity. It is justified by what it produces: it reproduces Newton's laws, as just demonstrated. The deep reason is Feynman's path integral (see below), where the classical path emerges as the stationary-phase limit of a sum over all paths with weight $e^{iS/\hbar}$. We assert the form, verify it gives Newton, and point onward.
 
 ---
 
@@ -143,9 +143,9 @@ For paths far from the stationary point, the phase $S/\hbar$ varies rapidly and 
 
 **"Stationary," not "least."** The principle of stationary action is the correct statement. The true path may be a saddle point rather than a minimum, particularly for paths traversing caustics or in systems with conjugate points. The quantum variational method does give a genuine minimum ($\langle H\rangle \geq E_0$), but the underlying Euler–Lagrange machinery is about stationarity.
 
-**The boundary term vanishes because $\eta = 0$ at the endpoints.** This is the most commonly dropped step in derivations. In quantum mechanics, the analogous condition is that trial wavefunctions vanish at the boundary (or decay to zero at infinity for bound states). Without boundary conditions, the integration-by-parts argument fails and the Euler–Lagrange equation picks up extra surface terms.
+**The boundary term vanishes because** $\eta = 0$ **at the endpoints.** This is the most commonly dropped step in derivations. In quantum mechanics, the analogous condition is that trial wavefunctions vanish at the boundary (or decay to zero at infinity for bound states). Without boundary conditions, the integration-by-parts argument fails and the Euler–Lagrange equation picks up extra surface terms.
 
-**$L = T - V$ is not derived within classical mechanics; it is postulated.** It is justified by producing Newton's laws. The Feynman path integral is the honest explanation for why $T - V$ rather than $T + V$.
+$L = T - V$ **is not derived within classical mechanics; it is postulated.** It is justified by producing Newton's laws. The Feynman path integral is the honest explanation for why $T - V$ rather than $T + V$.
 
 **Canonical momentum vs. kinetic momentum.** $p = \partial L/\partial\dot q$ is the canonical momentum. In the presence of a magnetic vector potential $\mathbf{A}$, the Lagrangian includes an $\dot{\mathbf{r}}\cdot\mathbf{A}$ term, and the canonical momentum $p = m\dot q + q_\text{charge}A$ differs from the kinetic momentum $m\dot q$. In QM, $\hat p = -i\hbar\nabla$ is the canonical momentum. This distinction matters in III·3 when trial wavefunctions involve magnetic fields.
 

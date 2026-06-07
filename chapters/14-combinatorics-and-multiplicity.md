@@ -60,7 +60,7 @@ $$\boxed{\ln N! \approx N\ln N - N.}$$
 
 The refined form is $N!\approx\sqrt{2\pi N}(N/e)^N$, giving $\ln N!\approx N\ln N - N + \tfrac{1}{2}\ln(2\pi N)$.
 
-**Why dropping the $\tfrac{1}{2}\ln(2\pi N)$ term is valid at thermodynamic scale.** For $N = 10^{23}$: the kept term $N\ln N\approx5\times10^{24}$; the dropped term $\approx27$. The relative error is one part in $10^{23}$. No experiment could resolve it. For small $N$ — a 5-qubit code — the error matters; use the refined form or exact factorials.
+**Why dropping the** $\tfrac{1}{2}\ln(2\pi N)$ **term is valid at thermodynamic scale.** For $N = 10^{23}$: the kept term $N\ln N\approx5\times10^{24}$; the dropped term $\approx27$. The relative error is one part in $10^{23}$. No experiment could resolve it. For small $N$ — a 5-qubit code — the error matters; use the refined form or exact factorials.
 
 **Stirling applied to the binomial coefficient.** Using $\ln\Omega = \ln N! - \ln N_\uparrow! - \ln(N-N_\uparrow)!$ and applying the leading Stirling form to each factorial:
 
@@ -140,7 +140,7 @@ Below the threshold error rate $p_\text{th}$, this is exponentially suppressed b
 
 ## Worked Example: Counting Microstates for a Small System
 
-**A system has $N = 6$ distinguishable spins. How many microstates have exactly $N_\uparrow = 2$ spins up?**
+**A system has** $N = 6$ **distinguishable spins. How many microstates have exactly** $N_\uparrow = 2$ **spins up?**
 
 Order doesn't matter (which two are up, not which-first):
 
@@ -150,7 +150,7 @@ Total microstates: $2^6 = 64$. Fraction: $15/64 \approx 23.4\%$.
 
 The peak macrostate is $N_\uparrow = 3$: $\binom{6}{3} = 20$, giving $20/64\approx31.3\%$. The peak is not yet dominant at $N = 6$; at $N = 10^{23}$ it is a knife-edge.
 
-**Stirling check at small $N$.** Exact: $\ln15\approx2.71$. Stirling: $6\ln6 - 6 - (2\ln2 - 2) - (4\ln4 - 4)\approx3.81$. A 40% error. Stirling is inaccurate for small $N$ and becomes reliable only in the thermodynamic limit. Note which regime you are in before applying it.
+**Stirling check at small** $N$. Exact: $\ln15\approx2.71$. Stirling: $6\ln6 - 6 - (2\ln2 - 2) - (4\ln4 - 4)\approx3.81$. A 40% error. Stirling is inaccurate for small $N$ and becomes reliable only in the thermodynamic limit. Note which regime you are in before applying it.
 
 ---
 
@@ -184,7 +184,7 @@ The peak macrostate is $N_\uparrow = 3$: $\binom{6}{3} = 20$, giving $20/64\appr
 
 4. *Difficulty: Application — multiplicity and entropy.*
    A two-state paramagnet has $N = 100$ spins and total energy $E = -B\mu(N_\uparrow - N_\downarrow)\hbar$ where $B$ is the applied field. (a) Express $N_\uparrow$ in terms of $N$ and $E$. (b) Use the leading Stirling approximation to write $\ln\Omega(N,N_\uparrow)$ as a function of $N$ and $N_\uparrow$. (c) Show that $\ln\Omega$ is maximized at $N_\uparrow = N/2$ by taking $d(\ln\Omega)/dN_\uparrow = 0$. (d) Compute $S/k = \ln\Omega$ at the maximum and verify it equals $N\ln2$.
-   *Tests: connecting $\Omega$ to energy, differentiating to find the maximum, connecting to entropy.*
+   *Tests: connecting* $\Omega$ *to energy, differentiating to find the maximum, connecting to entropy.*
 
 5. *Difficulty: Application — Hamming bound for quantum codes.*
    A $[[7,1,3]]$ code encodes 1 logical qubit in 7 physical qubits and corrects all weight-1 errors ($t = 1$). (a) How many distinct weight-0 and weight-1 Pauli errors are there? Compute the total $\sum_{j=0}^1\binom{7}{j}3^j$. (b) The syndrome space has size $2^{7-1} = 64$. Does the Hamming bound hold? (c) Is the bound saturated? If not, how much slack is there? (d) What does non-saturation tell you about whether a code with these parameters is "optimal"?
@@ -202,7 +202,7 @@ The peak macrostate is $N_\uparrow = 3$: $\binom{6}{3} = 20$, giving $20/64\appr
 
 8. *Difficulty: Synthesis — entropy additivity and the Gibbs paradox.*
    Two systems $A$ and $B$ each have $N$ distinguishable particles with multiplicities $\Omega_A$ and $\Omega_B$. (a) Show that the combined multiplicity is $\Omega_{AB} = \Omega_A\Omega_B$ and hence $S_{AB} = S_A + S_B$ (entropy is extensive). (b) Now suppose the $N$ particles in each system are identical and indistinguishable. For a classical gas occupying the same volume $V$ at the same temperature: if you divide $\Omega$ by $N!$, show that the Sackur-Tetrode entropy is extensive. (c) If you forgot the $N!$ and mixed two identical gases at the same pressure and temperature, compute the apparent entropy of mixing and show it is nonzero — the Gibbs paradox. (d) Explain in one sentence why quantum mechanics resolves this paradox automatically.
-   *Tests: additivity of entropy from multiplicities; the Gibbs $N!$ factor; the Gibbs paradox and its quantum resolution.*
+   *Tests: additivity of entropy from multiplicities; the Gibbs* $N!$ *factor; the Gibbs paradox and its quantum resolution.*
 
 **Challenge**
 

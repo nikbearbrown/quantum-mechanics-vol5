@@ -175,7 +175,7 @@ The eigenvalues $p_n$ are the classical probabilities of the pure states $|\psi_
 
 2. *Difficulty: Warm-up — tests Hermitian vs. symmetric.*
    Which of the following matrices is Hermitian? For each, check $A^\dagger = A$ explicitly. (a) $\bigl[\begin{smallmatrix}2&i\\-i&3\end{smallmatrix}\bigr]$; (b) $\bigl[\begin{smallmatrix}2&i\\i&3\end{smallmatrix}\bigr]$; (c) $\bigl[\begin{smallmatrix}1&1+i\\1-i&2\end{smallmatrix}\bigr]$. For the Hermitian case(s), compute the eigenvalues and verify they are real.
-   *Tests: the Hermitian condition $A^\dagger = A$ vs. symmetry $A^T = A$; real eigenvalues as a consequence.*
+   *Tests: the Hermitian condition* $A^\dagger = A$ *vs. symmetry* $A^T = A$; *real eigenvalues as a consequence.*
 
 3. *Difficulty: Warm-up — tests orthogonality with the complex inner product.*
    Verify that $|\lambda{=}{+1}\rangle = \tfrac{1}{\sqrt{2}}\bigl(\begin{smallmatrix}-i\\1\end{smallmatrix}\bigr)$ and $|\lambda{=}{-1}\rangle = \tfrac{1}{\sqrt{2}}\bigl(\begin{smallmatrix}i\\1\end{smallmatrix}\bigr)$ (the $\sigma_y$ eigenvectors from the worked example) are orthogonal using the complex inner product $\langle u|v\rangle = \mathbf{u}^\dagger\mathbf{v}$. Then attempt the same computation using the real dot product $\mathbf{u}^T\mathbf{v}$. What do you get, and why does it differ?

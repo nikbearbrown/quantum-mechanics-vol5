@@ -167,13 +167,13 @@ Reading Born scattering through the Fourier lens converts an opaque integral int
 
 ## Conventions and Pitfalls
 
-**The $2\pi$ placement.** Three common conventions are in active use: $1/2\pi$ on the inverse only (standard math); $1/\sqrt{2\pi}$ on each side (quantum optics and signal processing); $1/\sqrt{2\pi\hbar}$ on each side with $p = \hbar k$ (Griffiths-style QM). State the convention explicitly and do not switch mid-calculation. Mixing conventions introduces factors of $2\pi$ or $\hbar$ that are difficult to trace.
+**The** $2\pi$ **placement.** Three common conventions are in active use: $1/2\pi$ on the inverse only (standard math); $1/\sqrt{2\pi}$ on each side (quantum optics and signal processing); $1/\sqrt{2\pi\hbar}$ on each side with $p = \hbar k$ (Griffiths-style QM). State the convention explicitly and do not switch mid-calculation. Mixing conventions introduces factors of $2\pi$ or $\hbar$ that are difficult to trace.
 
 **Sign of the exponent.** Physics convention: $e^{-ikx}$ in the forward transform. Engineering convention: $e^{+ikx}$. The sign affects the transform of $f'(x)$: under physics convention $\widetilde{f'} = ik\tilde f$; under engineering $\widetilde{f'} = -ik\tilde f$. This matters when computing momentum-space representations of derivatives.
 
 **The delta is defined by integration, not by a picture.** $\delta(x)$ is not a "very tall, very thin spike." It is defined by $\int\delta(x-x_0)f(x)\,dx = f(x_0)$. Multiplying two deltas together, or evaluating $\delta(x)$ at a point, are undefined operations.
 
-**Bandwidth $\neq$ Robertson for energy and time.** The energy–time uncertainty $\Delta E\,\Delta t \sim \hbar$ is the Fourier bandwidth relation applied to time and energy, with $E = \hbar\omega$. It is not Robertson's theorem applied to $\hat H$ and $\hat t$, because $\hat t$ is not a self-adjoint operator in standard quantum mechanics. The correct statement: a system that interacts for time $\Delta t$ cannot exchange energy more sharply than $\Delta E \sim \hbar/\Delta t$.
+**Bandwidth** $\neq$ **Robertson for energy and time.** The energy–time uncertainty $\Delta E\,\Delta t \sim \hbar$ is the Fourier bandwidth relation applied to time and energy, with $E = \hbar\omega$. It is not Robertson's theorem applied to $\hat H$ and $\hat t$, because $\hat t$ is not a self-adjoint operator in standard quantum mechanics. The correct statement: a system that interacts for time $\Delta t$ cannot exchange energy more sharply than $\Delta E \sim \hbar/\Delta t$.
 
 **Plancherel normalization factor.** In the asymmetric convention, $\int|f|^2\,dx = \frac{1}{2\pi}\int|\tilde f|^2\,dk$ — there is a $1/2\pi$ on the right. In the symmetric convention both integrals are equal. Checking normalization of $\tilde\psi(p)$ using the wrong convention gives an answer off by $2\pi\hbar$.
 

@@ -111,7 +111,7 @@ $$|{+x}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\end{pmatrix},\quad |{-x}\
 
 $$|{+y}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\i\end{pmatrix},\quad |{-y}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\-i\end{pmatrix} \quad(\sigma_y\text{ eigenstates, eigenvalues }+1,\,-1).$$
 
-**$\text{Spin-}\hat n$ component.** For any unit vector $\hat n = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$, the operator $\hat n\cdot\boldsymbol{\sigma}$ has eigenvalues $\pm 1$ and eigenstates:
+$\text{Spin-}\hat n$ **component.** For any unit vector $\hat n = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$, the operator $\hat n\cdot\boldsymbol{\sigma}$ has eigenvalues $\pm 1$ and eigenstates:
 
 $$|{+\hat n}\rangle = \begin{pmatrix}\cos(\theta/2) \\ e^{i\phi}\sin(\theta/2)\end{pmatrix}, \qquad |{-\hat n}\rangle = \begin{pmatrix}-e^{-i\phi}\sin(\theta/2) \\ \cos(\theta/2)\end{pmatrix}.$$
 
@@ -193,7 +193,7 @@ $$\langle{+x}|{-x}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1&1\end{pmatrix}\cd
 
 **Step 4 — QM interpretation.** $\sigma_x$ is a Hermitian observable. Its eigenvalues $\pm 1$ (equivalently $S_x = \pm\hbar/2$) are the only possible outcomes of an $x$-spin measurement. After measuring $S_x = +\hbar/2$, the state collapses to $|{+x}\rangle$, a superposition of $|{\uparrow}\rangle$ and $|{\downarrow}\rangle$ in equal proportions.
 
-**Step 5 — verify Hadamard diagonalizes $\sigma_x$.** Since $H|{+x}\rangle = |{\uparrow}\rangle$ and $H|{-x}\rangle = |{\downarrow}\rangle$, the Hadamard gate rotates between the $z$-eigenbasis and the $x$-eigenbasis. Verify by matrix multiplication: $H\,\sigma_x\,H^\dagger = \sigma_z$.
+**Step 5 — verify Hadamard diagonalizes** $\sigma_x$. Since $H|{+x}\rangle = |{\uparrow}\rangle$ and $H|{-x}\rangle = |{\downarrow}\rangle$, the Hadamard gate rotates between the $z$-eigenbasis and the $x$-eigenbasis. Verify by matrix multiplication: $H\,\sigma_x\,H^\dagger = \sigma_z$.
 
 ---
 
@@ -215,7 +215,7 @@ $$H\,(XH) = \frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}\frac{1}{\sqr
 
 ## Conventions and Pitfalls
 
-**$A^\dagger$ vs. $A^T$ vs. $A^*$.** These are three different operations. $A^\dagger = (A^*)^T$ — conjugate each entry AND transpose. Never write $A^*$ when you mean $A^\dagger$: getting the order of operations wrong gives the wrong matrix.
+$A^\dagger$ **vs.** $A^T$ **vs.** $A^*$. These are three different operations. $A^\dagger = (A^*)^T$ — conjugate each entry AND transpose. Never write $A^*$ when you mean $A^\dagger$: getting the order of operations wrong gives the wrong matrix.
 
 **Row vs. column vectors.** In QM, $|\psi\rangle$ is a column vector; $\langle\psi|$ is its Hermitian conjugate, a row vector. The inner product $\langle\phi|\psi\rangle$ is (row) times (column) = scalar. The outer product $|\psi\rangle\langle\phi|$ is (column) times (row) = matrix. Reversing these produces scalars where matrices are needed and vice versa.
 
@@ -231,7 +231,7 @@ $$H\,(XH) = \frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}\frac{1}{\sqr
 
 ## Quick Practice
 
-1. **Eigenvalues of $\sigma_z$.** Compute $\det(\sigma_z - \lambda I) = 0$ explicitly, find the eigenvalues, and verify $\operatorname{tr}(\sigma_z) = \lambda_1 + \lambda_2$ and $\det(\sigma_z) = \lambda_1\lambda_2$. Write the eigenvectors and confirm they are orthogonal.
+1. **Eigenvalues of** $\sigma_z$. Compute $\det(\sigma_z - \lambda I) = 0$ explicitly, find the eigenvalues, and verify $\operatorname{tr}(\sigma_z) = \lambda_1 + \lambda_2$ and $\det(\sigma_z) = \lambda_1\lambda_2$. Write the eigenvectors and confirm they are orthogonal.
 
 2. **Density matrix.** Compute $\rho = |{+x}\rangle\langle{+x}|$ for $|{+x}\rangle = (1,1)^T/\sqrt{2}$. Verify: (a) $\operatorname{tr}(\rho) = 1$, (b) $\rho^2 = \rho$ (pure state), (c) $\langle\sigma_x\rangle = \operatorname{tr}(\rho\sigma_x) = 1$.
 

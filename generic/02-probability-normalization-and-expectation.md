@@ -1,5 +1,5 @@
 # Module M-02 — Probability, Normalization, and Expectation Values
-*Understanding what $|\psi(x)|^2$ represents and how to work with it.*
+*Understanding what* $|\psi(x)|^2$ *represents and how to work with it.*
 
 The Born rule tells us that $|\psi(x,t)|^2$ is the probability density for finding a particle at position $x$. The key word here is "density." A density evaluated at a single point is not a probability — it is a density. The probability lives in the integral over a region.
 
