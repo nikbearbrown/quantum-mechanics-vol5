@@ -1,63 +1,94 @@
-# CAJAL Figure Report — Module M-17 — Units, Dimensions, and Estimation
+# CAJAL Figure Intelligence — 17-units-dimensions-and-estimation
 
-Recommended: 2 figures, Foundational density.
-
----
-
-## Figure 1 — Dimensional analysis procedure: pendulum and Bohr radius side by side
-
-**Heuristic:** MC — Mechanism/Process
-**Rank:** Critical
-
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK:**
-Draw a two-panel flowchart illustrating the Rayleigh dimensional-analysis procedure, applied once to the pendulum period and once to the Bohr radius, so the student sees the same method applied at classical and quantum scales. Left panel (pendulum): a three-row input column listing the candidate variables (length ℓ, gravitational acceleration g, bob mass m), each with its dimension written symbolically. An arrow feeds into a matrix-solve step represented as a horizontal dimension-equation block with three rows (M, L, T) showing which exponents must sum to match the target dimension T¹L⁰M⁰. The output at the bottom is the derived power law T_p ∝ √(ℓ/g), with mass struck through to show it drops out. Right panel (Bohr radius): the same three-row structure with ℏ, m_e, and the electromagnetic coupling e²/4πε₀, their dimensions listed symbolically. The same M-L-T matrix block, and the output a_0 ∝ ℏ²/(m_e · e²/4πε₀). Use consistent color coding across both panels: input-variable nodes in one color, the dimension-matching block in a second, and the output result in a third. Connect panels with a shared method arrow to emphasize the single procedure applied at two scales.
-
-**BLOCK 2 — FULL SCOPE:**
-
-`[S — SPECIFICATION]` Single-column 89 mm width, 300 DPI, SVG/EPS, white background. Two-panel layout, panels side by side of equal width, separated by a thin vertical rule, with a shared method label between them.
-
-`[C — CONTENT]` Left panel: three input nodes (ℓ, g, m) with dimension annotations → dimension-exponent matrix block (3 rows: M, L, T) → output node (T_p ∝ √(ℓ/g), mass crossed out). Right panel: three input nodes (ℏ, m_e, e²/4πε₀) with dimension annotations → same matrix block structure → output node (a_0 ∝ ℏ²/(m_e·coupling)). No numerical values in the image. No variable labels or text baked into vectors.
-
-`[O — ORGANIZATION]` Top-to-bottom flow within each panel: input column → arrow → matrix block → arrow → output. The matrix block is a rectangle divided into three horizontal rows, each row representing one base dimension (M, L, T). A shared horizontal double-headed arrow connecting the two matrix blocks indicates they use the same method. The crossed-out mass node in the left panel uses a diagonal strike mark.
-
-`[P — PRESENTATION]` Flat vector, Okabe-Ito palette, 1 pt strokes, white background, no baked text. Input-variable nodes: Sky Blue `#56B4E9`. Dimension-matrix block: Blue `#0072B2`. Output nodes: Bluish Green `#009E73`. Struck-out mass node: light gray with Vermillion `#D55E00` diagonal strike. Method-link arrow: Orange `#E69F00`. Background: white.
-
-`[E — EXCLUSIONS]` Omit: numerical values of any constants, SI unit symbols, Buckingham Π-theorem formal statement, significant figures, natural units. Do not depict the pendulum as a physical object or the hydrogen atom as an orbital diagram. Do not include any text baked into the image.
-
-**BLOCK 3 — NEGATIVE PROMPT:**
-Physical pendulum illustration, orbital atom diagram, Bohr orbit circles, numerical constant values, SI unit abbreviations baked in, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+**Source:** `books/quantum-mechanics-vol5/chapters/17-units-dimensions-and-estimation.md`
+**Scan mode:** /scan silent
+**Date:** 2026-06-06
 
 ---
 
-## Figure 2 — Quantum scales on a log axis: ℏ as action, a₀, λ_C, and classical-quantum crossover
+## Zones Detected
 
-**Heuristic:** PQ — Proportional/Quantitative
-**Rank:** Important
+| Concept | Heuristic | Notes |
+|---|---|---|
+| Hierarchy of atomic length scales: $a_0 \gg \lambda_C \gg r_e$ | VG | Chapter states the three lengths and their ratios but never draws them on a common scale |
+| Classical vs. quantum crossover comparison $k_BT$ vs. $\hbar\omega$ | PQ | Specific numerical comparisons given (macroscopic 1 kHz oscillator ratio $\approx 10^{-10}$; hydrogen at room temp ratio $\approx 540$) — never charted |
+| Bohr radius derivation: dimensional exponent system solves to give $a_0$ | MC | Three-equation linear system for exponents $\alpha$, $\beta$, $\gamma$ — a multi-step mechanism; diagram of which constants contribute which dimensions would ground it |
+| Constants table: key quantum constants in SI and natural units | VG | Chapter explicitly flags this as a reference table that should be built; no figures needed here but the table gap is noted |
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK:**
-Draw a single horizontal logarithmic axis spanning length scales from roughly 10⁻¹⁵ m (femtometer / Compton wavelength regime) to 10⁻⁹ m (nanometer / de Broglie wavelength regime). Place three labeled tick-mark positions on the axis: the Compton wavelength λ_C ≈ 3.9×10⁻¹³ m, the Bohr radius a₀ ≈ 5.3×10⁻¹¹ m, and the de Broglie wavelength of a 1 eV electron ≈ 1.2×10⁻⁹ m. Use distinct marker shapes or colored triangular markers above the axis for each. Below the axis, indicate two regime zones with colored bands: a left zone (λ < λ_C) labeled by color as the relativistic-QM / pair-production regime; a right zone (λ > a₀) labeled by color as the non-relativistic regime. Between λ_C and a₀ mark the non-relativistic QM window. Above the axis, show a secondary bar indicating the "classical fails" zone (scales ≤ a₀) compared to "classical adequate" (scales >> a₀ in macroscopic regime, off the right edge). The axis must start at its left boundary with no truncation visual artifact — the axis extends with a left arrow to indicate smaller scales continue.
+**Density recommendation: 2 figures, Foundational density.**
 
-**BLOCK 2 — FULL SCOPE:**
+---
 
-`[S — SPECIFICATION]` Single-column 89 mm width, 300 DPI, SVG/EPS, white background. Single horizontal log-scale axis, full width of the column, with colored regime bands below and marker triangles above.
+## Figure 1 — Hierarchy of Atomic Length Scales
 
-`[C — CONTENT]` Log axis: 10⁻¹⁵ m to 10⁻⁹ m, base-10 tick marks at each decade. Three markers: λ_C (Compton wavelength, ≈ 3.9×10⁻¹³ m), a₀ (Bohr radius, ≈ 5.3×10⁻¹¹ m), λ_dB (1 eV electron, ≈ 1.2×10⁻⁹ m). Regime bands below the axis: Vermillion `#D55E00` band (relativistic/QFT zone, left of λ_C), Blue `#0072B2` band (non-relativistic QM window, λ_C to a₀), Bluish Green `#009E73` band (atomic/molecular scale, a₀ to λ_dB). No numerical values baked into the image; positions only.
+**Rank: CRITICAL**
 
-`[O — ORGANIZATION]` The axis runs left to right with a left-extending arrow indicating continuation below the shown range. Decade tick marks are uniform height. Three colored triangular markers sit above the axis at their respective positions. Regime color bands are rectangles of equal height below the axis, separated by vertical dividers at λ_C and a₀. A secondary thin bar above the axis spans the atomic regime (λ_C to λ_dB) and is distinguished from the full axis bar by color.
+**Concept statement:** The three characteristic lengths of hydrogen — the Bohr radius $a_0 \approx 0.529$ Å, the Compton wavelength $\lambda_C \approx 3.86 \times 10^{-3}$ Å, and the classical electron radius $r_e \approx 2.8 \times 10^{-5}$ Å — differ by factors of $\alpha \approx 1/137$ from each other, so the scales are separated by roughly two orders of magnitude each.
 
-`[P — PRESENTATION]` Flat vector, Okabe-Ito palette, 1 pt strokes, white background, no baked text. Axis line: black. Compton marker triangle: Vermillion `#D55E00`. Bohr-radius marker triangle: Blue `#0072B2`. de Broglie marker triangle: Bluish Green `#009E73`. Regime band left: Vermillion `#D55E00` at 25% opacity. Regime band middle: Blue `#0072B2` at 25% opacity. Regime band right: Bluish Green `#009E73` at 25% opacity. Secondary bar: Orange `#E69F00`.
+---
 
-`[E — EXCLUSIONS]` Omit: energy-level diagram, atomic orbital pictures, momentum axis, natural-units conversion labels, SI unit abbreviations baked in, any numbers baked into the image. Do not show a y-axis. Do not depict any wave oscillations or sinusoidal curves on this figure — it is a scale diagram only.
+**Block 1 — Illustrae Paste Block**
 
-**BLOCK 3 — NEGATIVE PROMPT:**
-Energy-level diagram, orbital diagrams, momentum axis, wave oscillation curves, y-axis with probability density, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+Produce a single-column 89mm vector figure on a white background showing a horizontal logarithmic ruler spanning from $10^{-5}$ Å to $1$ Å. Draw the ruler as a thin horizontal bar (#000000, 1pt) with major decade tick marks at $10^{-5}$, $10^{-4}$, $10^{-3}$, $10^{-2}$, $10^{-1}$, and $10^{0}$ Å (tick marks are 6pt vertical lines above the bar). Place three vertical arrow indicators dropping from above the ruler to the correct positions: a tall arrow in #0072B2 (2pt) pointing down to $a_0 \approx 0.529$ Å (near the right end of the ruler); a medium arrow in #009E73 (2pt) pointing down to $\lambda_C \approx 3.86 \times 10^{-3}$ Å (near the center); a short arrow in #E69F00 (2pt) pointing down to $r_e \approx 2.8 \times 10^{-5}$ Å (near the left end). Each arrow has a filled circle (#000000, 3pt) at the tip where it meets the ruler bar. Between the $a_0$ and $\lambda_C$ arrows draw a horizontal double-ended bracket (#CC79A7, 1pt dashed) below the ruler spanning those two positions to indicate the ratio $a_0/\lambda_C \approx 137$; between $\lambda_C$ and $r_e$ draw a similar bracket in (#D55E00, 1pt dashed) for the ratio $\lambda_C/r_e \approx 137$. No text; unannotated.
+
+---
+
+**Block 2 — Full SCOPE Prompt**
+
+[S] Single-column 89mm, single horizontal log-ruler panel, vector, white background.
+
+[C] Log-scale ruler from $10^{-5}$ Å to $1$ Å. Three markers at the exact positions: $a_0 = 5.29 \times 10^{-1}$ Å, $\lambda_C = 3.86 \times 10^{-3}$ Å, $r_e = 2.8 \times 10^{-5}$ Å. Two equal-width brackets below the ruler indicating the ratio $\approx 137$ between adjacent scales. All three values and their ratios are explicitly stated in Chapter 17 (specifically Exercise 7 and the main text on the Bohr radius and Compton wavelength sections).
+
+[O] The log ruler makes the three orders-of-magnitude gaps directly legible as equal visual distances. The two brackets with equal span reinforce that the ratio is the same ($\approx \alpha^{-1} = 137$) between each pair. The three arrow colors identify the three physical scales without labels.
+
+[P] Flat vector. Okabe-Ito: #0072B2 for $a_0$ arrow; #009E73 for $\lambda_C$ arrow; #E69F00 for $r_e$ arrow; #CC79A7 dashed bracket for $a_0/\lambda_C$; #D55E00 dashed bracket for $\lambda_C/r_e$; #000000 for ruler bar, tick marks, and dot tips. 1–2pt strokes. Unannotated.
+
+[E] No text labels of any kind, no numerical tick-mark annotations, no atomic radius or nuclear radius markers (not in chapter), no angstrom unit labels, no fine-structure constant $\alpha$ annotation, no additional length scales not in the chapter (no nuclear radius, no Planck length).
+
+---
+
+**Block 3 — Negative Prompt**
+
+No nuclear radius or Planck length markers, no labels on tick marks, no numerical values on the figure, no second ruler for SI units, no atomic orbital diagrams, no wave-function plots alongside the ruler. text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
+
+---
+
+## Figure 2 — Classical vs. Quantum Crossover: $k_BT$ vs. $\hbar\omega$
+
+**Rank: IMPORTANT**
+
+**Concept statement:** Whether a physical oscillator behaves classically or quantum mechanically is determined by the single comparison $k_BT$ vs. $\hbar\omega$; the chapter gives specific numerical examples spanning from a 1 kHz macroscopic pendulum ($\hbar\omega / k_BT \approx 10^{-10}$ at 300 K) to atomic hydrogen ($\hbar\omega / k_BT \approx 540$ at 300 K).
+
+---
+
+**Block 1 — Illustrae Paste Block**
+
+Produce a single-column 89mm vector figure on a white background with a single horizontal axis representing the dimensionless ratio $\hbar\omega / k_BT$ on a logarithmic scale from $10^{-12}$ to $10^4$. Draw the axis as a horizontal line (#000000, 1pt) with major decade tick marks. To the left of a central threshold at ratio $= 1$ shade a wide horizontal band of low opacity (#E69F00, 10% opacity fill) indicating the classical regime ($\hbar\omega \ll k_BT$); to the right shade a band in (#0072B2, 10% opacity fill) indicating the quantum regime ($\hbar\omega \gg k_BT$). Mark the threshold with a thin vertical dashed line at ratio $= 1$ in #000000 at 0.5pt. Place three vertical arrow indicators pointing down to the axis: at $\approx 10^{-10}$ a filled circle with a downward arrow in #E69F00 (macroscopic 1 kHz pendulum); at $\approx 10^{-3}$ a filled circle with a downward arrow in #E69F00 (a 1 GHz microwave resonator, representing an intermediate scale); at $\approx 540$ (between $10^2$ and $10^3$) a filled circle with a downward arrow in #0072B2 (hydrogen electron at room temperature). Each circle is #000000 filled, 3pt radius; arrow shafts match the regime color. No text; unannotated.
+
+---
+
+**Block 2 — Full SCOPE Prompt**
+
+[S] Single-column 89mm, single horizontal log-axis panel, vector, white background.
+
+[C] Log axis from $10^{-12}$ to $10^4$. Classical regime shading left of ratio $= 1$; quantum regime shading right. Three markers at: $\hbar\omega / k_BT \approx 10^{-10}$ (1 kHz macroscopic oscillator at 300 K, explicitly calculated in the chapter), $10^{-3}$ (illustrative intermediate example — chosen to spread the scale; this value is consistent with the chapter's framework even if not explicitly named), and $\approx 540$ (hydrogen electron at room temperature, explicitly stated in the chapter). The threshold at ratio $= 1$ corresponds to the crossover temperature $T^* = \hbar\omega / 2k_B$ from Exercise 5.
+
+[O] The log axis spreads 16 decades so the contrast between the pendulum ($10^{-10}$) and the hydrogen atom ($\approx 10^3$) is graphically striking. The two shading regions make the classical/quantum interpretation of the axis position immediate. Arrow colors match the regime.
+
+[P] Flat vector. Okabe-Ito: #E69F00 10% fill for classical region; #0072B2 10% fill for quantum region; #000000 for axis, ticks, threshold dashes, and marker dots. Arrow shafts #E69F00 or #0072B2 matching regime. 1pt strokes. Unannotated.
+
+[E] No text labels, no tick-mark annotations, no specific physical system labels on markers, no third-system marker that is not grounded in the chapter's numerical examples (the intermediate point at $10^{-3}$ is schematic; the two endpoints are chapter-confirmed), no photon energy curves, no temperature-axis overlay.
+
+---
+
+**Block 3 — Negative Prompt**
+
+No Planck distribution curve, no temperature axis, no specific system labels, no energy-level diagrams, no second axis for system names, no values that would require information not in the chapter. text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
 ## Video Candidate Pass
 
-**Figure 1 — Dimensional analysis procedure: pendulum and Bohr radius side by side**
-VIDEO CANDIDATE. Criterion: ≥3 sequential causal stages. The dimensional-analysis procedure has three distinct sequential steps — write the candidate variables with their dimensions, set up and solve the exponent-matching system, read off the derived scaling law — and the student benefits from seeing each step appear in order rather than all at once. Animating the procedure through both worked examples (classical then quantum) with each step building on the last makes the universality of the method apparent. **Recommend as the single video for this module.**
+No video candidates identified. The length-scale hierarchy (Figure 1) is a static ordering relationship — the visual argument is spatial, not temporal. The classical-quantum crossover (Figure 2) is a comparison of two values on a fixed scale; the transition mechanism is a single threshold comparison, not a sequential causal process. Neither concept benefits from animation over the static figures described.
 
-**Figure 2 — Quantum scales on a log axis**
-STATIC SUFFICIENT. A static axis snapshot is the correct format for a scale-comparison diagram. There is no temporal or procedural sequence; the spatial arrangement of scales on a log axis is the complete message.
+**Total video candidates: 0.**

@@ -1,94 +1,107 @@
-# CAJAL Figure Report — Module M-01 — Complex Numbers and the Complex Exponential
+# CAJAL Figure Intelligence — 01-complex-numbers-and-the-complex-exponential
 
-Recommended: 3 figures, Mixed density.
-
----
-
-## Figure 1 — The Complex Plane: Cartesian and Polar Representations of z
-
-**Heuristic:** VG — Verification Gap
-**Rank:** Critical
-
-### BLOCK 1 — ILLUSTRAE PASTE BLOCK
-
-Draw a single Cartesian coordinate plane with the horizontal axis labeled as the real axis and the vertical axis as the imaginary axis. Place a single point z in the first quadrant, connected to the origin by a line of length r (the modulus). Draw a horizontal dashed projection from the origin to directly below z, and a vertical dashed projection from that foot up to z, forming a right triangle with legs a (real part) and b (imaginary part) and hypotenuse r. Mark the angle θ between the positive real axis and the line from origin to z. On the unit circle (a circle of radius 1 centered at the origin), place a second point showing e^(iθ) — where the same angle θ intercepts the unit circle — and draw short tick marks to indicate unit radius. Connect both points to the origin with solid lines. Indicate the conjugate z* as a reflected point below the real axis with a short dashed vertical line of length b below the axis.
-
-### BLOCK 2 — FULL SCOPE
-
-**[S — SPECIFICATION]** Single-column 89 mm width, 300 DPI, vector (SVG/EPS), white background.
-
-**[C — CONTENT]** Complex plane with: origin O; point z = a + bi at coordinates (a, b); modulus r = |z| as the length of the line from O to z; real component a as horizontal projection; imaginary component b as vertical projection; angle θ (argument) from positive real axis to the line Oz; unit circle (radius 1) with the point e^(iθ) on it at angle θ; conjugate z* = a − bi as the reflection of z across the real axis. The right triangle formed by a, b, r is explicit.
-
-**[O — ORGANIZATION]** Standard orientation: real axis horizontal, imaginary axis vertical, both labeled. z in the first quadrant (a > 0, b > 0). z* in the fourth quadrant, directly below z. The unit circle occupies the central region; its intersection with the line at angle θ marks e^(iθ). Dashed projections form the right triangle. The angle arc θ sits near the origin between the real axis and the Oz line.
-
-**[P — PRESENTATION]** Flat vector, Okabe-Ito palette with hex. Point z: Sky Blue `#56B4E9` filled circle. Modulus line r: Blue `#0072B2`, solid, 1 pt. Projection dashes for a and b: neutral light gray, 0.75 pt. Unit circle: Orange `#E69F00`, 1 pt, no fill. e^(iθ) point on unit circle: Bluish Green `#009E73` filled circle. z* point: Reddish Purple `#CC79A7` filled circle. Angle arc θ: Blue `#0072B2`, thin arc near origin. White background; no baked text.
-
-**[E — EXCLUSIONS]** Omit: multiplication of two complex numbers (separate concept); Euler's formula derivation; the i^n power cycle; any reference to QM wave functions; de Moivre's theorem; multiple example points.
-
-### BLOCK 3 — NEGATIVE PROMPT
-
-multiple example points, multiplication arrows, power cycle diagram, wave function overlay, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion
+**Source:** /Users/bear/Documents/CoWork/bear-textbooks/books/quantum-mechanics-vol5/chapters/01-complex-numbers-and-the-complex-exponential.md
+**Scan:** /scan silent
+**Date:** 2026-06-06
 
 ---
 
-## Figure 2 — Phasor Addition as Vector Sum in the Complex Plane
+## Zones Detected
 
-**Heuristic:** VG — Verification Gap
-**Rank:** Important
+| Concept | Zone | Rationale |
+|---|---|---|
+| Polar form, modulus, argument | VG | Complex-plane geometry (unit circle, radial vector, angle θ, conjugate reflection) asserted in prose only |
+| Euler's formula derivation | MC | 3-step mechanism: series substitution → power-of-i cycle → real/imaginary separation |
+| Complex exponential with decay | VG | Spiral inward trajectory in the complex plane claimed but never shown; envelope/oscillation coupling is structural |
+| Phasor addition (worked example) | VG + PQ | Geometric claim (vector addition = amplitude/phase) with specific values 3, 4, 5, 53.1° |
+| Stationary-state phasor rotation | MC | 3-stage causal chain: phasor rotates at E/ħ → modulus fixed at 1 → probability density time-independent |
+| Global vs. relative phase | VG | Structural distinction — overall phase unobservable, relative phase produces interference — geometric claim, no figure |
 
-### BLOCK 1 — ILLUSTRAE PASTE BLOCK
-
-Draw a Cartesian complex plane. Place two phasor arrows originating from the origin: the first along the positive real axis with length 3 (representing the complex amplitude Ã₁ = 3), and the second at 90° to the real axis (pointing straight up) with length 4 (representing Ã₂ = 4i). Show their vector sum Ã = 3 + 4i as a third arrow from the origin to the point (3, 4), with length 5. Use a dashed construction path: a horizontal segment of length 3 from the origin, then a vertical segment of length 4 upward, meeting at the tip of the resultant arrow — the standard parallelogram (here a rectangle) construction. Mark the angle φ ≈ 53° between the resultant arrow and the positive real axis with a small arc near the origin. Display the right triangle formed by the three lengths 3, 4, 5 explicitly inside the construction.
-
-### BLOCK 2 — FULL SCOPE
-
-**[S — SPECIFICATION]** Single-column 89 mm width, 300 DPI, vector (SVG/EPS), white background.
-
-**[C — CONTENT]** Complex plane showing the worked phasor addition from the module: Ã₁ = 3 (real axis), Ã₂ = 4i (imaginary axis), resultant Ã = 3 + 4i with modulus 5. The 3–4–5 right triangle formed by the Cartesian components. Angle φ between resultant and real axis, illustrating φ = arctan(4/3). Construction dashes showing the tip-to-tail or parallelogram method.
-
-**[O — ORGANIZATION]** Origin at lower-left of the plotting region (with small negative-axis stubs for context). Ã₁ arrow along the real axis (horizontal, pointing right). Ã₂ arrow along the imaginary axis (vertical, pointing up). Resultant Ã as a diagonal arrow to the upper-right. Dashed rectangle construction lines from tips of Ã₁ and Ã₂ meeting at the resultant tip. Angle arc φ near the origin between real axis and resultant. All three arrows originate at the origin.
-
-**[P — PRESENTATION]** Flat vector, Okabe-Ito palette. Ã₁ arrow: Sky Blue `#56B4E9`, solid, 1 pt, filled arrowhead. Ã₂ arrow: Orange `#E69F00`, solid, 1 pt, filled arrowhead. Resultant Ã arrow: Blue `#0072B2`, solid, 1.5 pt, filled arrowhead (visually dominant). Construction dashes: light gray, 0.75 pt, dashed. Angle arc φ: Bluish Green `#009E73`, thin. White background; no baked text.
-
-**[E — EXCLUSIONS]** Omit: sinusoidal waveforms showing the time-domain oscillations; the unit circle; the conjugate; any second example beyond the 3–4–5 case; reference to quantum wave functions or spin.
-
-### BLOCK 3 — NEGATIVE PROMPT
-
-sinusoidal waveforms, unit circle overlay, multiple example cases, quantum wave function annotation, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion
+**Density recommendation: 4 figures, Mixed density.**
 
 ---
 
-## Figure 3 — Decaying Oscillation from a Complex Exponent: The e^(rt) Envelope
+## Figure 1 — CRITICAL
 
-**Heuristic:** PQ — Proportional/Quantitative
-**Rank:** Important
+**Concept:** The complex plane gives z = a + bi both a Cartesian representation (components a, b) and a polar representation (modulus r, argument θ), with the complex conjugate z* as a reflection across the real axis.
 
-### BLOCK 1 — ILLUSTRAE PASTE BLOCK
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background. Place horizontal (Re) and vertical (Im) axes in #000000 at 0.5pt, extending −1.5 to +1.5 on both axes. Draw a full circle of radius 1.0 centered at origin in #0072B2 at 1pt stroke. Place a filled 3pt dot at coordinates (0.6, 0.8) in #009E73. Draw a solid line from origin to (0.6, 0.8) in #009E73 at 1pt. Draw a small arc from the positive real axis to that line, radius 0.25 units, in #E69F00 at 1pt. Draw a dashed vertical line from (0.6, 0.8) to (0.6, 0) in #000000 at 0.5pt. Draw a dashed horizontal line from (0.6, 0) to origin in #000000 at 0.5pt. Place a filled 3pt dot at (0.6, −0.8) in #D55E00. Draw a dashed vertical line from (0.6, 0.8) to (0.6, −0.8) in #CC79A7 at 0.5pt. No text; unannotated.
 
-Draw a single horizontal time axis with a vertical amplitude axis starting at zero. Plot a smooth oscillating curve that starts with a positive peak near t = 0 and decreases in amplitude over time — a damped sinusoid representing Re(e^(rt)) = e^(−γt) cos(ωt). Superimpose two smooth envelope curves: one decaying exponential bounding the peaks from above (e^(−γt)), and its mirror image below the axis (−e^(−γt)). The envelope curves touch the oscillating curve at its successive peaks and troughs. Use three visually distinct curves: the central oscillating curve and the two bounding envelopes. The vertical axis runs from a negative minimum to a positive maximum, with zero marked. The oscillating curve begins at amplitude 1 at t = 0 and decays toward zero as t increases. The envelope curves converge symmetrically to zero.
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide vector figure, white background, Okabe-Ito palette only, 1pt strokes main elements, 0.5pt dashed projections, 3pt filled dots.
+[C] Complex plane: real axis horizontal, imaginary axis vertical; point z at approximately (0.6, 0.8) in first quadrant; radial line r from origin to z; angle arc θ from positive real axis to radial line; unit circle; horizontal and vertical dashed projections forming a right triangle with components a and b; complex conjugate z* at (0.6, −0.8) in fourth quadrant; vertical dashed line connecting z to z* showing mirror reflection across real axis.
+[O] Origin centered; z in first quadrant; z* in fourth quadrant directly below; angle arc small and near origin; projection right-triangle visible; unit circle radius visually distinct from radial line to z.
+[P] Flat vector, Okabe-Ito hexes: unit circle #0072B2; z dot and radial line #009E73; θ arc #E69F00; projections #000000 dashed; z* dot #D55E00; conjugate connection #CC79A7 dashed; axes #000000; unannotated.
+[E] No labels, tick marks, or numbers on axes; no arrows on radial line; no labels r, θ, a, b, z, z*; no multiplication illustration; no Euler's formula derivation; no spiral or decay; no phase factors from QM; no second example point beyond z and z*.
 
-### BLOCK 2 — FULL SCOPE
+**Block 3 — Negative Prompt:**
+No axis tick labels, no coordinate numbers, no vector labels, no arrows on modulus line, no complex multiplication diagram; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
-**[S — SPECIFICATION]** Single-column 89 mm width, 300 DPI, vector (SVG/EPS), white background.
+---
 
-**[C — CONTENT]** Three curves illustrating e^(rt) with r = −γ + iω: (1) the real part Re(e^(rt)) = e^(−γt)cos(ωt) — the oscillating curve; (2) the upper decay envelope e^(−γt); (3) the lower decay envelope −e^(−γt). The vertical axis starts at a negative value (minimum envelope) and passes through zero; the horizontal axis is time t ≥ 0. The curves show that the decay envelope is set by the real part of r (γ), and the oscillation frequency is set by the imaginary part (ω).
+## Figure 2 — CRITICAL
 
-**[O — ORGANIZATION]** Horizontal time axis from 0 rightward (approximately 1.5–2 full oscillation cycles visible before the amplitude becomes negligibly small). Vertical amplitude axis: symmetric about zero, running from roughly −1 to +1 (normalized so the initial amplitude is 1). Oscillating curve: begins at (0, 1), crosses zero multiple times, each successive peak visibly lower. Envelope curves: upper starts at (0, 1) and decays smoothly; lower starts at (0, −1) and rises smoothly to meet at zero. The envelope curves meet the oscillating curve exactly at its extrema (tangent at peaks and troughs). Y-axis starts at the negative minimum, passes through zero which is marked.
+**Concept:** Phasor addition reduces the superposition of two oscillations of the same frequency to a single vector addition in the complex plane, yielding the resultant amplitude and phase from one right-triangle geometry.
 
-**[P — PRESENTATION]** Flat vector, Okabe-Ito palette. Oscillating curve: Blue `#0072B2`, solid, 1.5 pt. Upper decay envelope: Vermillion `#D55E00`, dashed, 1 pt. Lower decay envelope: Vermillion `#D55E00`, dashed, 1 pt. Zero axis line: light gray, 0.5 pt, solid. White background; no baked text. No filled regions or shading.
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background. Place horizontal and vertical axes in #000000 at 0.5pt, ranging −0.5 to +5 on horizontal and −0.5 to +5 on vertical. Draw a horizontal arrow from origin to (3, 0) in #56B4E9 at 1.5pt with filled arrowhead. Draw a vertical arrow from (3, 0) to (3, 4) in #E69F00 at 1.5pt with filled arrowhead. Draw a diagonal arrow from origin to (3, 4) in #0072B2 at 2pt with filled arrowhead. Draw dashed rectangle construction lines from (3, 0) horizontally and from (0, 4) vertically, meeting at (3, 4), in #000000 at 0.5pt dashed. Draw a small right-angle marker at (3, 0) in #000000 at 0.5pt. Draw a small arc at origin from the positive horizontal axis to the diagonal arrow in #009E73 at 1pt. No text; unannotated.
 
-**[E — EXCLUSIONS]** Omit: complex-plane trajectory of e^(rt) as a spiral; comparison with purely imaginary exponent (no decay); the imaginary part Im(e^(rt)); any reference to quantum stationary states, spin, or wave packets; multiple curves for different γ values.
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide vector figure, white background.
+[C] Complex plane vector addition from the worked example: first phasor of magnitude 3 along positive real axis; second phasor of magnitude 4 along positive imaginary axis placed tip-to-tail at head of first; resultant from origin to final head at (3, 4) of magnitude 5; right-angle marker at junction (3, 0); small arc at origin indicating resultant angle; dashed construction lines forming the rectangle.
+[O] Origin at lower-left region; all three arrows in first quadrant; resultant diagonal clearly longer than either component; arc visually distinct from arrowheads.
+[P] Flat vector, Okabe-Ito hexes: A₁ arrow #56B4E9; A₂ arrow #E69F00; resultant #0072B2 at 2pt (visually dominant); construction dashes #000000 0.5pt; angle arc #009E73; unannotated.
+[E] No magnitude or angle number labels; no unit circle; no decay envelope; no sinusoidal curves; no time axis; no complex conjugate point; no second worked example; no quantum wave function annotation.
 
-### BLOCK 3 — NEGATIVE PROMPT
+**Block 3 — Negative Prompt:**
+No length labels "3", "4", "5", no angle label, no axis tick numbers, no phasor name labels; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
-complex plane spiral trajectory, multiple decay-rate curves, imaginary part curve, quantum state annotations, filled shaded regions, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion
+---
+
+## Figure 3 — IMPORTANT
+
+**Concept:** A complex exponent with negative real part produces an inward spiral in the complex plane, encoding simultaneous exponential decay (shrinking radius) and oscillation (angle advancing with each revolution).
+
+**Block 1 — Illustrae Paste Block:**
+Draw on a full-width 120mm wide vector canvas with white background. Place horizontal (Re) and vertical (Im) axes in #000000 at 0.5pt, range −1.3 to +1.3 on both axes. Draw a dashed circle of radius 1.0 centered at origin in #E69F00 at 0.5pt. Draw an inward spiral starting at (1.0, 0) and winding counterclockwise for approximately 2.5 turns, each successive loop smaller than the previous, terminating near (0.15, 0.05), in #0072B2 at 1.5pt — representing the trajectory of e^(rt) with r = −γ + iω as t increases from 0. Place a filled 3pt dot at the starting point (1.0, 0) in #009E73. Place a filled 3pt dot at the terminal point near origin in #D55E00. No text; unannotated.
+
+**Block 2 — Full SCOPE Prompt:**
+[S] Full-width 120mm wide vector figure, white background.
+[C] Complex plane trajectory of e^(rt) for r = −γ + iω (γ > 0): a spiral starting on positive real axis at radius 1.0, winding counterclockwise, shrinking in radius each revolution, converging toward origin. Dashed reference circle at initial radius 1.0. Start point (t = 0) and end point (large t) marked as distinct filled dots.
+[O] Spiral centered at origin; clearly inward and converging; approximately 2–3 full visible turns; start on positive real axis; end dot near origin.
+[P] Flat vector, Okabe-Ito hexes: spiral #0072B2 1.5pt; reference circle #E69F00 dashed 0.5pt; start dot #009E73; end dot #D55E00; axes #000000 0.5pt; unannotated.
+[E] No time axis; no separate real-part or imaginary-part plots; no growing spiral; no labels for γ or ω values; no arrows along spiral path; no rectangular bounding box; no stationary-state phase rotation material.
+
+**Block 3 — Negative Prompt:**
+No arrows on spiral, no parameter labels, no turn-count annotations, no time labels; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
+
+---
+
+## Figure 4 — IMPORTANT
+
+**Concept:** A stationary-state phasor rotates at constant rate E/ħ on the unit circle while its modulus stays exactly 1, showing geometrically why the probability density |ψ|² is time-independent even though ψ itself evolves.
+
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background, divided into two equal panels side by side. Left panel: draw a unit circle in #0072B2 at 1pt with Re and Im axes in #000000 at 0.5pt. Draw three arrows from origin to the unit circle at angles approximately 15°, 75°, and 135°, all of identical length 1.0, in #009E73, #E69F00, and #D55E00 respectively, each at 1.5pt with small filled arrowheads. Draw a curved arc arrow along the circle from the first to the second arrow tip in #CC79A7 at 1pt indicating counterclockwise rotation direction. Right panel: draw a horizontal axis at y = 0 and a vertical axis from y = 0 to y = 1.5, both in #000000 at 0.5pt. Draw three horizontal bars of identical height 1.0 side by side, each filled solid in #009E73, #E69F00, and #D55E00 respectively, representing |ψ|² = constant for each phasor angle. No text; unannotated.
+
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide two-panel vector figure, white background.
+[C] Left panel: unit circle in complex plane; three phasor snapshot arrows at three different angles, all reaching the unit circle (radius 1); arc indicating counterclockwise rotation direction. Right panel: three equal-height bars each of height 1.0 corresponding to the three phasor positions, showing |ψ|² invariant across all rotation angles. Right panel vertical axis starts at zero.
+[O] Left and right panels same height; arrows in left panel equally spaced in angle; all three bars in right panel identical height; right-panel y-axis visibly starting at zero.
+[P] Flat vector, Okabe-Ito hexes; each phasor matched by color to its bar: #009E73, #E69F00, #D55E00; unit circle #0072B2; rotation arc #CC79A7; axes #000000; unannotated.
+[E] No time axis; no sinusoidal wave; no decay; no second eigenstate; no interference term; no labels E or ħ; no tick marks or numbers on axes; no rotating animation arrow (static only).
+
+**Block 3 — Negative Prompt:**
+No energy labels, no ħ symbols, no time values, no sinusoidal overlay, no axis tick numbers; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
 ## Video Candidate Pass
 
-**Figure 1 — Complex Plane (Cartesian and Polar):** STATIC SUFFICIENT. The diagram is a static geometric relationship between two representations of the same point; no transformation or causal sequence is the learning target.
+**VIDEO CANDIDATE — Figure 4 (stationary-state phasor rotation):** The learning target IS the rotation mechanism itself — a phasor spinning continuously on the unit circle while the modulus-squared projection stays constant. This is a transformation below direct observation (quantum phase is not measurable), and the invariance of |ψ|² under rotation only becomes viscerally convincing in motion. A 3–5 second loop showing the phasor sweeping the unit circle with a live bar readout of |ψ|² would resolve the most common student misconception that stationary states do not evolve.
 
-**Figure 2 — Phasor Addition:** STATIC SUFFICIENT. The construction is a single-step geometric argument (vector addition); the result is a fixed triangle. The static diagram captures the full content without a temporal sequence.
+**VIDEO CANDIDATE — Figure 3 (decaying spiral):** The inward spiral is a 3-stage causal sequence as t increases: (1) angle advances (oscillation), (2) radius shrinks (decay), (3) the two combine in a single complex exponential. An animation tracing the spiral as t advances from 0 would show the geometric inseparability of damping and oscillation.
 
-**Figure 3 — Decaying Oscillation Envelope:** VIDEO CANDIDATE. Criterion: transition mechanism is the learning target. The key concept is that a single complex exponent simultaneously encodes two phenomena — the oscillation frequency and the decay rate — that the student has previously encountered only as separate functions. An animation showing e^(rt) sweeping in the complex plane (a decaying spiral) while the Re and Im projections play out on horizontal time axes would make the two-in-one structure viscerally clear in a way a static curve cannot. **Recommend this as the one video for Module M-01.**
+**Count: 2 video candidates.**
+**Recommendation:** Prioritize Figure 4 — it carries the central QM payoff of this chapter (why stationary states have time-independent probability despite complex phase rotation). The Figure 3 animation is secondary and serves the classical motivation for complex exponents.

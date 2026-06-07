@@ -1,88 +1,86 @@
-# CAJAL Figure Report — Module M-07 — Vectors, Vector Spaces, and Inner Products
+# CAJAL Figure Intelligence — 07-vectors-vector-spaces-and-inner-products
 
-Recommended: 3 figures, Mixed density.
-
----
-
-## Figure 1 — From Arrows to Abstract Spaces: Three Realizations of a Vector Space
-
-**Heuristic:** VG — Verification Gap
-**Rank:** Critical
+**Source:** /Users/bear/Documents/CoWork/bear-textbooks/books/quantum-mechanics-vol5/chapters/07-vectors-vector-spaces-and-inner-products.md
+**Scan:** /scan silent
+**Date:** 2026-06-06
 
 ---
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK**
+## Zones Detected
 
-Draw three side-by-side vertical panels representing three distinct realizations of a vector space, connected by a horizontal progression arrow. In the first panel, render a 2D Cartesian grid with a single arrow from the origin showing a concrete 3D geometric vector decomposed along two labeled axes, with a right-angle bracket indicating its component projections onto each axis. In the second panel, show a column of stacked horizontal rectangles representing a column vector in C^n, with two vector columns side by side and a third illustrating their sum. In the third panel, render two smooth wave-like curves on a horizontal axis representing function-space elements, with a third curve beneath them showing their pointwise sum. Connect all three panels with a rightward arrow indicating the progression from concrete to abstract. A small arc bracket above all three panels signals that all three satisfy the same closure, identity, and inverse structure. Use flat vector rendering with uniform 1pt strokes, white background, and no baked text.
+| Concept | Zone | Rationale |
+|---|---|---|
+| From arrows to abstract vector spaces | VG | Structural claim: geometric arrows, column vectors in ℂⁿ, and L² functions all satisfy the same axioms — three realizations of one abstraction, no figure |
+| Inner product in ℂⁿ requires conjugate on first slot | VG | Geometric/structural claim — without the conjugate, ⟨ψ|ψ⟩ need not be real; algebraic pitfall with no visual grounding |
+| Gram–Schmidt orthonormalization | MC | 3-step mechanism: take vector → subtract projection onto prior basis → normalize → repeat; produces orthonormal set |
+| Resolution of the identity | VG | Structural claim: projectors |n⟩⟨n| tile the space; each projects onto one direction and the sum reconstructs any vector |
+| Born rule as projection | VG | P(aₙ) = |⟨aₙ|ψ⟩|² — squared inner product magnitude equals probability; geometric claim about projection length, no figure |
+| Cauchy–Schwarz inequality | VG | |⟨φ|ψ⟩|² ≤ ‖φ‖²‖ψ‖² — geometric claim about maximum inner product; proof via residual-vector positivity |
 
-**BLOCK 2 — FULL SCOPE**
-
-- `[S — SPECIFICATION]` Single-column 89mm width, 300 DPI, vector (SVG/EPS), white background. Three-panel horizontal layout.
-- `[C — CONTENT]` (1) Geometric arrow vector in R^2/R^3 with component projections onto orthogonal axes; (2) Column vectors in C^n with addition illustrated; (3) Square-integrable functions on R with pointwise addition. A bracketing element above all three signals shared vector-space structure (closure, zero element, additive inverse). The rightward progression arrow indicates increasing abstraction. No cross product; no divergence; no curl.
-- `[O — ORGANIZATION]` Three equally spaced vertical panels arranged left-to-right, sharing a common baseline. A single horizontal arrow below the panels indicates the direction of abstraction. A large arc or bracket above all three panels is the only structural connector. No panel has more than 4 visual entities.
-- `[P — PRESENTATION]` Flat vector, Okabe-Ito palette. Panel 1 arrow: Blue `#0072B2`. Panel 2 column-vector rectangles: Sky Blue `#56B4E9`. Panel 3 function curves: Bluish Green `#009E73` for first curve, Orange `#E69F00` for second, Reddish Purple `#CC79A7` for sum. Progression arrow: neutral light gray. Arc bracket: light gray. Uniform 1pt strokes, white background.
-- `[E — EXCLUSIONS]` Omit: cross product, dot product formula, inner product structure (that belongs in Figure 2), tensor products, coordinate labels or numbers, dual space, any function-space completeness or norm notation, Hilbert space label.
-
-**BLOCK 3 — NEGATIVE PROMPT**
-
-3D perspective, cross product arrow, inner product bracket, tensor product symbol, dual space arrow, norm notation, completeness symbols, coordinate grid numbers, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+**Density recommendation: 3 figures, Mixed density.**
 
 ---
 
-## Figure 2 — Gram–Schmidt Orthonormalization: Three-Step Mechanism
+## Figure 1 — CRITICAL
 
-**Heuristic:** MC — Mechanism/Process
-**Rank:** Critical
+**Concept:** Three structurally identical vector spaces — geometric arrows in ℝ², column vectors in ℂⁿ, and square-integrable functions on ℝ — all obey the same addition and scaling axioms, showing that the abstract vector space concept is satisfied by objects as different as arrows and wave functions.
 
----
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background in three side-by-side panels of equal width. Left panel: draw a 2D Cartesian mini-grid with two orthogonal axes in #000000 at 0.5pt; draw a single arrow from origin to approximately (0.7, 0.6) in #0072B2 at 1.5pt; draw dashed projections to both axes in #000000 at 0.5pt with right-angle brackets. Middle panel: draw two narrow vertical rectangles side by side representing column vector components, each with three stacked horizontal segments in #56B4E9 at 1pt; draw a small plus sign (a cross shape made of two short lines) between them in #000000; draw a third rectangle to the right in #56B4E9 representing their sum. Right panel: draw a horizontal axis in #000000 at 0.5pt; draw a smooth sinusoidal curve in #009E73 at 1pt; draw a second smooth sinusoidal curve of different frequency in #E69F00 at 1pt; draw a third smooth curve below them in #CC79A7 at 1pt representing their pointwise sum. Draw a thin horizontal bracket or arc above all three panels in #000000 at 0.5pt. No text; unannotated.
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK**
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide three-panel vector figure, white background.
+[C] Three realizations of vector spaces: (1) geometric arrow in ℝ² with component projections onto two orthogonal axes; (2) column vectors in ℂⁿ with addition shown as two columns plus a third sum column; (3) two smooth functions on ℝ with their pointwise sum shown as a third curve. A unifying bracket or arc above all three panels indicates shared vector-space structure.
+[O] Three panels equal width and height; left panel arrow in first quadrant with dashed projections; middle panel two narrow column-segment stacks with a plus between and sum column to right; right panel three curves on shared axis with top two being summands and bottom being sum; bracket spans all three panels.
+[P] Flat vector, Okabe-Ito hexes: geometric arrow #0072B2; column-vector rectangles #56B4E9; first function #009E73; second function #E69F00; sum function #CC79A7; projections and axes #000000; bracket #000000; unannotated.
+[E] No cross product; no dot product formula; no inner product; no tensor product; no Hilbert space label; no coordinate number labels; no dual space; no norm notation; no ℝ³ perspective; no function labels f, g.
 
-Draw a three-panel horizontal sequence illustrating the Gram–Schmidt orthonormalization process in a 2D vector space. In the first panel, place two non-orthogonal arrows from a common origin at an acute angle — the initial linearly independent but non-orthonormal pair. In the second panel, show the first arrow normalized to unit length (a dashed circle of unit radius centered at the origin confirms its length), and a second arrow at the same angle as before, but now also draw a dashed projection line dropped perpendicularly from the tip of the second arrow onto the first, plus a short orthogonal remainder arrow pointing away from the first direction. In the third panel, show two arrows from the same origin that are exactly perpendicular, both with a small right-angle square at their base, indicating the completed orthonormal pair. A leftward-to-rightward numbered sequence (1, 2, 3) marks the progression. Use flat vector rendering, uniform 1pt strokes, white background, and no baked text.
-
-**BLOCK 2 — FULL SCOPE**
-
-- `[S — SPECIFICATION]` Single-column 89mm width, 300 DPI, vector (SVG/EPS), white background. Three-panel horizontal layout with step numbers.
-- `[C — CONTENT]` Step 1: two non-orthonormal vectors u1, u2 from common origin. Step 2: u1 normalized to e1 (unit circle shown as dashed arc), projection of u2 onto e1 shown as a dashed component arrow, residual component shown as an arrow perpendicular to e1. Step 3: completed orthonormal pair e1 and e2, right-angle square at their junction. Sequential numbered markers 1, 2, 3 beneath each panel.
-- `[O — ORGANIZATION]` Left-to-right three-panel progression. Each panel is a small 2D coordinate system (no axis labels). Dashed lines used only for the unit circle and projection components. Step numbers (1, 2, 3) are the only numeric elements; they are rendered as simple geometric shapes (circled dots or indexed triangles) without embedded text.
-- `[P — PRESENTATION]` Flat vector, Okabe-Ito. First input vector: Blue `#0072B2`. Second input vector: Orange `#E69F00`. Normalized e1: Blue `#0072B2`. Projection dashed arrow: light gray. Residual arrow: Vermillion `#D55E00` (the "remainder" to subtract). Completed e2: Bluish Green `#009E73`. Right-angle square: Sky Blue `#56B4E9`. Unit-circle arc: light gray dashed. Uniform 1pt strokes.
-- `[E — EXCLUSIONS]` Omit: inner-product formula, coordinate axis labels, numeric vector components, complex vector notation, algebraic steps, the resolution of the identity, 3D vectors.
-
-**BLOCK 3 — NEGATIVE PROMPT**
-
-algebraic formula overlay, coordinate axis labels, complex number notation, inner product angle brackets in image, 3D arrows, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+**Block 3 — Negative Prompt:**
+No cross product arrows, no inner product angle brackets, no tensor product symbol, no coordinate axis numbers, no function name labels, no Hilbert space annotation, no 3D perspective on the arrow; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
-## Figure 3 — Resolution of the Identity: Projectors Tiling the Space
+## Figure 2 — CRITICAL
 
-**Heuristic:** VG — Verification Gap
-**Rank:** Important
+**Concept:** The Gram–Schmidt procedure converts any linearly independent set into an orthonormal one through a three-step mechanism: normalize the first vector, subtract the projection of each subsequent vector onto the already-orthonormalized ones, then normalize the residual.
+
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background in three side-by-side panels. Left panel (step 1): draw two non-orthogonal arrows from a common origin at approximately 30° apart in #0072B2 (longer) and #E69F00 (slightly shorter) at 1.5pt each, neither unit length. Middle panel (step 2): draw the first arrow now shortened to unit length in #0072B2 at 1.5pt with a dashed arc of radius 1.0 in #000000 at 0.5pt indicating unit length; draw the second arrow in #E69F00 at 1.5pt unchanged; draw a dashed projection line from the tip of the second arrow perpendicularly onto the first arrow direction in #000000 at 0.5pt with a right-angle mark; draw a short residual arrow perpendicular to the first arrow in #D55E00 at 1.5pt. Right panel (step 3): draw two arrows from the same origin exactly perpendicular to each other in #0072B2 and #009E73 at 1.5pt, both ending at the same radius, with a small right-angle square between them in #000000 at 0.5pt. No text; unannotated.
+
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide three-panel vector figure, white background.
+[C] Step 1 (left): two non-orthonormal vectors from shared origin — both at an acute angle, neither unit-length. Step 2 (middle): first vector normalized to unit length (unit-circle arc confirming length); second vector projected onto first with dashed perpendicular; residual arrow perpendicular to first. Step 3 (right): completed orthonormal pair — two arrows exactly perpendicular with right-angle square, both unit length.
+[O] Three panels same size; left panel two arrows at acute angle; middle panel unit arc, projection dash, and residual arrow all present; right panel only two arrows at 90° with square; visual progression from non-orthonormal to orthonormal readable left to right.
+[P] Flat vector, Okabe-Ito hexes: first vector #0072B2; second vector #E69F00; residual arrow #D55E00; completed orthonormal second #009E73; right-angle square #000000; unit arc #000000 dashed; projection dash #000000; unannotated.
+[E] No inner product formula; no coordinate axis labels; no complex vector components; no algebraic step annotations; no Gram–Schmidt formula; no 3D vectors; no resolution of the identity in this figure.
+
+**Block 3 — Negative Prompt:**
+No algebraic formula overlays, no inner product angle bracket symbols, no complex number notation, no axis label text, no 3D arrow perspective; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK**
+## Figure 3 — IMPORTANT
 
-Draw a single panel showing a 2D vector space with an orthonormal basis of two perpendicular unit arrows. A general state vector is shown as an arrow at an oblique angle from the origin. Two dashed perpendicular projection lines drop from the tip of the state vector onto each basis direction, landing at right-angle brackets, creating two component shadow arrows along the basis directions. Each shadow arrow is rendered as a filled arrow of a distinct color, and the two component arrows combine — shown by a parallelogram construction — to reconstruct the original state vector. A small enclosing rectangle or arc in the corner of the panel signals that the two projectors together cover the entire plane. Use flat vector rendering, uniform 1pt strokes, white background, and no baked text.
+**Concept:** The resolution of the identity asserts that an orthonormal basis tiles the space — each basis projector |n⟩⟨n| projects a state onto one direction, and the sum of all projections reconstructs the original vector exactly via the parallelogram law.
 
-**BLOCK 2 — FULL SCOPE**
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background. Draw two orthogonal unit arrows from the origin at 0° and 90° in #56B4E9 at 1.5pt with a small right-angle square between them in #000000 at 0.5pt. Draw a general state arrow from origin to approximately (0.6, 0.7) in #0072B2 at 1.5pt. Draw dashed perpendicular lines from the tip of the state arrow to the horizontal axis and to the vertical axis in #000000 at 0.5pt, each with a right-angle mark at the foot. Draw two component arrows along the horizontal axis from origin to (0.6, 0) in #009E73 at 1.5pt and along the vertical axis from origin to (0, 0.7) in #E69F00 at 1.5pt. Draw a parallelogram outline connecting the two component tips and the state vector tip in #000000 at 0.3pt dashed, showing the reconstruction of the state from its components. Fill the interior angle between the two basis vectors with very light gray fill at 5% opacity. No text; unannotated.
 
-- `[S — SPECIFICATION]` Single-column 89mm width, 300 DPI, vector (SVG/EPS), white background. Single panel.
-- `[C — CONTENT]` Two orthonormal basis vectors e1 and e2 from origin (right-angle marker between them). A general state vector psi from origin at oblique angle. Dashed projection lines from tip of psi perpendicular to e1 and e2, landing with right-angle brackets on each axis. Component arrows c1*e1 and c2*e2 along each axis. Parallelogram construction showing c1*e1 + c2*e2 = psi. A small shaded or outlined region in the corner indicating the plane is fully tiled by the two projectors. No more than 6 labeled visual elements total (basis arrows, state arrow, two component shadows, parallelogram).
-- `[O — ORGANIZATION]` Single 2D diagram. Basis vectors along horizontal and vertical, state vector diagonal. Dashed lines for projections only. Parallelogram completion uses light gray outline. The "tiling" indicator is a subtle shaded square or arc in the interior of the angle between the two basis vectors.
-- `[P — PRESENTATION]` Flat vector, Okabe-Ito. Basis arrows e1, e2: Sky Blue `#56B4E9`. State vector psi: Blue `#0072B2`. Component c1*e1: Bluish Green `#009E73`. Component c2*e2: Orange `#E69F00`. Projection dashes: light gray. Parallelogram outline: light gray. Tiling shading: very light gray fill, no border. Uniform 1pt strokes.
-- `[E — EXCLUSIONS]` Omit: summation formula, Dirac notation angle brackets, Born rule, probability interpretation, continuous resolution of the identity, Dirac delta, infinite-dimensional notation.
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide vector figure, white background.
+[C] Two orthonormal basis vectors along horizontal and vertical axes; right-angle square between them; a general state vector at oblique angle; dashed perpendicular projections from the state tip to each axis with right-angle marks; two component arrows along each basis direction; parallelogram construction showing the sum of components equals the state; very light fill in the first-quadrant plane region indicating space is tiled. Maximum 6 visual elements: two basis arrows, state arrow, two component arrows, parallelogram outline.
+[O] Basis vectors along x and y; state in first quadrant; component horizontal clearly shorter than full vector; component vertical clearly shorter than full vector; parallelogram closes at state tip; fill subtle.
+[P] Flat vector, Okabe-Ito hexes: basis arrows #56B4E9; state #0072B2; c₁e₁ component #009E73; c₂e₂ component #E69F00; right-angle square #000000; projections #000000 dashed; parallelogram #000000 dashed 0.3pt; fill light gray; unannotated.
+[E] No summation formula; no Dirac notation angle brackets; no Born rule probability annotation; no continuous resolution with Dirac delta; no Cauchy–Schwarz inequality diagram; no infinite-dimensional notation; no axis tick numbers.
 
-**BLOCK 3 — NEGATIVE PROMPT**
-
-summation formula overlay, Dirac notation symbols baked in, Born rule probability annotation, continuous basis or delta function symbols, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+**Block 3 — Negative Prompt:**
+No summation formula, no Dirac bra-ket notation, no Born rule labels, no Dirac delta spike, no infinite dimension annotations, no axis tick labels; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
 ## Video Candidate Pass
 
-**Figure 1 — From Arrows to Abstract Spaces:** STATIC SUFFICIENT. The three panels form a spatial comparison, not a temporal process. The reader scans left-to-right at their own pace; no transition mechanism is the learning target.
+**VIDEO CANDIDATE — Figure 2 (Gram–Schmidt orthonormalization):** The learning target is the sequential causal mechanism: take a vector → subtract its projection → normalize the residual → repeat. This is a 3-stage process where the intermediate state (non-orthonormal residual) exists only between steps and is not visible in any single frozen frame. Watching the acute-angle pair transform into a right-angle pair, with the projection and residual constructed dynamically, makes the algorithm's logic self-evident. The cyclic return (Step 1 → Step 2 → Step 3 with a clear start and end) further qualifies this as a strong video candidate.
 
-**Figure 2 — Gram–Schmidt Orthonormalization:** VIDEO CANDIDATE. Criterion: ≥3 sequential causal stages, and the transformation mechanism (subtract projection, normalize, repeat) is the learning target. Watching the residual arrow shrink and the right-angle emerge from a non-perpendicular pair conveys the causal sequence better than three frozen frames. **Recommended as the single video for this module.**
-
-**Figure 3 — Resolution of the Identity:** STATIC SUFFICIENT. The projection geometry is fully legible as a static parallelogram diagram. The concept (projectors tile the space) is spatial, not temporal.
+**Count: 1 video candidate.**
+**Recommendation:** Animate Figure 2 — start with two non-orthogonal arrows, animate the normalization of the first, draw the projection dynamically, then show the residual arrow pivoting to perpendicular and normalizing. A 4–6 second loop covering all three steps would replace the static three-panel diagram as the primary learning artifact.

@@ -1,88 +1,107 @@
-# CAJAL Figure Report — Module M-06 — The Fourier Transform
+# CAJAL Figure Intelligence — 06-the-fourier-transform
 
-Recommended: 3 figures, Mixed density.
-
----
-
-## Figure 1 — The Fourier series becomes the Fourier transform: discrete comb filling into a continuous spectrum
-
-**Heuristic:** MC | **Rank:** Critical
+**Source:** /Users/bear/Documents/CoWork/bear-textbooks/books/quantum-mechanics-vol5/chapters/06-the-fourier-transform.md
+**Scan:** /scan silent
+**Date:** 2026-06-06
 
 ---
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK**
+## Zones Detected
 
-Draw three horizontally aligned panels stacked vertically, sharing the same horizontal frequency axis. Top panel: a discrete comb of tall vertical spikes at evenly spaced positions, representing the Fourier series coefficients for a short period L — roughly eight spikes spread across the axis, all the same height for clarity. Middle panel: the same comb with twice as many spikes at half the spacing — the period has doubled, the density has increased. Bottom panel: a smooth continuous curve of the same general envelope shape — the Fourier transform — filling in where the spikes were, with the curve touching or nearly touching the spike tips visible as faint ghost marks. A downward progression arrow runs along the right side of all three panels. No text baked into the image.
+| Concept | Zone | Rationale |
+|---|---|---|
+| Fourier series → Fourier transform as L → ∞ | MC | 3-step mechanism: discrete comb at spacing 2π/L → spacing shrinks as L grows → sum becomes integral |
+| Gaussian wave packet: Δx·Δp trade-off | VG + PQ | Geometric/structural claim (narrow x ↔ wide p) with specific product Δx·Δp = ħ/2; no figure |
+| Convolution theorem | VG | Structural claim: real-space convolution ↔ frequency-domain multiplication; no visual grounding |
+| Born amplitude as Fourier transform of V | VG | Scattering amplitude = ṼV(q) — geometric claim about scattering geometry and transform connection |
+| Bandwidth relation and uncertainty principle | VG | Two routes (Fourier vs. Robertson) distinguished in prose only — structural claim needing geometric contrast |
+| Wave packet spreading in time | MC | 3-stage causal chain: narrow Δx → wide Δp → different speeds → packet broadens in time |
 
-**BLOCK 2 — FULL SCOPE**
-
-- `[S — SPECIFICATION]` Single-column, 89 mm width, 300 DPI, vector (SVG/EPS), white background. Three stacked panels of equal height sharing a common horizontal k-axis; a progression indicator on the right margin.
-- `[C — CONTENT]` Top panel: ~8 discrete spike marks at spacing Δk = 2π/L₁ (large spacing, small L); middle panel: ~16 spikes at Δk/2 (smaller spacing, larger L); bottom panel: smooth continuous spectral envelope curve, with the ghost comb marks at very low opacity to show the limiting relationship. Right-margin arrow indicating L increasing downward.
-- `[O — ORGANIZATION]` All three panels share the same horizontal frequency axis range; vertical axes are all amplitude, starting at zero. Spikes are uniform 1 pt strokes with no fill. Continuous curve in bottom panel is a smooth bell-shaped envelope (not a specific named function). Ghost marks are the same comb as the middle panel, drawn at ~15% opacity.
-- `[P — PRESENTATION]` Flat vector, Okabe-Ito: spike combs = Blue `#0072B2`; continuous transform curve = Orange `#E69F00`; ghost comb = Blue `#0072B2` at low opacity; progression arrow = Sky Blue `#56B4E9`. Uniform 1 pt strokes. White background. No baked text.
-- `[E — EXCLUSIONS]` Omit the time-domain function panels (only show the spectral side), the QM momentum-space convention, Plancherel normalization factors, the Dirac delta, convolution, any specific named function (Gaussian, sinc).
-
-**BLOCK 3 — NEGATIVE PROMPT**
-
-time-domain function panel, wavefunction curves, Gaussian labeled shape, sinc function label, Dirac delta spike, convolution diagram, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion
+**Density recommendation: 4 figures, Mixed density.**
 
 ---
 
-## Figure 2 — Gaussian wave packet: position and momentum widths trade off reciprocally
+## Figure 1 — CRITICAL
 
-**Heuristic:** PQ | **Rank:** Critical
+**Concept:** As the period L grows without bound, the Fourier series discrete frequency comb progressively fills in until in the limit L → ∞ it becomes the continuous Fourier transform spectrum.
 
----
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background in three vertically stacked panels of equal height, all sharing the same horizontal k-axis from −4 to +4 units. Top panel: draw a vertical amplitude axis from y = 0 upward in #000000 at 0.5pt; draw approximately 8 vertical spike lines of equal height in #0072B2 at 1pt, evenly spaced with spacing Δk_large, arranged symmetrically about k = 0, representing the Fourier series coefficients at period L₁. Middle panel: same axes; draw approximately 16 vertical spike lines in #0072B2 at 1pt, spaced at Δk_large/2, representing period 2L₁. Bottom panel: same axes; draw a smooth continuous bell-shaped envelope curve in #E69F00 at 1.5pt, representing the Fourier transform; draw ghost spike lines at the middle-panel spacing in #0072B2 at 0.3pt (very faint). Draw a single downward arrow along the right margin spanning all three panels in #56B4E9 at 1pt. No text; unannotated.
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK**
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide vector figure, three stacked equal-height panels sharing horizontal k-axis, white background.
+[C] Top panel: discrete spike comb with spacing Δk (large, ~8 spikes). Middle panel: denser comb with spacing Δk/2 (~16 spikes). Bottom panel: smooth continuous bell-shaped envelope (the Fourier transform limit), with faint ghost comb marks. All three panels share the same k-axis range. Vertical amplitude axes starting at zero on all panels. Right-margin downward progression arrow.
+[O] All three panels same width and horizontal axis range; spike heights roughly equal within each panel; envelope curve in bottom panel approximates the same shape as the spike envelope; ghost combs at very low opacity just visible; spacing visibly halved from top to middle.
+[P] Flat vector, Okabe-Ito hexes: spike combs #0072B2 1pt; envelope curve #E69F00 1.5pt; ghost combs #0072B2 0.3pt; progression arrow #56B4E9 1pt; axes #000000 0.5pt; unannotated.
+[E] No time-domain function panels; no QM momentum convention factor; no Plancherel normalization labels; no Dirac delta spike; no convolution diagram; no named function labels (Gaussian, sinc); no axis tick number labels.
 
-Draw a two-column comparison diagram, each column containing two vertically stacked panels. Left column, top panel: a narrow tall Gaussian curve in position space (small Δx). Left column, bottom panel: a wide low Gaussian curve in momentum space (large Δp). Right column, top panel: a wide low Gaussian curve in position space (large Δx). Right column, bottom panel: a narrow tall Gaussian curve in momentum space (small Δp). All four panels share the same axis conventions: horizontal axis is the conjugate variable (x top, p bottom), vertical axis is probability density starting at zero. Width markers — horizontal two-tick brackets spanning the half-maximum width — appear on each curve. The four widths satisfy: narrow position pairs with wide momentum and vice versa. No text baked into the image.
-
-**BLOCK 2 — FULL SCOPE**
-
-- `[S — SPECIFICATION]` Single-column, 89 mm width, 300 DPI, vector (SVG/EPS), white background. Two-by-two grid of panels: left column = narrow-x / wide-p case; right column = wide-x / narrow-p case; top row = position space; bottom row = momentum space.
-- `[C — CONTENT]` Four Gaussian curves: (top-left) narrow position-space Gaussian; (bottom-left) wide momentum-space Gaussian; (top-right) wide position-space Gaussian; (bottom-right) narrow momentum-space Gaussian. Width brackets on all four curves indicating Δx or Δp (no numerical values, only geometric width indicators). All y-axes start at zero. Curves in each column are paired by color to show they belong to the same state.
-- `[O — ORGANIZATION]` Grid layout with shared axis conventions within each row. Top row: x-axis = position; bottom row: x-axis = momentum. Vertical axis = probability density from zero. Pairs within a column share one color; the two columns use two distinct colors. Width brackets sit at half-maximum height of each curve.
-- `[P — PRESENTATION]` Flat vector, Okabe-Ito: left-column state (narrow x) = Sky Blue `#56B4E9`; right-column state (wide x) = Orange `#E69F00`; width bracket tick marks = dark gray; axis lines = dark gray. Uniform 1 pt strokes; curve lines 1.5 pt. y-axis from zero. White background. No baked text.
-- `[E — EXCLUSIONS]` Omit time-evolved spreading (fixed t=0 only), wave packet oscillations, complex phase factors, the momentum-operator derivation, Robertson commutator route, energy-time uncertainty, three-panel time sequence.
-
-**BLOCK 3 — NEGATIVE PROMPT**
-
-time-evolution spreading sequence, complex wavefunction real/imaginary panels, Robertson commutator diagram, energy-time diagram, operator algebra boxes, three-panel time sequence, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion
+**Block 3 — Negative Prompt:**
+No time-domain panels, no wavefunction labels, no named function annotations, no Dirac delta, no convolution arrows, no axis tick values; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
-## Figure 3 — Born scattering amplitude as the Fourier transform of the potential at momentum transfer q
+## Figure 2 — CRITICAL
 
-**Heuristic:** VG | **Rank:** Important
+**Concept:** For a Gaussian wave packet, position-space width Δx and momentum-space width Δp are reciprocally related — narrowing one forces widening the other — with the Gaussian being the unique state achieving the minimum product Δx·Δp = ħ/2.
+
+**Block 1 — Illustrae Paste Block:**
+Draw on a full-width 120mm wide vector canvas with white background in a 2×2 grid of panels. Top-left: draw horizontal axis (position x) and vertical axis from y = 0 upward in #000000 at 0.5pt; draw a narrow, tall Gaussian bell curve in #56B4E9 at 1.5pt. Top-right: same axes; draw a wide, low Gaussian curve in #E69F00 at 1.5pt. Bottom-left: draw horizontal axis (momentum p) and vertical axis from y = 0 upward in #000000 at 0.5pt; draw a wide, low Gaussian curve in #56B4E9 at 1.5pt, with width matched reciprocally to the top-left. Bottom-right: same axes; draw a narrow, tall Gaussian curve in #E69F00 at 1.5pt, reciprocal to the top-right. Draw small horizontal bracket markers at half-maximum height on all four curves in #000000 at 0.5pt to indicate widths. No text; unannotated.
+
+**Block 2 — Full SCOPE Prompt:**
+[S] Full-width 120mm wide 2×2 grid of panels, white background.
+[C] Four Gaussian probability density curves: top-left narrow in x (small Δx, state A); bottom-left wide in p (large Δp, same state A); top-right wide in x (large Δx, state B); bottom-right narrow in p (small Δp, same state B). Width brackets at half-maximum on all four. All four y-axes starting at zero. Color pairing: state A = #56B4E9 (top-left and bottom-left); state B = #E69F00 (top-right and bottom-right). The visual message: narrow top pairs with wide bottom within each column.
+[O] 2×2 grid; top row = position space; bottom row = momentum space; left column = localized-in-x state; right column = delocalized-in-x state; width contrast between top-left (narrow) and top-right (wide) clearly visible; same contrast inverted in bottom row.
+[P] Flat vector, Okabe-Ito hexes: state A #56B4E9 1.5pt; state B #E69F00 1.5pt; width brackets #000000 0.5pt; axes #000000 0.5pt; unannotated.
+[E] No time evolution; no complex phase factors; no Robertson commutator diagram; no energy-time uncertainty; no sinusoidal oscillation inside the packet; no axis tick numbers; no Δx·Δp product annotation.
+
+**Block 3 — Negative Prompt:**
+No axis tick values, no Greek letter labels, no width annotations "Δx" or "Δp", no time-evolution panels, no complex wavefunction panels, no commutator diagram; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK**
+## Figure 3 — IMPORTANT
 
-Draw a two-panel figure. Left panel: a scattering geometry diagram — two arrows representing the incident and scattered wave vectors entering and leaving a central region, with a curved arc between their tips indicating the momentum transfer vector q = k_i − k_f, and the scattering angle θ marked between the two arrows. Inside the central region, represent the potential as a shaded circle. Right panel: a polar or Cartesian plot of the differential cross-section as a function of scattering angle — a smooth curve starting high at small angles (forward scattering) and falling off toward larger angles, with a single broad dip (for a smooth finite-range potential). The y-axis starts at zero. No text baked into the image.
+**Concept:** Wave packet spreading in time is a consequence of the Fourier bandwidth relation: a narrow initial Δx requires broad Δp, different momentum components travel at different speeds, and the packet broadens as t increases.
 
-**BLOCK 2 — FULL SCOPE**
+**Block 1 — Illustrae Paste Block:**
+Draw on a full-width 120mm wide vector canvas with white background in three horizontally arranged panels at t₁ < t₂ < t₃. Left panel: draw a horizontal x-axis in #000000 at 0.5pt and vertical axis from y = 0 upward; draw a narrow tall Gaussian curve in #0072B2 at 1.5pt centered at x₀ with a horizontal width bracket. Middle panel: draw same axes; draw a moderately wider and shorter Gaussian in #0072B2 at 1.5pt centered slightly right of x₀; same bracket wider. Right panel: draw same axes; draw a broad flat Gaussian in #0072B2 at 1.5pt centered further right; bracket correspondingly widest. Mark the center position of each Gaussian with a filled 3pt dot in #009E73 at the same horizontal position; connect the three dots with a dashed horizontal guide in #009E73 at 0.5pt to indicate that the center travels at constant speed while the shape broadens. All y-axes start at zero and scaled so all three curves have equal area. No text; unannotated.
 
-- `[S — SPECIFICATION]` Single-column, 89 mm width, 300 DPI, vector (SVG/EPS), white background. Two side-by-side panels; left ~45% of width (geometry diagram), right ~55% (cross-section curve).
-- `[C — CONTENT]` Left panel: incident wave vector arrow, scattered wave vector arrow, scattering center (shaded circle representing finite-range potential), curved arc connecting vector tips to indicate momentum transfer q, angle mark θ between vectors. Right panel: differential cross-section curve vs. scattering angle (0 to π), y-axis from zero; smooth monotonically decreasing curve with one suppressed dip — consistent with a smooth finite-range potential's Fourier transform. The connection between the two panels is indicated by a light gray arrow from the scattering geometry to the curve (inferred: cross-section is determined by the Fourier transform of the potential evaluated at q — label this as inferred with a dashed arrow).
-- `[O — ORGANIZATION]` Left panel: vector arrows radiate from center; arc bridges the tip of k_i to tip of k_f; angle mark at the scattering center. Right panel: horizontal axis = scattering angle (0 to π); vertical axis = cross-section from zero; curve from high forward peak to low back-angle values. Dashed inferred arrow connects the two panels.
-- `[P — PRESENTATION]` Flat vector, Okabe-Ito: incident vector = Blue `#0072B2`; scattered vector = Bluish Green `#009E73`; momentum transfer arc = Orange `#E69F00`; potential circle = Sky Blue `#56B4E9` fill at 30% opacity; cross-section curve = Blue `#0072B2`; inferred connection arrow = light gray dashed. Uniform 1 pt strokes; vector arrows 1.5 pt. White background. No baked text.
-- `[E — EXCLUSIONS]` Omit the 3D angular spherical plot, Yukawa potential profile in real space, multiple-potential comparison curves, Rutherford singularity (1/sin⁴ divergence at θ=0), convolution theorem derivation diagram, nuclear diffraction dip labeling.
+**Block 2 — Full SCOPE Prompt:**
+[S] Full-width 120mm wide three-panel figure, white background.
+[C] Three snapshots of a Gaussian wave packet at three successive times: t₁ (narrow, tall), t₂ (intermediate width), t₃ (broad, flat). The center of each Gaussian moves to the right at a constant group velocity. All three Gaussians have the same area (normalization preserved). Width bracket on each showing broadening. Center-position dots connected by a dashed guide line showing constant-speed center motion.
+[O] Left-to-right time progression; each successive Gaussian noticeably wider and shorter than the previous; center position advances to the right at uniform rate; all y-axes starting at zero; curves same color to indicate same state at different times.
+[P] Flat vector, Okabe-Ito hexes: Gaussian curves #0072B2 1.5pt; center dots #009E73 3pt; center guide #009E73 dashed 0.5pt; width brackets #000000 0.5pt; axes #000000 0.5pt; unannotated.
+[E] No complex phase oscillations inside packets; no separate plots of Δp; no Robertson commutator; no energy-time diagram; no axis tick values; no multiple-component decomposition; no dispersion relation curve.
 
-**BLOCK 3 — NEGATIVE PROMPT**
+**Block 3 — Negative Prompt:**
+No axis tick labels, no time labels "t₁ t₂ t₃", no Δx annotations, no phase oscillations, no dispersion relation overlay, no decomposition into k-components; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
-spherical polar plot in 3D, Yukawa potential real-space curve, Rutherford 1/sin4 divergence spike, nuclear diffraction labeled dips, multiple stacked cross-section curves, convolution diagram, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion
+---
+
+## Figure 4 — SUPPLEMENTARY
+
+**Concept:** In Born scattering, the differential cross-section is the squared Fourier transform of the potential evaluated at the momentum transfer q = 2k·sin(θ/2), so forward scattering (small q) probes the spatial integral of V while large-angle scattering (large q) probes its fine structure.
+
+**Block 1 — Illustrae Paste Block:**
+Draw on a single-column 89mm wide vector canvas with white background in two side-by-side panels. Left panel (45% width): draw two arrows from a central filled circle in #000000 3pt: one arrow entering from upper-left in #0072B2 at 1.5pt (incident k_i), one arrow exiting to lower-right in #009E73 at 1.5pt (scattered k_f); draw a curved arc in #E69F00 at 1pt from tip of k_i to tip of k_f indicating momentum transfer q; draw a small angle arc in #000000 at 0.5pt between the two arrows near the center indicating scattering angle θ; fill the central circle with #56B4E9 at 30% opacity representing the potential region. Right panel (55% width): draw a horizontal axis from 0 to π in #000000 at 0.5pt and vertical axis from y = 0 upward; draw a smooth monotonically decreasing curve in #0072B2 at 1.5pt starting high at 0 and falling toward zero at π, with a gentle inflection representing a typical Yukawa-type cross-section. No text; unannotated.
+
+**Block 2 — Full SCOPE Prompt:**
+[S] Single-column 89mm wide two-panel vector figure, white background.
+[C] Left panel: scattering geometry — incident wave vector, scattered wave vector, potential region as shaded circle, momentum transfer arc q between vector tips, scattering angle arc θ. Right panel: differential cross-section curve dσ/dΩ vs. scattering angle from 0 to π, y-axis from zero, smooth decreasing curve typical of a finite-range screened potential (forward-peaked, falls off at large angles).
+[O] Left panel vectors radiate from center; arc connects tips of k_i and k_f; angle arc at central point. Right panel curve starts high at θ = 0 and falls monotonically; y-axis from zero; no divergence at small angles shown.
+[P] Flat vector, Okabe-Ito hexes: incident k_i arrow #0072B2; scattered k_f arrow #009E73; momentum transfer arc #E69F00; angle arc #000000; potential circle #56B4E9 30% fill; cross-section curve #0072B2; axes #000000; unannotated.
+[E] No 3D spherical polar plot; no Yukawa potential real-space profile; no Rutherford 1/sin⁴ divergence spike; no nuclear diffraction dip labeling; no multiple potential comparison curves; no convolution diagram; no axis tick numbers.
+
+**Block 3 — Negative Prompt:**
+No spherical 3D polar plot, no Yukawa real-space curve, no 1/sin⁴ divergence, no nuclear diffraction labels, no multiple cross-section curves stacked, no convolution arrows; text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
 ## Video Candidate Pass
 
-**Figure 1 — Discrete comb filling into continuous transform**
-VIDEO CANDIDATE. Criterion: transition mechanism is the learning target. The central conceptual move of the module — the Fourier series continuously becoming the Fourier transform as L → ∞ — is a limiting process whose dynamism a three-panel static figure can only gesture at. An animation showing the comb progressively densifying until it smoothly merges into the continuous curve would make the limit concrete and memorable. Recommend this as the one video for the module.
+**VIDEO CANDIDATE — Figure 1 (Fourier series → Fourier transform limit):** The learning target IS the limiting transition mechanism — the comb densifying continuously as L → ∞. This is a 3-stage causal sequence (L grows → Δk shrinks → sum becomes integral) and the limiting process is below direct observation. An animation showing L growing continuously while the comb fills in and smoothly converges to the envelope curve would make the mathematical limit physically intuitive.
 
-**Figure 2 — Gaussian position-momentum trade-off**
-STATIC SUFFICIENT. The reciprocal-width relationship is a simultaneous structural comparison between two fixed states; the two-by-two static grid makes the trade-off legible without requiring animation.
+**VIDEO CANDIDATE — Figure 3 (wave packet spreading):** The spreading mechanism has 3+ sequential causal stages: narrow Δx at t = 0 → broad Δp → different speeds for different k → packet broadens as t increases. The time evolution is the concept, and the cyclic contrast between narrow (t = 0) and broad (large t) has a before-after structure that animation makes visceral.
 
-**Figure 3 — Born scattering geometry and cross-section**
-STATIC SUFFICIENT. The relationship between scattering geometry (q as a function of θ) and the cross-section curve is a spatial correspondence readable from a side-by-side static figure; no sequential causal staging is needed.
+**Count: 2 video candidates.**
+**Recommendation:** Prioritize Figure 1 (comb → transform) as it carries the foundational conceptual move of the entire module. Figure 3 (spreading) is secondary but useful as a companion animation to the wave packet discussion in Vol. I Ch. 8.

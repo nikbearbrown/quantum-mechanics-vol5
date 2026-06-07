@@ -1,91 +1,131 @@
-# CAJAL Figure Report — Module M-18 — Trigonometry, Waves, and the Harmonic Model
+# CAJAL Figure Intelligence — 18-trigonometry-waves-and-the-harmonic-model
 
-Recommended: 3 figures, Mixed density.
-
----
-
-## Figure 1 — The sinusoidal traveling wave: anatomy of one full cycle
-
-**Heuristic:** VG — Verification Gap
-**Rank:** Critical
-
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK:**
-Draw a single sinusoidal wave plotted on a horizontal spatial axis (x-axis) showing exactly one full wavelength plus a half-wavelength on either side. Annotate the wave's anatomy with bracket-and-arrow callouts: a horizontal double-bracket spanning one full period to indicate wavelength λ; a vertical double-bracket from the axis to the crest to indicate amplitude A; a filled circle at a particular phase point to indicate the phase offset φ position; and a small horizontal arrow pointing in the direction of wave travel (+x direction). Above the wave plot, add a second thin horizontal axis with a dotted vertical projection line connecting a point on the wave cycle to a corresponding point on the unit circle, showing how the cosine function maps the unit-circle angle to the wave height. Separately, in a compact inset to the right, show the complex exponential form as a rotating phasor — a circle with a rotating arrow at angle (kx − ωt), with the real part projecting horizontally (cosine component) and imaginary part projecting vertically (sine component), making the Euler formula geometry visible. Do not annotate with any text in the image.
-
-**BLOCK 2 — FULL SCOPE:**
-
-`[S — SPECIFICATION]` Single-column 89 mm width, 300 DPI, SVG/EPS, white background. Two sub-panels stacked vertically: main wave plot (approx. 2/3 height) and a right-side phasor inset (approx. 1/3 width of the main panel, same height as main panel).
-
-`[C — CONTENT]` Main panel: sinusoidal wave with amplitude A (crest-to-axis), wavelength λ (full cycle bracket), direction arrow (+x), and phase point marker. Unit-circle projection strip above the x-axis showing one unit circle linked to the wave by a dotted vertical. Phasor inset: a circle of unit radius, a rotating arm at a representative angle, horizontal projection (real/cosine), vertical projection (imaginary/sine), both projections marked with short tick marks.
-
-`[O — ORGANIZATION]` Main panel axis: horizontal (x) with the wave displayed over approximately 2.5 wavelengths. Amplitude bracket on the left side, wavelength bracket below the axis. Direction arrow on the crest. Unit circle positioned above the wave at one specific x point, with a dotted projection line. Phasor inset: compact circle diagram in the upper right corner of the figure, separated by a thin border.
-
-`[P — PRESENTATION]` Flat vector, Okabe-Ito palette, 1 pt strokes, white background, no baked text. Wave curve: Blue `#0072B2`, 2 pt stroke. Amplitude bracket: Bluish Green `#009E73`. Wavelength bracket: Orange `#E69F00`. Phase marker dot: Reddish Purple `#CC79A7`. Direction arrow: Sky Blue `#56B4E9`. Unit circle and projection lines: neutral gray. Phasor arm: Blue `#0072B2`. Real projection: Bluish Green `#009E73`. Imaginary projection: Vermillion `#D55E00`. Axes: black, 1 pt.
-
-`[E — EXCLUSIONS]` Omit: time-axis plot, probability density, group velocity envelope, two-wave superposition. Do not depict standing waves. Do not show wave packets or dispersion. Do not include any text labels, unit symbols, or numerical values baked into the image.
-
-**BLOCK 3 — NEGATIVE PROMPT:**
-Standing wave, wave packet envelope, two-wave superposition, time-axis, probability density curve, dispersion curve, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+**Source:** `books/quantum-mechanics-vol5/chapters/18-trigonometry-waves-and-the-harmonic-model.md`
+**Scan mode:** /scan silent
+**Date:** 2026-06-06
 
 ---
 
-## Figure 2 — Superposition and interference: constructive, destructive, and partial
+## Zones Detected
 
-**Heuristic:** PQ — Proportional/Quantitative
-**Rank:** Critical
+| Concept | Heuristic | Notes |
+|---|---|---|
+| Superposition of two waves with phase difference $\delta$: amplitude $2A|\cos(\delta/2)|$ | VG | Prose derives the amplitude formula but never draws the constructive/destructive result geometrically |
+| Phase velocity $v_\text{ph} = v/2$ vs. group velocity $v_g = v$ for de Broglie matter waves | VG | The distinction between a fast phase pattern and a slow wave-packet envelope is stated algebraically; the two-velocity geometry is never drawn |
+| Double-slit interference fringe pattern $I(\theta) = 4A^2\cos^2(\delta/2)$ | PQ | Specific intensity formula with quantitative $\cos^2$ shape; pattern never plotted |
+| Beats / group velocity: fast carrier and slow envelope from two nearby-frequency waves | MC | Three-stage mechanism: sum → product form → identify two separate velocities; the envelope/carrier structure is the learning target |
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK:**
-Draw three stacked horizontal panels, each showing the sum of two equal-amplitude sinusoidal waves and their resultant. Panel 1 (top): the two waves are in phase (δ = 0); both are shown as thin curves, their sum as a thick curve with amplitude 2A — constructive interference. Panel 2 (middle): the two waves are anti-phase (δ = π); their sum is the flat zero line — destructive interference. Panel 3 (bottom): the two waves have an intermediate phase offset (δ = π/2); the sum has an intermediate amplitude between 0 and 2A and a shifted peak. All three panels share the same x-axis scale and the same amplitude scale, with the y-axis running from −2A to +2A. Mark the resultant amplitude visually with a vertical double-bracket on the right edge of each panel. The phases of the two component waves should differ visibly from panel to panel — shift the second wave rightward progressively. Use consistent color coding: first component wave, second component wave, and resultant in distinct colors across all three panels.
-
-**BLOCK 2 — FULL SCOPE:**
-
-`[S — SPECIFICATION]` Single-column 89 mm width, 300 DPI, SVG/EPS, white background. Three stacked panels of equal height, sharing a common y-axis amplitude range (−2A to +2A), separated by thin horizontal rules.
-
-`[C — CONTENT]` Three panels (δ = 0, π, π/2). Each panel: two thin sinusoidal component curves and one thick resultant curve. Right-edge amplitude bracket indicating |resultant amplitude| for each panel. The component waves ψ₁ and ψ₂ are identical in frequency and amplitude, differing only in phase offset δ. Y-axis starts at −2A (not truncated). No numerical axis labels baked in.
-
-`[O — ORGANIZATION]` Y-axis: shared vertical axis on the left side, running from −2A to +2A across all three panels. Horizontal dividing rules between panels. The second component wave (ψ₂) is progressively right-shifted across the three panels (no shift, half-wavelength shift, quarter-wavelength shift). Amplitude bracket on the right edge of each panel; brackets increase in height from Panel 2 (zero height, flat line) through Panel 3 (intermediate) to Panel 1 (full 2A).
-
-`[P — PRESENTATION]` Flat vector, Okabe-Ito palette, 1 pt strokes for components, 2 pt stroke for resultant, white background, no baked text. Component wave ψ₁: Sky Blue `#56B4E9`, 1 pt. Component wave ψ₂: Orange `#E69F00`, 1 pt. Resultant: Blue `#0072B2`, 2 pt. Amplitude bracket: Bluish Green `#009E73`. Zero-result flat line (Panel 2): Vermillion `#D55E00`, 2 pt. Y-axis: black, 1 pt. Panel dividers: light gray rule.
-
-`[E — EXCLUSIONS]` Omit: beats / group velocity envelope (different frequencies), probability density interpretation, de Broglie wave labeling, double-slit geometry. Do not include any text labels, δ values, or amplitude values baked into the image. Do not depict more than two component waves per panel.
-
-**BLOCK 3 — NEGATIVE PROMPT:**
-Beat envelope with different-frequency waves, double-slit geometry diagram, probability density curve, de Broglie wavelength annotation, more than two component waves per panel, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+**Density recommendation: 3 figures, Mixed density.**
 
 ---
 
-## Figure 3 — Group velocity vs. phase velocity: carrier wave and envelope
+## Figure 1 — Superposition: Constructive, Destructive, and Partial Interference
 
-**Heuristic:** VG — Verification Gap
-**Rank:** Important
+**Rank: CRITICAL**
 
-**BLOCK 1 — ILLUSTRAE PASTE BLOCK:**
-Draw a horizontal two-snapshot diagram showing a wave packet at two successive time moments, t₁ and t₂, to illustrate the distinction between phase velocity and group velocity. In the top row (t₁): a modulated wave — a fast oscillating carrier multiplied by a slow amplitude envelope — shown as a thick envelope curve enclosing thin carrier oscillations. Mark two reference features: a crest of the carrier wave (phase marker, small filled circle on the carrier peak) and the center of the envelope (group marker, vertical dashed line at the envelope maximum). In the bottom row (t₂): the same wave packet at a later time. The envelope center has moved a short distance to the right (group velocity, v_g); the carrier crest has moved a longer distance to the right (phase velocity, v_ph > v_g for a dispersive medium). Use horizontal arrows below each snapshot connecting the marker positions between t₁ and t₂, one arrow for the envelope displacement and one for the carrier-crest displacement, with the envelope arrow visibly shorter than the carrier-crest arrow to show v_g < v_ph. This relationship corresponds to the de Broglie matter-wave case (non-relativistic). Do not annotate with any text.
+**Concept statement:** The superposition of two equal-amplitude waves with phase difference $\delta$ yields amplitude $2A|\cos(\delta/2)|$, which equals $2A$ at $\delta = 0$ (constructive), $0$ at $\delta = \pi$ (destructive), and an intermediate value for general $\delta$.
 
-**BLOCK 2 — FULL SCOPE:**
+---
 
-`[S — SPECIFICATION]` Single-column 89 mm width, 300 DPI, SVG/EPS, white background. Two-row stacked layout (t₁ top, t₂ bottom) with displacement arrows between them below the x-axis.
+**Block 1 — Illustrae Paste Block**
 
-`[C — CONTENT]` Each row: carrier wave (fast oscillation, thin curve), amplitude envelope (slow modulation, thick dashed curve), phase marker (filled circle on a carrier crest), group marker (vertical dashed line at envelope center). Between-row arrows: envelope displacement arrow (shorter, indicating v_g) and phase-marker displacement arrow (longer, indicating v_ph). The phase-marker displacement is approximately twice the envelope displacement to reflect v_ph = v/2 and v_g = v for the non-relativistic de Broglie case (ratio 2:1 approximately, inferred from the chapter's explicit result).
+Produce a full-width 120mm vector figure on a white background with three stacked panels of equal height, each showing one full wavelength of the wave pattern in $x$. In each panel draw the two component waves as thin curves (#E69F00 and #0072B2, 1pt dashed) and the resultant sum wave as a thicker solid curve (#009E73, 2pt). Top panel: $\delta = 0$ — both component waves are in phase; the resultant has amplitude $2A$ (the tallest curve); use a short vertical double-headed segment (#000000, 1pt) to indicate the amplitude $2A$ at the peak. Middle panel: $\delta = \pi$ — the two components are exactly anti-phase; the resultant is a flat line at zero amplitude along the $x$-axis (#009E73, 2pt, coincident with the axis). Bottom panel: $\delta = \pi/2$ — the components are offset by a quarter cycle; the resultant has intermediate amplitude $A\sqrt{2}$; use a short vertical double-headed segment (#000000, 1pt) at the peak. All panels share the same $x$-axis scale spanning one full wavelength; the $y$-axis in each panel is symmetric about zero and scaled so amplitude $2A$ fits comfortably. No text; unannotated.
 
-`[O — ORGANIZATION]` Top row (t₁) and bottom row (t₂) share the same horizontal x-axis scale. Phase marker (carrier crest): Blue filled circle. Envelope center marker: vertical Orange dashed line. Below the two rows: two horizontal arrows stacked, annotated only by their relative lengths (no text). The envelope arrow is drawn in Bluish Green; the phase arrow is drawn in Vermillion. No third row.
+---
 
-`[P — PRESENTATION]` Flat vector, Okabe-Ito palette, 1 pt strokes, white background, no baked text. Carrier wave curve: Blue `#0072B2`, 1 pt. Envelope curve: Orange `#E69F00`, 2 pt dashed. Phase marker circle: Blue `#0072B2` filled. Group/envelope marker line: Orange `#E69F00` dashed. Group displacement arrow: Bluish Green `#009E73`. Phase displacement arrow: Vermillion `#D55E00`. Row divider: light gray. Axes: black, 1 pt.
+**Block 2 — Full SCOPE Prompt**
 
-`[E — EXCLUSIONS]` Omit: dispersion relation curve (ω vs. k plot), Fourier components, probability density, double-slit. Do not show the wave packet spreading (dispersion broadening) — keep both snapshots at equal envelope width to isolate the velocity distinction. Do not depict more than one wave packet per row.
+[S] Full-width 120mm, three equal stacked panels, vector, white background. Shared $x$-axis scale.
 
-**BLOCK 3 — NEGATIVE PROMPT:**
-Dispersion relation ω-k plot, Fourier decomposition spectrum, probability density axes, double-slit geometry, envelope spreading / broadening, multiple simultaneous wave packets, text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, dual-headed arrows, hand-drawn styles, human figures, visual clutter, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.
+[C] Three interference cases from the chapter's superposition section: $\delta = 0$ (constructive, resultant amplitude $2A$), $\delta = \pi$ (destructive, resultant amplitude $0$), $\delta = \pi/2$ (partial, resultant amplitude $A\sqrt{2}$). Each panel shows the two component waves and their sum. The $2A$ and $A\sqrt{2}$ amplitude indicators are consistent with the formula $2A|\cos(\delta/2)|$ derived in the chapter.
+
+[O] Top-to-bottom stacking orders by interference outcome: maximum → zero → intermediate. The consistent color assignment (component 1 = #E69F00, component 2 = #0072B2, resultant = #009E73) lets the reader track how the sum changes as $\delta$ varies. Amplitude indicators at peaks make the $2A$ and $A\sqrt{2}$ values readable without labels.
+
+[P] Flat vector. Okabe-Ito: #E69F00 1pt dashed (wave 1), #0072B2 1pt dashed (wave 2), #009E73 2pt solid (resultant), #000000 1pt for amplitude segments. $y$-axis symmetric about zero. Unannotated.
+
+[E] No text on panels, no phase-offset annotation on the $x$-axis, no more than two component waves per panel, no standing wave patterns, no time-dependence shown (snapshot in $x$ only), no specific physical medium.
+
+---
+
+**Block 3 — Negative Prompt**
+
+No standing-wave nodes/antinodes, no time-evolution animation frames, no three-wave superpositions, no beat-frequency patterns in this figure (handled in Figure 3), no labeled phase arrows, no phasor diagrams. text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
+
+---
+
+## Figure 2 — Double-Slit Fringe Intensity Pattern
+
+**Rank: CRITICAL**
+
+**Concept statement:** The double-slit intensity pattern $I(\theta) = 4A^2\cos^2\!\bigl(\pi d\sin\theta / \lambda\bigr)$ oscillates between 0 and $4A^2$ with bright fringes at $d\sin\theta = n\lambda$, and the fringe spacing $\Delta y = \lambda L/d$ shrinks as momentum (and hence $\lambda$) decreases.
+
+---
+
+**Block 1 — Illustrae Paste Block**
+
+Produce a single-column 89mm vector figure on a white background with a single-panel line plot. The horizontal axis spans $\sin\theta$ from $-3\lambda/d$ to $+3\lambda/d$ (i.e., three fringe orders to each side). The vertical axis starts at zero and spans from 0 to $4A^2$, normalized so $4A^2 = 1$. Plot the intensity curve $I \propto \cos^2(\pi d \sin\theta / \lambda)$ as a smooth solid curve in #0072B2 at 1.5pt. The curve peaks at $\sin\theta = 0, \pm\lambda/d, \pm2\lambda/d, \pm3\lambda/d$ (seven peaks total) and reaches zero at the midpoints. Overlay a second intensity curve for a source with twice the momentum (half the wavelength) as a dashed curve in #E69F00 at 1.5pt — this curve has twice as many fringes in the same angular range. Draw a horizontal reference line at $I = 0$ (#000000, 0.5pt). The $y$-axis starts at zero. No text; unannotated.
+
+---
+
+**Block 2 — Full SCOPE Prompt**
+
+[S] Single-column 89mm, single-panel line plot, vector, white background.
+
+[C] Double-slit intensity $I(\theta) = 4A^2\cos^2(\pi d\sin\theta/\lambda)$ from the chapter's double-slit worked example, normalized to peak 1. Seven peaks for the primary wavelength ($n = 0, \pm1, \pm2, \pm3$). A second curve at $\lambda/2$ (double momentum) showing twice the fringe density, illustrating the chapter's statement "the faster the electrons, the finer the fringes." Both curves confirmed in the chapter.
+
+[O] Two overlaid curves with different fringe spacing make the $\Delta y \propto \lambda \propto 1/p$ relationship visible without calculation. The $y$-axis from zero correctly shows the zeros of the intensity. The angular axis symmetric about zero shows the symmetric fringe pattern.
+
+[P] Flat vector. Okabe-Ito: #0072B2 1.5pt solid for primary $\lambda$ curve; #E69F00 1.5pt dashed for $\lambda/2$ curve; #000000 0.5pt reference line at $I=0$. $y$-axis from zero. Unannotated.
+
+[E] No single-slit diffraction envelope, no label for central maximum or order numbers, no finite-slit-width corrections, no three-slit patterns, no off-axis intensity normalization not derived from the $\cos^2$ formula, no photon-detection dots.
+
+---
+
+**Block 3 — Negative Prompt**
+
+No single-slit diffraction envelope, no finite aperture corrections, no three-or-more-slit patterns, no photon-detection probability dots, no 2D fringe images, no secondary diffraction maxima from slit width. text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
+
+---
+
+## Figure 3 — Group Velocity vs. Phase Velocity: Carrier and Envelope
+
+**Rank: IMPORTANT**
+
+**Concept statement:** The superposition of two waves with nearby frequencies produces a fast-oscillating carrier traveling at phase velocity $v_\text{ph} = \omega/k$ modulated by a slow envelope traveling at group velocity $v_g = d\omega/dk$; for a non-relativistic de Broglie matter wave, $v_\text{ph} = v/2$ while $v_g = v$ equals the particle's classical speed.
+
+---
+
+**Block 1 — Illustrae Paste Block**
+
+Produce a single-column 89mm vector figure on a white background with two stacked equal-height panels sharing a common horizontal $x$-axis. Top panel: draw the fast carrier wave $\cos(kx - \omega t)$ as a smooth sinusoidal curve in #0072B2 at 1pt for one snapshot in time (many oscillations visible, approximately 12 cycles across the panel); draw the slow envelope $|\cos(\frac{dk}{2}x - \frac{d\omega}{2}t)|$ as a smooth bell-shaped modulation curve in #E69F00 at 2pt, tracing the amplitude outline of the carrier; the envelope width spans roughly half the panel width. Below the carrier curve add a short rightward arrow (#0072B2, 1.5pt) indicating the phase velocity $v_\text{ph}$ pointing in the direction of carrier motion, positioned near a carrier crest; below the envelope peak add a longer rightward arrow (#E69F00, 1.5pt) at half the length of the phase-velocity arrow to indicate the group velocity $v_g$ (the group velocity is half the phase velocity for a non-relativistic matter wave with $v_\text{ph} = v/2$, $v_g = v$ — wait, actually $v_g > v_\text{ph}$; use the correct ratio: $v_g = 2v_\text{ph}$ for the non-relativistic case, so the group-velocity arrow is twice as long as the phase-velocity arrow). Bottom panel: draw the same carrier and envelope but shifted rightward in time, showing the envelope has moved a smaller distance than the carrier phase pattern; a thin vertical dashed reference line at the initial envelope peak position (#000000, 0.5pt) in the top panel should align to show that the envelope peak has advanced further than the carrier crest per unit time. No text; unannotated.
+
+---
+
+**Block 2 — Full SCOPE Prompt**
+
+[S] Single-column 89mm, two equal stacked panels with shared $x$-axis, vector, white background.
+
+[C] Top panel: snapshot at $t = 0$ of the carrier wave $\cos(kx)$ and the envelope $|\cos(dk \cdot x/2)|$. Bottom panel: snapshot at a later $t$ showing that the envelope peak has moved by $v_g \cdot \Delta t$ while the carrier crests have moved by $v_\text{ph} \cdot \Delta t$, with $v_g = 2v_\text{ph}$ for the non-relativistic de Broglie dispersion $\omega = \hbar k^2/(2m)$ (i.e., $v_\text{ph} = \hbar k/(2m) = v/2$ and $v_g = \hbar k/m = v$). Two velocity arrows in the top panel with lengths proportional to the actual velocities. A reference dashed line anchored at the top-panel envelope peak. All values from the chapter's group velocity section and the matter-waves application.
+
+[O] Two-panel stacked snapshot sequence gives the key evidence that carrier and envelope move at different speeds without requiring animation. Velocity arrows with correct length ratio ($v_g = 2v_\text{ph}$) embed the quantitative fact geometrically. The reference dashed line makes the differential displacement readable.
+
+[P] Flat vector. Okabe-Ito: #0072B2 1pt for carrier wave; #E69F00 2pt for envelope; #0072B2 1.5pt for phase-velocity arrow; #E69F00 1.5pt for group-velocity arrow (twice as long); #000000 0.5pt for reference dashed line. Unannotated.
+
+[E] No specific dispersion relation curve, no relativistic case, no quantum tunneling, no three-or-more component waves, no beating in the time domain, no spatial-frequency axis, no energy labeling.
+
+---
+
+**Block 3 — Negative Prompt**
+
+No dispersion relation $\omega(k)$ plot in this figure, no relativistic treatment, no frequency-domain spectrum, no labeled velocities or values, no comparison to light speed. text labels, words, gibberish letters, titles, captions, decorative borders, realistic textures, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, hand-drawn styles, visual clutter, watermarks, red-green color combinations, 3D perspective distortion.
 
 ---
 
 ## Video Candidate Pass
 
-**Figure 1 — Sinusoidal wave anatomy**
-STATIC SUFFICIENT. The anatomy of a wave is a spatial snapshot — amplitude, wavelength, phase, and the Euler-circle projection are all structural features that a single frozen frame conveys completely. No step unfolds in time.
+**VIDEO CANDIDATE — Wave Packet Propagation: Phase vs. Group Velocity**
 
-**Figure 2 — Superposition and interference: three-panel comparison**
-STATIC SUFFICIENT. The three panels are a comparison set, not a temporal sequence. The learning target is the amplitude contrast across phase offsets, which is fully visible in a side-by-side static layout.
+The separation between phase velocity and group velocity for a matter wave is a process where time evolution is the concept — it is literally about what moves where over time. A single-electron wave packet propagating rightward with its fast-oscillating phase pattern outrunning (or in the non-relativistic case running at half the speed of) the envelope satisfies both the sequential causal stages criterion (packet forms → carrier advances ahead of envelope → envelope arrives at detector → particle detected at envelope location, not carrier location) and the cyclic-return structure criterion (repeated oscillations). Crucially, the chapter explicitly flags this as the resolution of a paradox ("Without the beats analysis, $v_\text{ph} = v/2$ seems surprising"), indicating the mechanism is the learning target.
 
-**Figure 3 — Group velocity vs. phase velocity: carrier and envelope**
-VIDEO CANDIDATE. Criterion: transition mechanism is the learning target. The core misconception (phase velocity ≠ particle speed) is resolved by watching the carrier crest and the envelope center move at different speeds simultaneously. A static two-snapshot approximation conveys the direction of travel but not the lived sense of the two motions diverging from the same initial packet. Animation — showing the carrier oscillations rippling fast while the envelope drifts slowly — is the most direct demonstration of why v_ph = v/2 while v_g = v for a matter wave. **Recommend as the single video for this module.**
+**Total video candidates: 1.**
+**Recommendation:** Animate a Gaussian-modulated matter-wave packet propagating rightward, with a colored dot tracking the phase velocity of a carrier crest (#0072B2) and a second colored dot tracking the envelope peak (#E69F00), over approximately two envelope widths of travel. Overlay the de Broglie dispersion $\omega = \hbar k^2 / 2m$ in a small inset panel that updates in real time.
