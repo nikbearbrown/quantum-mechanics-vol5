@@ -1,0 +1,188 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 12-matrices-determinants-and-linear-systems
+     Figure      : 03
+     Title       : Pauli matrix commutation cycle
+     Type        : concept / verification-gap
+     Priority    : Important
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/12-matrices-determinants-and-linear-systems-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-12-03">
+  <title id="fig-title-12-03">Pauli matrix commutation cycle</title>
+  <desc>Equilateral triangle layout with three circular nodes representing the three Pauli operators differentiated by color only: orange for σₓ (lower-left), green for σᵧ (lower-right), red for σᵤ (top). Three clockwise curved arrows in dark red connect σₓ→σᵧ→σᵤ→σₓ, representing the cyclic commutation relation [σᵢ,σⱼ] = 2iεᵢⱼₖσₖ.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="12-matrices-determinants-and-linear-systems"
+      figure-number="03"
+      figure-title="Pauli matrix commutation cycle"
+      figure-slug="pauli-commutation-cycle"
+      figure-type="concept-verification-gap"
+      priority="Important"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/12-matrices-determinants-and-linear-systems-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr12c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr12c-cycle" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#C8102E"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Pauli commutation cycle: [σᵢ,σⱼ] = 2iεᵢⱼₖσₖ</text>
+
+  <!-- Triangle geometry:
+       Equilateral triangle inscribed in circle of radius R=135, centered at (350,230)
+       Top node (σᵤ): angle 90° = (350, 230-135) = (350, 95)
+       Lower-left (σₓ): angle 210° = (350+135*cos210, 230-135*sin210) = (350-117, 230+67.5) = (233, 297.5)
+       Lower-right (σᵧ): angle 330° = (350+135*cos330, 230-135*sin330) = (350+117, 230+67.5) = (467, 297.5)
+  -->
+
+  <!-- Node radius = 36 -->
+  <!-- Draw external curved arcs (clockwise cycle: σₓ → σᵧ → σᵤ → σₓ) -->
+  <!-- Arc 1: σₓ (233,297) → σᵧ (467,297): clockwise external arc goes BELOW the two nodes -->
+  <!-- Arc: start at σₓ bottom tangent, end at σᵧ bottom tangent, with control point below -->
+  <path d="M 233 334 C 233 410, 467 410, 467 334"
+        fill="none" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr12c-cycle)"/>
+
+  <!-- Arc 2: σᵧ (467,297) → σᵤ (350,95): clockwise external arc goes RIGHT of the two nodes -->
+  <path d="M 502 280 C 550 230, 440 60, 386 80"
+        fill="none" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr12c-cycle)"/>
+
+  <!-- Arc 3: σᵤ (350,95) → σₓ (233,297): clockwise external arc goes LEFT of two nodes -->
+  <path d="M 314 80 C 260 60, 150 230, 198 280"
+        fill="none" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr12c-cycle)"/>
+
+  <!-- Thin triangle edges (structural reference lines) -->
+  <line x1="233" y1="297" x2="467" y2="297" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="467" y1="297" x2="350" y2="95" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="350" y1="95" x2="233" y2="297" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Node σᵤ (top): Blue = C8102E-family... use accent color. Report says Blue #0072B2.
+       Override to palette: use #C8102E for z (report: Blue). But we must use palette.
+       Palette: accent #C8102E = one data category. Use #2a1a0e for z (top), #787878 for x, #ADADAD for y -->
+  <!-- Node z (σᵤ): #2a1a0e (ink) -->
+  <circle cx="350" cy="95" r="38" fill="#C8102E" fill-opacity="0.15" stroke="#2a1a0e" stroke-width="2"/>
+  <text x="350" y="88" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="18"
+        fill="#2a1a0e">σ</text>
+  <text x="350" y="108" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="14"
+        fill="#2a1a0e">z</text>
+
+  <!-- Node x (σₓ): lower-left -->
+  <circle cx="233" cy="297" r="38" fill="#C8860E" fill-opacity="0.15" stroke="#C8860E" stroke-width="2"/>
+  <text x="233" y="290" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="18"
+        fill="#C8860E">σ</text>
+  <text x="233" y="312" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="14"
+        fill="#C8860E">x</text>
+
+  <!-- Node y (σᵧ): lower-right -->
+  <circle cx="467" cy="297" r="38" fill="#787878" fill-opacity="0.15" stroke="#787878" stroke-width="2"/>
+  <text x="467" y="290" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="18"
+        fill="#787878">σ</text>
+  <text x="467" y="312" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="14"
+        fill="#787878">y</text>
+
+  <!-- Central cycle indicator: curved arrows label -->
+  <text x="350" y="215" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#C8102E">[σₓ,σᵧ] = 2iσᵤ</text>
+  <text x="350" y="232" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#C8102E">[σᵧ,σᵤ] = 2iσₓ</text>
+  <text x="350" y="249" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#C8102E">[σᵤ,σₓ] = 2iσᵧ</text>
+
+  <!-- Clockwise direction indicator at center -->
+  <!-- Small circular arrow icon at (350,188) -->
+  <path d="M 350 180 A 10 10 0 1 1 342 188" fill="none" stroke="#C8102E" stroke-width="1.5"
+        marker-end="url(#arr12c-cycle)"/>
+
+  <!-- Annotation panel right side -->
+  <rect x="542" y="42" width="142" height="340" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="613" y="60" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">SU(2) algebra</text>
+
+  <text x="554" y="84" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">General rule:</text>
+  <text x="554" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#C8102E">[σᵢ,σⱼ] = 2iεᵢⱼₖσₖ</text>
+  <text x="554" y="116" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Levi-Civita εᵢⱼₖ = ±1</text>
+  <text x="554" y="130" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">for cyclic permutations</text>
+
+  <line x1="554" y1="144" x2="672" y2="144" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <text x="554" y="162" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">Anticommutation:</text>
+  <text x="554" y="178" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">{σᵢ,σⱼ} = 2δᵢⱼI</text>
+  <text x="554" y="194" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">(not shown here)</text>
+
+  <line x1="554" y1="208" x2="672" y2="208" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <text x="554" y="226" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">Each σ squares to I:</text>
+  <text x="554" y="242" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">σₓ² = σᵧ² = σᵤ² = I</text>
+
+  <line x1="554" y1="256" x2="672" y2="256" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <text x="554" y="274" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">The cycle is closed:</text>
+  <text x="554" y="290" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">x→y→z→x (clockwise)</text>
+  <text x="554" y="306" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">is one cyclic identity,</text>
+  <text x="554" y="322" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">not three separate facts</text>
+
+  <rect x="554" y="336" width="106" height="36" fill="#C8102E" fill-opacity="0.06"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="607" y="353" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">The Lie algebra</text>
+  <text x="607" y="367" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">of SU(2) / SO(3)</text>
+
+  <!-- Arc direction label -->
+  <text x="350" y="390" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">↻ clockwise: [first, second] ∝ third</text>
+
+  <!-- Caption -->
+  <text x="270" y="406" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">The three cyclic arrows encode one closed algebraic identity — reading the cycle in reverse gives a sign flip</text>
+  <text x="270" y="420" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">The commutation cycle is why angular momentum algebras in QM have ladders and quantized eigenvalues</text>
+</svg>

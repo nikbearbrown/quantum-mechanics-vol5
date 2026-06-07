@@ -1,0 +1,271 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 10-multivariable-calculus-and-separation-of-variables
+     Figure      : 01
+     Title       : Four-step separation-of-variables cascade (Cartesian)
+     Type        : mechanism / process (flowchart)
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/10-multivariable-calculus-and-separation-of-variables-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-10-01">
+  <title id="fig-title-10-01">Four-step separation-of-variables cascade (Cartesian)</title>
+  <desc>Four stacked panels connected by downward arrows: Panel 1 the full 3D PDE with three coordinate inputs; Panel 2 the product ansatz substituting the wavefunction as a product of three single-variable functions; Panel 3 the division step isolating each coordinate ratio; Panel 4 three independent ODEs each terminated at a zero-at-wall boundary condition from which a quantized constant emerges.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="10-multivariable-calculus-and-separation-of-variables"
+      figure-number="01"
+      figure-title="Four-step separation-of-variables cascade (Cartesian)"
+      figure-slug="separation-of-variables-cartesian-cascade"
+      figure-type="mechanism-process"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/10-multivariable-calculus-and-separation-of-variables-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr10a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ADADAD"/>
+    </marker>
+    <marker id="arr10a-ink" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="20" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Separation of variables — Cartesian 3D well</text>
+
+  <!-- Step arrows on right margin -->
+  <line x1="620" y1="72" x2="620" y2="104" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr10a)"/>
+  <line x1="620" y1="144" x2="620" y2="176" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr10a)"/>
+  <line x1="620" y1="220" x2="620" y2="252" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr10a)"/>
+
+  <!-- ── Panel 1: Full 3D PDE ── -->
+  <rect x="36" y="30" width="570" height="42" fill="#D4D4D4" fill-opacity="0.3"
+        stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- 3 coordinate arrows entering from left -->
+  <line x1="16" y1="44" x2="34" y2="51" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <line x1="16" y1="51" x2="34" y2="51" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <line x1="16" y1="58" x2="34" y2="51" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <!-- x, y, z labels -->
+  <text x="8" y="46" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="9" fill="#545454">x</text>
+  <text x="8" y="53" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="9" fill="#545454">y</text>
+  <text x="8" y="60" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="9" fill="#545454">z</text>
+
+  <text x="50" y="45" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" font-weight="600" fill="#2a1a0e">Step 1 — Full 3D PDE</text>
+  <text x="50" y="62" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#2a1a0e">−(ℏ²/2m)(∂²/∂x² + ∂²/∂y² + ∂²/∂z²) Ψ(x,y,z) = E·Ψ(x,y,z)</text>
+
+  <!-- Step label right -->
+  <text x="632" y="52" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#545454">product</text>
+  <text x="632" y="64" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#545454">ansatz</text>
+
+  <!-- ── Panel 2: Product ansatz ── -->
+  <rect x="36" y="106" width="570" height="38" fill="#C8102E" fill-opacity="0.07"
+        stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="50" y="120" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" font-weight="600" fill="#2a1a0e">Step 2 — Product ansatz</text>
+
+  <!-- Three function boxes connected by × symbols -->
+  <rect x="50" y="124" width="52" height="14" fill="#C8102E" fill-opacity="0.15"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="76" y="135" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#C8102E">X(x)</text>
+  <text x="110" y="135" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#ADADAD">·</text>
+  <rect x="118" y="124" width="52" height="14" fill="#C8102E" fill-opacity="0.15"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="144" y="135" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#C8102E">Y(y)</text>
+  <text x="178" y="135" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#ADADAD">·</text>
+  <rect x="186" y="124" width="52" height="14" fill="#C8102E" fill-opacity="0.15"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="212" y="135" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#C8102E">Z(z)</text>
+
+  <text x="260" y="135" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">⟵ substitute Ψ(x,y,z) = X(x)·Y(y)·Z(z) and divide by Ψ</text>
+
+  <!-- Step label right -->
+  <text x="632" y="118" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#545454">divide by</text>
+  <text x="632" y="130" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#545454">XYZ</text>
+
+  <!-- ── Panel 3: Division step — three ratio boxes ── -->
+  <rect x="36" y="178" width="570" height="62" fill="#C8860E" fill-opacity="0.08"
+        stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="50" y="196" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" font-weight="600" fill="#2a1a0e">Step 3 — Each ratio depends on one variable only</text>
+
+  <!-- Horizontal rule representing division -->
+  <line x1="50" y1="200" x2="550" y2="200" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Three ratio boxes -->
+  <!-- x-ratio box -->
+  <rect x="60" y="204" width="130" height="28" fill="#FFFFFF" stroke="#C8860E" stroke-width="0.75"/>
+  <text x="125" y="214" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">X''(x) / X(x)</text>
+  <text x="125" y="228" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#545454">= −k²_x</text>
+
+  <!-- + sign -->
+  <text x="202" y="222" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="14"
+        fill="#ADADAD">+</text>
+
+  <!-- y-ratio box -->
+  <rect x="214" y="204" width="130" height="28" fill="#FFFFFF" stroke="#C8860E" stroke-width="0.75"/>
+  <text x="279" y="214" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">Y''(y) / Y(y)</text>
+  <text x="279" y="228" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#545454">= −k²_y</text>
+
+  <!-- + sign -->
+  <text x="356" y="222" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="14"
+        fill="#ADADAD">+</text>
+
+  <!-- z-ratio box -->
+  <rect x="368" y="204" width="130" height="28" fill="#FFFFFF" stroke="#C8860E" stroke-width="0.75"/>
+  <text x="433" y="214" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">Z''(z) / Z(z)</text>
+  <text x="433" y="228" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#545454">= −k²_z</text>
+
+  <!-- equals constant -->
+  <text x="510" y="222" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">= const</text>
+
+  <!-- Step label right -->
+  <text x="632" y="200" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#545454">solve</text>
+  <text x="632" y="212" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#545454">3 ODEs</text>
+
+  <!-- ── Panel 4: Three ODEs + boundary conditions ── -->
+  <rect x="36" y="254" width="570" height="140" fill="#2a1a0e" fill-opacity="0.04"
+        stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="50" y="270" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" font-weight="600" fill="#2a1a0e">Step 4 — Three independent ODEs, each with boundary condition</text>
+
+  <!-- ODE column X -->
+  <rect x="60" y="278" width="150" height="28" fill="#787878" fill-opacity="0.15"
+        stroke="#787878" stroke-width="0.75"/>
+  <text x="135" y="292" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">X'' + k²_x X = 0</text>
+  <text x="135" y="304" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#545454">simple harmonic ODE in x</text>
+  <!-- Down arrow to BC -->
+  <line x1="135" y1="308" x2="135" y2="322" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <!-- BC block -->
+  <rect x="70" y="323" width="130" height="22" fill="#C8102E" fill-opacity="0.15"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="135" y="338" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#C8102E">X(0)=X(L)=0</text>
+  <!-- Down arrow to quantized constant -->
+  <line x1="135" y1="346" x2="135" y2="360" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <text x="135" y="372" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">kₓ = nₓπ/L</text>
+  <text x="135" y="384" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">nₓ = 1, 2, 3, ...</text>
+
+  <!-- ODE column Y -->
+  <rect x="225" y="278" width="150" height="28" fill="#787878" fill-opacity="0.15"
+        stroke="#787878" stroke-width="0.75"/>
+  <text x="300" y="292" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">Y'' + k²_y Y = 0</text>
+  <text x="300" y="304" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#545454">simple harmonic ODE in y</text>
+  <line x1="300" y1="308" x2="300" y2="322" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <rect x="235" y="323" width="130" height="22" fill="#C8102E" fill-opacity="0.15"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="300" y="338" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#C8102E">Y(0)=Y(L)=0</text>
+  <line x1="300" y1="346" x2="300" y2="360" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <text x="300" y="372" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">k_y = n_y π/L</text>
+  <text x="300" y="384" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">n_y = 1, 2, 3, ...</text>
+
+  <!-- ODE column Z -->
+  <rect x="390" y="278" width="150" height="28" fill="#787878" fill-opacity="0.15"
+        stroke="#787878" stroke-width="0.75"/>
+  <text x="465" y="292" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">Z'' + k²_z Z = 0</text>
+  <text x="465" y="304" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#545454">simple harmonic ODE in z</text>
+  <line x1="465" y1="308" x2="465" y2="322" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <rect x="400" y="323" width="130" height="22" fill="#C8102E" fill-opacity="0.15"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="465" y="338" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#C8102E">Z(0)=Z(L)=0</text>
+  <line x1="465" y1="346" x2="465" y2="360" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10a)"/>
+  <text x="465" y="372" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">k_z = n_z π/L</text>
+  <text x="465" y="384" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">n_z = 1, 2, 3, ...</text>
+
+  <!-- Caption -->
+  <text x="350" y="405" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Division by the product ansatz decouples the PDE into three independent ODEs — each yields one quantum number</text>
+  <text x="350" y="418" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Boundary conditions quantize the constants: kₙ = nπ/L with n = 1,2,3,…</text>
+</svg>

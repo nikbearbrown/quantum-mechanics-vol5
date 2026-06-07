@@ -1,0 +1,190 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 07-vectors-vector-spaces-and-inner-products
+     Figure      : 01
+     Title       : Three realizations of vector spaces
+     Type        : concept / multi-panel comparison
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/07-vectors-vector-spaces-and-inner-products-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-01">
+  <title id="fig-title-01">Three realizations of vector spaces</title>
+  <desc>Three side-by-side panels showing geometric arrows in ℝ², column vectors with addition, and functions with pointwise summation — all satisfying the same vector-space axioms, unified by a bracket above.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="07-vectors-vector-spaces-and-inner-products"
+      figure-number="01"
+      figure-title="Three realizations of vector spaces"
+      figure-slug="three-vector-space-realizations"
+      figure-type="concept-multi-panel"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/07-vectors-vector-spaces-and-inner-products-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr01" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr01-gray" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#787878"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas background -->
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- ── Figure title ── -->
+  <text x="350" y="28" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Three realizations of vector spaces</text>
+
+  <!-- ── Unifying bracket above all three panels ── -->
+  <!-- Bracket spans x=52 to x=648, sits at y=50 -->
+  <path d="M52,58 L52,50 L648,50 L648,58" fill="none" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <!-- ── PANEL 1: Geometric arrow in ℝ² ── -->
+  <!-- Panel box x=52–232, y=65–340 -->
+  <rect x="52" y="65" width="180" height="275" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Panel label -->
+  <text x="142" y="87" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Geometric arrow in ℝ²</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="310" x2="220" y2="310" stroke="#2a1a0e" stroke-width="1"
+        marker-end="url(#arr01)"/>
+  <line x1="90" y1="320" x2="90" y2="110" stroke="#2a1a0e" stroke-width="1"
+        marker-end="url(#arr01)"/>
+
+  <!-- Main vector: origin(90,310) to ~(90+112, 310-119) = (202,191) -->
+  <line x1="90" y1="310" x2="196" y2="195" stroke="#C8102E" stroke-width="2"
+        marker-end="url(#arr01)"/>
+
+  <!-- Dashed projection to x-axis: (196,195) -> (196,310) -->
+  <line x1="196" y1="195" x2="196" y2="310" stroke="#D4D4D4" stroke-width="0.75"
+        stroke-dasharray="4 3"/>
+  <!-- Right-angle mark at (196,310) -->
+  <path d="M196,302 L188,302 L188,310" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Dashed projection to y-axis: (196,195) -> (90,195) -->
+  <line x1="196" y1="195" x2="90" y2="195" stroke="#D4D4D4" stroke-width="0.75"
+        stroke-dasharray="4 3"/>
+  <!-- Right-angle mark at (90,195) -->
+  <path d="M98,195 L98,203 L90,203" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Panel 1 caption -->
+  <text x="142" y="360" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Arrows with</text>
+  <text x="142" y="374" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">component projections</text>
+
+  <!-- ── PANEL 2: Column vectors with addition ── -->
+  <!-- Panel box x=260–440, y=65–340 -->
+  <rect x="260" y="65" width="180" height="275" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <text x="350" y="87" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Column vectors in ℂⁿ</text>
+
+  <!-- Column vector u: x=287, 3 cells -->
+  <rect x="287" y="105" width="36" height="36" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <rect x="287" y="141" width="36" height="36" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <rect x="287" y="177" width="36" height="36" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <!-- Fill marks in column u -->
+  <circle cx="305" cy="123" r="6" fill="#C8102E" opacity="0.7"/>
+  <rect x="295" y="152" width="20" height="10" rx="0" fill="#787878" opacity="0.6"/>
+  <circle cx="305" cy="195" r="5" fill="#C8102E" opacity="0.5"/>
+
+  <!-- Plus sign -->
+  <line x1="336" y1="160" x2="348" y2="160" stroke="#2a1a0e" stroke-width="1.5"/>
+  <line x1="342" y1="154" x2="342" y2="166" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <!-- Column vector v: x=355 -->
+  <rect x="355" y="105" width="36" height="36" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <rect x="355" y="141" width="36" height="36" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <rect x="355" y="177" width="36" height="36" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <!-- Fill marks in column v -->
+  <rect x="362" y="114" width="14" height="14" fill="#787878" opacity="0.5"/>
+  <circle cx="373" cy="159" r="5" fill="#C8102E" opacity="0.6"/>
+  <rect x="362" y="184" width="14" height="14" fill="#787878" opacity="0.4"/>
+
+  <!-- Equals sign -->
+  <line x1="401" y1="156" x2="413" y2="156" stroke="#2a1a0e" stroke-width="1.2"/>
+  <line x1="401" y1="164" x2="413" y2="164" stroke="#2a1a0e" stroke-width="1.2"/>
+
+  <!-- Column vector sum w: x=420 -->
+  <rect x="420" y="105" width="36" height="36" fill="#2a1a0e" opacity="0.08" stroke="#ADADAD" stroke-width="0.75"/>
+  <rect x="420" y="141" width="36" height="36" fill="#2a1a0e" opacity="0.08" stroke="#ADADAD" stroke-width="0.75"/>
+  <rect x="420" y="177" width="36" height="36" fill="#2a1a0e" opacity="0.08" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Sum marks -->
+  <circle cx="438" cy="123" r="7" fill="#C8102E" opacity="0.5"/>
+  <circle cx="438" cy="159" r="6" fill="#787878" opacity="0.5"/>
+  <circle cx="438" cy="195" r="5" fill="#C8102E" opacity="0.4"/>
+
+  <!-- v1 + v2 = v3 arrow hint -->
+  <text x="350" y="360" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Addition of</text>
+  <text x="350" y="374" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">column vectors</text>
+
+  <!-- ── PANEL 3: Functions with pointwise sum ── -->
+  <!-- Panel box x=468–648, y=65–340 -->
+  <rect x="468" y="65" width="180" height="275" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <text x="558" y="87" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Functions in L²(ℝ)</text>
+
+  <!-- Shared x-axis for functions -->
+  <line x1="480" y1="270" x2="644" y2="270" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- f(x): sinusoid, higher freq -->
+  <!-- Points for sin(3x/period * pi) with Gaussian envelope, 3 lobes -->
+  <polyline fill="none" stroke="#C8102E" stroke-width="1.5"
+    points="484,270 492,248 500,230 508,220 516,228 524,250 532,270 540,250 548,228 556,218 564,228 572,250 580,270 588,248 596,230 604,222 612,230 620,250 628,270 636,250"/>
+
+  <!-- g(x): lower freq sinusoid -->
+  <polyline fill="none" stroke="#787878" stroke-width="1.5"
+    points="484,270 496,244 508,222 520,212 532,222 544,244 556,256 568,244 580,222 592,212 604,224 616,246 628,268"/>
+
+  <!-- (f+g)(x): sum, shown below -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5" stroke-dasharray="5 3"
+    points="484,270 492,235 500,213 508,196 516,215 524,240 532,260 540,245 548,224 556,206 564,222 572,246 580,268"/>
+
+  <!-- Legend dots -->
+  <circle cx="492" cy="308" r="4" fill="#C8102E"/>
+  <text x="500" y="312" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">f</text>
+  <circle cx="516" cy="308" r="4" fill="#787878"/>
+  <text x="524" y="312" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">g</text>
+  <line x1="538" y1="308" x2="550" y2="308" stroke="#2a1a0e" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="554" y="312" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">f+g</text>
+
+  <text x="558" y="360" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Pointwise addition</text>
+  <text x="558" y="374" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">of square-integrable functions</text>
+
+  <!-- ── Shared label: same axioms ── -->
+  <text x="350" y="405" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">All three satisfy the same addition and scaling axioms — all are vector spaces</text>
+</svg>

@@ -1,0 +1,110 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 15-calculus-of-variations
+  Figure:  01 — Varied paths and fixed endpoints
+  Source:  pantry/15-calculus-of-variations-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c15-01">
+  <title id="fig-title-c15-01">Varied paths and fixed endpoints in the calculus of variations</title>
+  <desc>Diagram showing three smooth curves connecting two fixed endpoint dots: the candidate stationary path (solid ink), one trial variation curving above (ochre dashed), and one curving below (red dashed). A vertical double-headed segment at the midpoint indicates the displacement ε η between the stationary path and the upper variation, with fixed endpoint dots anchoring the boundary conditions η(x₁)=η(x₂)=0.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="15-calculus-of-variations" figure-number="01"
+      figure-title="Varied paths and fixed endpoints"
+      figure-slug="varied-paths-endpoints" figure-type="diagram"
+      priority="critical" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/15-calculus-of-variations-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr15a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr15b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse">
+      <polygon points="0 0,8 3,0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Background chart area -->
+  <rect x="80" y="60" width="540" height="280" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Variation  ȳ(x) = y(x) + εη(x)  with fixed endpoints
+  </text>
+
+  <!-- x-axis -->
+  <line x1="80" y1="340" x2="620" y2="340" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arr15a)"/>
+  <text x="628" y="344" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">x</text>
+
+  <!-- Endpoint ticks -->
+  <line x1="130" y1="334" x2="130" y2="346" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="130" y="358" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">x₁</text>
+  <line x1="570" y1="334" x2="570" y2="346" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="570" y="358" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">x₂</text>
+
+  <!-- y-axis -->
+  <line x1="80" y1="340" x2="80" y2="62" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arr15a)"/>
+  <text x="75" y="58" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">y</text>
+
+  <!-- Fixed endpoint dots (both paths pass through these) -->
+  <circle cx="130" cy="240" r="5" fill="#2a1a0e"/>
+  <circle cx="570" cy="210" r="5" fill="#2a1a0e"/>
+
+  <!-- Stationary path y(x): smooth arch from (130,240) to (570,210)
+       Cubic Bezier: control points to create gentle arch -->
+  <path d="M 130,240 C 200,120 430,105 570,210"
+        fill="none" stroke="#2a1a0e" stroke-width="2.5"/>
+
+  <!-- Upper variation: curves above stationary path -->
+  <path d="M 130,240 C 190,85 440,75 570,210"
+        fill="none" stroke="#C8860E" stroke-width="1.5" stroke-dasharray="7 4"/>
+
+  <!-- Lower variation: curves below stationary path -->
+  <path d="M 130,240 C 215,150 440,135 570,210"
+        fill="none" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="7 4"/>
+
+  <!-- Displacement indicator at x ≈ midpoint (x=350)
+       Stationary path at x=350: approx y=155 (from Bezier midpoint)
+       Upper variation at x=350: approx y=123 -->
+  <!-- Double-headed arrow from (350,155) to (350,123) -->
+  <line x1="350" y1="155" x2="350" y2="120"
+        stroke="#787878" stroke-width="1.5"
+        marker-end="url(#arr15a)" marker-start="url(#arr15b)"/>
+
+  <!-- εη label -->
+  <text x="358" y="140"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#787878">εη(x)</text>
+
+  <!-- Region labels -->
+  <text x="350" y="390" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    all variations share the same fixed endpoints  η(x₁) = η(x₂) = 0
+  </text>
+
+  <!-- Path labels -->
+  <text x="210" y="110"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#C8860E">y + εη  (above)</text>
+  <text x="215" y="185"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#2a1a0e">y(x)  stationary path</text>
+  <text x="220" y="248"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#C8102E">y − εη  (below)</text>
+
+  <!-- Stationarity condition annotation -->
+  <text x="490" y="85"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#545454">δS = 0</text>
+  <text x="490" y="100"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">for all η</text>
+
+</svg>

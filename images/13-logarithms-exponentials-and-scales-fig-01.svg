@@ -1,0 +1,154 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 13-logarithms-exponentials-and-scales
+  Figure:  01 — Log–log vs semi-log linearization diagnostic
+  Source:  pantry/13-logarithms-exponentials-and-scales-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-01">
+  <title id="fig-title-01">Log–log vs semi-log linearization diagnostic</title>
+  <desc>Two-panel comparison: a power law y=x^2.5 shown on linear axes (upward-bending curve) and on log–log axes (straight line with slope triangle), alongside an exponential y=e^(0.8x) on linear axes and on semi-log axes (straight line with slope triangle), illustrating which axis transform linearizes which functional family.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="13-logarithms-exponentials-and-scales"
+      figure-number="01"
+      figure-title="Log–log vs semi-log linearization diagnostic"
+      figure-slug="log-log-vs-semi-log"
+      figure-type="diagram"
+      priority="critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/13-logarithms-exponentials-and-scales-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arrow01" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- ── Figure title ── -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400" fill="#2a1a0e">
+    Log–log vs semi-log linearization
+  </text>
+
+  <!-- ══════════════════════════════════════════════════
+       ROW 1: raw curves on linear axes
+       Left panel: power law  x=60–330  y=40–190
+       Right panel: exponential  x=370–640  y=40–190
+  ══════════════════════════════════════════════════ -->
+
+  <!-- Left panel border -->
+  <rect x="60" y="40" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Right panel border -->
+  <rect x="370" y="40" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Column labels -->
+  <text x="195" y="36" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    Power law  y = x^k
+  </text>
+  <text x="505" y="36" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    Exponential  y = e^(kx)
+  </text>
+
+  <!-- Row label: linear axes -->
+  <text x="32" y="120" text-anchor="middle" transform="rotate(-90,32,120)"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">
+    linear axes
+  </text>
+
+  <!-- Power law on linear axes (Sky-mapped to #2a1a0e, now using ink+accent per palette) -->
+  <!-- Curve: y = x^2.5, x in [0.1,10], mapped to panel -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="60.0,190.0 63.4,190.0 66.8,190.0 70.2,190.0 73.6,190.0 77.0,190.0 80.4,189.9 83.8,189.9 87.2,189.8 90.6,189.7 94.0,189.6 97.4,189.4 100.8,189.1 104.2,188.8 107.6,188.4 111.0,187.9 114.4,187.3 117.8,186.5 121.2,185.7 124.6,184.7 128.0,183.5 131.4,182.2 134.8,180.7 138.2,179.0 141.6,177.1 145.0,175.0 148.4,172.7 151.8,170.2 155.2,167.4 158.6,164.4 162.0,161.1 165.4,157.6 168.8,153.8 172.2,149.7 175.6,145.4 179.0,140.7 182.4,135.8 185.8,130.6 189.2,125.0 192.6,119.2 196.0,113.0 199.4,106.5 202.8,99.7 206.2,92.5 209.6,85.1 213.0,77.2 216.4,69.0 219.8,60.5 223.2,51.6 226.6,42.4 230.0,32.8"/>
+
+  <!-- Exponential on linear axes -->
+  <polyline fill="none" stroke="#C8102E" stroke-width="1.5"
+    points="370.0,187.3 373.4,187.1 376.8,187.0 380.2,186.8 383.6,186.6 387.0,186.4 390.4,186.1 393.8,185.8 397.2,185.4 400.6,185.0 404.0,184.6 407.4,184.1 410.8,183.5 414.2,182.8 417.6,182.1 421.0,181.3 424.4,180.4 427.8,179.4 431.2,178.3 434.6,177.1 438.0,175.8 441.4,174.3 444.8,172.8 448.2,171.0 451.6,169.2 455.0,167.2 458.4,165.0 461.8,162.7 465.2,160.2 468.6,157.5 472.0,154.6 475.4,151.5 478.8,148.2 482.2,144.7 485.6,141.0 489.0,137.0 492.4,132.8 495.8,128.4 499.2,123.7 502.6,118.7 506.0,113.5 509.4,108.0 512.8,102.2 516.2,96.1 519.6,89.7 523.0,83.0 526.4,76.0 529.8,68.6 533.2,60.9 536.6,52.9 540.0,44.5"/>
+
+  <!-- ══════════════════════════════════════════════════
+       ROW 2: linearized versions
+       Left panel: power law on log–log  x=60–330  y=230–380
+       Right panel: exponential on semi-log  x=370–640  y=230–380
+  ══════════════════════════════════════════════════ -->
+
+  <!-- Left panel border -->
+  <rect x="60" y="230" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Right panel border -->
+  <rect x="370" y="230" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Row label: log/semi-log axes -->
+  <text x="32" y="310" text-anchor="middle" transform="rotate(-90,32,310)"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">
+    log axes
+  </text>
+
+  <!-- Power law on log–log axes (straight line) -->
+  <line x1="60" y1="380" x2="330" y2="230" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <!-- Slope triangle on log–log (at x from log10(2.5) to log10(5), mapped) -->
+  <!-- Triangle vertices: bottom-left (249,275), bottom-right (289.5,275), top-right (289.5,252.5) -->
+  <polygon points="249,275 289.5,275 289.5,252.5" fill="#F5F5F5" stroke="#787878" stroke-width="0.75"/>
+  <!-- k label arrow indicator -->
+  <text x="296" y="266"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">k</text>
+
+  <!-- Exponential on semi-log axes (straight line) -->
+  <line x1="370" y1="380" x2="640" y2="230" stroke="#C8102E" stroke-width="1.5"/>
+
+  <!-- Slope triangle on semi-log -->
+  <!-- Triangle: (424, 350.2), (505, 350.2), (505, 305.5) -->
+  <polygon points="424,350 505,350 505,306" fill="#F5F5F5" stroke="#787878" stroke-width="0.75"/>
+  <text x="512" y="332"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">k</text>
+
+  <!-- Horizontal divider between rows -->
+  <line x1="50" y1="212" x2="650" y2="212" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+  <!-- Vertical divider between columns -->
+  <line x1="350" y1="30" x2="350" y2="395" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+  <!-- Axes arrows for panels -->
+  <!-- Top-left axes -->
+  <line x1="60" y1="190" x2="60" y2="42" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <line x1="60" y1="190" x2="328" y2="190" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <text x="68" y="192" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">x</text>
+  <text x="61" y="52" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">y</text>
+
+  <!-- Top-right axes -->
+  <line x1="370" y1="190" x2="370" y2="42" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <line x1="370" y1="190" x2="638" y2="190" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <text x="378" y="192" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">x</text>
+  <text x="371" y="52" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">y</text>
+
+  <!-- Bottom-left axes (log–log) -->
+  <line x1="60" y1="380" x2="60" y2="232" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <line x1="60" y1="380" x2="328" y2="380" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <text x="68" y="382" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">log x</text>
+  <text x="61" y="242" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">log y</text>
+
+  <!-- Bottom-right axes (semi-log) -->
+  <line x1="370" y1="380" x2="370" y2="232" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <line x1="370" y1="380" x2="638" y2="380" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arrow01)"/>
+  <text x="378" y="382" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">x</text>
+  <text x="371" y="242" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">log y</text>
+
+  <!-- Legend -->
+  <line x1="60" y1="408" x2="90" y2="408" stroke="#2a1a0e" stroke-width="1.5"/>
+  <text x="94" y="412" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">power law</text>
+  <line x1="200" y1="408" x2="230" y2="408" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="234" y="412" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">exponential</text>
+  <polygon points="350,404 358,408 350,412 342,408" fill="#F5F5F5" stroke="#787878" stroke-width="0.75"/>
+  <text x="362" y="412" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">slope triangle = exponent k</text>
+
+</svg>

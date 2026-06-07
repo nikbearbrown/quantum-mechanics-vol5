@@ -1,0 +1,132 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 16-tensor-products-and-composite-systems
+  Figure:  01 — Dimension contrast: direct sum vs tensor product
+  Source:  pantry/16-tensor-products-and-composite-systems-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c16-01">
+  <title id="fig-title-c16-01">Dimension contrast: direct sum V⊕W versus tensor product V⊗W</title>
+  <desc>Side-by-side comparison: left panel shows the direct sum V⊕W as two separate stacks of basis-vector rectangles (blue for V, ochre for W) with a bracket indicating 2+2=4 dimensions; right panel shows the tensor product V⊗W as a 2×2 grid of ordered-pair basis elements with corner marks encoding the pairing, plus a purple indicator for non-product (entangled) elements absent from the product basis.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="16-tensor-products-and-composite-systems" figure-number="01"
+      figure-title="Dimension contrast: direct sum vs tensor product"
+      figure-slug="direct-sum-vs-tensor-product" figure-type="diagram"
+      priority="critical" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/16-tensor-products-and-composite-systems-cajal.md"/>
+  </metadata>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Direct sum  V ⊕ W  vs tensor product  V ⊗ W
+  </text>
+
+  <!-- Vertical divider -->
+  <line x1="350" y1="40" x2="350" y2="390" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- ====== LEFT PANEL: Direct sum V ⊕ W ====== -->
+  <text x="175" y="58" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="15" fill="#2a1a0e">V ⊕ W</text>
+  <text x="175" y="74" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">dim = 2 + 2 = 4</text>
+
+  <!-- V basis elements (blue) — left stack, x=90 -->
+  <rect x="90" y="100" width="70" height="50" fill="#2a1a0e" fill-opacity="0.35" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="125" y="130" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13" fill="#2a1a0e">|v₁⟩</text>
+  <rect x="90" y="160" width="70" height="50" fill="#2a1a0e" fill-opacity="0.35" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="125" y="190" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13" fill="#2a1a0e">|v₂⟩</text>
+
+  <!-- V label -->
+  <text x="125" y="92" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e" font-style="italic">V</text>
+
+  <!-- W basis elements (ochre) — right stack, x=180 -->
+  <rect x="180" y="100" width="70" height="50" fill="#C8860E" fill-opacity="0.35" stroke="#C8860E" stroke-width="1"/>
+  <text x="215" y="130" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13" fill="#C8860E">|w₁⟩</text>
+  <rect x="180" y="160" width="70" height="50" fill="#C8860E" fill-opacity="0.35" stroke="#C8860E" stroke-width="1"/>
+  <text x="215" y="190" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13" fill="#C8860E">|w₂⟩</text>
+
+  <!-- W label -->
+  <text x="215" y="92" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#C8860E" font-style="italic">W</text>
+
+  <!-- Bracket below spanning both stacks -->
+  <path d="M 90,225 L 90,240 L 250,240 L 250,225" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="170" y="258" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">4 basis vectors</text>
+  <text x="170" y="274" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">(each belongs to V or W)</text>
+
+  <!-- Key insight -->
+  <rect x="72" y="300" width="236" height="52" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="190" y="320" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">Basis elements are</text>
+  <text x="190" y="334" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">|v₁⟩, |v₂⟩, |w₁⟩, |w₂⟩</text>
+  <text x="190" y="346" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">separated by subspace</text>
+
+  <!-- ====== RIGHT PANEL: Tensor product V ⊗ W ====== -->
+  <text x="525" y="58" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="15" fill="#2a1a0e">V ⊗ W</text>
+  <text x="525" y="74" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">dim = 2 × 2 = 4</text>
+
+  <!-- 2×2 grid of ordered-pair basis elements -->
+  <!-- Cell size 80×50, grid starts at x=385, y=90 -->
+  <!-- Row labels: v1, v2; Col labels: w1, w2 -->
+
+  <!-- Column headers -->
+  <text x="435" y="92" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#C8860E">|w₁⟩</text>
+  <text x="515" y="92" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#C8860E">|w₂⟩</text>
+  <!-- Row headers -->
+  <text x="378" y="135" text-anchor="end" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">|v₁⟩</text>
+  <text x="378" y="185" text-anchor="end" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">|v₂⟩</text>
+
+  <!-- Cell (v1,w1) = |00⟩ -->
+  <rect x="385" y="100" width="80" height="50" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="425" y="130" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">|v₁w₁⟩</text>
+  <!-- Corner marks -->
+  <polyline points="385,110 395,110 395,100" fill="none" stroke="#2a1a0e" stroke-width="2.5"/>
+  <polyline points="455,100 465,100 465,110" fill="none" stroke="#C8860E" stroke-width="2.5"/>
+
+  <!-- Cell (v1,w2) = |01⟩ -->
+  <rect x="465" y="100" width="80" height="50" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="505" y="130" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">|v₁w₂⟩</text>
+  <polyline points="465,110 475,110 475,100" fill="none" stroke="#2a1a0e" stroke-width="2.5"/>
+  <polyline points="535,100 545,100 545,110" fill="none" stroke="#C8860E" stroke-width="2.5"/>
+
+  <!-- Cell (v2,w1) = |10⟩ -->
+  <rect x="385" y="150" width="80" height="50" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="425" y="180" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">|v₂w₁⟩</text>
+  <polyline points="385,160 395,160 395,150" fill="none" stroke="#2a1a0e" stroke-width="2.5"/>
+  <polyline points="455,150 465,150 465,160" fill="none" stroke="#C8860E" stroke-width="2.5"/>
+
+  <!-- Cell (v2,w2) = |11⟩ -->
+  <rect x="465" y="150" width="80" height="50" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="505" y="180" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">|v₂w₂⟩</text>
+  <polyline points="465,160 475,160 475,150" fill="none" stroke="#2a1a0e" stroke-width="2.5"/>
+  <polyline points="535,150 545,150 545,160" fill="none" stroke="#C8860E" stroke-width="2.5"/>
+
+  <!-- Entangled-element indicator -->
+  <rect x="385" y="230" width="80" height="50" fill="#C8102E" fill-opacity="0.30" stroke="#C8102E" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="425" y="252" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#C8102E">entangled</text>
+  <text x="425" y="265" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#C8102E">states</text>
+  <text x="475" y="252" text-anchor="start" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">also in</text>
+  <text x="475" y="264" text-anchor="start" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">V⊗W</text>
+  <text x="475" y="276" text-anchor="start" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">not in V⊕W</text>
+
+  <!-- Key insight box -->
+  <rect x="372" y="300" width="253" height="52" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="498" y="320" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">Basis elements are</text>
+  <text x="498" y="334" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">|v₁w₁⟩, |v₁w₂⟩, |v₂w₁⟩, |v₂w₂⟩</text>
+  <text x="498" y="346" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">all ordered pairs</text>
+
+  <!-- Bottom note -->
+  <text x="350" y="400" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    Only V⊗W contains entangled states  (superpositions of product states)
+  </text>
+
+</svg>

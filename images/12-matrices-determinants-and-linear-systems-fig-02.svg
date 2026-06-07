@@ -1,0 +1,174 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 12-matrices-determinants-and-linear-systems
+     Figure      : 02
+     Title       : Bloch sphere cross-section — pure states on surface, mixed states interior
+     Type        : concept / verification-gap
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/12-matrices-determinants-and-linear-systems-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-12-02">
+  <title id="fig-title-12-02">Bloch sphere cross-section — pure states on surface, mixed states interior</title>
+  <desc>Flat circle representing the Bloch sphere cross-section: boundary circle (pure states, |r|=1) with three marked boundary points at north pole, south pole, and equator; one interior point (mixed state, |r|&lt;1) with Bloch vector arrow from center; center point (maximally mixed state); dashed vertical spin axis from south to north pole through center.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="12-matrices-determinants-and-linear-systems"
+      figure-number="02"
+      figure-title="Bloch sphere cross-section — pure states on surface, mixed states interior"
+      figure-slug="bloch-sphere-pure-mixed-states"
+      figure-type="concept-verification-gap"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/12-matrices-determinants-and-linear-systems-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr12b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr12b-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Bloch sphere: state space for a qubit</text>
+
+  <!-- ── MAIN BLOCH SPHERE CIRCLE ── centered at (280,210), radius=160 -->
+  <!-- Interior fill (mixed state region) -->
+  <circle cx="280" cy="210" r="160" fill="#2a1a0e" fill-opacity="0.04"
+          stroke="#2a1a0e" stroke-width="2"/>
+
+  <!-- Dashed vertical spin axis: from (280,50) to (280,370) -->
+  <line x1="280" y1="42" x2="280" y2="378" stroke="#D4D4D4" stroke-width="1"
+        stroke-dasharray="6 4"/>
+
+  <!-- North pole point (top): (280, 50) -->
+  <circle cx="280" cy="50" r="7" fill="#C8102E"/>
+  <!-- South pole point (bottom): (280, 370) -->
+  <circle cx="280" cy="370" r="7" fill="#C8102E"/>
+  <!-- Equatorial point (right): (440, 210) -->
+  <circle cx="440" cy="210" r="7" fill="#C8102E"/>
+
+  <!-- Interior mixed-state point: at ~60% radius in upper-right quadrant
+       r=0.6, angle=45° → (280+0.6*160*cos45, 210-0.6*160*sin45)=(280+68,210-68)=(348,142) -->
+  <circle cx="348" cy="142" r="9" fill="#787878" fill-opacity="0.8" stroke="#787878" stroke-width="1.5"/>
+
+  <!-- Center point (maximally mixed): (280,210) -->
+  <circle cx="280" cy="210" r="8" fill="#ADADAD" stroke="#ADADAD" stroke-width="1.5"/>
+
+  <!-- Bloch vector r: from center (280,210) to interior point (348,142) -->
+  <line x1="280" y1="210" x2="342" y2="148" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr12b-red)"/>
+
+  <!-- Radial distance indicator: from center to equatorial point -->
+  <line x1="280" y1="210" x2="438" y2="210" stroke="#D4D4D4" stroke-width="1"
+        stroke-dasharray="4 3" marker-end="url(#arr12b)"/>
+
+  <!-- Annotations: left side legend panel -->
+  <rect x="32" y="42" width="200" height="340" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="132" y="62" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">State space legend</text>
+
+  <!-- Boundary (pure states) -->
+  <line x1="44" y1="84" x2="80" y2="84" stroke="#2a1a0e" stroke-width="2.5"/>
+  <circle cx="62" cy="84" r="6" fill="#C8102E"/>
+  <text x="88" y="80" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#2a1a0e">Boundary |r| = 1</text>
+  <text x="88" y="95" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Pure states: |ψ⟩</text>
+  <text x="88" y="108" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">ρ² = ρ, Tr(ρ²) = 1</text>
+
+  <line x1="44" y1="134" x2="224" y2="134" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <!-- Interior mixed state -->
+  <circle cx="62" cy="156" r="8" fill="#787878" fill-opacity="0.7"/>
+  <text x="78" y="150" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#545454">Interior |r| &lt; 1</text>
+  <text x="78" y="165" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Mixed states: ρ = Σ pᵢ|ψᵢ⟩⟨ψᵢ|</text>
+  <text x="78" y="178" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Tr(ρ²) &lt; 1</text>
+
+  <line x1="44" y1="194" x2="224" y2="194" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <!-- Center (max mixed) -->
+  <circle cx="62" cy="214" r="7" fill="#ADADAD"/>
+  <text x="78" y="208" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#545454">Center r = 0</text>
+  <text x="78" y="222" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Maximally mixed: ρ = I/2</text>
+  <text x="78" y="235" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Tr(ρ²) = 1/2</text>
+
+  <line x1="44" y1="250" x2="224" y2="250" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <!-- Bloch vector -->
+  <line x1="44" y1="268" x2="80" y2="268" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr12b-red)"/>
+  <text x="88" y="264" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#C8102E">Bloch vector r</text>
+  <text x="88" y="278" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">r = Tr(ρ σ) = (⟨σₓ⟩,⟨σᵧ⟩,⟨σᵤ⟩)</text>
+  <text x="88" y="291" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">encodes full density matrix</text>
+
+  <line x1="44" y1="308" x2="224" y2="308" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <!-- Axis -->
+  <line x1="54" y1="325" x2="70" y2="325" stroke="#D4D4D4" stroke-width="1"
+        stroke-dasharray="5 3"/>
+  <text x="78" y="321" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Dashed axis: spin-z</text>
+  <text x="78" y="335" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">measurement direction</text>
+
+  <!-- Sphere annotations -->
+  <!-- North pole label -->
+  <text x="290" y="45" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#2a1a0e">|↑⟩ = spin-up</text>
+  <!-- South pole label -->
+  <text x="290" y="376" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#2a1a0e">|↓⟩ = spin-down</text>
+  <!-- Equator label -->
+  <text x="454" y="206" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">equatorial</text>
+  <text x="454" y="220" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">pure state</text>
+  <!-- Interior point label -->
+  <text x="360" y="138" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#787878">mixed state</text>
+  <text x="360" y="152" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#787878">|r| = 0.6</text>
+  <!-- Center label -->
+  <text x="292" y="225" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#ADADAD">max mixed</text>
+
+  <!-- r unit radius indicator -->
+  <text x="362" y="202" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">|r| = 1</text>
+  <text x="362" y="216" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#545454">(unit radius)</text>
+
+  <!-- Caption -->
+  <text x="350" y="396" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Pure states saturate the sphere surface; mixing moves the state vector inward</text>
+  <text x="350" y="410" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Any qubit density matrix ρ = ½(I + r·σ) is fully characterized by its Bloch vector r ∈ R³</text>
+</svg>

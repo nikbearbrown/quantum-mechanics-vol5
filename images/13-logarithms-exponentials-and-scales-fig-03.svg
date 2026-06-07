@@ -1,0 +1,159 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 13-logarithms-exponentials-and-scales
+  Figure:  03 — WKB tunneling geometry: classically allowed and forbidden regions
+  Source:  pantry/13-logarithms-exponentials-and-scales-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-03">
+  <title id="fig-title-03">WKB tunneling geometry: classically allowed and forbidden regions</title>
+  <desc>Spatial diagram showing a smooth hill-shaped barrier potential V(x) above a particle energy E (dashed line), with the classically forbidden region between turning points x₁ and x₂ shaded, flanked by oscillatory wavefunctions in the allowed regions and an exponentially decaying wavefunction inside the barrier.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="13-logarithms-exponentials-and-scales"
+      figure-number="03"
+      figure-title="WKB tunneling geometry: classically allowed and forbidden regions"
+      figure-slug="wkb-tunneling-geometry"
+      figure-type="diagram"
+      priority="important"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/13-logarithms-exponentials-and-scales-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arrow03" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Chart area -->
+  <rect x="60" y="30" width="610" height="320" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Title -->
+  <text x="365" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400" fill="#2a1a0e">
+    WKB tunneling geometry
+  </text>
+
+  <!-- Coordinate axes -->
+  <line x1="60" y1="290" x2="668" y2="290" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow03)"/>
+  <text x="672" y="294" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">x</text>
+
+  <!-- Barrier potential V(x): Gaussian hill centered at x=365 (screen coords)
+       Turning points x1≈200, x2≈530 (derived from sigma=130px, peak at 365)
+       V(x) = 3.0 * exp(-((x-365)/130)^2) in data units, mapped to screen
+       Screen: y=290 is V=0, y=60 is V=3
+       At turning points V=E=1.5 → y=290-1.5/3*230 = 175 -->
+
+  <!-- Forbidden region fill (between x1=200 and x2=530, below V curve) -->
+  <!-- We build a path: V(x) curve from x1 to x2, then straight back along bottom -->
+  <path d="M 200,175
+    C 220,165 240,145 260,125 280,107 300,90 320,77 340,67 360,62 365,61
+    C 370,62 380,67 400,77 420,90 440,107 460,125 480,145 500,165 530,175
+    L 530,290 L 200,290 Z"
+    fill="#C8102E" fill-opacity="0.12" stroke="none"/>
+
+  <!-- Full V(x) barrier curve (smooth Gaussian hill) -->
+  <path d="M 62,289
+    C 80,289 100,288 120,287 140,286 160,283 180,278
+    C 190,274 195,270 200,265 210,252 220,238 230,222
+    C 240,206 250,188 265,170 280,152 295,132 310,114
+    C 320,102 335,88 350,76 360,68 365,62 365,61
+    C 365,62 370,68 380,76 395,88 410,102 420,114
+    C 435,132 450,152 465,170 480,188 490,206 500,222
+    C 510,238 520,252 530,265 535,270 540,274 550,278
+    C 570,283 590,286 610,287 630,288 650,289 668,289"
+    fill="none" stroke="#2a1a0e" stroke-width="2"/>
+
+  <!-- Energy level E (horizontal dashed line) -->
+  <line x1="62" y1="175" x2="668" y2="175" stroke="#C8860E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Turning point markers -->
+  <line x1="200" y1="50" x2="200" y2="350" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="530" y1="50" x2="530" y2="350" stroke="#ADADAD" stroke-width="0.75"/>
+
+  <!-- Turning point dots on E line -->
+  <circle cx="200" cy="175" r="4" fill="#2a1a0e"/>
+  <circle cx="530" cy="175" r="4" fill="#2a1a0e"/>
+
+  <!-- Turning point labels -->
+  <text x="200" y="365" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">x₁</text>
+  <text x="530" y="365" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">x₂</text>
+
+  <!-- V(x) label -->
+  <text x="365" y="52" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">V(x)</text>
+
+  <!-- E label -->
+  <text x="72" y="170"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#C8860E">E</text>
+
+  <!-- Oscillatory wavefunction LEFT (classically allowed, x < x1=200) -->
+  <!-- ψ ~ cos(kx) with amplitude, sitting below E line, y centered around 240 -->
+  <path d="M 65,250
+    C 72,245 79,225 86,220 93,225 100,250 107,255
+    C 114,250 121,225 128,220 135,225 142,250 149,255
+    C 156,250 163,225 170,220 177,225 184,250 191,253"
+    fill="none" stroke="#787878" stroke-width="1.5"/>
+
+  <!-- Decaying wavefunction INSIDE barrier (x1=200 to x2=530) -->
+  <!-- Exponential decay from x1 to x2 -->
+  <path d="M 200,245
+    C 220,246 240,248 260,251 280,254 300,257 330,260
+    C 360,263 390,265 420,266 450,267 480,268 510,268 525,268 530,268"
+    fill="none" stroke="#C8102E" stroke-width="1.5"/>
+
+  <!-- Oscillatory wavefunction RIGHT (transmitted, smaller amplitude) -->
+  <path d="M 530,265
+    C 537,262 544,248 551,245 558,248 565,265 572,268
+    C 579,265 586,248 593,245 600,248 607,265 614,268
+    C 621,265 628,248 635,246 642,248 649,262 656,265"
+    fill="none" stroke="#787878" stroke-width="1.5"/>
+
+  <!-- WKB exponent bracket over forbidden region -->
+  <path d="M 200,140 C 205,130 215,125 230,125 L 500,125 C 515,125 525,130 530,140"
+    fill="none" stroke="#C8860E" stroke-width="1" stroke-dasharray="3 2"/>
+  <text x="365" y="120" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#C8860E">
+    ∫ κ(x) dx
+  </text>
+
+  <!-- Region labels -->
+  <text x="125" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">classically</text>
+  <text x="125" y="342" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">allowed</text>
+
+  <text x="365" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8102E">classically</text>
+  <text x="365" y="342" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8102E">forbidden</text>
+
+  <text x="595" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">classically</text>
+  <text x="595" y="342" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">allowed</text>
+
+  <!-- Legend -->
+  <g font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    <line x1="65" y1="406" x2="90" y2="406" stroke="#2a1a0e" stroke-width="2"/>
+    <text x="94" y="410">V(x)</text>
+    <line x1="155" y1="406" x2="180" y2="406" stroke="#C8860E" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="184" y="410">E</text>
+    <line x1="210" y1="406" x2="235" y2="406" stroke="#787878" stroke-width="1.5"/>
+    <text x="239" y="410">ψ (allowed)</text>
+    <line x1="360" y1="406" x2="385" y2="406" stroke="#C8102E" stroke-width="1.5"/>
+    <text x="389" y="410">ψ (forbidden, decaying)</text>
+  </g>
+
+</svg>

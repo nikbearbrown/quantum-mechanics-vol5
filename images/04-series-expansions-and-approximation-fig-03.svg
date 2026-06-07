@@ -1,0 +1,38 @@
+<!-- CAJAL SVG | book: Quantum Mechanics | chapter: 04-series-expansions-and-approximation | figure: 03 | type: diagram | date: 2026-06-06 -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-title-0403">
+<title id="fig-title-0403">Perturbation theory: well-separated levels vs. near-degenerate levels</title>
+<desc>Two-panel diagram. Left: two energy levels well separated; a perturbation produces small first-order shifts. Right: two nearly degenerate levels with the same perturbation producing dramatically large level repulsion, with curved mixing brackets connecting original to strongly shifted positions. Visual contrast illustrates why perturbation theory breaks down near degeneracy.</desc>
+<metadata><cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0" book="Quantum Mechanics" book-slug="quantum-mechanics-vol5" chapter="04-series-expansions-and-approximation" figure-number="03" figure-title="Perturbation theory: convergence breakdown near degeneracy" figure-slug="perturbation-theory-degeneracy" figure-type="diagram" priority="IMPORTANT" author="Humanitarians AI Incorporated" date-generated="2026-06-06" source-file="pantry/04-series-expansions-and-approximation-cajal.md"/></metadata>
+<defs>
+  <marker id="arr0403r" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C8102E"/></marker>
+  <marker id="arr0403a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/></marker>
+</defs>
+<rect x="60" y="30" width="280" height="360" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+<rect x="360" y="30" width="280" height="360" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+<text x="200" y="22" text-anchor="middle" font-family="'Inter',-apple-system,sans-serif" font-size="11" fill="#545454">Well-separated levels</text>
+<text x="500" y="22" text-anchor="middle" font-family="'Inter',-apple-system,sans-serif" font-size="11" fill="#545454">Nearly degenerate levels</text>
+<line x1="85" y1="340" x2="85" y2="38" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arr0403a)"/>
+<text x="78" y="34" font-family="'EB Garamond',Georgia,serif" font-size="12" fill="#545454" font-style="italic">E</text>
+<line x1="385" y1="340" x2="385" y2="38" stroke="#2a1a0e" stroke-width="0.75" marker-end="url(#arr0403a)"/>
+<text x="378" y="34" font-family="'EB Garamond',Georgia,serif" font-size="12" fill="#545454" font-style="italic">E</text>
+<line x1="350" y1="30" x2="350" y2="390" stroke="#D4D4D4" stroke-width="1"/>
+<line x1="135" y1="256.0" x2="255" y2="256.0" stroke="#C8102E" stroke-width="3"/>
+<line x1="290" y1="256.0" x2="273" y2="256.0" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arr0403r)"/>
+<line x1="147" y1="247.6" x2="263" y2="247.6" stroke="#787878" stroke-width="1.5" stroke-dasharray="5 3"/>
+<line x1="135" y1="116.0" x2="255" y2="116.0" stroke="#787878" stroke-width="3"/>
+<line x1="290" y1="116.0" x2="273" y2="116.0" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arr0403r)"/>
+<line x1="147" y1="124.4" x2="263" y2="124.4" stroke="#787878" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="102" y="186.0" font-family="'EB Garamond',Georgia,serif" font-size="10" fill="#545454" font-style="italic">large gap</text>
+<text x="220" y="186.0" font-family="'EB Garamond',Georgia,serif" font-size="10" fill="#545454" font-style="italic">&#x394;E small</text>
+<line x1="445" y1="194.4" x2="565" y2="194.4" stroke="#C8102E" stroke-width="3"/>
+<line x1="600" y1="194.4" x2="583" y2="194.4" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arr0403r)"/>
+<line x1="457" y1="116.0" x2="573" y2="116.0" stroke="#787878" stroke-width="1.5" stroke-dasharray="5 3"/>
+<path d="M 445.0,194.4 C 415,194.4 415,116.0 457.0,116.0" fill="none" stroke="#C8102E" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="445" y1="177.6" x2="565" y2="177.6" stroke="#787878" stroke-width="3"/>
+<line x1="600" y1="177.6" x2="583" y2="177.6" stroke="#C8860E" stroke-width="1.5" marker-end="url(#arr0403r)"/>
+<line x1="457" y1="256.0" x2="573" y2="256.0" stroke="#787878" stroke-width="1.5" stroke-dasharray="5 3"/>
+<path d="M 445.0,177.6 C 415,177.6 415,256.0 457.0,256.0" fill="none" stroke="#C8102E" stroke-width="1.2" stroke-dasharray="3 2"/>
+<text x="398" y="186.0" font-family="'EB Garamond',Georgia,serif" font-size="10" fill="#545454" font-style="italic">tiny gap</text>
+<text x="508" y="93.6" font-family="'EB Garamond',Georgia,serif" font-size="10" fill="#C8102E" font-style="italic">&#x394;E huge!</text>
+<text x="350" y="408" text-anchor="middle" font-family="'EB Garamond',Georgia,serif" font-size="13" fill="#2a1a0e">As level spacing shrinks, the same perturbation drives diverging corrections — series breaks down</text>
+</svg>

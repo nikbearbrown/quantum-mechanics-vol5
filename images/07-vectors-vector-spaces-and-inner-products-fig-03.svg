@@ -1,0 +1,151 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 07-vectors-vector-spaces-and-inner-products
+     Figure      : 03
+     Title       : Resolution of the identity — projectors tile the space
+     Type        : concept / verification-gap
+     Priority    : Important
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/07-vectors-vector-spaces-and-inner-products-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-03">
+  <title id="fig-title-03">Resolution of the identity — projectors tile the space</title>
+  <desc>Two orthonormal basis vectors along horizontal and vertical axes with right-angle square; a general state vector at oblique angle; dashed perpendicular projections from the state tip to each axis; component arrows along each basis direction; parallelogram construction showing reconstruction of the state from its components.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="07-vectors-vector-spaces-and-inner-products"
+      figure-number="03"
+      figure-title="Resolution of the identity — projectors tile the space"
+      figure-slug="resolution-of-identity-projectors"
+      figure-type="concept-verification-gap"
+      priority="Important"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/07-vectors-vector-spaces-and-inner-products-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr03" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr03-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+    <marker id="arr03-gray" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#787878"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Resolution of the identity: Σ|n⟩⟨n| = I</text>
+
+  <!-- Plot area background -->
+  <rect x="160" y="50" width="380" height="310" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Origin at (230, 320) -->
+  <!-- e1 (horizontal basis): (230,320) → (390,320), length 160px (unit) -->
+  <!-- e2 (vertical basis):   (230,320) → (230,160), length 160px (unit) -->
+  <!-- |ψ⟩: state at angle ~49°: tip = (230+110, 320-125) = (340,195) -->
+  <!--       c1 = 110/160 = 0.688, c2 = 125/160 = 0.781 -->
+
+  <!-- Light fill for first-quadrant plane region -->
+  <polygon points="230,320 390,320 390,160 230,160"
+           fill="#2a1a0e" fill-opacity="0.04"/>
+
+  <!-- Parallelogram outline: c1e1 tip (340,320) → |ψ⟩ tip (340,195) → c2e2 tip (230,195) -->
+  <polygon points="230,320 340,320 340,195 230,195"
+           fill="none" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+  <!-- Dashed projections from |ψ⟩ tip to axes -->
+  <!-- To x-axis: (340,195) → (340,320) -->
+  <line x1="340" y1="195" x2="340" y2="320" stroke="#D4D4D4" stroke-width="0.75"
+        stroke-dasharray="4 3"/>
+  <!-- Right-angle at foot (340,320) -->
+  <path d="M340,312 L332,312 L332,320" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- To y-axis: (340,195) → (230,195) -->
+  <line x1="340" y1="195" x2="230" y2="195" stroke="#D4D4D4" stroke-width="0.75"
+        stroke-dasharray="4 3"/>
+  <!-- Right-angle at foot (230,195) -->
+  <path d="M238,195 L238,203 L230,203" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Component arrow c1·e1: (230,320) → (340,320) -->
+  <line x1="230" y1="320" x2="336" y2="320" stroke="#787878" stroke-width="2"
+        marker-end="url(#arr03-gray)"/>
+
+  <!-- Component arrow c2·e2: (230,320) → (230,195) -->
+  <line x1="230" y1="320" x2="230" y2="199" stroke="#ADADAD" stroke-width="2"
+        marker-end="url(#arr03-gray)"/>
+
+  <!-- Basis vector e1: (230,320) → (386,320) full unit length -->
+  <line x1="230" y1="320" x2="386" y2="320" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr03)"/>
+
+  <!-- Basis vector e2: (230,320) → (230,164) full unit length -->
+  <line x1="230" y1="320" x2="230" y2="164" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr03)"/>
+
+  <!-- Right-angle square at origin between e1 and e2 -->
+  <path d="M230,311 L239,311 L239,320" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+
+  <!-- State vector |ψ⟩: (230,320) → (340,195) -->
+  <line x1="230" y1="320" x2="337" y2="198" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr03-red)"/>
+
+  <!-- Labels -->
+  <text x="392" y="324" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">e₁</text>
+  <text x="235" y="160" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">e₂</text>
+  <text x="344" y="192" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="12" fill="#C8102E">|ψ⟩</text>
+  <text x="280" y="336" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">c₁e₁</text>
+  <text x="200" y="258" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">c₂e₂</text>
+
+  <!-- Annotation: Identity decomposition -->
+  <text x="480" y="120" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="12" fill="#2a1a0e">|ψ⟩ = c₁|e₁⟩ + c₂|e₂⟩</text>
+  <text x="480" y="140" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="12" fill="#2a1a0e">cₙ = ⟨eₙ|ψ⟩</text>
+  <text x="480" y="165" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">Projectors |eₙ⟩⟨eₙ| tile</text>
+  <text x="480" y="180" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">the full space — their</text>
+  <text x="480" y="195" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">sum reconstructs any |ψ⟩</text>
+
+  <!-- Legend -->
+  <line x1="480" y1="240" x2="506" y2="240" stroke="#C8102E" stroke-width="2.5"/>
+  <text x="512" y="244" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">state |ψ⟩</text>
+  <line x1="480" y1="260" x2="506" y2="260" stroke="#2a1a0e" stroke-width="2"/>
+  <text x="512" y="264" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">basis vectors eₙ</text>
+  <line x1="480" y1="280" x2="506" y2="280" stroke="#787878" stroke-width="2"/>
+  <text x="512" y="284" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">components cₙeₙ</text>
+  <line x1="480" y1="300" x2="506" y2="300" stroke="#D4D4D4" stroke-width="0.75"
+        stroke-dasharray="4 3"/>
+  <text x="512" y="304" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">projections / parallelogram</text>
+
+  <!-- Caption -->
+  <text x="350" y="395" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Parallelogram closes at the state tip, confirming Σ|n⟩⟨n||ψ⟩ = |ψ⟩</text>
+  <text x="350" y="410" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">for any |ψ⟩ in the space</text>
+</svg>

@@ -1,0 +1,100 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 14-combinatorics-and-multiplicity
+  Figure:  03 — Stirling accuracy: relative error vs N
+  Source:  pantry/14-combinatorics-and-multiplicity-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c14-03">
+  <title id="fig-title-c14-03">Stirling accuracy: relative error of ln N! approximations versus N</title>
+  <desc>Line chart showing the relative error |approx − exact| / |exact| of the leading Stirling approximation N ln N − N (solid red) and the refined approximation including the half-log term (dashed ink) for N from 2 to 30, with a marker at N=6 where the leading error is approximately 28%, and both curves asymptoting toward zero.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="14-combinatorics-and-multiplicity" figure-number="03"
+      figure-title="Stirling accuracy: relative error vs N"
+      figure-slug="stirling-relative-error" figure-type="chart"
+      priority="important" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/14-combinatorics-and-multiplicity-cajal.md"/>
+  </metadata>
+  <defs>
+    <marker id="arw3" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <text x="360" y="28" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Stirling approximation accuracy  |approx − exact| / |exact|
+  </text>
+
+  <rect x="80" y="50" width="560" height="320" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Gridlines -->
+  <g stroke="#D4D4D4" stroke-width="0.75">
+    <line x1="80" y1="290.0" x2="640" y2="290.0"/>
+    <line x1="80" y1="210.0" x2="640" y2="210.0"/>
+    <line x1="80" y1="130.0" x2="640" y2="130.0"/>
+  </g>
+
+  <!-- Zero reference -->
+  <line x1="80" y1="370" x2="640" y2="370" stroke="#2a1a0e" stroke-width="0.75"/>
+
+  <!-- Y-axis ticks -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
+    <line x1="75" y1="370" x2="80" y2="370" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="374" text-anchor="end">0</text>
+    <line x1="75" y1="290.0" x2="80" y2="290.0" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="294" text-anchor="end">0.5</text>
+    <line x1="75" y1="210.0" x2="80" y2="210.0" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="214" text-anchor="end">1.0</text>
+    <line x1="75" y1="130.0" x2="80" y2="130.0" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="134" text-anchor="end">1.5</text>
+    <line x1="75" y1="50" x2="80" y2="50" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="54" text-anchor="end">2.0</text>
+  </g>
+
+  <!-- Y-axis label -->
+  <text x="22" y="210" text-anchor="middle" transform="rotate(-90,22,210)"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    relative error
+  </text>
+
+  <!-- X-axis ticks -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
+    <line x1="80.0" y1="370" x2="80.0" y2="375" stroke="#2a1a0e" stroke-width="0.75"/><text x="80.0" y="387" text-anchor="middle">2</text><line x1="140.0" y1="370" x2="140.0" y2="375" stroke="#2a1a0e" stroke-width="0.75"/><text x="140.0" y="387" text-anchor="middle">5</text><line x1="240.0" y1="370" x2="240.0" y2="375" stroke="#2a1a0e" stroke-width="0.75"/><text x="240.0" y="387" text-anchor="middle">10</text><line x1="340.0" y1="370" x2="340.0" y2="375" stroke="#2a1a0e" stroke-width="0.75"/><text x="340.0" y="387" text-anchor="middle">15</text><line x1="440.0" y1="370" x2="440.0" y2="375" stroke="#2a1a0e" stroke-width="0.75"/><text x="440.0" y="387" text-anchor="middle">20</text><line x1="540.0" y1="370" x2="540.0" y2="375" stroke="#2a1a0e" stroke-width="0.75"/><text x="540.0" y="387" text-anchor="middle">25</text><line x1="640.0" y1="370" x2="640.0" y2="375" stroke="#2a1a0e" stroke-width="0.75"/><text x="640.0" y="387" text-anchor="middle">30</text>
+  </g>
+
+  <text x="360" y="404" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">N</text>
+
+  <!-- Refined curve (dashed ink) — draw first so leading is on top -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5" stroke-dasharray="5 3"
+    points="80.0,360.5 100.0,367.5 120.0,369.0 140.0,369.4 160.0,369.7 180.0,369.8 200.0,369.8 220.0,369.9 240.0,369.9 260.0,369.9 280.0,369.9 300.0,370.0 320.0,370.0 340.0,370.0 360.0,370.0 380.0,370.0 400.0,370.0 420.0,370.0 440.0,370.0 460.0,370.0 480.0,370.0 500.0,370.0 520.0,370.0 540.0,370.0 560.0,370.0 580.0,370.0 600.0,370.0 620.0,370.0 640.0,370.0"/>
+
+  <!-- Leading Stirling curve (solid red) -->
+  <polyline fill="none" stroke="#C8102E" stroke-width="2"
+    points="80.0,68.3 100.0,236.4 120.0,287.8 140.0,311.8 160.0,325.5 180.0,334.3 200.0,340.3 220.0,344.7 240.0,348.0 260.0,350.6 280.0,352.6 300.0,354.3 320.0,355.7 340.0,356.9 360.0,357.9 380.0,358.8 400.0,359.6 420.0,360.3 440.0,360.9 460.0,361.4 480.0,361.9 500.0,362.3 520.0,362.7 540.0,363.0 560.0,363.3 580.0,363.6 600.0,363.9 620.0,364.1 640.0,364.4"/>
+
+  <!-- Marker at N=6 -->
+  <circle cx="160.0" cy="325.5" r="5" fill="#C8102E"/>
+  <!-- Annotation line from marker -->
+  <line x1="160.0" y1="317.5" x2="200.0" y2="280.5" stroke="#545454" stroke-width="0.75"/>
+  <text x="203" y="278"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">N = 6</text>
+  <text x="203" y="290"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">err ≈ 28%</text>
+
+  <!-- Legend -->
+  <g font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    <line x1="95" y1="392" x2="130" y2="392" stroke="#C8102E" stroke-width="2"/>
+    <text x="134" y="396">leading  N ln N − N</text>
+    <line x1="360" y1="392" x2="395" y2="392" stroke="#2a1a0e" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="399" y="396">refined  + ½ ln(2πN)</text>
+  </g>
+
+</svg>

@@ -1,0 +1,49 @@
+<!-- CAJAL SVG | book: Quantum Mechanics | chapter: 02-probability-normalization-and-expectation | figure: 01 | type: chart | date: 2026-06-06 -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-title-0201">
+<title id="fig-title-0201">Gaussian probability density: area as probability, sigma bracket, and shaded interval</title>
+<desc>Gaussian probability density function symmetric about its mean at zero. The y-axis starts at zero, showing probability density values not probabilities. A bracket below the x-axis marks the interval from negative sigma to positive sigma. A shaded strip to the right of the mean shows a finite-interval probability as the area under the curve.</desc>
+<metadata><cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0" book="Quantum Mechanics" book-slug="quantum-mechanics-vol5" chapter="02-probability-normalization-and-expectation" figure-number="01" figure-title="Gaussian probability density: area as probability, sigma bracket, and shaded interval" figure-slug="gaussian-pdf-area-sigma" figure-type="chart" priority="CRITICAL" author="Humanitarians AI Incorporated" date-generated="2026-06-06" source-file="pantry/02-probability-normalization-and-expectation-cajal.md"/></metadata>
+
+<defs>
+  <marker id="arr-0201" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+  </marker>
+</defs>
+
+<!-- Chart area -->
+<rect x="90" y="40" width="520" height="320" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+<!-- Axes -->
+<line x1="90" y1="360.0" x2="620" y2="360.0" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arr-0201)"/>
+<line x1="350.0" y1="360" x2="350.0" y2="40" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arr-0201)"/>
+
+<!-- Y-axis label -->
+<text x="356.0" y="36" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#545454" font-style="italic">f(x)</text>
+<!-- X-axis label -->
+<text x="628" y="364.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#545454" font-style="italic">x</text>
+
+<!-- Shaded strip (area = probability) -->
+<path d="M 454.00,360.00 L 454.00,230.54 L 454.87,232.09 L 455.73,233.64 L 456.60,235.18 L 457.47,236.71 L 458.33,238.23 L 459.20,239.75 L 460.07,241.26 L 460.93,242.77 L 461.80,244.27 L 462.67,245.75 L 463.53,247.24 L 464.40,248.71 L 465.27,250.17 L 466.13,251.63 L 467.00,253.08 L 467.87,254.52 L 468.73,255.95 L 469.60,257.37 L 470.47,258.78 L 471.33,260.18 L 472.20,261.57 L 473.07,262.96 L 473.93,264.33 L 474.80,265.69 L 475.67,267.05 L 476.53,268.39 L 477.40,269.72 L 478.27,271.04 L 479.13,272.35 L 480.00,273.65 L 480.87,274.94 L 481.73,276.22 L 482.60,277.49 L 483.47,278.75 L 484.33,279.99 L 485.20,281.23 L 486.07,282.45 L 486.93,283.66 L 487.80,284.86 L 488.67,286.05 L 489.53,287.23 L 490.40,288.40 L 491.27,289.55 L 492.13,290.69 L 493.00,291.82 L 493.87,292.94 L 494.73,294.05 L 495.60,295.15 L 496.47,296.23 L 497.33,297.30 L 497.33,360.00 Z" fill="#787878" fill-opacity="0.35"/>
+
+<!-- Gaussian curve -->
+<path d="M 90.00,357.05 L 92.60,356.77 L 95.20,356.47 L 97.80,356.15 L 100.40,355.80 L 103.00,355.42 L 105.60,355.01 L 108.20,354.57 L 110.80,354.10 L 113.40,353.60 L 116.00,353.05 L 118.60,352.47 L 121.20,351.85 L 123.80,351.18 L 126.40,350.46 L 129.00,349.70 L 131.60,348.89 L 134.20,348.02 L 136.80,347.10 L 139.40,346.11 L 142.00,345.07 L 144.60,343.96 L 147.20,342.79 L 149.80,341.55 L 152.40,340.23 L 155.00,338.84 L 157.60,337.37 L 160.20,335.83 L 162.80,334.20 L 165.40,332.48 L 168.00,330.68 L 170.60,328.78 L 173.20,326.80 L 175.80,324.72 L 178.40,322.54 L 181.00,320.27 L 183.60,317.90 L 186.20,315.42 L 188.80,312.84 L 191.40,310.16 L 194.00,307.37 L 196.60,304.47 L 199.20,301.47 L 201.80,298.36 L 204.40,295.15 L 207.00,291.82 L 209.60,288.40 L 212.20,284.86 L 214.80,281.23 L 217.40,277.49 L 220.00,273.65 L 222.60,269.72 L 225.20,265.69 L 227.80,261.57 L 230.40,257.37 L 233.00,253.08 L 235.60,248.71 L 238.20,244.27 L 240.80,239.75 L 243.40,235.18 L 246.00,230.54 L 248.60,225.86 L 251.20,221.13 L 253.80,216.36 L 256.40,211.56 L 259.00,206.75 L 261.60,201.91 L 264.20,197.07 L 266.80,192.24 L 269.40,187.41 L 272.00,182.61 L 274.60,177.84 L 277.20,173.10 L 279.80,168.42 L 282.40,163.80 L 285.00,159.24 L 287.60,154.77 L 290.20,150.38 L 292.80,146.09 L 295.40,141.91 L 298.00,137.85 L 300.60,133.92 L 303.20,130.12 L 305.80,126.47 L 308.40,122.98 L 311.00,119.65 L 313.60,116.49 L 316.20,113.51 L 318.80,110.73 L 321.40,108.13 L 324.00,105.74 L 326.60,103.56 L 329.20,101.59 L 331.80,99.84 L 334.40,98.31 L 337.00,97.01 L 339.60,95.95 L 342.20,95.11 L 344.80,94.52 L 347.40,94.16 L 350.00,94.04 L 352.60,94.16 L 355.20,94.52 L 357.80,95.11 L 360.40,95.95 L 363.00,97.01 L 365.60,98.31 L 368.20,99.84 L 370.80,101.59 L 373.40,103.56 L 376.00,105.74 L 378.60,108.13 L 381.20,110.73 L 383.80,113.51 L 386.40,116.49 L 389.00,119.65 L 391.60,122.98 L 394.20,126.47 L 396.80,130.12 L 399.40,133.92 L 402.00,137.85 L 404.60,141.91 L 407.20,146.09 L 409.80,150.38 L 412.40,154.77 L 415.00,159.24 L 417.60,163.80 L 420.20,168.42 L 422.80,173.10 L 425.40,177.84 L 428.00,182.61 L 430.60,187.41 L 433.20,192.24 L 435.80,197.07 L 438.40,201.91 L 441.00,206.75 L 443.60,211.56 L 446.20,216.36 L 448.80,221.13 L 451.40,225.86 L 454.00,230.54 L 456.60,235.18 L 459.20,239.75 L 461.80,244.27 L 464.40,248.71 L 467.00,253.08 L 469.60,257.37 L 472.20,261.57 L 474.80,265.69 L 477.40,269.72 L 480.00,273.65 L 482.60,277.49 L 485.20,281.23 L 487.80,284.86 L 490.40,288.40 L 493.00,291.82 L 495.60,295.15 L 498.20,298.36 L 500.80,301.47 L 503.40,304.47 L 506.00,307.37 L 508.60,310.16 L 511.20,312.84 L 513.80,315.42 L 516.40,317.90 L 519.00,320.27 L 521.60,322.54 L 524.20,324.72 L 526.80,326.80 L 529.40,328.78 L 532.00,330.68 L 534.60,332.48 L 537.20,334.20 L 539.80,335.83 L 542.40,337.37 L 545.00,338.84 L 547.60,340.23 L 550.20,341.55 L 552.80,342.79 L 555.40,343.96 L 558.00,345.07 L 560.60,346.11 L 563.20,347.10 L 565.80,348.02 L 568.40,348.89 L 571.00,349.70 L 573.60,350.46 L 576.20,351.18 L 578.80,351.85 L 581.40,352.47 L 584.00,353.05 L 586.60,353.60 L 589.20,354.10 L 591.80,354.57 L 594.40,355.01 L 597.00,355.42 L 599.60,355.80 L 602.20,356.15 L 604.80,356.47 L 607.40,356.77 L 610.00,357.05" fill="none" stroke="#C8102E" stroke-width="2"/>
+
+<!-- Mean dashed line -->
+<line x1="350.0" y1="360.0" x2="350.0" y2="94.0" stroke="#2a1a0e" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+<!-- Sigma bracket below x-axis -->
+<line x1="263.3" y1="376.0" x2="436.7" y2="376.0" stroke="#C8860E" stroke-width="1.5"/>
+<line x1="263.3" y1="371.0" x2="263.3" y2="381.0" stroke="#C8860E" stroke-width="1.5"/>
+<line x1="436.7" y1="371.0" x2="436.7" y2="381.0" stroke="#C8860E" stroke-width="1.5"/>
+<text x="350.0" y="396.0" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#C8860E" font-style="italic">σ = 1</text>
+
+<!-- Labels on the figure -->
+<text x="358.0" y="86.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="12" fill="#545454" font-style="italic">peak = f(μ)</text>
+
+<!-- Area annotation for shaded strip -->
+<text x="475.7" y="320.0" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">P(a ≤ x ≤ b)</text>
+<line x1="475.7" y1="328.0" x2="475.7" y2="272.0" stroke="#545454" stroke-width="0.75"/>
+
+<!-- Figure title -->
+<text x="350" y="412" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">Probability density f(x): probability = area under curve, not function value</text>
+</svg>

@@ -1,0 +1,195 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 11-special-functions
+     Figure      : 01
+     Title       : Sturm–Liouville taxonomy — seven special-function families from one structure
+     Type        : concept / verification-gap (hierarchy)
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/11-special-functions-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-11-01">
+  <title id="fig-title-11-01">Sturm–Liouville taxonomy — seven special-function families from one structure</title>
+  <desc>Two-level hierarchy: a single anchor box at the top representing the Sturm–Liouville self-adjoint operator; seven leaf boxes in a horizontal row below, each with a distinguishing shape icon for one special-function family and a color-coded badge for the quantization mechanism. Three badge colors: bluish-green for series termination, gray for regularity at endpoint, red-accent for asymptotic boundary zeros.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="11-special-functions"
+      figure-number="01"
+      figure-title="Sturm–Liouville taxonomy — seven special-function families from one structure"
+      figure-slug="sturm-liouville-taxonomy-seven-families"
+      figure-type="concept-hierarchy"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/11-special-functions-cajal.md"/>
+  </metadata>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Sturm–Liouville structure: one operator, seven function families</text>
+
+  <!-- ── ANCHOR BOX ── -->
+  <rect x="120" y="34" width="460" height="44" fill="#C8102E" fill-opacity="0.12"
+        stroke="#C8102E" stroke-width="1.5"/>
+  <text x="350" y="52" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12"
+        font-weight="600" fill="#2a1a0e">Sturm–Liouville operator: (d/dx)[p(x)dy/dx] − q(x)y + λw(x)y = 0</text>
+  <text x="350" y="70" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Self-adjoint; eigenfunctions orthogonal with weight w(x); eigenvalues real and ordered</text>
+
+  <!-- Branch lines from anchor to 7 leaf boxes -->
+  <!-- Leaf box centers at x = 48, 147, 246, 349, 452, 553, 652; y = 130 (top of leaf) -->
+  <!-- Seven leaf centers: 48,159 | 148,159 | 248,159 | 350,159 | 452,159 | 552,159 | 652,159 -->
+  <!-- Lines from anchor bottom center (350,78) -->
+  <line x1="350" y1="78" x2="48" y2="128" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="350" y1="78" x2="149" y2="128" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="350" y1="78" x2="250" y2="128" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="350" y1="78" x2="350" y2="128" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="350" y1="78" x2="451" y2="128" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="350" y1="78" x2="551" y2="128" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="350" y1="78" x2="651" y2="128" stroke="#ADADAD" stroke-width="0.75"/>
+
+  <!-- Leaf box width=86, height=100, y=128–228 -->
+  <!-- Centers: 48, 149, 250, 350, 451, 551, 651 -->
+
+  <!-- Helper: leaf box + icon + badge + label -->
+  <!-- 1. Hermite — series termination (green badge) -->
+  <rect x="5" y="128" width="86" height="100" fill="#FFFFFF" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Icon: smooth Gaussian peak (single lobe) -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="12,215 18,210 24,200 30,185 36,172 42,166 48,165 54,166 60,172 66,185 72,200 78,210 84,215"/>
+  <!-- Badge: green (series termination) -->
+  <rect x="5" y="220" width="86" height="8" fill="#2a1a0e" fill-opacity="0.6" stroke="none"/>
+  <text x="48" y="242" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#2a1a0e">Hermite</text>
+  <text x="48" y="254" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">H_n(x)e^{−x²/2}</text>
+
+  <!-- 2. Legendre — regularity (gray badge) -->
+  <rect x="106" y="128" width="86" height="100" fill="#FFFFFF" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Icon: dome-shaped curve -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="112,215 120,200 128,182 136,168 149,163 162,168 170,182 178,200 186,215"/>
+  <!-- Badge: gray (regularity at endpoint) -->
+  <rect x="106" y="220" width="86" height="8" fill="#ADADAD" stroke="none"/>
+  <text x="149" y="242" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#2a1a0e">Legendre</text>
+  <text x="149" y="254" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">P_ℓ(cos θ)</text>
+
+  <!-- 3. Assoc. Legendre — regularity (gray badge) -->
+  <rect x="207" y="128" width="86" height="100" fill="#FFFFFF" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Icon: dome with kink/inflection -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="213,215 220,205 227,190 234,178 241,170 248,167 255,165 262,168 266,178 265,190 262,205 256,215"/>
+  <!-- Badge: gray -->
+  <rect x="207" y="220" width="86" height="8" fill="#ADADAD" stroke="none"/>
+  <text x="250" y="242" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#2a1a0e">Assoc. Legendre</text>
+  <text x="250" y="254" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">P_ℓ^m(cos θ)</text>
+
+  <!-- 4. Spherical Harmonics — regularity (gray badge) -->
+  <rect x="307" y="128" width="86" height="100" fill="#FFFFFF" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Icon: sphere surface outline -->
+  <circle cx="350" cy="178" r="34" fill="none" stroke="#2a1a0e" stroke-width="1.5"/>
+  <ellipse cx="350" cy="178" rx="34" ry="12" fill="none" stroke="#2a1a0e" stroke-width="0.75"
+           stroke-dasharray="4 2"/>
+  <!-- Badge: gray -->
+  <rect x="307" y="220" width="86" height="8" fill="#ADADAD" stroke="none"/>
+  <text x="350" y="242" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#2a1a0e">Spherical Harm.</text>
+  <text x="350" y="254" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">Y_ℓ^m(θ,φ)</text>
+
+  <!-- 5. Assoc. Laguerre — series termination (dark badge) -->
+  <rect x="408" y="128" width="86" height="100" fill="#FFFFFF" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Icon: decaying oscillation to the right -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="414,195 418,175 426,168 434,170 442,185 450,200 458,205 466,198 474,190 482,187 490,188 494,192"/>
+  <!-- Badge: dark (series termination) -->
+  <rect x="408" y="220" width="86" height="8" fill="#2a1a0e" fill-opacity="0.6" stroke="none"/>
+  <text x="451" y="242" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#2a1a0e">Assoc. Laguerre</text>
+  <text x="451" y="254" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">L_n^k(r)e^{−r/2}</text>
+
+  <!-- 6. Spherical Bessel — asymptotic (red badge) -->
+  <rect x="508" y="128" width="86" height="100" fill="#FFFFFF" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Icon: damped oscillation starting from zero -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="514,210 518,210 522,198 530,175 538,165 546,175 554,195 562,210 570,212 578,205 582,198 586,195 590,197 594,202"/>
+  <!-- Badge: red (asymptotic) -->
+  <rect x="508" y="220" width="86" height="8" fill="#C8102E" fill-opacity="0.5" stroke="none"/>
+  <text x="551" y="242" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#2a1a0e">Sph. Bessel</text>
+  <text x="551" y="254" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">j_ℓ(kr)</text>
+
+  <!-- 7. Cylindrical Bessel — asymptotic (red badge) -->
+  <rect x="608" y="128" width="86" height="100" fill="#FFFFFF" stroke="#ADADAD" stroke-width="0.75"/>
+  <!-- Icon: sustained horizontal oscillation (no decay) -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="614,200 618,190 624,175 632,165 640,175 648,195 656,207 662,200 668,185 674,175 680,183 686,197 692,205"/>
+  <!-- Badge: red (asymptotic) -->
+  <rect x="608" y="220" width="86" height="8" fill="#C8102E" fill-opacity="0.5" stroke="none"/>
+  <text x="651" y="242" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#2a1a0e">Cyl. Bessel</text>
+  <text x="651" y="254" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#545454">J_n(kr)</text>
+
+  <!-- ── Badge legend ── -->
+  <text x="350" y="282" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#2a1a0e">Quantization mechanism (color badge):</text>
+
+  <!-- Dark badge: series termination -->
+  <rect x="60" y="292" width="50" height="10" fill="#2a1a0e" fill-opacity="0.6"/>
+  <text x="118" y="302" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">Series terminates at finite n (Hermite, Assoc. Laguerre) — integer quantum number from algebra</text>
+
+  <!-- Gray badge: regularity at endpoint -->
+  <rect x="60" y="314" width="50" height="10" fill="#ADADAD"/>
+  <text x="118" y="324" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Regular at singular endpoint (Legendre family, Sph. Harm.) — ℓ,m integers from regularity</text>
+
+  <!-- Red badge: asymptotic/boundary zeros -->
+  <rect x="60" y="336" width="50" height="10" fill="#C8102E" fill-opacity="0.5"/>
+  <text x="118" y="346" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Boundary zeros fix wavenumber (Bessel families) — continuous or discrete spectrum from domain</text>
+
+  <!-- Caption -->
+  <text x="350" y="372" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">All seven families are eigenfunctions of the same Sturm–Liouville operator structure</text>
+  <text x="350" y="386" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">They differ in the weight function w(x), the interval, and the boundary conditions imposed</text>
+  <text x="350" y="402" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Orthogonality with weight w(x): ∫ yₘ yₙ w dx = δₘₙ holds for all seven families</text>
+</svg>

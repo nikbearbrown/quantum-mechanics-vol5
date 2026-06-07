@@ -1,0 +1,207 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 08-eigenvalues-and-diagonalization
+     Figure      : 03
+     Title       : Spectral decomposition — operator as sum of eigenvalue-weighted projectors
+     Type        : concept / verification-gap
+     Priority    : Important
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/08-eigenvalues-and-diagonalization-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-08-03">
+  <title id="fig-title-08-03">Spectral decomposition — operator as sum of eigenvalue-weighted projectors</title>
+  <desc>Left side: algebraic decomposition showing a full 2×2 matrix equals two rank-1 projector matrices each weighted by an eigenvalue-scale marker. Right side: geometric view showing two perpendicular eigenvector arrows each surrounded by an elliptical lobe scaled by the corresponding eigenvalue.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="08-eigenvalues-and-diagonalization"
+      figure-number="03"
+      figure-title="Spectral decomposition — operator as sum of eigenvalue-weighted projectors"
+      figure-slug="spectral-decomposition-projectors"
+      figure-type="concept-verification-gap"
+      priority="Important"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/08-eigenvalues-and-diagonalization-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr08c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Spectral decomposition: A = λ₁|e₁⟩⟨e₁| + λ₂|e₂⟩⟨e₂|</text>
+
+  <!-- Vertical separator -->
+  <line x1="360" y1="45" x2="360" y2="390" stroke="#D4D4D4" stroke-width="1"/>
+
+  <!-- Section labels -->
+  <text x="180" y="52" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Algebraic structure</text>
+  <text x="530" y="52" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Geometric interpretation</text>
+
+  <!-- ═══ LEFT SIDE — Algebraic decomposition ═══ -->
+
+  <!-- Full operator A: 2×2, all cells filled (blue) -->
+  <!-- Position: top-left (42,70), cell size 28 -->
+  <rect x="42" y="70" width="28" height="28" fill="#C8102E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="70" y="70" width="28" height="28" fill="#C8102E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="42" y="98" width="28" height="28" fill="#C8102E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="70" y="98" width="28" height="28" fill="#C8102E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <path d="M38,67 L34,67 L34,129 L38,129" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <path d="M102,67 L106,67 L106,129 L102,129" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <text x="70" y="146" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">A</text>
+
+  <!-- Equals sign -->
+  <line x1="114" y1="94" x2="130" y2="94" stroke="#2a1a0e" stroke-width="1.5"/>
+  <line x1="114" y1="102" x2="130" y2="102" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <!-- First term: λ₁ scale tick × projector P₁ (only upper-left cell filled) -->
+  <!-- Scale tick for λ₁: tall tick bar at x=142 -->
+  <rect x="138" y="75" width="10" height="50" fill="#ADADAD" stroke="none" rx="0"/>
+  <text x="143" y="146" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">λ₁</text>
+
+  <!-- Multiplication dot -->
+  <circle cx="158" cy="98" r="3" fill="#2a1a0e"/>
+
+  <!-- Projector P₁: only upper-left filled -->
+  <rect x="168" y="70" width="28" height="28" fill="#787878" fill-opacity="0.6" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="196" y="70" width="28" height="28" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="168" y="98" width="28" height="28" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="196" y="98" width="28" height="28" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Zero cross in empty cells -->
+  <line x1="200" y1="74" x2="220" y2="94" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="200" y1="94" x2="220" y2="74" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="172" y1="102" x2="192" y2="122" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="172" y1="122" x2="192" y2="102" stroke="#D4D4D4" stroke-width="0.75"/>
+  <path d="M164,67 L160,67 L160,129 L164,129" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <path d="M228,67 L232,67 L232,129 L228,129" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <text x="196" y="146" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">P₁ = |e₁⟩⟨e₁|</text>
+
+  <!-- Plus sign -->
+  <line x1="240" y1="94" x2="256" y2="94" stroke="#2a1a0e" stroke-width="1.5"/>
+  <line x1="248" y1="86" x2="248" y2="102" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <!-- Second term: λ₂ scale tick × projector P₂ (only lower-right filled) -->
+  <!-- λ₂ is smaller than λ₁ — shorter bar -->
+  <rect x="264" y="83" width="10" height="30" fill="#ADADAD" stroke="none" rx="0"/>
+  <text x="269" y="146" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">λ₂</text>
+
+  <circle cx="284" cy="98" r="3" fill="#2a1a0e"/>
+
+  <!-- Projector P₂: only lower-right filled -->
+  <rect x="294" y="70" width="28" height="28" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="322" y="70" width="28" height="28" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="294" y="98" width="28" height="28" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="322" y="98" width="28" height="28" fill="#ADADAD" fill-opacity="0.6" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Zero cross in empty cells -->
+  <line x1="298" y1="74" x2="318" y2="94" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="298" y1="94" x2="318" y2="74" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="326" y1="74" x2="346" y2="94" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="326" y1="94" x2="346" y2="74" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="298" y1="102" x2="318" y2="122" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="298" y1="122" x2="318" y2="102" stroke="#D4D4D4" stroke-width="0.75"/>
+  <path d="M290,67 L286,67 L286,129 L290,129" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <path d="M354,67 L358,67 L358,129 L354,129" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <text x="324" y="146" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">P₂ = |e₂⟩⟨e₂|</text>
+
+  <!-- Explanatory text left side -->
+  <text x="180" y="185" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#2a1a0e">Each projector Pₙ = |eₙ⟩⟨eₙ| is rank-1:</text>
+  <text x="180" y="201" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#2a1a0e">it maps any vector onto one direction</text>
+  <text x="180" y="220" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">The eigenvalue λₙ weights the projection:</text>
+  <text x="180" y="236" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">large λ ↔ dominant contribution</text>
+  <text x="180" y="255" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">A full operator = sum of its projector parts</text>
+
+  <!-- ═══ RIGHT SIDE — Geometric interpretation ═══ -->
+  <!-- Origin at (530,270) -->
+
+  <!-- Eigenvector e1: along ~30° angle, length 100px -->
+  <!-- tip: (530+87,270-50)=(617,220) -->
+  <line x1="530" y1="270" x2="614" y2="222" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr08c)"/>
+
+  <!-- Lobe for e1 (ellipse): centered at midpoint (572,246), scaled by λ₁ (large) -->
+  <!-- Semi-axes: along e1 direction ~50px, perpendicular ~20px -->
+  <!-- Rotation angle ~-30° = -0.524 rad, transform -->
+  <ellipse cx="572" cy="246" rx="52" ry="18" fill="#C8102E" fill-opacity="0.12"
+           stroke="#C8102E" stroke-width="0.75" stroke-opacity="0.4"
+           transform="rotate(-30,572,246)"/>
+  <text x="623" y="215" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">e₁</text>
+  <text x="602" y="205" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">λ₁ (large)</text>
+
+  <!-- Eigenvector e2: perpendicular to e1, i.e. along ~120° angle, length 70px (smaller λ₂) -->
+  <!-- 120° from +x: (530+70*cos120, 270+70*sin120) but SVG y-flipped = (530-35,270-61)=(495,209) -->
+  <!-- Actually use ~120° in standard coords: cos120=-0.5, sin120=0.866 → (-35,-61) in SVG = (495,209) -->
+  <line x1="530" y1="270" x2="495" y2="209" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr08c)"/>
+
+  <!-- Lobe for e2 (smaller, λ₂ < λ₁): centered at midpoint (512.5,239.5), rotated 120° -->
+  <ellipse cx="513" cy="240" rx="36" ry="13" fill="#787878" fill-opacity="0.15"
+           stroke="#787878" stroke-width="0.75" stroke-opacity="0.4"
+           transform="rotate(-60,513,240)"/>
+  <text x="480" y="204" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">e₂</text>
+  <text x="445" y="215" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#787878">λ₂ (smaller)</text>
+
+  <!-- Right-angle mark between e1 and e2 at origin (530,270) -->
+  <!-- e1 direction ~(-0.866,0.5), e2 direction ~(0.5,0.866) in SVG coords.
+       Right-angle square: draw small square. e1 unit = (0.866,-0.5) in SVG, e2 unit = (-0.5,-0.866) -->
+  <!-- Simple approximation: mark near origin -->
+  <path d="M530,270 L527,262 L519,265 L522,273 Z" fill="none" stroke="#2a1a0e" stroke-width="0.75"/>
+
+  <!-- Lobe size comparison annotation -->
+  <text x="530" y="320" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Lobe size encodes eigenvalue magnitude</text>
+  <text x="530" y="336" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Projectors Pₙ are rank-1: one-dimensional ranges</text>
+  <text x="530" y="352" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Sum of all lobes = full operator A</text>
+
+  <!-- Caption -->
+  <text x="350" y="395" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">The spectral theorem for Hermitian operators: A = Σₙ λₙ |eₙ⟩⟨eₙ|</text>
+  <text x="350" y="410" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">decomposes any observable into eigenvalue-weighted one-dimensional projectors</text>
+</svg>

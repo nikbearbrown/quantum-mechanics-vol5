@@ -1,0 +1,275 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 09-operators-and-dirac-notation
+     Figure      : 03
+     Title       : Robertson uncertainty — from Cauchy–Schwarz to the commutator bound
+     Type        : mechanism / process (flowchart)
+     Priority    : Important
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/09-operators-and-dirac-notation-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-09-03">
+  <title id="fig-title-09-03">Robertson uncertainty — from Cauchy–Schwarz to the commutator bound</title>
+  <desc>Four-stage vertical flowchart: Stage 1 Cauchy–Schwarz geometry with two vectors and angle; Stage 2 squared-norm inequality; Stage 3 decomposition of inner product into real and imaginary parts containing the commutator; Stage 4 Robertson uncertainty bound with variance bell curves and commutator icon.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="09-operators-and-dirac-notation"
+      figure-number="03"
+      figure-title="Robertson uncertainty — from Cauchy–Schwarz to the commutator bound"
+      figure-slug="robertson-uncertainty-cauchy-schwarz"
+      figure-type="mechanism-process"
+      priority="Important"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/09-operators-and-dirac-notation-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr09c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ADADAD"/>
+    </marker>
+    <marker id="arr09c-ink" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Robertson uncertainty: Cauchy–Schwarz → commutator bound</text>
+
+  <!-- Stage box geometry: x=36, width=380, heights at y=32,120,200,290,380 -->
+  <!-- Annotation column: x=430 -->
+
+  <!-- ── Stage 1: Cauchy–Schwarz geometry ── -->
+  <rect x="36" y="32" width="380" height="72" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="54" y="50" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#2a1a0e">Stage 1 — Cauchy–Schwarz geometry</text>
+
+  <!-- Two vectors from origin at (100,88): f (blue) at 0°, g (green) at 40° -->
+  <line x1="100" y1="90" x2="162" y2="90" stroke="#C8102E" stroke-width="2"
+        marker-end="url(#arr09c-ink)"/>
+  <line x1="100" y1="90" x2="150" y2="58" stroke="#787878" stroke-width="2"
+        marker-end="url(#arr09c-ink)"/>
+  <!-- Angle arc -->
+  <path d="M130,90 A30,30 0 0,1 124,70" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Norm projections: from tips to baseline -->
+  <line x1="162" y1="90" x2="162" y2="98" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="150" y1="58" x2="150" y2="98" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="3 2"/>
+
+  <!-- Labels -->
+  <text x="168" y="94" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#C8102E">f</text>
+  <text x="154" y="54" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#787878">g</text>
+  <text x="133" y="88" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="9" fill="#545454">θ</text>
+
+  <!-- Formula icon: |⟨f|g⟩|² ≤ ‖f‖²·‖g‖² -->
+  <text x="210" y="62" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="12" fill="#2a1a0e">|⟨f|g⟩|²</text>
+  <text x="280" y="62" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="14" fill="#D4D4D4">≤</text>
+  <text x="298" y="62" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="12" fill="#2a1a0e">‖f‖²‖g‖²</text>
+  <text x="210" y="80" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">equality when f ∥ g (zero angle)</text>
+  <text x="210" y="95" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">maximum overlap ↔ parallel vectors</text>
+
+  <!-- Step arrow down -->
+  <line x1="224" y1="104" x2="224" y2="118" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr09c)"/>
+  <text x="238" y="114" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">apply with f=ΔAψ, g=ΔBψ</text>
+
+  <!-- ── Stage 2: Squared-norm inequality ── -->
+  <rect x="36" y="120" width="380" height="66" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="54" y="138" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#2a1a0e">Stage 2 — Variance product bound</text>
+
+  <!-- Two length bars for ‖ΔA‖² and ‖ΔB‖² -->
+  <rect x="60" y="147" width="60" height="12" fill="#C8102E" fill-opacity="0.5" rx="0"/>
+  <text x="90" y="158" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#FFFFFF">⟨(ΔA)²⟩</text>
+  <text x="130" y="158" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="12" fill="#D4D4D4">·</text>
+  <rect x="138" y="147" width="50" height="12" fill="#787878" fill-opacity="0.5" rx="0"/>
+  <text x="163" y="158" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#FFFFFF">⟨(ΔB)²⟩</text>
+
+  <text x="198" y="158" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="14" fill="#D4D4D4">≥</text>
+
+  <!-- Overlap magnitude -->
+  <circle cx="248" cy="153" r="14" fill="#C8860E" fill-opacity="0.4" stroke="#C8860E" stroke-width="0.75"/>
+  <text x="248" y="158" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#2a1a0e">|⟨f|g⟩|²</text>
+
+  <text x="280" y="153" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" fill="#545454">= overlap magnitude squared</text>
+
+  <text x="54" y="180" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">σ²_A · σ²_B ≥ |⟨ΔA·ψ | ΔB·ψ⟩|²  — product of variances ≥ squared inner product</text>
+
+  <!-- Step arrow -->
+  <line x1="224" y1="186" x2="224" y2="200" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr09c)"/>
+  <text x="238" y="196" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">split ⟨f|g⟩ = Re + i·Im</text>
+
+  <!-- ── Stage 3: Real/Imaginary decomposition ── -->
+  <rect x="36" y="202" width="380" height="72" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="54" y="220" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#2a1a0e">Stage 3 — Decompose ⟨ΔAψ|ΔBψ⟩</text>
+
+  <!-- Real part box -->
+  <rect x="60" y="228" width="120" height="32" fill="#D4D4D4" fill-opacity="0.3"
+        stroke="#ADADAD" stroke-width="0.75"/>
+  <text x="120" y="243" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Real part</text>
+  <text x="120" y="257" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#545454">½⟨{A,B}⟩ − ⟨A⟩⟨B⟩</text>
+
+  <!-- + sign -->
+  <text x="194" y="248" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="16"
+        fill="#ADADAD">+</text>
+
+  <!-- Imaginary part box (containing commutator) -->
+  <rect x="204" y="228" width="140" height="32" fill="#C8102E" fill-opacity="0.08"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="274" y="243" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">Imaginary part</text>
+  <!-- Commutator bracket icon inside -->
+  <text x="274" y="257" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#C8102E">½i · ⟨[A,B]⟩</text>
+
+  <text x="54" y="270" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Taking |...|² and dropping Re²: bound comes from imaginary part alone → commutator</text>
+
+  <!-- Step arrow -->
+  <line x1="224" y1="274" x2="224" y2="288" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr09c)"/>
+  <text x="238" y="284" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">|Im part|² ≤ |full⟨f|g⟩|²</text>
+
+  <!-- ── Stage 4: Robertson bound ── -->
+  <rect x="36" y="290" width="380" height="90" fill="#F5F5F5" stroke="#C8102E" stroke-width="1"/>
+  <text x="54" y="308" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="11" font-weight="600" fill="#C8102E">Stage 4 — Robertson uncertainty bound</text>
+
+  <!-- Two bell curve silhouettes for σ_A and σ_B -->
+  <!-- Bell A (small): center (90,345) -->
+  <path d="M60,360 Q65,310 90,308 Q115,310 120,360 Z" fill="#C8102E" fill-opacity="0.15"
+        stroke="#C8102E" stroke-width="1"/>
+  <text x="90" y="375" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">σ_A</text>
+
+  <!-- Bell B (smaller): center (160,345) -->
+  <path d="M134,360 Q138,325 160,323 Q182,325 186,360 Z" fill="#787878" fill-opacity="0.15"
+        stroke="#787878" stroke-width="1"/>
+  <text x="160" y="375" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">σ_B</text>
+
+  <!-- ≥ symbol -->
+  <text x="205" y="350" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="20"
+        fill="#D4D4D4">≥</text>
+
+  <!-- ½ disk -->
+  <path d="M228,345 A16,16 0 0,1 260,345 Z" fill="#ADADAD" fill-opacity="0.5"
+        stroke="#ADADAD" stroke-width="0.75"/>
+  <text x="244" y="375" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#545454">½</text>
+
+  <!-- Multiplication dot -->
+  <circle cx="275" cy="345" r="3" fill="#2a1a0e"/>
+
+  <!-- Commutator icon: nested bracket pair -->
+  <path d="M288,328 L280,328 L280,362 L288,362" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <text x="300" y="350" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13"
+        fill="#C8102E">[A,B]</text>
+  <path d="M328,328 L336,328 L336,362 L328,362" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <text x="304" y="375" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
+        fill="#C8102E">commutator</text>
+
+  <!-- Final formula -->
+  <text x="350" y="325" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="12" fill="#C8102E">σ_A · σ_B ≥ ½|⟨[A,B]⟩|</text>
+
+  <!-- Annotation column -->
+  <rect x="430" y="32" width="234" height="348" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="547" y="52" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Logical chain</text>
+
+  <text x="442" y="76" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">1. Cauchy–Schwarz</text>
+  <text x="442" y="90" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">   inner product magnitude</text>
+  <text x="442" y="104" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">   bounded by norms</text>
+
+  <text x="442" y="130" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">2. Apply to ΔA·ψ and ΔB·ψ</text>
+  <text x="442" y="144" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">   norms = standard deviations</text>
+  <text x="442" y="158" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">   σ_A, σ_B</text>
+
+  <text x="442" y="184" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">3. Split ⟨ΔAψ|ΔBψ⟩</text>
+  <text x="442" y="198" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">   real part = anticommutator</text>
+  <text x="442" y="212" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">   imag part = commutator</text>
+
+  <text x="442" y="238" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">4. Drop real part (≥ 0)</text>
+  <text x="442" y="252" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">   bound is purely from</text>
+  <text x="442" y="266" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">   the commutator</text>
+
+  <rect x="442" y="280" width="210" height="60" fill="#C8102E" fill-opacity="0.06"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="547" y="298" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#C8102E">σ_A σ_B ≥ ½|⟨[A,B]⟩|</text>
+  <text x="547" y="314" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Non-zero commutator</text>
+  <text x="547" y="328" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">⟹ irreducible uncertainty</text>
+
+  <!-- Caption -->
+  <text x="350" y="398" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">The bound is tight: Cauchy–Schwarz forces σ_A σ_B ≥ ½|⟨[A,B]⟩|</text>
+  <text x="350" y="413" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Observables with [A,B] ≠ 0 cannot simultaneously have zero spread</text>
+</svg>

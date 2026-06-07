@@ -1,0 +1,208 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 10-multivariable-calculus-and-separation-of-variables
+     Figure      : 03
+     Title       : Sign-of-separation-constant decision fork
+     Type        : concept / verification-gap
+     Priority    : Important
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/10-multivariable-calculus-and-separation-of-variables-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-10-03">
+  <title id="fig-title-10-03">Sign-of-separation-constant decision fork</title>
+  <desc>Binary decision fork: diamond decision node at top receiving the separated ODE; left branch for negative separation constant leading to a sinusoidal curve with a checkmark indicating boundary conditions can be satisfied; right branch for positive separation constant leading to an exponential growth-decay curve with an X indicating boundary conditions cannot be satisfied.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="10-multivariable-calculus-and-separation-of-variables"
+      figure-number="03"
+      figure-title="Sign-of-separation-constant decision fork"
+      figure-slug="separation-constant-decision-fork"
+      figure-type="concept-verification-gap"
+      priority="Important"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/10-multivariable-calculus-and-separation-of-variables-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr10c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ADADAD"/>
+    </marker>
+    <marker id="arr10c-green" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr10c-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Sign of separation constant — which solutions survive?</text>
+
+  <!-- Input arrow: general separated ODE → decision diamond -->
+  <line x1="350" y1="35" x2="350" y2="68" stroke="#C8860E" stroke-width="1.5"
+        marker-end="url(#arr10c)"/>
+  <text x="358" y="54" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8860E">separated ODE: f'' = k·f</text>
+
+  <!-- Decision diamond -->
+  <polygon points="350,72 414,104 350,136 286,104" fill="#D4D4D4" fill-opacity="0.3"
+           stroke="#ADADAD" stroke-width="1.5"/>
+  <text x="350" y="100" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Sign of k?</text>
+  <text x="350" y="116" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">f'' = k·f</text>
+
+  <!-- Left branch: k < 0 (oscillatory) -->
+  <line x1="286" y1="104" x2="170" y2="152" stroke="#2a1a0e" stroke-width="1.5"
+        marker-end="url(#arr10c-green)"/>
+  <text x="218" y="134" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">k &lt; 0</text>
+  <text x="218" y="148" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">k = −κ² (κ real)</text>
+
+  <!-- Right branch: k > 0 (exponential) -->
+  <line x1="414" y1="104" x2="530" y2="152" stroke="#C8102E" stroke-width="1.5"
+        marker-end="url(#arr10c-red)"/>
+  <text x="482" y="134" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#C8102E">k &gt; 0</text>
+  <text x="482" y="148" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">k = +κ² (κ real)</text>
+
+  <!-- ── LEFT BRANCH: Negative constant → oscillatory ── -->
+
+  <!-- Sign box -->
+  <rect x="70" y="155" width="200" height="36" fill="#2a1a0e" fill-opacity="0.07"
+        stroke="#2a1a0e" stroke-width="1"/>
+  <text x="170" y="170" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Negative constant: k = −κ²</text>
+  <text x="170" y="184" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#2a1a0e">f(x) = A sin(κx) + B cos(κx)</text>
+
+  <!-- Down arrow to sinusoidal curve -->
+  <line x1="170" y1="192" x2="170" y2="222" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10c)"/>
+
+  <!-- Sinusoidal curve panel -->
+  <rect x="52" y="224" width="236" height="80" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Baseline -->
+  <line x1="62" y1="270" x2="278" y2="270" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Sinusoidal curve with ~1.5 full cycles, ZERO crossings at boundaries -->
+  <!-- x from 62 to 278 = 216px, 1.5 cycles. Nodes at: 62, 134, 206, 278 -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="2"
+    points="62,270 74,248 86,232 98,228 110,232 122,248 134,270 146,292 158,308 170,312 182,308 194,292 206,270 218,248 230,232 242,228 254,232 266,248 278,270"/>
+  <!-- Node count ticks -->
+  <line x1="134" y1="264" x2="134" y2="276" stroke="#ADADAD" stroke-width="1"/>
+  <line x1="206" y1="264" x2="206" y2="276" stroke="#ADADAD" stroke-width="1"/>
+  <!-- Boundary zero labels -->
+  <circle cx="62" cy="270" r="3" fill="#2a1a0e"/>
+  <circle cx="278" cy="270" r="3" fill="#2a1a0e"/>
+  <!-- Positive lobe fill -->
+  <polygon points="62,270 74,248 86,232 98,228 110,232 122,248 134,270"
+           fill="#2a1a0e" fill-opacity="0.08"/>
+  <polygon points="206,270 218,248 230,232 242,228 254,232 266,248 278,270"
+           fill="#2a1a0e" fill-opacity="0.08"/>
+  <!-- Negative lobe fill -->
+  <polygon points="134,270 146,292 158,308 170,312 182,308 194,292 206,270"
+           fill="#ADADAD" fill-opacity="0.2"/>
+
+  <!-- Arrow to checkmark -->
+  <line x1="170" y1="305" x2="170" y2="328" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10c)"/>
+
+  <!-- Checkmark marker (boundary condition SATISFIED) -->
+  <rect x="98" y="330" width="144" height="50" fill="#2a1a0e" fill-opacity="0.07"
+        stroke="#2a1a0e" stroke-width="1.5"/>
+  <!-- Checkmark symbol: V shape -->
+  <polyline points="120,358 142,370 178,344" fill="none" stroke="#2a1a0e" stroke-width="3"
+            stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="200" y="350" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">f(0) = 0</text>
+  <text x="200" y="364" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#2a1a0e">f(L) = 0</text>
+  <text x="200" y="378" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#2a1a0e">both satisfied</text>
+  <text x="170" y="394" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#2a1a0e">VALID — quantizes κ</text>
+
+  <!-- ── RIGHT BRANCH: Positive constant → exponential ── -->
+
+  <!-- Sign box -->
+  <rect x="430" y="155" width="218" height="36" fill="#C8102E" fill-opacity="0.07"
+        stroke="#C8102E" stroke-width="1"/>
+  <text x="539" y="170" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#C8102E">Positive constant: k = +κ²</text>
+  <text x="539" y="184" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#C8102E">f(x) = Ae^(κx) + Be^(−κx)</text>
+
+  <!-- Down arrow to exponential curve -->
+  <line x1="539" y1="192" x2="539" y2="222" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10c)"/>
+
+  <!-- Exponential curve panel -->
+  <rect x="420" y="224" width="238" height="80" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Baseline -->
+  <line x1="430" y1="270" x2="648" y2="270" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Growing exponential: no zero crossings -->
+  <polyline fill="none" stroke="#C8102E" stroke-width="2"
+    points="430,298 446,294 462,290 478,284 494,276 510,267 526,256 542,242 558,226 574,208 590,192 606,174"/>
+  <!-- Decaying branch (negative exponential) -->
+  <polyline fill="none" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="5 3"
+    points="430,242 446,247 462,253 478,258 494,263 510,267 526,270 542,272 558,274 574,275 590,276 606,277"/>
+  <!-- No zero crossing ticks (none expected) -->
+  <!-- "No zero crossings" annotation -->
+  <text x="539" y="300" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#C8102E">no zero crossings</text>
+
+  <!-- Arrow to X marker -->
+  <line x1="539" y1="305" x2="539" y2="328" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10c)"/>
+
+  <!-- X blocked marker (boundary condition FAILS) -->
+  <rect x="467" y="330" width="144" height="50" fill="#C8102E" fill-opacity="0.07"
+        stroke="#C8102E" stroke-width="1.5"/>
+  <!-- X symbol -->
+  <line x1="489" y1="348" x2="514" y2="373" stroke="#C8102E" stroke-width="3"
+        stroke-linecap="round"/>
+  <line x1="514" y1="348" x2="489" y2="373" stroke="#C8102E" stroke-width="3"
+        stroke-linecap="round"/>
+  <text x="535" y="350" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">f(0) = 0</text>
+  <text x="535" y="364" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">f(L) = 0</text>
+  <text x="535" y="378" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="9" fill="#C8102E">cannot both hold</text>
+  <text x="539" y="394" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#C8102E">EXCLUDED for a box</text>
+
+  <!-- Caption -->
+  <text x="350" y="407" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Choosing k negative forces oscillatory solutions — the only type that can vanish at both walls</text>
+  <text x="350" y="420" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">This sign choice is not optional: the boundary conditions select it automatically</text>
+</svg>

@@ -1,0 +1,276 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 12-matrices-determinants-and-linear-systems
+     Figure      : 01
+     Title       : Three conjugate operations on a complex matrix: A*, Aᵀ, A†
+     Type        : concept / verification-gap
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/12-matrices-determinants-and-linear-systems-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-12-01">
+  <title id="fig-title-12-01">Three conjugate operations on a complex matrix: A*, Aᵀ, A†</title>
+  <desc>Hub-and-spoke diagram: source 2×2 matrix at left with abstract shape markers for complex entries; three derived matrices branching right. A* (complex conjugate): same positions, shapes conjugated (filled↔hollow). Aᵀ (transpose): off-diagonal shapes swapped. A† (Hermitian conjugate): both swapped and conjugated. Arrow weights distinguish A† as the QM-primary operation.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="12-matrices-determinants-and-linear-systems"
+      figure-number="01"
+      figure-title="Three conjugate operations on a complex matrix: A*, Aᵀ, A†"
+      figure-slug="three-conjugate-operations-complex-matrix"
+      figure-type="concept-verification-gap"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/12-matrices-determinants-and-linear-systems-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr12a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr12a-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+    <marker id="arr12a-gray" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#787878"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Three operations on a complex matrix: conjugate, transpose, adjoint</text>
+
+  <!-- ── SOURCE MATRIX A ── x=38–120, y=155–235 -->
+  <!-- Label -->
+  <text x="79" y="148" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Source matrix A</text>
+
+  <rect x="38" y="155" width="40" height="40" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.5"/>
+  <rect x="78" y="155" width="40" height="40" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.5"/>
+  <rect x="38" y="195" width="40" height="40" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.5"/>
+  <rect x="78" y="195" width="40" height="40" fill="#F5F5F5" stroke="#C8102E" stroke-width="1.5"/>
+  <!-- Matrix brackets -->
+  <path d="M34,152 L28,152 L28,238 L34,238" fill="none" stroke="#2a1a0e" stroke-width="1.5"/>
+  <path d="M122,152 L128,152 L128,238 L122,238" fill="none" stroke="#2a1a0e" stroke-width="1.5"/>
+  <!-- Abstract entry markers: 4 distinct shapes representing complex numbers a,b,c,d -->
+  <!-- (1,1): a₁₁ = filled circle (large) -->
+  <circle cx="58" cy="175" r="10" fill="#C8102E" fill-opacity="0.6"/>
+  <!-- (1,2): a₁₂ = filled square -->
+  <rect x="88" y="165" width="20" height="20" fill="#787878" fill-opacity="0.6"/>
+  <!-- (2,1): a₂₁ = filled triangle -->
+  <polygon points="58,225 48,210 68,210" fill="#ADADAD" fill-opacity="0.8"/>
+  <!-- (2,2): a₂₂ = star/cross shape -->
+  <line x1="98" y1="207" x2="98" y2="223" stroke="#C8102E" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="215" x2="106" y2="215" stroke="#C8102E" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="79" y="254" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₁₁ a₁₂</text>
+  <text x="79" y="267" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₂₁ a₂₂</text>
+
+  <!-- ── ARROWS from source to derived matrices ── -->
+  <!-- A*: upper-right diagonal — gray arrow -->
+  <line x1="128" y1="175" x2="265" y2="115" stroke="#787878" stroke-width="1.5"
+        marker-end="url(#arr12a-gray)"/>
+  <text x="188" y="136" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#787878">conjugate *</text>
+  <text x="188" y="150" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#787878">same positions,</text>
+  <text x="188" y="162" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#787878">shapes conjugated</text>
+
+  <!-- Aᵀ: horizontal arrow — gray -->
+  <line x1="128" y1="195" x2="265" y2="195" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr12a-gray)"/>
+  <text x="196" y="188" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#ADADAD">transpose ᵀ</text>
+  <text x="196" y="206" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#ADADAD">off-diagonal swapped</text>
+
+  <!-- A†: lower-right diagonal — red, 2pt (primary QM operation) -->
+  <line x1="128" y1="220" x2="265" y2="290" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr12a-red)"/>
+  <text x="188" y="263" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#C8102E">adjoint †</text>
+  <text x="188" y="278" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">swap AND conjugate</text>
+  <text x="188" y="292" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">primary QM operation</text>
+
+  <!-- ── DERIVED MATRIX A* (complex conjugate) ── x=268–350, y=60–140 -->
+  <text x="309" y="53" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#787878">A* (complex conjugate)</text>
+
+  <rect x="268" y="60" width="40" height="40" fill="#F5F5F5" stroke="#787878" stroke-width="1"/>
+  <rect x="308" y="60" width="40" height="40" fill="#F5F5F5" stroke="#787878" stroke-width="1"/>
+  <rect x="268" y="100" width="40" height="40" fill="#F5F5F5" stroke="#787878" stroke-width="1"/>
+  <rect x="308" y="100" width="40" height="40" fill="#F5F5F5" stroke="#787878" stroke-width="1"/>
+  <path d="M264,57 L258,57 L258,143 L264,143" fill="none" stroke="#787878" stroke-width="1.2"/>
+  <path d="M352,57 L358,57 L358,143 L352,143" fill="none" stroke="#787878" stroke-width="1.2"/>
+  <!-- Conjugated shapes: filled → hollow, hollow → filled
+       (1,1): circle hollow (conjugated) -->
+  <circle cx="288" cy="80" r="10" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <!-- (1,2): square hollow -->
+  <rect x="318" y="70" width="20" height="20" fill="none" stroke="#787878" stroke-width="2"/>
+  <!-- (2,1): triangle hollow -->
+  <polygon points="288,130 278,115 298,115" fill="none" stroke="#ADADAD" stroke-width="2"/>
+  <!-- (2,2): star/cross hollow -->
+  <line x1="328" y1="112" x2="328" y2="128" stroke="#C8102E" stroke-width="2" stroke-linecap="round"/>
+  <line x1="320" y1="120" x2="336" y2="120" stroke="#C8102E" stroke-width="2" stroke-linecap="round"/>
+  <!-- conjugate notation -->
+  <text x="309" y="155" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₁₁* a₁₂*</text>
+  <text x="309" y="168" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₂₁* a₂₂*</text>
+  <text x="309" y="184" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#787878">Positions unchanged</text>
+  <text x="309" y="198" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#787878">Shapes conjugated (hollow)</text>
+
+  <!-- ── DERIVED MATRIX Aᵀ (transpose) ── x=268–350, y=155–235 -->
+  <text x="309" y="220" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#ADADAD">Aᵀ (transpose)</text>
+
+  <rect x="268" y="228" width="40" height="40" fill="#F5F5F5" stroke="#ADADAD" stroke-width="1"/>
+  <rect x="308" y="228" width="40" height="40" fill="#F5F5F5" stroke="#ADADAD" stroke-width="1"/>
+  <rect x="268" y="268" width="40" height="40" fill="#F5F5F5" stroke="#ADADAD" stroke-width="1"/>
+  <rect x="308" y="268" width="40" height="40" fill="#F5F5F5" stroke="#ADADAD" stroke-width="1"/>
+  <path d="M264,225 L258,225 L258,311 L264,311" fill="none" stroke="#ADADAD" stroke-width="1.2"/>
+  <path d="M352,225 L358,225 L358,311 L352,311" fill="none" stroke="#ADADAD" stroke-width="1.2"/>
+  <!-- Transposed shapes: (1,1) same, (2,2) same, off-diagonal SWAPPED
+       (1,1): circle (same) -->
+  <circle cx="288" cy="248" r="10" fill="#C8102E" fill-opacity="0.6"/>
+  <!-- (1,2): triangle (was a₂₁) — SWAPPED -->
+  <polygon points="328,266 318,251 338,251" fill="#ADADAD" fill-opacity="0.8"/>
+  <!-- (2,1): square (was a₁₂) — SWAPPED -->
+  <rect x="278" y="278" width="20" height="20" fill="#787878" fill-opacity="0.6"/>
+  <!-- (2,2): cross (same) -->
+  <line x1="328" y1="280" x2="328" y2="296" stroke="#C8102E" stroke-width="4" stroke-linecap="round"/>
+  <line x1="320" y1="288" x2="336" y2="288" stroke="#C8102E" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="309" y="324" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₁₁ a₂₁</text>
+  <text x="309" y="337" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₁₂ a₂₂</text>
+  <text x="309" y="353" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#ADADAD">Off-diagonal positions swapped</text>
+  <text x="309" y="367" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#ADADAD">Shapes unchanged</text>
+
+  <!-- ── DERIVED MATRIX A† (Hermitian conjugate) ── x=430–560, y=255–365 -->
+  <text x="495" y="248" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12"
+        font-weight="600" fill="#C8102E">A† (Hermitian conjugate)</text>
+  <text x="495" y="264" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">= (A*)ᵀ = (Aᵀ)* — both operations</text>
+
+  <rect x="430" y="272" width="50" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="2"/>
+  <rect x="480" y="272" width="50" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="2"/>
+  <rect x="430" y="322" width="50" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="2"/>
+  <rect x="480" y="322" width="50" height="50" fill="#F5F5F5" stroke="#C8102E" stroke-width="2"/>
+  <path d="M426,269 L420,269 L420,375 L426,375" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <path d="M534,269 L540,269 L540,375 L534,375" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <!-- A† = swap AND conjugate:
+       (1,1): a₁₁* = hollow circle (conjugated, position unchanged) -->
+  <circle cx="455" cy="297" r="12" fill="none" stroke="#C8102E" stroke-width="2.5"/>
+  <!-- (1,2): a₂₁* = hollow triangle (was triangle, conjugated) — SWAPPED position -->
+  <polygon points="505,300 492,282 518,282" fill="none" stroke="#ADADAD" stroke-width="2.5"/>
+  <!-- (2,1): a₁₂* = hollow square (was square, conjugated) — SWAPPED position -->
+  <rect x="442" y="334" width="26" height="26" fill="none" stroke="#787878" stroke-width="2.5"/>
+  <!-- (2,2): a₂₂* = hollow cross (conjugated, position unchanged) -->
+  <line x1="505" y1="336" x2="505" y2="358" stroke="#C8102E" stroke-width="3" stroke-linecap="round"/>
+  <line x1="494" y1="347" x2="516" y2="347" stroke="#C8102E" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="495" y="388" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₁₁* a₂₁*</text>
+  <text x="495" y="401" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">a₁₂* a₂₂*</text>
+
+  <!-- Comparison table (right) -->
+  <rect x="568" y="48" width="118" height="280" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="627" y="66" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#2a1a0e">What changes?</text>
+
+  <text x="580" y="88" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" font-weight="600" fill="#787878">A*:</text>
+  <text x="580" y="102" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Shape form ✓</text>
+  <text x="580" y="116" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Position ✗</text>
+
+  <line x1="580" y1="126" x2="674" y2="126" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <text x="580" y="144" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" font-weight="600" fill="#ADADAD">Aᵀ:</text>
+  <text x="580" y="158" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Shape form ✗</text>
+  <text x="580" y="172" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Position ✓</text>
+
+  <line x1="580" y1="182" x2="674" y2="182" stroke="#D4D4D4" stroke-width="0.5"/>
+
+  <text x="580" y="200" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" font-weight="600" fill="#C8102E">A† = A*ᵀ:</text>
+  <text x="580" y="214" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Shape form ✓</text>
+  <text x="580" y="228" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">Position ✓</text>
+  <text x="580" y="244" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">BOTH changed</text>
+  <text x="580" y="258" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">QM-primary!</text>
+
+  <rect x="576" y="272" width="80" height="42" fill="#C8102E" fill-opacity="0.06"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="616" y="290" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#C8102E">Hermitian: A†=A</text>
+  <text x="616" y="304" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#C8102E">Unitary: A†A=I</text>
+  <text x="616" y="318" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#545454">(special cases)</text>
+
+  <!-- Caption -->
+  <text x="350" y="400" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Abstract shape markers represent complex entries without specific values</text>
+  <text x="350" y="414" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Filled = original form; hollow = conjugated. A† combines both: swap position AND conjugate shape</text>
+</svg>

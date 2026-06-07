@@ -1,0 +1,166 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 16-tensor-products-and-composite-systems
+  Figure:  03 — Partial trace: from pure entangled state to mixed reduced state
+  Source:  pantry/16-tensor-products-and-composite-systems-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c16-03">
+  <title id="fig-title-c16-03">Partial trace: Bell state density matrix traced over subsystem B gives maximally mixed state</title>
+  <desc>Three-stage horizontal flow showing the partial trace operation: Stage 1 is the 4×4 joint density matrix ρ_AB for the Bell state |Φ+⟩ with four nonzero entries highlighted in blue; a curved arrow indicates tracing out subsystem B to yield Stage 2, the 2×2 reduced state ρ_A = I/2 with equal diagonal entries in green; Stage 3 shows a generic diagonal mixed state in red for contrast, separated by a dashed line.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="16-tensor-products-and-composite-systems" figure-number="03"
+      figure-title="Partial trace: from pure Bell state to mixed reduced state"
+      figure-slug="partial-trace-bell-state" figure-type="diagram"
+      priority="important" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/16-tensor-products-and-composite-systems-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr16c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Partial trace  Tr_B(ρ_AB)  —  Bell state  |Φ⁺⟩ to maximally mixed
+  </text>
+
+  <!-- ====== STAGE 1: 4×4 joint density matrix ρ_AB ====== -->
+  <!-- Grid at x=50, y=80, cells 52×52 -->
+  <text x="154" y="68" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">ρ_AB = |Φ⁺⟩⟨Φ⁺|</text>
+
+  <!-- Row/col labels -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">
+    <text x="48" y="110" text-anchor="end">|00⟩</text>
+    <text x="48" y="162" text-anchor="end">|01⟩</text>
+    <text x="48" y="214" text-anchor="end">|10⟩</text>
+    <text x="48" y="266" text-anchor="end">|11⟩</text>
+    <text x="76"  y="78" text-anchor="middle">|00⟩</text>
+    <text x="128" y="78" text-anchor="middle">|01⟩</text>
+    <text x="180" y="78" text-anchor="middle">|10⟩</text>
+    <text x="232" y="78" text-anchor="middle">|11⟩</text>
+  </g>
+
+  <!-- All 16 cells -->
+  <g stroke="#2a1a0e" stroke-width="0.75">
+    <!-- Row 1 -->
+    <rect x="50" y="84" width="52" height="52" fill="#2a1a0e" fill-opacity="0.55"/>  <!-- (00,00) nonzero -->
+    <rect x="102" y="84" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="154" y="84" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="206" y="84" width="52" height="52" fill="#2a1a0e" fill-opacity="0.55"/>  <!-- (00,11) nonzero -->
+    <!-- Row 2 -->
+    <rect x="50" y="136" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="102" y="136" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="154" y="136" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="206" y="136" width="52" height="52" fill="#FFFFFF"/>
+    <!-- Row 3 -->
+    <rect x="50" y="188" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="102" y="188" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="154" y="188" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="206" y="188" width="52" height="52" fill="#FFFFFF"/>
+    <!-- Row 4 -->
+    <rect x="50" y="240" width="52" height="52" fill="#2a1a0e" fill-opacity="0.55"/>  <!-- (11,00) nonzero -->
+    <rect x="102" y="240" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="154" y="240" width="52" height="52" fill="#FFFFFF"/>
+    <rect x="206" y="240" width="52" height="52" fill="#2a1a0e" fill-opacity="0.55"/>  <!-- (11,11) nonzero -->
+  </g>
+
+  <!-- Entry labels for nonzero cells -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#FFFFFF">
+    <text x="76"  y="115" text-anchor="middle">½</text>
+    <text x="232" y="115" text-anchor="middle">½</text>
+    <text x="76"  y="271" text-anchor="middle">½</text>
+    <text x="232" y="271" text-anchor="middle">½</text>
+  </g>
+
+  <!-- Trace-over-B arc arrow -->
+  <!-- Arc from top of right two columns (x≈206,y=84) curving right then down to arrow at Stage2 -->
+  <path d="M 258,84 C 310,60 350,80 365,140"
+        fill="none" stroke="#2a1a0e" stroke-width="1.5" marker-end="url(#arr16c)"/>
+  <text x="320" y="70" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#2a1a0e">Tr_B</text>
+
+  <!-- ====== STAGE 2: 2×2 reduced state ρ_A = I/2 ====== -->
+  <text x="434" y="68" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">ρ_A = I/2</text>
+
+  <!-- Row/col labels -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
+    <text x="380" y="120" text-anchor="end">|0⟩</text>
+    <text x="380" y="188" text-anchor="end">|1⟩</text>
+    <text x="408" y="78" text-anchor="middle">|0⟩</text>
+    <text x="476" y="78" text-anchor="middle">|1⟩</text>
+  </g>
+
+  <!-- 2×2 grid -->
+  <g stroke="#2a1a0e" stroke-width="0.75">
+    <rect x="384" y="84"  width="68" height="68" fill="#787878" fill-opacity="0.45"/>  <!-- (0,0) diagonal -->
+    <rect x="452" y="84"  width="68" height="68" fill="#FFFFFF"/>
+    <rect x="384" y="152" width="68" height="68" fill="#FFFFFF"/>
+    <rect x="452" y="152" width="68" height="68" fill="#787878" fill-opacity="0.45"/>  <!-- (1,1) diagonal -->
+  </g>
+
+  <!-- Entry labels -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="14" fill="#FFFFFF">
+    <text x="418" y="124" text-anchor="middle">½</text>
+    <text x="486" y="192" text-anchor="middle">½</text>
+  </g>
+
+  <!-- Dashed separator before Stage 3 -->
+  <line x1="538" y1="64" x2="538" y2="300" stroke="#2a1a0e" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+  <!-- ====== STAGE 3: generic mixed state (contrast) ====== -->
+  <text x="617" y="68" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">generic mixed</text>
+
+  <g stroke="#2a1a0e" stroke-width="0.75">
+    <rect x="552" y="84"  width="60" height="60" fill="#C8102E" fill-opacity="0.35"/>
+    <rect x="612" y="84"  width="60" height="60" fill="#FFFFFF"/>
+    <rect x="552" y="144" width="60" height="60" fill="#FFFFFF"/>
+    <rect x="612" y="144" width="60" height="60" fill="#C8102E" fill-opacity="0.20"/>
+  </g>
+
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#545454">
+    <text x="582" y="120" text-anchor="middle">p</text>
+    <text x="642" y="175" text-anchor="middle">1−p</text>
+  </g>
+
+  <!-- Stage annotations -->
+  <text x="154" y="318" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">entangled joint state</text>
+  <text x="154" y="332" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">4 nonzero entries</text>
+
+  <text x="434" y="318" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">maximally mixed</text>
+  <text x="434" y="332" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">no off-diagonal structure</text>
+
+  <text x="617" y="318" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">generic mixed</text>
+  <text x="617" y="332" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">(unequal diagonal)</text>
+
+  <!-- Key message -->
+  <rect x="50" y="360" width="600" height="42" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="350" y="377" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#2a1a0e">
+    All information about correlations is lost when only one half of an entangled pair is accessible.
+  </text>
+  <text x="350" y="392" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
+    Tr_B(|Φ⁺⟩⟨Φ⁺|) = I/2  ←  maximally mixed
+  </text>
+
+</svg>

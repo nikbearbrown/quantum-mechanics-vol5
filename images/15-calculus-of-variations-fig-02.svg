@@ -1,0 +1,161 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 15-calculus-of-variations
+  Figure:  02 — Path-integral phase cancellation and constructive interference
+  Source:  pantry/15-calculus-of-variations-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c15-02">
+  <title id="fig-title-c15-02">Path-integral phase cancellation and constructive interference near the stationary path</title>
+  <desc>Two-panel figure: left panel shows five paths from endpoint to endpoint with phasor indicators at each midpoint — the central stationary path (ink) has a coherent upward phasor, near-neighbor paths (gray) have nearly aligned phasors, and outer paths (red) have scattered phasors pointing in opposing directions; right panel shows the phasor addition diagram where outer contributions cancel and the near-stationary contributions survive as the dominant resultant.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="15-calculus-of-variations" figure-number="02"
+      figure-title="Path-integral phase cancellation and constructive interference"
+      figure-slug="path-integral-phase-cancellation" figure-type="diagram"
+      priority="important" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/15-calculus-of-variations-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr15c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr15d" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#C8102E"/>
+    </marker>
+    <marker id="arr15e" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#787878"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Feynman path integral: phase cancellation away from stationary path
+  </text>
+
+  <!-- ====== LEFT PANEL: paths (x 40–380, y 50–380) ====== -->
+  <rect x="40" y="50" width="340" height="310" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Fixed endpoints -->
+  <circle cx="80"  cy="290" r="5" fill="#2a1a0e"/>
+  <circle cx="360" cy="270" r="5" fill="#2a1a0e"/>
+
+  <!-- Path labels -->
+  <text x="210" y="46" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">all paths  e^(iS/ℏ)</text>
+
+  <!-- Outer path 1 (far above, red) -->
+  <path d="M 80,290 C 130,70 280,60 360,270"
+        fill="none" stroke="#C8102E" stroke-width="1"/>
+  <!-- Outer path 2 (far below, red) -->
+  <path d="M 80,290 C 150,340 300,350 360,270"
+        fill="none" stroke="#C8102E" stroke-width="1"/>
+  <!-- Near-neighbor path 1 (gray) -->
+  <path d="M 80,290 C 140,110 290,100 360,270"
+        fill="none" stroke="#787878" stroke-width="1.2"/>
+  <!-- Near-neighbor path 2 (gray) -->
+  <path d="M 80,290 C 155,310 300,320 360,270"
+        fill="none" stroke="#787878" stroke-width="1.2"/>
+  <!-- Stationary path (ink, boldest) -->
+  <path d="M 80,290 C 145,145 295,135 360,270"
+        fill="none" stroke="#2a1a0e" stroke-width="2.5"/>
+
+  <!-- Phasor circles at midpoint (~x=220) -->
+  <!-- Outer path 1 phasor (scattered, pointing lower-left) at approx y=100 -->
+  <circle cx="215" cy="100" r="16" fill="#FFFFFF" stroke="#C8102E" stroke-width="0.75"/>
+  <line x1="215" y1="100" x2="215" y2="84" transform="rotate(130,215,100)"
+        stroke="#C8102E" stroke-width="1.2" marker-end="url(#arr15d)"/>
+
+  <!-- Outer path 2 phasor (opposing direction) at approx y=345 -->
+  <circle cx="215" cy="342" r="16" fill="#FFFFFF" stroke="#C8102E" stroke-width="0.75"/>
+  <line x1="215" y1="342" x2="215" y2="326" transform="rotate(-50,215,342)"
+        stroke="#C8102E" stroke-width="1.2" marker-end="url(#arr15d)"/>
+
+  <!-- Near-neighbor 1 phasor (nearly up) at approx y=148 -->
+  <circle cx="215" cy="148" r="16" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <line x1="215" y1="148" x2="215" y2="132" transform="rotate(15,215,148)"
+        stroke="#787878" stroke-width="1.2" marker-end="url(#arr15e)"/>
+
+  <!-- Near-neighbor 2 phasor (nearly up) at approx y=310 -->
+  <circle cx="215" cy="308" r="16" fill="#FFFFFF" stroke="#787878" stroke-width="0.75"/>
+  <line x1="215" y1="308" x2="215" y2="292" transform="rotate(-12,215,308)"
+        stroke="#787878" stroke-width="1.2" marker-end="url(#arr15e)"/>
+
+  <!-- Stationary path phasor (straight up) at approx y=222 -->
+  <circle cx="215" cy="222" r="16" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="215" y1="222" x2="215" y2="206"
+        stroke="#2a1a0e" stroke-width="1.5" marker-end="url(#arr15c)"/>
+
+  <!-- Path labels -->
+  <text x="45" y="70"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8102E">outer</text>
+  <text x="45" y="83"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8102E">(scattered</text>
+  <text x="45" y="95"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8102E">phase)</text>
+  <text x="45" y="215"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#2a1a0e">stationary</text>
+  <text x="45" y="227"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#2a1a0e">(coherent)</text>
+
+  <!-- ====== RIGHT PANEL: phasor addition (x 400–680, y 50–380) ====== -->
+  <rect x="400" y="50" width="280" height="310" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <text x="540" y="46" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">phasor addition</text>
+
+  <!-- Show phasors stacked: starting at bottom x=520 y=330 -->
+  <!-- Outer phasor 1 (red, short, 25px, pointing lower-left ~200°) -->
+  <line x1="520" y1="330" x2="499" y2="316"
+        stroke="#C8102E" stroke-width="1.5" marker-end="url(#arr15d)"/>
+
+  <!-- Outer phasor 2 (red, short, 25px, nearly cancels — pointing upper-right ~30°) -->
+  <line x1="499" y1="316" x2="524" y2="300"
+        stroke="#C8102E" stroke-width="1.5" marker-end="url(#arr15d)"/>
+
+  <!-- Near-neighbor 1 (gray, medium, 40px, pointing ~80°) -->
+  <line x1="524" y1="300" x2="520" y2="260"
+        stroke="#787878" stroke-width="1.5" marker-end="url(#arr15e)"/>
+
+  <!-- Near-neighbor 2 (gray, medium, 40px, pointing ~85°) -->
+  <line x1="520" y1="260" x2="518" y2="220"
+        stroke="#787878" stroke-width="1.5" marker-end="url(#arr15e)"/>
+
+  <!-- Stationary path phasor (ink, tall, 80px, straight up) -->
+  <line x1="518" y1="220" x2="518" y2="140"
+        stroke="#2a1a0e" stroke-width="3" marker-end="url(#arr15c)"/>
+
+  <!-- Resultant arrow (dominant, ink) -->
+  <line x1="520" y1="330" x2="518" y2="135"
+        stroke="#2a1a0e" stroke-width="1.5" stroke-dasharray="5 3"/>
+
+  <!-- Labels -->
+  <text x="540" y="330" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8102E">outer cancel</text>
+  <text x="540" y="240" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#787878">near-neighbor</text>
+  <text x="540" y="252" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#787878">add</text>
+  <text x="540" y="170" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#2a1a0e">stationary path</text>
+  <text x="540" y="182" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#2a1a0e">dominates</text>
+
+  <!-- Resultant label -->
+  <text x="480" y="108" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#2a1a0e">net</text>
+  <text x="480" y="120" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#2a1a0e">∑ e^(iS/ℏ)</text>
+
+  <!-- Legend -->
+  <g font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    <line x1="60" y1="400" x2="90" y2="400" stroke="#2a1a0e" stroke-width="2.5"/>
+    <text x="94" y="404">stationary path</text>
+    <line x1="240" y1="400" x2="270" y2="400" stroke="#787878" stroke-width="1.2"/>
+    <text x="274" y="404">near-neighbor paths</text>
+    <line x1="460" y1="400" x2="490" y2="400" stroke="#C8102E" stroke-width="1"/>
+    <text x="494" y="404">distant paths</text>
+  </g>
+
+</svg>

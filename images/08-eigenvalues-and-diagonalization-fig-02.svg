@@ -1,0 +1,194 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 08-eigenvalues-and-diagonalization
+     Figure      : 02
+     Title       : Diagonalization — coordinate change reveals the eigenbasis
+     Type        : mechanism / process
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/08-eigenvalues-and-diagonalization-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-08-02">
+  <title id="fig-title-08-02">Diagonalization — coordinate change reveals the eigenbasis</title>
+  <desc>Three-panel sequence: Step 1 shows the original oblique basis and a dense 2×2 matrix with all cells filled; Step 2 shows the change-of-basis transformation arc from old to eigenvector basis; Step 3 shows the diagonal matrix with only diagonal cells filled and the eigenbasis coordinate system with perpendicular arrows and scaling ticks.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="08-eigenvalues-and-diagonalization"
+      figure-number="02"
+      figure-title="Diagonalization — coordinate change reveals the eigenbasis"
+      figure-slug="diagonalization-coordinate-change"
+      figure-type="mechanism-process"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/08-eigenvalues-and-diagonalization-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr08b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr08b-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+    <marker id="arr08b-gray" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#787878"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Diagonalization: A = PDP⁻¹</text>
+
+  <!-- Step arrows between panels -->
+  <path d="M222,200 C240,200 242,200 258,200" fill="none" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr08b-gray)"/>
+  <path d="M454,200 C472,200 474,200 490,200" fill="none" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr08b-gray)"/>
+
+  <!-- Step labels above panels -->
+  <text x="111" y="48" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Step 1: Original basis</text>
+  <text x="338" y="48" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Step 2: Change of basis P</text>
+  <text x="565" y="48" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Step 3: Diagonal form D</text>
+
+  <!-- ═══ PANEL 1 ═══  x=36–222, y=60–350 -->
+  <rect x="36" y="60" width="186" height="290" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Oblique basis: origin (100,280) -->
+  <!-- b1: horizontal with slight upward tilt ~10° → (100+90,280-16)=(190,264) -->
+  <line x1="100" y1="280" x2="188" y2="265" stroke="#ADADAD" stroke-width="2"
+        marker-end="url(#arr08b-gray)"/>
+  <!-- b2: ~60° from b1, i.e. ~70° absolute → (100+35,280-100)=(135,180) -->
+  <line x1="100" y1="280" x2="132" y2="182" stroke="#ADADAD" stroke-width="2"
+        marker-end="url(#arr08b-gray)"/>
+  <!-- Angle arc showing oblique (not 90°) -->
+  <path d="M150,271 A50,50 0 0,1 115,234" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Dense 2×2 matrix icon — all 4 cells filled — positioned top-right of panel -->
+  <!-- Matrix box: top-left (52,72), cell size 26 -->
+  <rect x="52" y="78" width="26" height="26" fill="#C8860E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="78" y="78" width="26" height="26" fill="#C8860E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="52" y="104" width="26" height="26" fill="#C8860E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="78" y="104" width="26" height="26" fill="#C8860E" fill-opacity="0.5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Matrix bracket decoration -->
+  <path d="M48,75 L44,75 L44,133 L48,133" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <path d="M108,75 L112,75 L112,133 L108,133" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <text x="78" y="148" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">A (all cells filled)</text>
+
+  <text x="111" y="358" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Non-orthogonal basis b₁, b₂</text>
+  <text x="111" y="371" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Matrix A couples all components</text>
+
+  <!-- ═══ PANEL 2 ═══  x=260–452, y=60–350 -->
+  <rect x="260" y="60" width="192" height="290" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Old basis at origin (300,280): same as panel 1 but lighter -->
+  <line x1="300" y1="280" x2="386" y2="265" stroke="#D4D4D4" stroke-width="1.5"
+        marker-end="url(#arr08b-gray)"/>
+  <line x1="300" y1="280" x2="330" y2="184" stroke="#D4D4D4" stroke-width="1.5"
+        marker-end="url(#arr08b-gray)"/>
+
+  <!-- Transformation arc P: sweeping from old oblique basis to new eigen basis -->
+  <path d="M380,270 A90,90 0 0,1 300,190" fill="none" stroke="#C8102E" stroke-width="1.5"
+        stroke-dasharray="5 3" marker-end="url(#arr08b-red)"/>
+
+  <!-- New eigenbasis arrows -->
+  <!-- e1 horizontal: (300,280) → (430,280) -->
+  <line x1="300" y1="280" x2="428" y2="280" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr08b)"/>
+  <!-- e2 vertical: (300,280) → (300,155) -->
+  <line x1="300" y1="280" x2="300" y2="157" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr08b)"/>
+  <!-- Right-angle square -->
+  <path d="M300,272 L308,272 L308,280" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+
+  <!-- P bracket label -->
+  <text x="385" y="230" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="12" fill="#C8102E">P</text>
+  <text x="375" y="246" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#C8102E">(eigenvector matrix)</text>
+
+  <text x="356" y="358" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">P rotates old basis to eigenvectors</text>
+  <text x="356" y="371" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">New basis is orthogonal eigenbasis</text>
+
+  <!-- ═══ PANEL 3 ═══  x=490–680, y=60–350 -->
+  <rect x="490" y="60" width="184" height="290" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Diagonal matrix icon: only diagonal cells filled -->
+  <!-- Matrix box: top-left (500,72), cell size 30 -->
+  <rect x="504" y="78" width="30" height="30" fill="#C8102E" fill-opacity="0.6" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="534" y="78" width="30" height="30" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="504" y="108" width="30" height="30" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="534" y="108" width="30" height="30" fill="#C8102E" fill-opacity="0.6" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- Bracket decoration -->
+  <path d="M500,75 L496,75 L496,141 L500,141" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <path d="M568,75 L572,75 L572,141 L568,141" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <!-- Off-diagonal zero indicator -->
+  <line x1="538" y1="90" x2="558" y2="100" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="558" y1="90" x2="538" y2="100" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="508" y1="117" x2="528" y2="127" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="528" y1="117" x2="508" y2="127" stroke="#D4D4D4" stroke-width="1"/>
+
+  <text x="534" y="153" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">D (diagonal)</text>
+
+  <!-- Eigenbasis coordinate system: origin (582,280) -->
+  <!-- e1 horizontal with scale tick λ₁ -->
+  <line x1="582" y1="280" x2="650" y2="280" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr08b)"/>
+  <!-- Scale tick at ~85% of e1 -->
+  <line x1="638" y1="276" x2="638" y2="284" stroke="#ADADAD" stroke-width="1.5"/>
+  <text x="635" y="298" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="9" fill="#545454">λ₁</text>
+
+  <!-- e2 vertical with scale tick λ₂ -->
+  <line x1="582" y1="280" x2="582" y2="168" stroke="#2a1a0e" stroke-width="2"
+        marker-end="url(#arr08b)"/>
+  <!-- Scale tick at ~75% of e2 -->
+  <line x1="578" y1="197" x2="586" y2="197" stroke="#ADADAD" stroke-width="1.5"/>
+  <text x="565" y="200" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="9" fill="#545454">λ₂</text>
+
+  <!-- Right-angle square -->
+  <path d="M582,272 L590,272 L590,280" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+
+  <text x="582" y="358" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">D = P⁻¹AP: off-diagonal cells drain to zero</text>
+  <text x="582" y="371" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Operator stretches along each axis by λᵢ</text>
+
+  <!-- Bottom caption -->
+  <text x="350" y="398" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Diagonalization decouples the operator: in the eigenbasis, each component is scaled independently</text>
+  <text x="350" y="412" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">and the coupling between different directions (off-diagonal entries) vanishes</text>
+</svg>

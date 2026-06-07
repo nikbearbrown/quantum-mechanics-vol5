@@ -1,0 +1,60 @@
+<!-- CAJAL SVG | book: Quantum Mechanics | chapter: 01-complex-numbers-and-the-complex-exponential | figure: 02 | type: diagram | date: 2026-06-06 -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-title-02">
+<title id="fig-title-02">Phasor addition: two perpendicular components sum to a resultant</title>
+<desc>Vector addition of two phasors in the complex plane: horizontal component of magnitude 3, vertical component of magnitude 4 placed tip-to-tail, yielding resultant of magnitude 5 at angle 53 degrees. Right-angle marker at the junction confirms perpendicularity.</desc>
+<metadata><cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0" book="Quantum Mechanics" book-slug="quantum-mechanics-vol5" chapter="01-complex-numbers-and-the-complex-exponential" figure-number="02" figure-title="Phasor addition: two perpendicular components sum to a resultant" figure-slug="phasor-addition-345" figure-type="diagram" priority="CRITICAL" author="Humanitarians AI Incorporated" date-generated="2026-06-06" source-file="pantry/01-complex-numbers-and-the-complex-exponential-cajal.md"/></metadata>
+
+<defs>
+  <marker id="arr-02" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+  </marker>
+  <marker id="arr-02b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#787878"/>
+  </marker>
+  <marker id="arr-02c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+  </marker>
+  <marker id="arr-02d" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#C8860E"/>
+  </marker>
+</defs>
+
+<!-- Plot area background -->
+<rect x="80" y="40" width="540" height="340" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+<!-- Axes -->
+<line x1="80" y1="349.1" x2="620" y2="349.1" stroke="#2a1a0e" stroke-width="0.75" stroke-dasharray="2 3" opacity="0.4"/>
+<line x1="129.1" y1="380" x2="129.1" y2="40" stroke="#2a1a0e" stroke-width="0.75" stroke-dasharray="2 3" opacity="0.4"/>
+
+<!-- Axis labels -->
+<text x="628" y="353.1" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">Re</text>
+<text x="133.1" y="36" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">Im</text>
+
+<!-- Dashed construction rectangle -->
+<line x1="423.6" y1="349.1" x2="129.1" y2="101.8" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="4 3"/>
+<line x1="129.1" y1="101.8" x2="423.6" y2="101.8" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+<!-- A1: horizontal phasor from origin to (3,0) -->
+<line x1="129.1" y1="349.1" x2="415.6" y2="349.1" stroke="#787878" stroke-width="2" marker-end="url(#arr-02b)"/>
+
+<!-- A2: vertical phasor from (3,0) to (3,4) tip-to-tail -->
+<line x1="423.6" y1="349.1" x2="423.6" y2="109.8" stroke="#C8860E" stroke-width="2" marker-end="url(#arr-02d)"/>
+
+<!-- Resultant: from origin to (3,4) -->
+<line x1="129.1" y1="349.1" x2="419.4" y2="107.4" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arr-02c)"/>
+
+<!-- Right angle marker at (3,0) -->
+<path d="M 423.6,335.1 L 409.6,335.1 L 409.6,349.1" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+
+<!-- Angle arc at origin -->
+<path d="M 159.1,349.1 A 30,30 0 0,0 147.1,325.1" fill="none" stroke="#C8860E" stroke-width="1"/>
+
+<!-- Labels -->
+<text x="276.4" y="369.1" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#787878" text-anchor="middle" font-style="italic">A₁ = 3</text>
+<text x="437.6" y="225.5" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#C8860E" font-style="italic">A₂ = 4</text>
+<text x="248.4" y="225.5" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#C8102E" font-style="italic">R = 5</text>
+<text x="169.1" y="337.1" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#C8860E" font-style="italic">θ = 53.1°</text>
+
+<!-- Figure title -->
+<text x="350" y="410" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">Phasor addition: A₁ + A₂ = R, with |R|² = |A₁|² + |A₂|²</text>
+</svg>

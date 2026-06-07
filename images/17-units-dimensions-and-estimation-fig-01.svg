@@ -1,0 +1,101 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 17-units-dimensions-and-estimation
+  Figure:  01 — Hierarchy of atomic length scales
+  Source:  pantry/17-units-dimensions-and-estimation-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c17-01">
+  <title id="fig-title-c17-01">Hierarchy of atomic length scales: Bohr radius, Compton wavelength, and classical electron radius</title>
+  <desc>Horizontal logarithmic ruler spanning five decades from 10^-5 to 1 Angstrom with three downward arrow markers for the Bohr radius a0 (ink), Compton wavelength lambda_C (gray), and classical electron radius r_e (ochre). Two equal-width dashed brackets below the ruler show that adjacent scales are separated by a factor of approximately 137 (the inverse fine-structure constant).</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="17-units-dimensions-and-estimation" figure-number="01"
+      figure-title="Hierarchy of atomic length scales"
+      figure-slug="atomic-length-scales" figure-type="diagram"
+      priority="critical" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/17-units-dimensions-and-estimation-cajal.md"/>
+  </metadata>
+  <defs>
+    <marker id="arw17a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#2a1a0e"/></marker>
+    <marker id="arw17b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#787878"/></marker>
+    <marker id="arw17c" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#C8860E"/></marker>
+  </defs>
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <text x="350" y="32" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Hierarchy of atomic length scales  (log scale, Angstrom)
+  </text>
+
+  <rect x="80" y="188" width="540" height="28" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="80" y1="200" x2="620" y2="200" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <line x1="80.0" y1="192" x2="80.0" y2="208" stroke="#2a1a0e" stroke-width="1"/>
+<text x="80.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-5</text>
+<line x1="188.0" y1="192" x2="188.0" y2="208" stroke="#2a1a0e" stroke-width="1"/>
+<text x="188.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-4</text>
+<line x1="296.0" y1="192" x2="296.0" y2="208" stroke="#2a1a0e" stroke-width="1"/>
+<text x="296.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-3</text>
+<line x1="404.0" y1="192" x2="404.0" y2="208" stroke="#2a1a0e" stroke-width="1"/>
+<text x="404.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-2</text>
+<line x1="512.0" y1="192" x2="512.0" y2="208" stroke="#2a1a0e" stroke-width="1"/>
+<text x="512.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-1</text>
+<line x1="620.0" y1="192" x2="620.0" y2="208" stroke="#2a1a0e" stroke-width="1"/>
+<text x="620.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^0</text>
+
+
+  <!-- Arrow a0 (ink, tall) -->
+  <line x1="590.1" y1="68" x2="590.1" y2="195" stroke="#2a1a0e" stroke-width="2" marker-end="url(#arw17a)"/>
+  <circle cx="590.1" cy="200" r="4" fill="#2a1a0e"/>
+  <text x="590.1" y="60" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">a&#x2080;</text>
+  <text x="590.1" y="48" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">0.529 A</text>
+
+  <!-- Arrow lambda_C (gray, medium) -->
+  <line x1="359.4" y1="85" x2="359.4" y2="195" stroke="#787878" stroke-width="2" marker-end="url(#arw17b)"/>
+  <circle cx="359.4" cy="200" r="4" fill="#787878"/>
+  <text x="359.4" y="77" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#787878">&#x3BB;&#x2C;</text>
+  <text x="359.4" y="65" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">3.86e-3 A</text>
+
+  <!-- Arrow r_e (ochre, shorter) -->
+  <line x1="128.3" y1="105" x2="128.3" y2="195" stroke="#C8860E" stroke-width="2" marker-end="url(#arw17c)"/>
+  <circle cx="128.3" cy="200" r="4" fill="#C8860E"/>
+  <text x="128.3" y="97" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#C8860E">r&#x2091;</text>
+  <text x="128.3" y="85" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">2.8e-5 A</text>
+
+  <!-- Bracket 1: lC to a0, ratio ~137 -->
+  <path d="M 359.4,240 L 359.4,258 L 590.1,258 L 590.1,240"
+        fill="none" stroke="#2a1a0e" stroke-width="0.75" stroke-dasharray="4 2"/>
+  <text x="474.7" y="274" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">ratio a&#x2080;/&#x3BB;&#x2C; &#x2248; 137</text>
+
+  <!-- Bracket 2: re to lC, ratio ~137 -->
+  <path d="M 128.3,240 L 128.3,258 L 359.4,258 L 359.4,240"
+        fill="none" stroke="#787878" stroke-width="0.75" stroke-dasharray="4 2"/>
+  <text x="243.8" y="274" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">ratio &#x3BB;&#x2C;/r&#x2091; &#x2248; 137</text>
+
+  <!-- Span indicator -->
+  <text x="359.2" y="306" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">each gap is the same 2-decade log interval  ( = &#x3B1;&#x207B;&#x00B9; &#x2248; 137 )</text>
+
+  <!-- Scale label -->
+  <text x="620" y="228" text-anchor="end"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">Angstrom</text>
+
+  <!-- Legend -->
+  <line x1="80" y1="370" x2="110" y2="370" stroke="#2a1a0e" stroke-width="2"/>
+  <text x="114" y="374" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">a&#x2080;  Bohr radius</text>
+  <line x1="270" y1="370" x2="300" y2="370" stroke="#787878" stroke-width="2"/>
+  <text x="304" y="374" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">&#x3BB;&#x2C;  Compton wavelength</text>
+  <line x1="510" y1="370" x2="540" y2="370" stroke="#C8860E" stroke-width="2"/>
+  <text x="544" y="374" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">r&#x2091;  classical e&#x207B; radius</text>
+
+</svg>

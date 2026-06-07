@@ -1,0 +1,192 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 07-vectors-vector-spaces-and-inner-products
+     Figure      : 02
+     Title       : Gram–Schmidt orthonormalization — three-step process
+     Type        : mechanism / process
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/07-vectors-vector-spaces-and-inner-products-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-02">
+  <title id="fig-title-02">Gram–Schmidt orthonormalization — three-step process</title>
+  <desc>Three panels show the Gram–Schmidt process: Step 1 two non-orthogonal vectors; Step 2 first vector normalized with unit arc, projection of second vector shown as dashed line with residual; Step 3 completed orthonormal pair with right-angle square.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="07-vectors-vector-spaces-and-inner-products"
+      figure-number="02"
+      figure-title="Gram–Schmidt orthonormalization — three-step process"
+      figure-slug="gram-schmidt-three-steps"
+      figure-type="mechanism-process"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/07-vectors-vector-spaces-and-inner-products-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr02" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arr02-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+    <marker id="arr02-gray" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#787878"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Gram–Schmidt orthonormalization</text>
+
+  <!-- Step arrows between panels -->
+  <line x1="218" y1="210" x2="242" y2="210" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr02-gray)"/>
+  <line x1="452" y1="210" x2="476" y2="210" stroke="#ADADAD" stroke-width="1.5"
+        marker-end="url(#arr02-gray)"/>
+
+  <!-- Step labels -->
+  <text x="113" y="48" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Step 1</text>
+  <text x="113" y="62" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Non-orthonormal input</text>
+
+  <text x="348" y="48" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Step 2</text>
+  <text x="348" y="62" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Normalize e₁, project and subtract</text>
+
+  <text x="583" y="48" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Step 3</text>
+  <text x="583" y="62" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Completed orthonormal basis</text>
+
+  <!-- ══ PANEL 1 ══ x=36–226, y=72–348 -->
+  <rect x="36" y="72" width="190" height="276" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Origin at (131, 290) -->
+  <!-- v1: angle ~10° from horizontal, length ~130px → tip at ~(131+128, 290-23) = (259... clipped, use 131+115,290-20)=(246,270)?
+       Use within panel. Origin at (115, 280).
+       v1 at angle 15°: tip at 115+100*cos15=115+96.6=212, 280-100*sin15=280-26=254 → (212,254)
+       v2 at angle 40°: tip at 115+85*cos40=115+65=180, 280-85*sin40=280-55=225 → (180,225) -->
+  <!-- Origin panel 1: (115, 282) -->
+  <line x1="115" y1="282" x2="209" y2="256" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr02-red)"/>
+  <line x1="115" y1="282" x2="175" y2="222" stroke="#ADADAD" stroke-width="2"
+        marker-end="url(#arr02-gray)"/>
+
+  <!-- Angle arc between v1 and v2, radius ~30 -->
+  <path d="M145,278 A30,30 0 0,1 134,253" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Labels -->
+  <text x="214" y="254" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">v₁</text>
+  <text x="177" y="217" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">v₂</text>
+
+  <text x="113" y="378" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Two independent vectors,</text>
+  <text x="113" y="391" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">neither unit length, not orthogonal</text>
+
+  <!-- ══ PANEL 2 ══ x=252–442, y=72–348 -->
+  <rect x="252" y="72" width="190" height="276" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Origin panel 2: (347, 282) -->
+  <!-- e1 normalized (unit): along 15°, length 90px → tip at (347+87, 282-23)=(434,259) — trim to panel -->
+  <!-- Use origin at (315,282), unit length ~80px, e1 along ~5° so near horizontal -->
+  <!-- e1: (315,282) → (395,277) -->
+  <line x1="315" y1="282" x2="393" y2="278" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr02-red)"/>
+  <!-- Unit circle arc centered at (315,282), r=78 from angle -5° to 40° -->
+  <path d="M393,278 A78,78 0 0,1 375,232" fill="none" stroke="#D4D4D4" stroke-width="0.75"
+        stroke-dasharray="4 3"/>
+
+  <!-- v2 (unchanged direction from step 1) at ~40° from origin, length ~90px -->
+  <!-- tip at 315+90*cos40=315+69=384, 282-90*sin40=282-58=224 → (384,224) -->
+  <line x1="315" y1="282" x2="381" y2="224" stroke="#ADADAD" stroke-width="2"
+        marker-end="url(#arr02-gray)"/>
+
+  <!-- Projection of v2 onto e1: foot is at projection along e1 direction.
+       e1 direction ~(0.996,-0.064). v2=(69,-58). proj length=69*0.996+(-58)*(-0.064)=68.7+3.7=72.4
+       Foot at (315+72.4*0.996, 282+72.4*(-0.064)) ≈ (387,277) — near tip of e1, makes sense.
+       Actually foot = (315+69,282) = (384,282) for simplicity with near-horizontal e1. -->
+  <!-- Foot point: (384, 279) -->
+  <line x1="381" y1="224" x2="381" y2="278" stroke="#D4D4D4" stroke-width="0.75"
+        stroke-dasharray="4 3"/>
+  <!-- Right-angle mark at foot (381,278) -->
+  <path d="M381,271 L374,271 L374,278" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Residual vector (perpendicular to e1, from foot to tip of v2):
+       from (381,278) to (381,224) is the residual — already drawn as projection line.
+       The residual arrow itself: foot (381,278) → v2 tip direction offset.
+       Residual = v2 - projection = v2 tip - foot.
+       Actual residual: from foot (381,278) to (381,224) but colored distinctly. -->
+  <!-- Residual arrow in accent red -->
+  <line x1="381" y1="278" x2="381" y2="230" stroke="#C8102E" stroke-width="2"
+        marker-end="url(#arr02-red)" stroke-dasharray="none"/>
+
+  <!-- Labels -->
+  <text x="396" y="276" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">e₁</text>
+  <text x="384" y="220" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">v₂</text>
+  <text x="388" y="258" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#C8102E">r</text>
+
+  <text x="348" y="378" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">e₁ normalized; dashed unit arc confirms ‖e₁‖=1</text>
+  <text x="348" y="391" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">Residual r = v₂ − ⟨v₂,e₁⟩e₁  ⊥  e₁</text>
+
+  <!-- ══ PANEL 3 ══ x=486–676, y=72–348 -->
+  <rect x="486" y="72" width="190" height="276" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Origin panel 3: (581, 282) -->
+  <!-- e1 horizontal, e2 vertical — both unit length (80px) -->
+  <line x1="581" y1="282" x2="659" y2="282" stroke="#C8102E" stroke-width="2.5"
+        marker-end="url(#arr02-red)"/>
+  <line x1="581" y1="282" x2="581" y2="204" stroke="#2a1a0e" stroke-width="2.5"
+        marker-end="url(#arr02)"/>
+
+  <!-- Right-angle square -->
+  <path d="M581,274 L589,274 L589,282" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+
+  <!-- Labels -->
+  <text x="663" y="286" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">e₁</text>
+  <text x="585" y="200" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="11" fill="#545454">e₂</text>
+
+  <text x="581" y="378" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Orthonormal pair: ‖e₁‖=‖e₂‖=1,</text>
+  <text x="581" y="391" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">⟨e₁,e₂⟩=0</text>
+
+  <!-- Shared caption -->
+  <text x="350" y="412" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Normalize → project and subtract → normalize residual → repeat for each subsequent vector</text>
+</svg>

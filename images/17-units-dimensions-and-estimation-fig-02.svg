@@ -1,0 +1,121 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 17-units-dimensions-and-estimation
+  Figure:  02 — Classical vs quantum crossover: hbar*omega / k_B*T
+  Source:  pantry/17-units-dimensions-and-estimation-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c17-02">
+  <title id="fig-title-c17-02">Classical versus quantum crossover: dimensionless ratio hbar omega over k_B T</title>
+  <desc>Horizontal logarithmic axis spanning 16 decades from 10^-12 to 10^4 showing the dimensionless ratio hbar*omega/k_B*T. The classical regime (ratio much less than 1) is shaded ochre; the quantum regime (ratio much greater than 1) is shaded ink. Three downward markers identify a 1 kHz macroscopic pendulum (ratio ~10^-10), an intermediate 1 GHz resonator (ratio ~10^-3), and a hydrogen atom at room temperature (ratio ~540). A vertical dashed threshold at ratio=1 marks the classical-quantum crossover.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="17-units-dimensions-and-estimation" figure-number="02"
+      figure-title="Classical vs quantum crossover: dimensionless ratio"
+      figure-slug="classical-quantum-crossover" figure-type="diagram"
+      priority="important" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/17-units-dimensions-and-estimation-cajal.md"/>
+  </metadata>
+  <defs>
+    <marker id="arw17d" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#2a1a0e"/></marker>
+    <marker id="arw17e" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#C8860E"/></marker>
+  </defs>
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <text x="350" y="30" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Classical vs quantum crossover:  hbar*omega / k_B*T
+  </text>
+
+  <!-- Classical region shading (left of threshold) -->
+  <rect x="80.0" y="170" width="420.0" height="60" fill="#C8860E" fill-opacity="0.12"/>
+  <!-- Quantum region shading (right of threshold) -->
+  <rect x="500.0" y="170" width="140.0" height="60" fill="#2a1a0e" fill-opacity="0.10"/>
+
+  <!-- Background ruler band -->
+  <rect x="80" y="186" width="560" height="28" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Ruler line -->
+  <line x1="80" y1="200" x2="640" y2="200" stroke="#2a1a0e" stroke-width="1.5"/>
+
+  <line x1="80.0" y1="192" x2="80.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="80.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-12</text>
+<line x1="150.0" y1="192" x2="150.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="150.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-10</text>
+<line x1="220.0" y1="192" x2="220.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="220.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-8</text>
+<line x1="290.0" y1="192" x2="290.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="290.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-6</text>
+<line x1="360.0" y1="192" x2="360.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="360.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-4</text>
+<line x1="430.0" y1="192" x2="430.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="430.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^-2</text>
+<line x1="500.0" y1="192" x2="500.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="500.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^0</text>
+<line x1="570.0" y1="192" x2="570.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="570.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^2</text>
+<line x1="640.0" y1="192" x2="640.0" y2="208" stroke="#2a1a0e" stroke-width="0.75"/>
+<text x="640.0" y="222" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">10^4</text>
+
+
+  <!-- Threshold line at ratio=1 -->
+  <line x1="500.0" y1="155" x2="500.0" y2="245" stroke="#2a1a0e" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="500.0" y="150" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">1</text>
+
+  <!-- Region labels -->
+  <text x="290.0" y="178" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#C8860E">classical</text>
+  <text x="290.0" y="168" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#C8860E">hbar*omega &lt;&lt; k_B*T</text>
+  <text x="570.0" y="178" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">quantum</text>
+  <text x="570.0" y="168" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#2a1a0e">hbar*omega &gt;&gt; k_B*T</text>
+
+  <!-- Marker: 1 kHz macroscopic pendulum (classical, ~1e-10) -->
+  <line x1="150.0" y1="110" x2="150.0" y2="195" stroke="#C8860E" stroke-width="2" marker-end="url(#arw17e)"/>
+  <circle cx="150.0" cy="200" r="4" fill="#2a1a0e"/>
+  <text x="150.0" y="102" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8860E">1 kHz</text>
+  <text x="150.0" y="89" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">~10^-10</text>
+
+  <!-- Marker: 1 GHz resonator (intermediate, ~1e-3) -->
+  <line x1="395.0" y1="110" x2="395.0" y2="195" stroke="#C8860E" stroke-width="2" marker-end="url(#arw17e)"/>
+  <circle cx="395.0" cy="200" r="4" fill="#2a1a0e"/>
+  <text x="395.0" y="102" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#C8860E">1 GHz</text>
+  <text x="395.0" y="89" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">~10^-3</text>
+
+  <!-- Marker: hydrogen atom ~540 (quantum) -->
+  <line x1="595.6" y1="110" x2="595.6" y2="195" stroke="#2a1a0e" stroke-width="2" marker-end="url(#arw17d)"/>
+  <circle cx="595.6" cy="200" r="4" fill="#2a1a0e"/>
+  <text x="595.6" y="102" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#2a1a0e">H atom</text>
+  <text x="595.6" y="89" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">~540</text>
+
+  <!-- X-axis label -->
+  <text x="360" y="250" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#545454">hbar*omega / k_B*T</text>
+
+  <!-- Key insight box -->
+  <rect x="80" y="280" width="540" height="90" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="350" y="302" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">Ratio below 1: classical equipartition applies</text>
+  <text x="350" y="320" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">Ratio above 1: quantum zero-point energy dominates</text>
+  <text x="350" y="344" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">1 kHz pendulum (10^-10) vs hydrogen atom (540) spans 13 decades</text>
+  <text x="350" y="358" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">at room temperature  T = 300 K</text>
+
+</svg>

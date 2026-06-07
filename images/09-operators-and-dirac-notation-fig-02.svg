@@ -1,0 +1,269 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 09-operators-and-dirac-notation
+     Figure      : 02
+     Title       : The adjoint — operator flips across the inner product
+     Type        : concept / verification-gap
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/09-operators-and-dirac-notation-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-09-02">
+  <title id="fig-title-09-02">The adjoint — operator flips across the inner product</title>
+  <desc>Main diagram shows bra–operator–ket equals adjoint-operator-on-bra times ket, with an equivalence bridge. Lower strip has three rule panels: order reversal (AB)† = B†A†, scalar conjugation (αA)† = α*A†, and ket-bra adjoint (|ψ⟩⟨φ|)† = |φ⟩⟨ψ|.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="09-operators-and-dirac-notation"
+      figure-number="02"
+      figure-title="The adjoint — operator flips across the inner product"
+      figure-slug="adjoint-flip-across-inner-product"
+      figure-type="concept-verification-gap"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/09-operators-and-dirac-notation-cajal.md"/>
+  </metadata>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">The adjoint: ⟨φ|A|ψ⟩ = ⟨A†φ|ψ⟩</text>
+
+  <!-- ═══ MAIN DIAGRAM: bra | A | ket  =  (A†bra) | ket ═══ -->
+  <rect x="36" y="40" width="628" height="165" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="350" y="58" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Defining relation of the adjoint A†</text>
+
+  <!-- LEFT SIDE: ⟨φ| A |ψ⟩ -->
+  <!-- Bra ⟨φ| -->
+  <path d="M80,100 L60,122 L80,144" fill="none" stroke="#C8102E" stroke-width="2.5"
+        stroke-linejoin="round"/>
+  <text x="55" y="126" text-anchor="end"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#C8102E">⟨φ|</text>
+
+  <!-- Operator A rectangle: on the ket side -->
+  <rect x="90" y="104" width="36" height="36" fill="#C8860E" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <text x="108" y="127" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#2a1a0e">A</text>
+
+  <!-- Ket |ψ⟩ -->
+  <path d="M136,100 L156,122 L136,144" fill="none" stroke="#ADADAD" stroke-width="2.5"
+        stroke-linejoin="round"/>
+  <text x="163" y="126"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#ADADAD">|ψ⟩</text>
+
+  <!-- Equivalence bridge / equals sign -->
+  <text x="235" y="126" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="22"
+        fill="#D4D4D4">=</text>
+  <!-- Annotation: "operator crossed to bra side, got dagger" -->
+  <text x="235" y="160" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#C8102E">A crosses to bra side, acquires †</text>
+
+  <!-- RIGHT SIDE: ⟨A†φ| |ψ⟩ -->
+  <!-- Bra with A† absorbed: (A†bra) -->
+  <!-- Show: bracket with A† rectangle attached to its left inside -->
+  <!-- Adjoint rectangle (with dagger marker) + bra bracket -->
+  <rect x="272" y="104" width="36" height="36" fill="#C8860E" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <!-- Dagger marker: a cross symbol above the rect -->
+  <line x1="290" y1="96" x2="290" y2="86" stroke="#C8102E" stroke-width="1.5"/>
+  <line x1="284" y1="90" x2="296" y2="90" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="290" y="127" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#2a1a0e">A†</text>
+  <path d="M318,100 L298,122 L318,144" fill="none" stroke="#C8102E" stroke-width="2.5"
+        stroke-linejoin="round"/>
+  <text x="296" y="160" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">adjoint acts on bra</text>
+
+  <!-- Ket |ψ⟩ (same ket) -->
+  <path d="M330,100 L350,122 L330,144" fill="none" stroke="#ADADAD" stroke-width="2.5"
+        stroke-linejoin="round"/>
+  <text x="357" y="126"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12"
+        fill="#ADADAD">|ψ⟩</text>
+
+  <!-- Dagger symbol legend -->
+  <rect x="420" y="95" width="12" height="12" fill="#C8860E" fill-opacity="0.4" stroke="#ADADAD" stroke-width="0.75"/>
+  <line x1="426" y1="91" x2="426" y2="83" stroke="#C8102E" stroke-width="1.5"/>
+  <line x1="421" y1="87" x2="431" y2="87" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="438" y="104" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">= dagger marker</text>
+  <text x="438" y="118" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">signals adjoint operation</text>
+  <text x="438" y="134" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">on operator rectangle</text>
+  <text x="438" y="150" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
+        font-size="10" fill="#545454">(transpose + conjugate)</text>
+
+  <!-- ═══ LOWER RULE PANELS ═══ -->
+  <text x="350" y="225" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Three manipulation rules for the adjoint</text>
+
+  <!-- Rule Panel 1: Order reversal (AB)† = B†A† -->
+  <rect x="36" y="234" width="200" height="145" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="136" y="252" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#2a1a0e">Rule 1: Order reversal</text>
+
+  <!-- LHS: A-rect then B-rect -->
+  <rect x="50" y="262" width="28" height="28" fill="#C8860E" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <text x="64" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">A</text>
+  <rect x="86" y="262" width="28" height="28" fill="#787878" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <text x="100" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">B</text>
+  <!-- Dagger on (AB) -->
+  <line x1="68" y1="257" x2="68" y2="249" stroke="#C8102E" stroke-width="1.5"/>
+  <line x1="62" y1="253" x2="74" y2="253" stroke="#C8102E" stroke-width="1.5"/>
+
+  <!-- = -->
+  <text x="124" y="281" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="14"
+        fill="#D4D4D4">=</text>
+
+  <!-- RHS: B†-rect then A†-rect (REVERSED ORDER) -->
+  <rect x="138" y="262" width="28" height="28" fill="#787878" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <text x="152" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">B†</text>
+  <rect x="174" y="262" width="28" height="28" fill="#C8860E" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <text x="188" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">A†</text>
+
+  <text x="136" y="310" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#545454">(AB)† = B†A†</text>
+  <text x="136" y="328" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">order reverses when taking adjoint</text>
+  <text x="136" y="344" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">of a product</text>
+  <text x="136" y="360" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">(like matrix transpose)</text>
+
+  <!-- Rule Panel 2: Scalar conjugation (αA)† = α*A† -->
+  <rect x="252" y="234" width="196" height="145" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="350" y="252" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#2a1a0e">Rule 2: Scalar conjugation</text>
+
+  <!-- LHS: α circle · A-rect with dagger -->
+  <circle cx="278" cy="276" r="12" fill="#D4D4D4" stroke="#ADADAD" stroke-width="1"/>
+  <text x="278" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">α</text>
+  <rect x="300" y="262" width="28" height="28" fill="#C8860E" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <text x="314" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">A</text>
+  <!-- Dagger on whole (αA) -->
+  <line x1="290" y1="257" x2="290" y2="249" stroke="#C8102E" stroke-width="1.5"/>
+  <line x1="284" y1="253" x2="296" y2="253" stroke="#C8102E" stroke-width="1.5"/>
+
+  <!-- = -->
+  <text x="340" y="281" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="14"
+        fill="#D4D4D4">=</text>
+
+  <!-- RHS: α* circle · A†-rect -->
+  <circle cx="364" cy="276" r="12" fill="#C8102E" fill-opacity="0.2" stroke="#C8102E" stroke-width="1"/>
+  <text x="364" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#C8102E">α*</text>
+  <rect x="386" y="262" width="28" height="28" fill="#C8860E" fill-opacity="0.5" stroke="#ADADAD" stroke-width="1"/>
+  <text x="400" y="281" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#2a1a0e">A†</text>
+
+  <text x="350" y="310" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#545454">(αA)† = α*A†</text>
+  <text x="350" y="328" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">scalar coefficient α</text>
+  <text x="350" y="344" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">becomes α* under †</text>
+
+  <!-- Rule Panel 3: ket-bra adjoint (|ψ⟩⟨φ|)† = |φ⟩⟨ψ| -->
+  <rect x="464" y="234" width="200" height="145" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="564" y="252" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#2a1a0e">Rule 3: Ket-bra adjoint</text>
+
+  <!-- LHS: |ψ⟩⟨φ| with dagger -->
+  <!-- ket shape -->
+  <path d="M478,264 L492,278 L478,292" fill="none" stroke="#ADADAD" stroke-width="2"
+        stroke-linejoin="round"/>
+  <text x="496" y="281"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#ADADAD">|ψ⟩</text>
+  <!-- bra shape -->
+  <path d="M530,264 L516,278 L530,292" fill="none" stroke="#C8102E" stroke-width="2"
+        stroke-linejoin="round"/>
+  <text x="488" y="296" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#C8102E">⟨φ|</text>
+  <!-- Dagger on outer product -->
+  <line x1="504" y1="259" x2="504" y2="251" stroke="#C8102E" stroke-width="1.5"/>
+  <line x1="498" y1="255" x2="510" y2="255" stroke="#C8102E" stroke-width="1.5"/>
+
+  <!-- = -->
+  <text x="548" y="281" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="14"
+        fill="#D4D4D4">=</text>
+
+  <!-- RHS: |φ⟩⟨ψ| (swapped) -->
+  <path d="M556,264 L570,278 L556,292" fill="none" stroke="#C8102E" stroke-width="2"
+        stroke-linejoin="round"/>
+  <text x="574" y="281"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#C8102E">|φ⟩</text>
+  <path d="M610,264 L596,278 L610,292" fill="none" stroke="#ADADAD" stroke-width="2"
+        stroke-linejoin="round"/>
+  <text x="572" y="297" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#ADADAD">⟨ψ|</text>
+
+  <text x="564" y="318" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#545454">(|ψ⟩⟨φ|)† = |φ⟩⟨ψ|</text>
+  <text x="564" y="336" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">bra and ket swap roles</text>
+  <text x="564" y="352" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">when taking adjoint of</text>
+  <text x="564" y="368" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">an outer product</text>
+
+  <!-- Caption -->
+  <text x="350" y="400" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">The adjoint A† is defined by ⟨φ|Aψ⟩ = ⟨A†φ|ψ⟩: the operator crosses to the bra side with conjugation</text>
+  <text x="350" y="415" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Rules: (AB)† = B†A† (order reversal), (αA)† = α*A† (scalar conjugate), (|ψ⟩⟨φ|)† = |φ⟩⟨ψ|</text>
+</svg>

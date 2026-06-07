@@ -1,0 +1,62 @@
+<!-- CAJAL SVG | book: Quantum Mechanics | chapter: 01-complex-numbers-and-the-complex-exponential | figure: 01 | type: diagram | date: 2026-06-06 -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-title-01">
+<title id="fig-title-01">Complex plane: polar form, conjugate, and unit circle</title>
+<desc>The complex plane showing point z in the first quadrant with radial line r, angle arc theta from the real axis, Cartesian projections a and b, the unit circle, and the complex conjugate z-star as a reflection across the real axis.</desc>
+<metadata><cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0" book="Quantum Mechanics" book-slug="quantum-mechanics-vol5" chapter="01-complex-numbers-and-the-complex-exponential" figure-number="01" figure-title="Complex plane: polar form, conjugate, and unit circle" figure-slug="complex-plane-polar-conjugate" figure-type="diagram" priority="CRITICAL" author="Humanitarians AI Incorporated" date-generated="2026-06-06" source-file="pantry/01-complex-numbers-and-the-complex-exponential-cajal.md"/></metadata>
+
+<defs>
+  <marker id="arrow-01a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+  </marker>
+</defs>
+
+<!-- Plot area background -->
+<rect x="80" y="40" width="540" height="340" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+<!-- Axes -->
+<line x1="80" y1="210" x2="620" y2="210" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow-01a)"/>
+<line x1="350" y1="380" x2="350" y2="40" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow-01a)"/>
+
+<!-- Axis labels -->
+<text x="628" y="214" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">Re</text>
+<text x="354" y="36" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">Im</text>
+
+<!-- Unit circle -->
+<path d="M 480.00,210.00 L 479.51,198.67 L 478.03,187.43 L 475.57,176.35 L 472.16,165.54 L 467.82,155.06 L 462.58,145.00 L 456.49,135.44 L 449.59,126.44 L 441.92,118.08 L 433.56,110.41 L 424.56,103.51 L 415.00,97.42 L 404.94,92.18 L 394.46,87.84 L 383.65,84.43 L 372.57,81.97 L 361.33,80.49 L 350.00,80.00 L 338.67,80.49 L 327.43,81.97 L 316.35,84.43 L 305.54,87.84 L 295.06,92.18 L 285.00,97.42 L 275.44,103.51 L 266.44,110.41 L 258.08,118.08 L 250.41,126.44 L 243.51,135.44 L 237.42,145.00 L 232.18,155.06 L 227.84,165.54 L 224.43,176.35 L 221.97,187.43 L 220.49,198.67 L 220.00,210.00 L 220.49,221.33 L 221.97,232.57 L 224.43,243.65 L 227.84,254.46 L 232.18,264.94 L 237.42,275.00 L 243.51,284.56 L 250.41,293.56 L 258.08,301.92 L 266.44,309.59 L 275.44,316.49 L 285.00,322.58 L 295.06,327.82 L 305.54,332.16 L 316.35,335.57 L 327.43,338.03 L 338.67,339.51 L 350.00,340.00 L 361.33,339.51 L 372.57,338.03 L 383.65,335.57 L 394.46,332.16 L 404.94,327.82 L 415.00,322.58 L 424.56,316.49 L 433.56,309.59 L 441.92,301.92 L 449.59,293.56 L 456.49,284.56 L 462.58,275.00 L 467.82,264.94 L 472.16,254.46 L 475.57,243.65 L 478.03,232.57 L 479.51,221.33 L 480.00,210.00 Z" fill="none" stroke="#C8102E" stroke-width="1.2"/>
+<text x="488" y="100" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">unit circle</text>
+
+<!-- Dashed projections forming right triangle -->
+<!-- Vertical from z down to real axis -->
+<line x1="428.0" y1="106.0" x2="428.0" y2="210.0" stroke="#787878" stroke-width="0.75" stroke-dasharray="4 3"/>
+<!-- Horizontal from foot to origin -->
+<line x1="350" y1="210.0" x2="428.0" y2="210.0" stroke="#787878" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+<!-- Dashed line connecting z to z* (conjugate mirror) -->
+<line x1="428.0" y1="106.0" x2="428.0" y2="314.0" stroke="#ADADAD" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+<!-- Radial line r from origin to z -->
+<line x1="350" y1="210" x2="428.0" y2="106.0" stroke="#2a1a0e" stroke-width="1.5"/>
+
+<!-- Theta arc -->
+<path d="M 383.0,210.0 A 33,33 0 0,0 369.8,183.6" fill="none" stroke="#C8860E" stroke-width="1.2"/>
+
+<!-- z dot -->
+<circle cx="428.0" cy="106.0" r="4" fill="#2a1a0e"/>
+<!-- z* dot -->
+<circle cx="428.0" cy="314.0" r="4" fill="#787878"/>
+<!-- Origin dot -->
+<circle cx="350" cy="210" r="3" fill="#2a1a0e"/>
+
+<!-- Labels -->
+<text x="436.0" y="102.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e" font-style="italic">z</text>
+<text x="436.0" y="320.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#545454" font-style="italic">z*</text>
+<text x="391.0" y="200.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#C8860E" font-style="italic">θ</text>
+<text x="379.0" y="150.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#2a1a0e" font-style="italic">r</text>
+<!-- a label (Re component) -->
+<text x="385.0" y="228.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#545454" font-style="italic">a</text>
+<!-- b label (Im component) -->
+<text x="436.0" y="162.0" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#545454" font-style="italic">b</text>
+
+<!-- Figure title -->
+<text x="350" y="410" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">Complex plane: polar form z = re^(iθ) and conjugate z*</text>
+</svg>

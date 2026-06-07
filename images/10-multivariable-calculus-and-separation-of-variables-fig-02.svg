@@ -1,0 +1,215 @@
+<!-- ============================================================
+     CAJAL SVG Figure
+     Book        : Quantum Mechanics — Math for Quantum Physics
+     Book slug   : quantum-mechanics-vol5
+     Chapter     : 10-multivariable-calculus-and-separation-of-variables
+     Figure      : 02
+     Title       : Spherical separation cascade — three quantum numbers from three equations
+     Type        : mechanism / process
+     Priority    : Critical
+     Author      : Humanitarians AI Incorporated
+     Generated   : 2026-06-06
+     Source      : pantry/10-multivariable-calculus-and-separation-of-variables-cajal.md
+     ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-10-02">
+  <title id="fig-title-10-02">Spherical separation cascade — three quantum numbers from three equations</title>
+  <desc>Three-tier hierarchy: top tier one source oval representing the spherical PDE with three coordinate arrows; middle tier three equation boxes (azimuthal, polar, radial) each with a constraint marker; bottom tier three quantum number output tokens, one per chain, connected by vertical arrows.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics — Math for Quantum Physics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="10-multivariable-calculus-and-separation-of-variables"
+      figure-number="02"
+      figure-title="Spherical separation cascade — three quantum numbers from three equations"
+      figure-slug="spherical-separation-three-quantum-numbers"
+      figure-type="mechanism-process"
+      priority="Critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/10-multivariable-calculus-and-separation-of-variables-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arr10b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ADADAD"/>
+    </marker>
+    <marker id="arr10b-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="22" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
+        fill="#2a1a0e">Spherical separation: one PDE → three quantum numbers</text>
+
+  <!-- ── TIER 1: Source oval ── -->
+  <ellipse cx="350" cy="62" rx="145" ry="26" fill="#D4D4D4" fill-opacity="0.3"
+           stroke="#D4D4D4" stroke-width="1"/>
+  <text x="350" y="58" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#2a1a0e">Spherical PDE (central potential)</text>
+  <text x="350" y="74" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#545454">[−ℏ²/2m ∇² + V(r)] Ψ = EΨ , Ψ = R(r)Θ(θ)Φ(φ)</text>
+
+  <!-- Coordinate arrows entering source oval from left -->
+  <line x1="168" y1="52" x2="203" y2="58" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+  <line x1="168" y1="62" x2="203" y2="62" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+  <line x1="168" y1="72" x2="203" y2="66" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+  <text x="130" y="54" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">r (radial)</text>
+  <text x="118" y="64" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">θ (polar)</text>
+  <text x="108" y="74" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
+        font-size="10" fill="#545454">φ (azimuthal)</text>
+
+  <!-- Three branching lines from source oval to middle tier boxes -->
+  <!-- Azimuthal (left): from oval bottom-left to box top -->
+  <line x1="250" y1="88" x2="148" y2="150" stroke="#787878" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+  <!-- Polar (center): straight down -->
+  <line x1="350" y1="88" x2="350" y2="150" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+  <!-- Radial (right): from oval bottom-right to box top -->
+  <line x1="450" y1="88" x2="552" y2="150" stroke="#C8102E" stroke-width="1"
+        marker-end="url(#arr10b-red)"/>
+
+  <!-- ── TIER 2: Three equation boxes ── -->
+
+  <!-- Azimuthal box (left, purple-toned via gray) -->
+  <rect x="50" y="152" width="196" height="52" fill="#787878" fill-opacity="0.1"
+        stroke="#787878" stroke-width="1"/>
+  <text x="148" y="170" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#545454">Azimuthal equation</text>
+  <text x="148" y="186" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#2a1a0e">d²Φ/dφ² = −m²Φ</text>
+  <text x="148" y="198" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#545454">φ-equation only</text>
+
+  <!-- Polar box (center) -->
+  <rect x="254" y="152" width="192" height="52" fill="#ADADAD" fill-opacity="0.1"
+        stroke="#ADADAD" stroke-width="1"/>
+  <text x="350" y="170" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#545454">Polar equation</text>
+  <text x="350" y="186" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#2a1a0e">sin θ·d/dθ[sin θ·dΘ/dθ]+[ℓ(ℓ+1)sin²θ−m²]Θ=0</text>
+  <text x="350" y="198" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#545454">θ-equation (associated Legendre)</text>
+
+  <!-- Radial box (right) -->
+  <rect x="454" y="152" width="196" height="52" fill="#C8102E" fill-opacity="0.07"
+        stroke="#C8102E" stroke-width="0.75"/>
+  <text x="552" y="170" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        font-weight="600" fill="#C8102E">Radial equation</text>
+  <text x="552" y="186" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
+        fill="#2a1a0e">d/dr[r²dR/dr]−[ℓ(ℓ+1)−2mr²(E−V)/ℏ²]R=0</text>
+  <text x="552" y="198" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
+        fill="#545454">r-equation (Laguerre-type)</text>
+
+  <!-- Constraint diamond symbols between tier 2 and tier 3 -->
+
+  <!-- Azimuthal constraint: single-valuedness Φ(φ+2π)=Φ(φ) -->
+  <polygon points="148,218 162,232 148,246 134,232" fill="#C8102E" fill-opacity="0.15"
+           stroke="#C8102E" stroke-width="1"/>
+  <text x="148" y="237" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#C8102E">single-valued</text>
+  <line x1="148" y1="205" x2="148" y2="216" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+
+  <!-- Polar constraint: finiteness at poles θ=0,π -->
+  <polygon points="350,218 364,232 350,246 336,232" fill="#C8102E" fill-opacity="0.15"
+           stroke="#C8102E" stroke-width="1"/>
+  <text x="350" y="237" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#C8102E">finite at poles</text>
+  <line x1="350" y1="205" x2="350" y2="216" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+
+  <!-- Radial constraint: normalizable, series terminates -->
+  <polygon points="552,218 566,232 552,246 538,232" fill="#C8102E" fill-opacity="0.15"
+           stroke="#C8102E" stroke-width="1"/>
+  <text x="552" y="237" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="8"
+        fill="#C8102E">normalizable</text>
+  <line x1="552" y1="205" x2="552" y2="216" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+
+  <!-- Down arrows from constraint to quantum number -->
+  <line x1="148" y1="247" x2="148" y2="295" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+  <line x1="350" y1="247" x2="350" y2="295" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+  <line x1="552" y1="247" x2="552" y2="295" stroke="#ADADAD" stroke-width="1"
+        marker-end="url(#arr10b)"/>
+
+  <!-- ── TIER 3: Quantum number output tokens ── -->
+
+  <!-- m (magnetic quantum number): smallest token -->
+  <rect x="90" y="297" width="116" height="60" fill="#787878" fill-opacity="0.12"
+        stroke="#787878" stroke-width="1.5"/>
+  <text x="148" y="316" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#545454">magnetic quantum</text>
+  <text x="148" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#545454">number m</text>
+  <text x="148" y="348" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#545454">m = 0, ±1, …, ±ℓ</text>
+
+  <!-- ℓ (azimuthal quantum number): mid-size token -->
+  <rect x="280" y="297" width="140" height="60" fill="#ADADAD" fill-opacity="0.12"
+        stroke="#ADADAD" stroke-width="1.5"/>
+  <text x="350" y="316" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#545454">azimuthal quantum</text>
+  <text x="350" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#545454">number ℓ</text>
+  <text x="350" y="348" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#545454">ℓ = 0, 1, 2, …</text>
+
+  <!-- n (principal quantum number): largest token -->
+  <rect x="470" y="297" width="164" height="60" fill="#C8102E" fill-opacity="0.07"
+        stroke="#C8102E" stroke-width="1.5"/>
+  <text x="552" y="316" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#C8102E">principal quantum</text>
+  <text x="552" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        font-weight="600" fill="#C8102E">number n</text>
+  <text x="552" y="348" text-anchor="middle"
+        font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11"
+        fill="#545454">n = 1, 2, 3, …</text>
+
+  <!-- Token size ordering indicator -->
+  <text x="350" y="376" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
+        fill="#545454">Token width encodes the range of allowed values: m ⊂ ℓ ⊂ n (each constrains the others)</text>
+
+  <!-- Caption -->
+  <text x="350" y="396" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Each separation path enforces one physical constraint → quantizes one quantum number</text>
+  <text x="350" y="410" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
+        fill="#545454">Three constraints: single-valuedness (m), finiteness (ℓ), normalizability (n)</text>
+</svg>

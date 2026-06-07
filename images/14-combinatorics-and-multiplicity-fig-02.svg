@@ -1,0 +1,170 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 14-combinatorics-and-multiplicity
+  Figure:  02 — Three statistics: explicit microstate enumeration
+  Source:  pantry/14-combinatorics-and-multiplicity-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-c14-02">
+  <title id="fig-title-c14-02">Three statistics: explicit microstate enumeration for 2 particles in 2 states</title>
+  <desc>Three vertical columns showing all microstates for Maxwell-Boltzmann (4 tiles, two distinguishable particles), Bose-Einstein (3 tiles, identical bosons), and Fermi-Dirac (1 tile, identical fermions) statistics for 2 particles in 2 single-particle states, with filled circles indicating particle occupancy in each state box.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics" book-slug="quantum-mechanics-vol5"
+      chapter="14-combinatorics-and-multiplicity" figure-number="02"
+      figure-title="Three statistics: explicit microstate enumeration"
+      figure-slug="three-statistics-microstates" figure-type="diagram"
+      priority="critical" author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/14-combinatorics-and-multiplicity-cajal.md"/>
+  </metadata>
+
+  <!-- Canvas -->
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
+    Microstate enumeration: 2 particles, 2 states
+  </text>
+
+  <!-- Column headers -->
+  <text x="175" y="58" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="13" font-weight="400" fill="#2a1a0e">
+    Maxwell–Boltzmann
+  </text>
+  <text x="175" y="73" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    (distinguishable)  4 states
+  </text>
+
+  <text x="385" y="58" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="13" font-weight="400" fill="#2a1a0e">
+    Bose–Einstein
+  </text>
+  <text x="385" y="73" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    (identical bosons)  3 states
+  </text>
+
+  <text x="575" y="58" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="13" font-weight="400" fill="#2a1a0e">
+    Fermi–Dirac
+  </text>
+  <text x="575" y="73" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    (identical fermions)  1 state
+  </text>
+
+  <!-- Vertical column dividers -->
+  <line x1="280" y1="40" x2="280" y2="390" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="490" y1="40" x2="490" y2="390" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- State labels at top of each tile set -->
+  <text x="135" y="93" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">state 1</text>
+  <text x="215" y="93" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">state 2</text>
+  <text x="345" y="93" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">state 1</text>
+  <text x="425" y="93" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">state 2</text>
+  <text x="535" y="93" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">state 1</text>
+  <text x="615" y="93" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">state 2</text>
+
+  <!-- ==================== MB tiles (x_left=105) ====================
+       Tile layout: box1 left=105, box2 left=185, each box 60x40
+       Tile y positions: 100, 155, 210, 265
+       Circle radius: 9, colored: A=#C8860E, B=#2a1a0e
+  -->
+  <!-- Tile 1: both in state 1 -->
+  <rect x="105" y="100" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="185" y="100" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="126" cy="120" r="9" fill="#C8860E"/>
+  <circle cx="144" cy="120" r="9" fill="#2a1a0e"/>
+
+  <!-- Tile 2: both in state 2 -->
+  <rect x="105" y="155" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="185" y="155" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="206" cy="175" r="9" fill="#C8860E"/>
+  <circle cx="224" cy="175" r="9" fill="#2a1a0e"/>
+
+  <!-- Tile 3: A in state1, B in state2 -->
+  <rect x="105" y="210" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="185" y="210" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="135" cy="230" r="9" fill="#C8860E"/>
+  <circle cx="215" cy="230" r="9" fill="#2a1a0e"/>
+
+  <!-- Tile 4: A in state2, B in state1 -->
+  <rect x="105" y="265" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="185" y="265" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="135" cy="285" r="9" fill="#2a1a0e"/>
+  <circle cx="215" cy="285" r="9" fill="#C8860E"/>
+
+  <!-- ==================== BE tiles (x_left=315) ====================
+       3 tiles: identical particles (green #787878 for visibility, using ink)
+  -->
+  <!-- Tile 1: both in state 1 -->
+  <rect x="315" y="100" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="395" y="100" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="326" cy="120" r="9" fill="#787878"/>
+  <circle cx="344" cy="120" r="9" fill="#787878"/>
+
+  <!-- Tile 2: both in state 2 -->
+  <rect x="315" y="155" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="395" y="155" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="416" cy="175" r="9" fill="#787878"/>
+  <circle cx="434" cy="175" r="9" fill="#787878"/>
+
+  <!-- Tile 3: one in each -->
+  <rect x="315" y="210" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="395" y="210" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="345" cy="230" r="9" fill="#787878"/>
+  <circle cx="425" cy="230" r="9" fill="#787878"/>
+
+  <!-- ==================== FD tile (x_left=505) ====================
+       1 tile: only one in each state (exclusion)
+  -->
+  <rect x="505" y="100" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <rect x="585" y="100" width="60" height="40" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1"/>
+  <circle cx="535" cy="120" r="9" fill="#C8102E"/>
+  <circle cx="615" cy="120" r="9" fill="#C8102E"/>
+
+  <!-- FD exclusion indicator (crossed-out tiles below to show they're forbidden) -->
+  <rect x="505" y="155" width="60" height="40" fill="#ADADAD" fill-opacity="0.2" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="3 2"/>
+  <rect x="585" y="155" width="60" height="40" fill="#ADADAD" fill-opacity="0.2" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="3 2"/>
+  <line x1="505" y1="155" x2="565" y2="195" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="565" y1="155" x2="505" y2="195" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <rect x="505" y="210" width="60" height="40" fill="#ADADAD" fill-opacity="0.2" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="3 2"/>
+  <rect x="585" y="210" width="60" height="40" fill="#ADADAD" fill-opacity="0.2" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="3 2"/>
+  <line x1="585" y1="210" x2="645" y2="250" stroke="#D4D4D4" stroke-width="0.75"/>
+  <line x1="645" y1="210" x2="585" y2="250" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Count brackets -->
+  <text x="175" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="22" fill="#C8860E" font-weight="400">4</text>
+  <text x="175" y="348" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">microstates</text>
+  <text x="385" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="22" fill="#787878" font-weight="400">3</text>
+  <text x="385" y="348" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">microstates</text>
+  <text x="575" y="330" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="22" fill="#C8102E" font-weight="400">1</text>
+  <text x="575" y="348" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">microstate</text>
+
+  <!-- Legend -->
+  <g font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    <circle cx="70"  cy="382" r="7" fill="#C8860E"/>
+    <text x="81" y="387">particle A (MB)</text>
+    <circle cx="210" cy="382" r="7" fill="#2a1a0e"/>
+    <text x="221" y="387">particle B (MB)</text>
+    <circle cx="365" cy="382" r="7" fill="#787878"/>
+    <text x="376" y="387">identical (BE)</text>
+    <circle cx="500" cy="382" r="7" fill="#C8102E"/>
+    <text x="511" y="387">identical (FD)</text>
+    <rect x="592" y="374" width="20" height="14" fill="#ADADAD" fill-opacity="0.2" stroke="#D4D4D4" stroke-width="0.75" stroke-dasharray="2 2"/>
+    <text x="616" y="387">forbidden</text>
+  </g>
+
+</svg>

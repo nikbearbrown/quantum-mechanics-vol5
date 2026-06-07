@@ -1,0 +1,147 @@
+<!-- ============================================================
+  Book:    Quantum Mechanics — Math for Quantum Physics
+  Chapter: 13-logarithms-exponentials-and-scales
+  Figure:  02 — Tunneling transmission T = e^{−2κL} vs barrier width
+  Source:  pantry/13-logarithms-exponentials-and-scales-cajal.md
+  Date:    2026-06-06
+  Author:  Humanitarians AI Incorporated
+  ============================================================ -->
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="fig-title-02">
+  <title id="fig-title-02">Tunneling transmission T = e^(−2κL) versus barrier width</title>
+  <desc>Semi-log plot of quantum tunneling transmission probability T versus barrier width L for three decay constants κ (small, medium, large), each appearing as a straight line confirming the exponential law, with regime brackets on the large-κ curve marking substantial tunneling, partial transmission, and exponential suppression.</desc>
+  <metadata>
+    <cajal:figure xmlns:cajal="https://bearbrown.ai/cajal/1.0"
+      book="Quantum Mechanics"
+      book-slug="quantum-mechanics-vol5"
+      chapter="13-logarithms-exponentials-and-scales"
+      figure-number="02"
+      figure-title="Tunneling transmission T = e^(−2κL) versus barrier width"
+      figure-slug="tunneling-transmission-semi-log"
+      figure-type="chart"
+      priority="critical"
+      author="Humanitarians AI Incorporated"
+      date-generated="2026-06-06"
+      source-file="pantry/13-logarithms-exponentials-and-scales-cajal.md"/>
+  </metadata>
+
+  <defs>
+    <marker id="arrow02" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="700" height="420" fill="#FFFFFF"/>
+
+  <!-- Chart area: x 80–660, y 50–370 -->
+  <rect x="80" y="50" width="580" height="320" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+
+  <!-- Title -->
+  <text x="370" y="28" text-anchor="middle"
+        font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400" fill="#2a1a0e">
+    Tunneling transmission on semi-log axes
+  </text>
+
+  <!-- Y-axis label -->
+  <text x="22" y="210" text-anchor="middle" transform="rotate(-90,22,210)"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    log₁₀(T)
+  </text>
+
+  <!-- X-axis label -->
+  <text x="370" y="406" text-anchor="middle"
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    Barrier width  L
+  </text>
+
+  <!-- Y-axis ticks and labels (log scale: 0, -1, -2, -3, -4, -5) -->
+  <!-- py positions: 0→50, -1→114, -2→178, -3→242, -4→306, -5→370 -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
+    <line x1="75" y1="50"  x2="80" y2="50"  stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="54"  text-anchor="end"> 0</text>
+    <line x1="75" y1="114" x2="80" y2="114" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="118" text-anchor="end">−1</text>
+    <line x1="75" y1="178" x2="80" y2="178" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="182" text-anchor="end">−2</text>
+    <line x1="75" y1="242" x2="80" y2="242" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="246" text-anchor="end">−3</text>
+    <line x1="75" y1="306" x2="80" y2="306" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="310" text-anchor="end">−4</text>
+    <line x1="75" y1="370" x2="80" y2="370" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="72" y="374" text-anchor="end">−5</text>
+  </g>
+
+  <!-- Horizontal gridlines -->
+  <g stroke="#D4D4D4" stroke-width="0.75">
+    <line x1="80" y1="114" x2="660" y2="114"/>
+    <line x1="80" y1="178" x2="660" y2="178"/>
+    <line x1="80" y1="242" x2="660" y2="242"/>
+    <line x1="80" y1="306" x2="660" y2="306"/>
+  </g>
+
+  <!-- X-axis ticks and labels (L = 0,1,2,3,4,5) -->
+  <!-- px positions: 0→80, 1→196, 2→312, 3→428, 4→544, 5→660 -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
+    <line x1="80"  y1="370" x2="80"  y2="375" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="80"  y="387" text-anchor="middle">0</text>
+    <line x1="196" y1="370" x2="196" y2="375" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="196" y="387" text-anchor="middle">1</text>
+    <line x1="312" y1="370" x2="312" y2="375" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="312" y="387" text-anchor="middle">2</text>
+    <line x1="428" y1="370" x2="428" y2="375" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="428" y="387" text-anchor="middle">3</text>
+    <line x1="544" y1="370" x2="544" y2="375" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="544" y="387" text-anchor="middle">4</text>
+    <line x1="660" y1="370" x2="660" y2="375" stroke="#2a1a0e" stroke-width="0.75"/>
+    <text x="660" y="387" text-anchor="middle">5</text>
+  </g>
+
+  <!-- Three tunneling curves -->
+  <!-- κ small = 0.5, ink color #2a1a0e -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="1.5"
+    points="80.0,50.0 85.8,51.4 91.6,52.8 97.4,54.2 103.2,55.6 109.0,56.9 114.8,58.3 120.6,59.7 126.4,61.1 132.2,62.5 138.0,63.9 143.8,65.3 149.6,66.7 155.4,68.1 161.2,69.5 167.0,70.8 172.8,72.2 178.6,73.6 184.4,75.0 190.2,76.4 196.0,77.8 201.8,79.2 207.6,80.6 213.4,82.0 219.2,83.4 225.0,84.7 230.8,86.1 236.6,87.5 242.4,88.9 248.2,90.3 254.0,91.7 259.8,93.1 265.6,94.5 271.4,95.9 277.2,97.3 283.0,98.6 288.8,100.0 294.6,101.4 300.4,102.8 306.2,104.2 312.0,105.6 317.8,107.0 323.6,108.4 329.4,109.8 335.2,111.1 341.0,112.5 346.8,113.9 352.6,115.3 358.4,116.7 364.2,118.1 370.0,119.5 375.8,120.9 381.6,122.3 387.4,123.7 393.2,125.0 399.0,126.4 404.8,127.8 410.6,129.2 416.4,130.6 422.2,132.0 428.0,133.4 433.8,134.8 439.6,136.2 445.4,137.6 451.2,138.9 457.0,140.3 462.8,141.7 468.6,143.1 474.4,144.5 480.2,145.9 486.0,147.3 491.8,148.7 497.6,150.1 503.4,151.5 509.2,152.8 515.0,154.2 520.8,155.6 526.6,157.0 532.4,158.4 538.2,159.8 544.0,161.2 549.8,162.6 555.6,164.0 561.4,165.3 567.2,166.7 573.0,168.1 578.8,169.5 584.6,170.9 590.4,172.3 596.2,173.7 602.0,175.1 607.8,176.5 613.6,177.9 619.4,179.2 625.2,180.6 631.0,182.0 636.8,183.4 642.6,184.8 648.4,186.2 654.2,187.6 660.0,189.0"/>
+
+  <!-- κ medium = 1.5, gray #787878 -->
+  <polyline fill="none" stroke="#787878" stroke-width="1.5"
+    points="80.0,50.0 85.8,54.2 91.6,58.3 97.4,62.5 103.2,66.7 109.0,70.8 114.8,75.0 120.6,79.2 126.4,83.4 132.2,87.5 138.0,91.7 143.8,95.9 149.6,100.0 155.4,104.2 161.2,108.4 167.0,112.5 172.8,116.7 178.6,120.9 184.4,125.0 190.2,129.2 196.0,133.4 201.8,137.6 207.6,141.7 213.4,145.9 219.2,150.1 225.0,154.2 230.8,158.4 236.6,162.6 242.4,166.7 248.2,170.9 254.0,175.1 259.8,179.2 265.6,183.4 271.4,187.6 277.2,191.8 283.0,195.9 288.8,200.1 294.6,204.3 300.4,208.4 306.2,212.6 312.0,216.8 317.8,220.9 323.6,225.1 329.4,229.3 335.2,233.4 341.0,237.6 346.8,241.8 352.6,246.0 358.4,250.1 364.2,254.3 370.0,258.5 375.8,262.6 381.6,266.8 387.4,271.0 393.2,275.1 399.0,279.3 404.8,283.5 410.6,287.6 416.4,291.8 422.2,296.0 428.0,300.2 433.8,304.3 439.6,308.5 445.4,312.7 451.2,316.8 457.0,321.0 462.8,325.2 468.6,329.3 474.4,333.5 480.2,337.7 486.0,341.8 491.8,346.0 497.6,350.2 503.4,354.4 509.2,358.5 515.0,362.7 520.8,366.9 526.6,370.0"/>
+
+  <!-- κ large = 3.0, red #C8102E -->
+  <polyline fill="none" stroke="#C8102E" stroke-width="2"
+    points="80.0,50.0 85.8,58.3 91.6,66.7 97.4,75.0 103.2,83.4 109.0,91.7 114.8,100.0 120.6,108.4 126.4,116.7 132.2,125.0 138.0,133.4 143.8,141.7 149.6,150.1 155.4,158.4 161.2,166.7 167.0,175.1 172.8,183.4 178.6,191.8 184.4,200.1 190.2,208.4 196.0,216.8 201.8,225.1 207.6,233.4 213.4,241.8 219.2,250.1 225.0,258.5 230.8,266.8 236.6,275.1 242.4,283.5 248.2,291.8 254.0,300.2 259.8,308.5 265.6,316.8 271.4,325.2 277.2,333.5 283.0,341.8 288.8,350.2 294.6,358.5 300.4,366.9 306.2,370.0"/>
+
+  <!-- Equal-step reference bracket on κ=1.5 curve -->
+  <!-- Show that L=1 to L=2 to L=3 each drop the same log unit -->
+  <!-- Vertical bracket from (196,133.4) to (196,216.8) indicating Δ(logT)=-1.303 -->
+  <rect x="183" y="133" width="26" height="84" fill="#787878" fill-opacity="0.15" stroke="none"/>
+  <!-- Bracket lines -->
+  <line x1="196" y1="133" x2="196" y2="217" stroke="#787878" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <line x1="312" y1="217" x2="312" y2="300" stroke="#787878" stroke-width="0.75" stroke-dasharray="4 3"/>
+
+  <!-- Regime brackets on κ=3 curve -->
+  <!-- Top: T ≈ 1, py around 50–83 (L=0 to 0.5) -->
+  <rect x="80" y="50" width="58" height="33" fill="#2a1a0e" fill-opacity="0.06" stroke="none"/>
+  <!-- Mid: partial, py 83–167 (L=0.5 to 1.2) -->
+  <rect x="138" y="83" width="81" height="84" fill="#787878" fill-opacity="0.08" stroke="none"/>
+  <!-- Low: suppressed, py 167–370 (L=1.2 to end) -->
+  <rect x="219" y="167" width="87" height="203" fill="#C8102E" fill-opacity="0.05" stroke="none"/>
+
+  <!-- Regime bracket labels (right side) -->
+  <text x="665" y="70" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">T ≈ 1</text>
+  <text x="665" y="84" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9" fill="#545454">substantial</text>
+  <text x="665" y="155" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">partial</text>
+  <text x="665" y="270" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454">suppressed</text>
+
+  <!-- Legend -->
+  <g font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">
+    <line x1="95" y1="403" x2="125" y2="403" stroke="#2a1a0e" stroke-width="1.5"/>
+    <text x="129" y="407">κ small</text>
+    <line x1="220" y1="403" x2="250" y2="403" stroke="#787878" stroke-width="1.5"/>
+    <text x="254" y="407">κ medium</text>
+    <line x1="365" y1="403" x2="395" y2="403" stroke="#C8102E" stroke-width="2"/>
+    <text x="399" y="407">κ large</text>
+    <rect x="490" y="396" width="12" height="8" fill="#787878" fill-opacity="0.15" stroke="#787878" stroke-width="0.5"/>
+    <text x="506" y="407">equal-step</text>
+  </g>
+
+</svg>
