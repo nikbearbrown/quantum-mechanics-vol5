@@ -88,7 +88,7 @@ The transmission probability through a rectangular barrier of width $L$ is
 
 $$\boxed{T \approx e^{-2\kappa L}, \qquad \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar}.}$$
 
-This has the same $e^{-\lambda t}$ structure as radioactive decay, but in the *spatial* variable $x$. The "decay constant" is $\kappa$ (units: m$^{-1}$) and the "lifetime" is $1/\kappa$ — the spatial scale over which the wavefunction falls to $1/e$.
+This has the same $e^{-\lambda t}$ structure as radioactive decay, but in the *spatial* variable $x$. The "decay constant" is $\kappa$ (units: $\text{m}^{-1}$) and the "lifetime" is $1/\kappa$ — the spatial scale over which the wavefunction falls to $1/e$.
 
 **Evaluate the exponent before computing $T$.** If $2\kappa L = 10$, then $T \approx e^{-10} \approx 4.5\times10^{-5}$ — five orders of magnitude suppression — without touching a calculator. If $2\kappa L = 0.1$, then $T \approx 1 - 0.1 \approx 0.9$ — essentially no suppression. Identifying the regime before doing algebra is a useful first step.
 
@@ -132,7 +132,7 @@ This corresponds to a 1 eV effective barrier for an electron. The exponential se
 
 ## Conventions and Pitfalls
 
-**Exponents must be dimensionless.** $e^{-2\kappa L}$ requires $\kappa L$ to be a pure number. $\kappa$ has units m$^{-1}$; $L$ has units m; the product is dimensionless. A common error is to work with $\kappa$ in nm$^{-1}$ and $L$ in m — unit mismatch by $10^9$. Check units before computing the exponent.
+**Exponents must be dimensionless.** $e^{-2\kappa L}$ requires $\kappa L$ to be a pure number. $\kappa$ has units $\text{m}^{-1}$; $L$ has units m; the product is dimensionless. A common error is to work with $\kappa$ in $\text{nm}^{-1}$ and $L$ in m — unit mismatch by $10^9$. Check units before computing the exponent.
 
 **Sign of the exponent.** In the classically forbidden region ($E < V$), the wavefunction is a real decaying exponential with *negative* exponent. If a calculation gives $e^{+|\kappa|x}$ as the physical solution inside the barrier, the growing exponential is not normalizable and must be rejected.
 

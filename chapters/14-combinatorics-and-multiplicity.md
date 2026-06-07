@@ -116,13 +116,13 @@ A parallel issue arises in classical statistical mechanics. For $N$ identical cl
 
 An $[[n,k,d]]$ quantum error-correcting code encodes $k$ logical qubits in $n$ physical qubits and can correct any error on up to $t = \lfloor(d-1)/2\rfloor$ physical qubits. The combinatorics enters directly.
 
-**Counting errors.** The number of distinct weight-$t$ Pauli errors on $n$ qubits (errors affecting exactly $t$ sites) is
+**Counting errors.** The number of distinct $\text{weight-}t$ Pauli errors on $n$ qubits (errors affecting exactly $t$ sites) is
 
 $$\binom{n}{t}\times3^t,$$
 
 since there are $\binom{n}{t}$ ways to choose which $t$ sites are affected and $3^t$ choices of Pauli operator ($X$, $Y$, or $Z$) at each affected site.
 
-**The Hamming bound.** For a code to correct all weight-$\leq t$ errors, the correctable error cosets must fit in the syndrome space without overlapping:
+**The Hamming bound.** For a code to correct all $\text{weight-}\leq t$ errors, the correctable error cosets must fit in the syndrome space without overlapping:
 
 $$\sum_{j=0}^t\binom{n}{j}3^j \leq 2^{n-k}.$$
 

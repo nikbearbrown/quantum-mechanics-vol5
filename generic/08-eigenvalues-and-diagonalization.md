@@ -135,7 +135,7 @@ $$|\lambda = -1\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}i\\1\end{pmatrix}.$$
 
 $$\langle\lambda{=}{-1}|\lambda{=}{+1}\rangle = \frac{1}{2}\bigl[(i)^*(-i) + (1)^*(1)\bigr] = \frac{1}{2}\bigl[(-i)(-i) + 1\bigr] = \frac{1}{2}[-1+1] = 0. \checkmark$$
 
-These are the spin-$\frac{1}{2}$ eigenstates along the $\pm y$ direction. The physical content: a particle whose spin is measured along $y$ will return $+\hbar/2$ in the state $|\lambda = +1\rangle$ and $-\hbar/2$ in the state $|\lambda = -1\rangle$, with certainty.
+These are the $\text{spin-}\frac{1}{2}$ eigenstates along the $\pm y$ direction. The physical content: a particle whose spin is measured along $y$ will return $+\hbar/2$ in the state $|\lambda = +1\rangle$ and $-\hbar/2$ in the state $|\lambda = -1\rangle$, with certainty.
 
 **Spectral decomposition.** $\sigma_y = (+1)|\lambda{=}+1\rangle\langle\lambda{=}+1| + (-1)|\lambda{=}-1\rangle\langle\lambda{=}-1|$. One verifies this reconstructs $\bigl[\begin{smallmatrix}0&-i\\i&0\end{smallmatrix}\bigr]$ by expanding the outer products.
 

@@ -111,7 +111,7 @@ $$|{+x}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\1\end{pmatrix},\quad |{-x}\
 
 $$|{+y}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\i\end{pmatrix},\quad |{-y}\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\-i\end{pmatrix} \quad(\sigma_y\text{ eigenstates, eigenvalues }+1,\,-1).$$
 
-**Spin-$\hat n$ component.** For any unit vector $\hat n = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$, the operator $\hat n\cdot\boldsymbol{\sigma}$ has eigenvalues $\pm 1$ and eigenstates:
+**$\text{Spin-}\hat n$ component.** For any unit vector $\hat n = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$, the operator $\hat n\cdot\boldsymbol{\sigma}$ has eigenvalues $\pm 1$ and eigenstates:
 
 $$|{+\hat n}\rangle = \begin{pmatrix}\cos(\theta/2) \\ e^{i\phi}\sin(\theta/2)\end{pmatrix}, \qquad |{-\hat n}\rangle = \begin{pmatrix}-e^{-i\phi}\sin(\theta/2) \\ \cos(\theta/2)\end{pmatrix}.$$
 

@@ -100,7 +100,7 @@ $$Y_{\ell m}(\theta,\phi) = \sqrt{\frac{(2\ell+1)}{4\pi}\frac{(\ell-|m|)!}{(\ell
 
 $$\int_0^{2\pi}\!\int_0^\pi Y_{\ell'm'}^*\,Y_{\ell m}\,\sin\theta\,d\theta\,d\phi = \delta_{\ell\ell'}\delta_{mm'}.$$
 
-**Key low-$\ell$ harmonics:**
+**Key $\text{low-}\ell$ harmonics:**
 
 $$Y_{00} = \frac{1}{\sqrt{4\pi}}, \quad Y_{10} = \sqrt{\frac{3}{4\pi}}\cos\theta, \quad Y_{1,\pm1} = \mp\sqrt{\frac{3}{8\pi}}\sin\theta\,e^{\pm i\phi}.$$
 

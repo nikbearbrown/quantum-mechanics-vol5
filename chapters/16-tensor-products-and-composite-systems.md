@@ -44,7 +44,7 @@ $$\{|00\rangle,\ |01\rangle,\ |10\rangle,\ |11\rangle\}.$$
 
 The convention here — and throughout Nielsen and Chuang — is **lexicographic**: the first (left) index varies slowest. This is what gives the Kronecker product its standard block form; deviating from it changes every gate matrix.
 
-For $N$ qubits: $\dim = 2^N$. Thirty qubits require $\sim10^9$ complex amplitudes ($\sim$16 GB) to represent classically. Fifty qubits require $\sim$16 petabytes. This exponential growth is simultaneously the source of quantum computing's potential power and of the difficulty in simulating it classically.
+For $N$ qubits: $\dim = 2^N$. Thirty qubits require $\sim10^9$ complex amplitudes ($\sim 16$ GB) to represent classically. Fifty qubits require $\sim 16$ petabytes. This exponential growth is simultaneously the source of quantum computing's potential power and of the difficulty in simulating it classically.
 
 ---
 

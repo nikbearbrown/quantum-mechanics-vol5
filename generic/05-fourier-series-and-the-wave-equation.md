@@ -176,7 +176,7 @@ The energy bands and gaps at the Brillouin zone boundary ($k = \pm\pi/a$) arise 
    *Tests: computing probability density for a superposition; revival time from Fourier beating; physical interpretation of the oscillation.*
 
 6. *Difficulty: Application — band gap from a Fourier coefficient.*
-   A periodic potential in 1D with lattice spacing $a = 0.5$ nm has Fourier coefficients $V_0 = -10$ eV, $V_1 = V_{-1} = -0.5$ eV. (a) At the first Brillouin zone boundary, $k = \pi/a$; compute this wavevector in nm$^{-1}$ and the free-electron kinetic energy at this $k$ for an electron. (b) The two degenerate states at the zone boundary are $e^{ikx}$ and $e^{i(k-2\pi/a)x}$; verify they have the same kinetic energy. (c) The gap width is $2|V_1|$; find the gap in eV. (d) Which Fourier coefficient of $V(x)$ would need to be changed to affect the gap at the second Brillouin zone boundary ($k = 2\pi/a$)?
+   A periodic potential in 1D with lattice spacing $a = 0.5$ nm has Fourier coefficients $V_0 = -10$ eV, $V_1 = V_{-1} = -0.5$ eV. (a) At the first Brillouin zone boundary, $k = \pi/a$; compute this wavevector in $\text{nm}^{-1}$ and the free-electron kinetic energy at this $k$ for an electron. (b) The two degenerate states at the zone boundary are $e^{ikx}$ and $e^{i(k-2\pi/a)x}$; verify they have the same kinetic energy. (c) The gap width is $2|V_1|$; find the gap in eV. (d) Which Fourier coefficient of $V(x)$ would need to be changed to affect the gap at the second Brillouin zone boundary ($k = 2\pi/a$)?
    *Tests: Brillouin zone boundary; degenerate free-electron states; gap from Fourier coefficient; identifying which coefficient controls which gap.*
 
 **Synthesis**

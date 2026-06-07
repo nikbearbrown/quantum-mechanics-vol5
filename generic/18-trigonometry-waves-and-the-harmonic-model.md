@@ -162,7 +162,7 @@ The faster the electrons (larger $p$, smaller $\lambda$), the finer the fringes.
 
 **$|\psi|^2$, not $\psi^2$.** The probability density is $|\psi|^2 = \psi^*\psi$. For a complex wave $Ae^{ikx}$, $|Ae^{ikx}|^2 = A^2$ — a constant. Writing $\psi^2$ instead gives $A^2e^{2ikx}$, which is incorrect.
 
-**$\lambda = 2\pi/k$, not $1/k$.** The factor of $2\pi$ is the source of most off-by-$2\pi$ errors. Wavenumber $k$ counts radians per unit length; one wavelength is $2\pi$ radians.
+**$\lambda = 2\pi/k$, not $1/k$.** The factor of $2\pi$ is the source of most $\text{off-}\text{by-}2\pi$ errors. Wavenumber $k$ counts radians per unit length; one wavelength is $2\pi$ radians.
 
 **$\hbar$ vs. $h$ in de Broglie relations.** $\lambda = h/p$ uses $h$. The wavenumber form $k = p/\hbar$ uses $\hbar = h/2\pi$. Both are correct. The confusion arises when one mixes the formulas: $k = p/h$ (wrong by $2\pi$) or $\lambda = \hbar/p$ (wrong by $2\pi$).
 
@@ -174,7 +174,7 @@ The faster the electrons (larger $p$, smaller $\lambda$), the finer the fringes.
 
 1. **Phase and group velocity.** A relativistic particle has energy $E = \sqrt{(pc)^2 + (m_0c^2)^2}$. Show that $\omega = E/\hbar$ and $k = p/\hbar$ give $v_\text{ph} = c^2/v$ and $v_g = v$, where $v$ is the particle's classical speed. What happens to $v_\text{ph}$ for a massless particle?
 
-2. **Double-slit fringe spacing.** Electrons are accelerated through a potential difference $V = 100$ V. (a) Find the kinetic energy, momentum, and de Broglie wavelength. (b) If the slit separation is $d = 1\,\mu$m and the screen is at $L = 1$ m, find the fringe spacing $\Delta y = \lambda L/d$ in the small-angle approximation.
+2. **Double-slit fringe spacing.** Electrons are accelerated through a potential difference $V = 100$ V. (a) Find the kinetic energy, momentum, and de Broglie wavelength. (b) If the slit separation is $d = 1\,\mu\text{m}$ and the screen is at $L = 1$ m, find the fringe spacing $\Delta y = \lambda L/d$ in the small-angle approximation.
 
 3. **Superposition and phase.** Two quantum waves $\psi_1 = e^{ikx}$ and $\psi_2 = e^{i(kx+\pi/3)}$ are superposed. Find $|\psi_1 + \psi_2|^2$ and verify it equals $4\cos^2(\pi/6) = 3$. Then find the phase $\delta$ for (a) maximal constructive interference and (b) fully destructive interference.
 

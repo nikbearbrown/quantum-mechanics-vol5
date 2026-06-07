@@ -157,7 +157,7 @@ No number is postulated. Every one is a boundary or regularity condition in disg
 
 2. **Degeneracy count.** For the 3D infinite square well of side $L$, list all $(n_x,n_y,n_z)$ triples at the second excited energy level (the third distinct energy value). What is the degeneracy, and what symmetry of the box causes it?
 
-3. **Where $m$ comes from.** Starting from $\Phi'' = -m^2\Phi$ with solution $\Phi = e^{im\phi}$, state the regularity condition that forces $m\in\mathbb{Z}$, and explain in one sentence why this argument fails for spin-$\tfrac{1}{2}$.
+3. **Where $m$ comes from.** Starting from $\Phi'' = -m^2\Phi$ with solution $\Phi = e^{im\phi}$, state the regularity condition that forces $m\in\mathbb{Z}$, and explain in one sentence why this argument fails for $\text{spin-}\tfrac{1}{2}$.
 
 ---
 

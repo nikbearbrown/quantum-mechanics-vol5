@@ -159,7 +159,7 @@ where $\omega_{fi} = (E_f - E_i)/\hbar$. For a perturbation that turns on at $t 
 
 For a perturbation of duration $T$, its Fourier spectrum has width $\Delta\omega \sim 1/T$ (the bandwidth relation in time–frequency). This gives $\Delta E \sim \hbar/T$ — the energy–time uncertainty relation as a Fourier theorem, not a Robertson commutator. The longer the interaction lasts, the more sharply defined the energy transfer.
 
-**The Born amplitude is a Fourier transform (III·8).** As derived above, $f(\theta) \propto \tilde V(\mathbf{q})$. Every feature of the Born cross-section is a feature of the potential's Fourier transform. Forward scattering ($q = 0$): $\tilde V(0) = \int V(\mathbf{r})\,d^3r$ — the spatial integral of the potential. Large-angle scattering (large $q$): determined by the high-$q$ components, which fall off rapidly for smooth potentials and persist for sharp ones. Diffraction dips in nuclear scattering (e.g., $^{12}$C): the Fourier transform of a uniform sphere is $\propto j_1(qR)/qR$, a spherical Bessel function with zeros at definite angles — the same mathematics as single-slit diffraction.
+**The Born amplitude is a Fourier transform (III·8).** As derived above, $f(\theta) \propto \tilde V(\mathbf{q})$. Every feature of the Born cross-section is a feature of the potential's Fourier transform. Forward scattering ($q = 0$): $\tilde V(0) = \int V(\mathbf{r})\,d^3r$ — the spatial integral of the potential. Large-angle scattering (large $q$): determined by the $\text{high-}q$ components, which fall off rapidly for smooth potentials and persist for sharp ones. Diffraction dips in nuclear scattering (e.g., $^{12}\text{C}$): the Fourier transform of a uniform sphere is $\propto j_1(qR)/qR$, a spherical Bessel function with zeros at definite angles — the same mathematics as single-slit diffraction.
 
 Reading Born scattering through the Fourier lens converts an opaque integral into a physical picture: we are measuring the spatial frequency content of the potential at the spatial frequency set by the momentum transfer.
 
@@ -187,7 +187,7 @@ Reading Born scattering through the Fourier lens converts an opaque integral int
 
 2. **Gaussian saturation.** For $\psi(x) = (\pi a^2)^{-1/4}e^{-x^2/2a^2}$, compute $\Delta x = \sqrt{\langle x^2\rangle - \langle x\rangle^2}$ directly from $|\psi(x)|^2$, and compute $\Delta p$ from $|\tilde\psi(p)|^2$. Verify $\Delta x\,\Delta p = \hbar/2$. If $a$ is halved, by what factor does $\Delta p$ change?
 
-3. **Born scattering for a Yukawa potential.** The Yukawa potential is $V(r) = V_0 e^{-\mu r}/r$; its 3D Fourier transform is $\tilde V(q) = 4\pi V_0/(q^2 + \mu^2)$. (a) Write the Born differential cross-section $d\sigma/d\Omega \propto |f(\theta)|^2$ as a function of $\theta$ using $q = 2k\sin(\theta/2)$. (b) Take $\mu \to 0$ to recover the Rutherford cross-section for Coulomb scattering. (c) Explain physically why large-$q$ (wide-angle) scattering is suppressed for a screened potential.
+3. **Born scattering for a Yukawa potential.** The Yukawa potential is $V(r) = V_0 e^{-\mu r}/r$; its 3D Fourier transform is $\tilde V(q) = 4\pi V_0/(q^2 + \mu^2)$. (a) Write the Born differential cross-section $d\sigma/d\Omega \propto |f(\theta)|^2$ as a function of $\theta$ using $q = 2k\sin(\theta/2)$. (b) Take $\mu \to 0$ to recover the Rutherford cross-section for Coulomb scattering. (c) Explain physically why $\text{large-}q$ (wide-angle) scattering is suppressed for a screened potential.
 
 ---
 

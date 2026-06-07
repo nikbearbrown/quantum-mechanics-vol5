@@ -102,13 +102,13 @@ The least precise input dominates in a chain of multiplications. A result quoted
 
 ## Natural Units ($\hbar = c = 1$)
 
-In particle physics and advanced QM, it is conventional to set $\hbar = c = 1$ (and sometimes $k_B = 1$). In these units, mass, energy, momentum, and inverse length all share the same dimension. Energies are quoted in eV or MeV; lengths are in eV$^{-1}$ via the conversion:
+In particle physics and advanced QM, it is conventional to set $\hbar = c = 1$ (and sometimes $k_B = 1$). In these units, mass, energy, momentum, and inverse length all share the same dimension. Energies are quoted in eV or MeV; lengths are in $\text{eV}^{-1}$ via the conversion:
 
 $$\hbar c\approx197.3\text{ MeV·fm.}$$
 
 To restore SI factors from a natural-units result: count the powers of $\hbar$ and $c$ needed to give the right dimension. A cross-section $\sigma$ has dimension $L^2 = (\hbar c)^2/\text{energy}^2$; a lifetime $\tau$ has dimension $T = \hbar/\text{energy}$.
 
-Natural units are a precision tool, not a shortcut. A student who sets $\hbar = c = 1$ without being able to restore the factors is not working with full understanding. Practice the restoration: if you compute a length in natural units and get a number in MeV$^{-1}$, multiply by $\hbar c\approx197$ MeV·fm to recover meters.
+Natural units are a precision tool, not a shortcut. A student who sets $\hbar = c = 1$ without being able to restore the factors is not working with full understanding. Practice the restoration: if you compute a length in natural units and get a number in $\text{MeV}^{-1}$, multiply by $\hbar c\approx197$ MeV·fm to recover meters.
 
 One notational hazard: $\hbar$ vs. $h$. The de Broglie relation is $\lambda = h/p$; written with wavenumber $k = 2\pi/\lambda$, this is $k = p/\hbar$. Confusing $h$ and $\hbar$ introduces a factor of $2\pi$ — a silent error with no dimensional signal.
 
