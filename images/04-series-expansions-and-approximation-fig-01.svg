@@ -29,8 +29,8 @@
 <line x1="450" y1="79" x2="474" y2="79" stroke="#2a1a0e" stroke-width="2"/>
 <text x="478" y="83" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#545454" font-style="italic">order 1: x</text>
 <line x1="450" y1="96" x2="474" y2="96" stroke="#787878" stroke-width="2"/>
-<text x="478" y="100" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#545454" font-style="italic">order 3: x−x³/6</text>
+<text x="478" y="100" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#545454" font-style="italic">order 3: x−x<tspan dy="-0.5em" font-size="0.75em">3</tspan><tspan dy="0.5em"></tspan>/6</text>
 <line x1="450" y1="113" x2="474" y2="113" stroke="#ADADAD" stroke-width="2"/>
-<text x="478" y="117" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#545454" font-style="italic">order 5: x−x³/6+x⁵/120</text>
+<text x="478" y="117" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#545454" font-style="italic">order 5: x−x<tspan dy="-0.5em" font-size="0.75em">3</tspan><tspan dy="0.5em"></tspan>/6+x<tspan dy="-0.5em" font-size="0.75em">5</tspan><tspan dy="0.5em"></tspan>/120</text>
 <text x="350" y="418" text-anchor="middle" font-family="'EB Garamond',Georgia,serif" font-size="13" fill="#2a1a0e">Taylor truncation: higher order gives greater accuracy over a wider range</text>
 </svg>

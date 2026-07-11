@@ -32,13 +32,13 @@
   <!-- Title -->
   <text x="350" y="26" text-anchor="middle"
         font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">
-    Partial trace  Tr_B(ρ_AB)  —  Bell state  |Φ⁺⟩ to maximally mixed
+    Partial trace  Tr_B(ρ_AB)  —  Bell state  |Φ<tspan dy="-0.5em" font-size="0.75em">+</tspan><tspan dy="0.5em"></tspan>⟩ to maximally mixed
   </text>
 
   <!-- ====== STAGE 1: 4×4 joint density matrix ρ_AB ====== -->
   <!-- Grid at x=50, y=80, cells 52×52 -->
   <text x="154" y="68" text-anchor="middle"
-        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">ρ_AB = |Φ⁺⟩⟨Φ⁺|</text>
+        font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="12" fill="#2a1a0e">ρ_AB = |Φ<tspan dy="-0.5em" font-size="0.75em">+</tspan><tspan dy="0.5em"></tspan>⟩⟨Φ<tspan dy="-0.5em" font-size="0.75em">+</tspan><tspan dy="0.5em"></tspan>|</text>
 
   <!-- Row/col labels -->
   <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">
@@ -160,7 +160,7 @@
   </text>
   <text x="350" y="392" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
-    Tr_B(|Φ⁺⟩⟨Φ⁺|) = I/2  ←  maximally mixed
+    Tr_B(|Φ<tspan dy="-0.5em" font-size="0.75em">+</tspan><tspan dy="0.5em"></tspan>⟩⟨Φ<tspan dy="-0.5em" font-size="0.75em">+</tspan><tspan dy="0.5em"></tspan>|) = I/2  ←  maximally mixed
   </text>
 
 </svg>

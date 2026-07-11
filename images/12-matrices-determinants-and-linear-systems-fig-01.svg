@@ -75,10 +75,10 @@
 
   <text x="79" y="254" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₁₁ a₁₂</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">11</tspan><tspan dy="-0.3em"></tspan> a<tspan dy="0.3em" font-size="0.75em">12</tspan><tspan dy="-0.3em"></tspan></text>
   <text x="79" y="267" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₂₁ a₂₂</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">21</tspan><tspan dy="-0.3em"></tspan> a<tspan dy="0.3em" font-size="0.75em">22</tspan><tspan dy="-0.3em"></tspan></text>
 
   <!-- ── ARROWS from source to derived matrices ── -->
   <!-- A*: upper-right diagonal — gray arrow -->
@@ -141,10 +141,10 @@
   <!-- conjugate notation -->
   <text x="309" y="155" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₁₁* a₁₂*</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">11</tspan><tspan dy="-0.3em"></tspan>* a<tspan dy="0.3em" font-size="0.75em">12</tspan><tspan dy="-0.3em"></tspan>*</text>
   <text x="309" y="168" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₂₁* a₂₂*</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">21</tspan><tspan dy="-0.3em"></tspan>* a<tspan dy="0.3em" font-size="0.75em">22</tspan><tspan dy="-0.3em"></tspan>*</text>
   <text x="309" y="184" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
         fill="#787878">Positions unchanged</text>
@@ -176,10 +176,10 @@
 
   <text x="309" y="324" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₁₁ a₂₁</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">11</tspan><tspan dy="-0.3em"></tspan> a<tspan dy="0.3em" font-size="0.75em">21</tspan><tspan dy="-0.3em"></tspan></text>
   <text x="309" y="337" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₁₂ a₂₂</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">12</tspan><tspan dy="-0.3em"></tspan> a<tspan dy="0.3em" font-size="0.75em">22</tspan><tspan dy="-0.3em"></tspan></text>
   <text x="309" y="353" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
         fill="#ADADAD">Off-diagonal positions swapped</text>
@@ -214,10 +214,10 @@
 
   <text x="495" y="388" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₁₁* a₂₁*</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">11</tspan><tspan dy="-0.3em"></tspan>* a<tspan dy="0.3em" font-size="0.75em">21</tspan><tspan dy="-0.3em"></tspan>*</text>
   <text x="495" y="401" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
-        fill="#545454">a₁₂* a₂₂*</text>
+        fill="#545454">a<tspan dy="0.3em" font-size="0.75em">12</tspan><tspan dy="-0.3em"></tspan>* a<tspan dy="0.3em" font-size="0.75em">22</tspan><tspan dy="-0.3em"></tspan>*</text>
 
   <!-- Comparison table (right) -->
   <rect x="568" y="48" width="118" height="280" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>

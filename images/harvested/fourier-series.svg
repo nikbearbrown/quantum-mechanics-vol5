@@ -1,0 +1,26 @@
+<svg role="img" aria-labelledby="t-fou" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-fou">Fourier series of a square wave: partial sums</title>
+  <desc>A square wave target in grey approximated by Fourier partial sums; the converged sum with several harmonics shown in red, exhibiting the Gibbs overshoot at the jumps.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-fou" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">Fourier Series of a Square Wave</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <line x1="60" y1="198" x2="500" y2="198" stroke="#2a1a0e" stroke-width="1.2" marker-end="url(#ar-fou)"/>
+  <line x1="70" y1="338" x2="70" y2="62" stroke="#2a1a0e" stroke-width="1.2" marker-end="url(#ar-fou)"/>
+  <text x="505" y="202" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">x</text>
+  <text x="80" y="76" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">f(x)</text>
+  <!-- square wave target grey: period 220, high y=120, low y=276 from x=70..510 -->
+  <polyline points="70,120 180,120 180,276 290,276 290,120 400,120 400,276 500,276" fill="none" stroke="#ADADAD" stroke-width="1.4"/>
+  <!-- N=1 fundamental sine grey dashed amplitude ~62 -->
+  <path d="M70,136 Q125,80 180,136 Q235,180 290,260 Q345,316 400,260 Q455,180 500,136" fill="none" stroke="#787878" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="92" y="96" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#787878">N=1</text>
+  <!-- N=7 partial sum red with gibbs ripples; approximate ripple near transitions -->
+  <path d="M70,128 L120,128 Q140,118 150,128 L172,130 Q179,108 182,140 L182,256 Q185,288 192,266 L208,268 Q218,278 230,268 L278,268 Q286,288 289,256 L289,140 Q292,108 299,130 L318,128 Q330,118 342,128 L390,128 Q398,108 401,140 L401,256 Q404,288 411,266 L460,268 Q480,278 500,268"
+        fill="none" stroke="#C8102E" stroke-width="1.8"/>
+  <text x="300" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#C8102E">N=7 (Gibbs)</text>
+  <text x="60" y="368" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">f(x) = (4/π) Σ_{k odd} sin(kx)/k</text>
+  
+</svg>

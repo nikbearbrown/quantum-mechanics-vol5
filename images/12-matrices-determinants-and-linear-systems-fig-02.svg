@@ -91,7 +91,7 @@
   <text x="88" y="95" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" fill="#545454">Pure states: |ψ⟩</text>
   <text x="88" y="108" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
-        font-size="10" fill="#545454">ρ² = ρ, Tr(ρ²) = 1</text>
+        font-size="10" fill="#545454">ρ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> = ρ, Tr(ρ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>) = 1</text>
 
   <line x1="44" y1="134" x2="224" y2="134" stroke="#D4D4D4" stroke-width="0.5"/>
 
@@ -100,9 +100,9 @@
   <text x="78" y="150" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="11" font-weight="600" fill="#545454">Interior |r| &lt; 1</text>
   <text x="78" y="165" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
-        font-size="10" fill="#545454">Mixed states: ρ = Σ pᵢ|ψᵢ⟩⟨ψᵢ|</text>
+        font-size="10" fill="#545454">Mixed states: ρ = Σ p<tspan dy="0.3em" font-size="0.75em">i</tspan><tspan dy="-0.3em"></tspan>|ψ<tspan dy="0.3em" font-size="0.75em">i</tspan><tspan dy="-0.3em"></tspan>⟩⟨ψ<tspan dy="0.3em" font-size="0.75em">i</tspan><tspan dy="-0.3em"></tspan>|</text>
   <text x="78" y="178" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
-        font-size="10" fill="#545454">Tr(ρ²) &lt; 1</text>
+        font-size="10" fill="#545454">Tr(ρ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>) &lt; 1</text>
 
   <line x1="44" y1="194" x2="224" y2="194" stroke="#D4D4D4" stroke-width="0.5"/>
 
@@ -113,7 +113,7 @@
   <text x="78" y="222" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" fill="#545454">Maximally mixed: ρ = I/2</text>
   <text x="78" y="235" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
-        font-size="10" fill="#545454">Tr(ρ²) = 1/2</text>
+        font-size="10" fill="#545454">Tr(ρ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>) = 1/2</text>
 
   <line x1="44" y1="250" x2="224" y2="250" stroke="#D4D4D4" stroke-width="0.5"/>
 
@@ -170,5 +170,5 @@
         fill="#545454">Pure states saturate the sphere surface; mixing moves the state vector inward</text>
   <text x="350" y="410" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
-        fill="#545454">Any qubit density matrix ρ = ½(I + r·σ) is fully characterized by its Bloch vector r ∈ R³</text>
+        fill="#545454">Any qubit density matrix ρ = ½(I + r·σ) is fully characterized by its Bloch vector r ∈ R<tspan dy="-0.5em" font-size="0.75em">3</tspan><tspan dy="0.5em"></tspan></text>
 </svg>

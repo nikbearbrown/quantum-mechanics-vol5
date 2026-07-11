@@ -76,7 +76,7 @@
   <text x="50" y="45" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" font-weight="600" fill="#2a1a0e">Step 1 — Full 3D PDE</text>
   <text x="50" y="62" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="11" fill="#2a1a0e">−(ℏ²/2m)(∂²/∂x² + ∂²/∂y² + ∂²/∂z²) Ψ(x,y,z) = E·Ψ(x,y,z)</text>
+        font-size="11" fill="#2a1a0e">−(ℏ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>/2m)(∂<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>/∂x<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> + ∂<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>/∂y<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> + ∂<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>/∂z<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>) Ψ(x,y,z) = E·Ψ(x,y,z)</text>
 
   <!-- Step label right -->
   <text x="632" y="52" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
@@ -137,7 +137,7 @@
         fill="#2a1a0e">X''(x) / X(x)</text>
   <text x="125" y="228" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
-        fill="#545454">= −k²_x</text>
+        fill="#545454">= −k<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>_x</text>
 
   <!-- + sign -->
   <text x="202" y="222" text-anchor="middle"
@@ -151,7 +151,7 @@
         fill="#2a1a0e">Y''(y) / Y(y)</text>
   <text x="279" y="228" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
-        fill="#545454">= −k²_y</text>
+        fill="#545454">= −k<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>_y</text>
 
   <!-- + sign -->
   <text x="356" y="222" text-anchor="middle"
@@ -165,7 +165,7 @@
         fill="#2a1a0e">Z''(z) / Z(z)</text>
   <text x="433" y="228" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
-        fill="#545454">= −k²_z</text>
+        fill="#545454">= −k<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>_z</text>
 
   <!-- equals constant -->
   <text x="510" y="222" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
@@ -188,7 +188,7 @@
         stroke="#787878" stroke-width="0.75"/>
   <text x="135" y="292" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
-        fill="#2a1a0e">X'' + k²_x X = 0</text>
+        fill="#2a1a0e">X'' + k<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>_x X = 0</text>
   <text x="135" y="304" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
         fill="#545454">simple harmonic ODE in x</text>
@@ -216,7 +216,7 @@
         stroke="#787878" stroke-width="0.75"/>
   <text x="300" y="292" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
-        fill="#2a1a0e">Y'' + k²_y Y = 0</text>
+        fill="#2a1a0e">Y'' + k<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>_y Y = 0</text>
   <text x="300" y="304" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
         fill="#545454">simple harmonic ODE in y</text>
@@ -241,7 +241,7 @@
         stroke="#787878" stroke-width="0.75"/>
   <text x="465" y="292" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9"
-        fill="#2a1a0e">Z'' + k²_z Z = 0</text>
+        fill="#2a1a0e">Z'' + k<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan>_z Z = 0</text>
   <text x="465" y="304" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="9"
         fill="#545454">simple harmonic ODE in z</text>
@@ -267,5 +267,5 @@
         fill="#545454">Division by the product ansatz decouples the PDE into three independent ODEs — each yields one quantum number</text>
   <text x="350" y="418" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
-        fill="#545454">Boundary conditions quantize the constants: kₙ = nπ/L with n = 1,2,3,…</text>
+        fill="#545454">Boundary conditions quantize the constants: k<tspan dy="0.3em" font-size="0.75em">n</tspan><tspan dy="-0.3em"></tspan> = nπ/L with n = 1,2,3,…</text>
 </svg>

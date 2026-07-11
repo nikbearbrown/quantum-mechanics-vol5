@@ -13,7 +13,7 @@
 <line x1="40" y1="300" x2="340" y2="300" stroke="#2a1a0e" stroke-width="1.5"/>
 <line x1="340" y1="300" x2="340" y2="120" stroke="#2a1a0e" stroke-width="1.5"/>
 <line x1="340" y1="120" x2="660" y2="120" stroke="#2a1a0e" stroke-width="1.5"/>
-<text x="650" y="114" font-family="'EB Garamond',Georgia,serif" font-size="12" fill="#545454" font-style="italic">V₀</text>
+<text x="650" y="114" font-family="'EB Garamond',Georgia,serif" font-size="12" fill="#545454" font-style="italic">V<tspan dy="0.3em" font-size="0.75em">0</tspan><tspan dy="-0.3em"></tspan></text>
 <text x="50" y="294" font-family="'EB Garamond',Georgia,serif" font-size="12" fill="#545454" font-style="italic">V=0</text>
 <line x1="40" y1="210" x2="660" y2="210" stroke="#C8102E" stroke-width="1" stroke-dasharray="5 3"/>
 <text x="665" y="214" font-family="'EB Garamond',Georgia,serif" font-size="12" fill="#C8102E" font-style="italic">E</text>

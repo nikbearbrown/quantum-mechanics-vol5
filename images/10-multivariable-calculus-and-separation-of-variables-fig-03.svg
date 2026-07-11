@@ -11,7 +11,7 @@
      Generated   : 2026-06-06
      Source      : pantry/10-multivariable-calculus-and-separation-of-variables-cajal.md
      ============================================================ -->
-<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+<svg viewBox="0 0 700 430.42" xmlns="http://www.w3.org/2000/svg"
      role="img" aria-labelledby="fig-title-10-03">
   <title id="fig-title-10-03">Sign-of-separation-constant decision fork</title>
   <desc>Binary decision fork: diamond decision node at top receiving the separated ODE; left branch for negative separation constant leading to a sinusoidal curve with a checkmark indicating boundary conditions can be satisfied; right branch for positive separation constant leading to an exponential growth-decay curve with an X indicating boundary conditions cannot be satisfied.</desc>
@@ -42,7 +42,7 @@
     </marker>
   </defs>
 
-  <rect width="700" height="420" fill="#FFFFFF"/>
+  <rect width="700" height="430.42" fill="#FFFFFF"/>
 
   <!-- Title -->
   <text x="350" y="22" text-anchor="middle"
@@ -73,7 +73,7 @@
         fill="#2a1a0e">k &lt; 0</text>
   <text x="218" y="148" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
-        fill="#545454">k = −κ² (κ real)</text>
+        fill="#545454">k = −κ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> (κ real)</text>
 
   <!-- Right branch: k > 0 (exponential) -->
   <line x1="414" y1="104" x2="530" y2="152" stroke="#C8102E" stroke-width="1.5"
@@ -83,7 +83,7 @@
         fill="#C8102E">k &gt; 0</text>
   <text x="482" y="148" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
-        fill="#545454">k = +κ² (κ real)</text>
+        fill="#545454">k = +κ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> (κ real)</text>
 
   <!-- ── LEFT BRANCH: Negative constant → oscillatory ── -->
 
@@ -92,7 +92,7 @@
         stroke="#2a1a0e" stroke-width="1"/>
   <text x="170" y="170" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
-        font-weight="600" fill="#2a1a0e">Negative constant: k = −κ²</text>
+        font-weight="600" fill="#2a1a0e">Negative constant: k = −κ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan></text>
   <text x="170" y="184" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
         fill="#2a1a0e">f(x) = A sin(κx) + B cos(κx)</text>
@@ -151,7 +151,7 @@
         stroke="#C8102E" stroke-width="1"/>
   <text x="539" y="170" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11"
-        font-weight="600" fill="#C8102E">Positive constant: k = +κ²</text>
+        font-weight="600" fill="#C8102E">Positive constant: k = +κ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan></text>
   <text x="539" y="184" text-anchor="middle"
         font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10"
         fill="#C8102E">f(x) = Ae^(κx) + Be^(−κx)</text>

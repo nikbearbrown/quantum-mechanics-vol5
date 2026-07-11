@@ -6,7 +6,7 @@
   Date:    2026-06-06
   Author:  Humanitarians AI Incorporated
   ============================================================ -->
-<svg viewBox="0 0 700 455" xmlns="http://www.w3.org/2000/svg"
+<svg viewBox="0 0 700 466.64" xmlns="http://www.w3.org/2000/svg"
      role="img" aria-labelledby="fig-title-c18-01">
   <title id="fig-title-c18-01">Wave superposition: constructive, destructive, and partial interference for three phase differences</title>
   <desc>Three stacked panels showing the superposition of two equal-amplitude waves (ochre and gray dashed) with phase differences delta=0, pi, and pi/2. The resultant sum (solid red) has amplitude 2A for delta=0 (fully constructive), zero for delta=pi (fully destructive, flat line), and A*sqrt(2) for delta=pi/2 (partial). Amplitude indicators mark the peak in each panel.</desc>
@@ -20,7 +20,7 @@
       date-generated="2026-06-06"
       source-file="pantry/18-trigonometry-waves-and-the-harmonic-model-cajal.md"/>
   </metadata>
-  <rect width="700" height="455" fill="#FFFFFF"/>
+  <rect width="700" height="466.64" fill="#FFFFFF"/>
 
   <text x="350" y="28" text-anchor="middle"
         font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">

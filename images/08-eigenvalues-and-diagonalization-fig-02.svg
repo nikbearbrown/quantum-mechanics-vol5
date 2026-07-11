@@ -47,7 +47,7 @@
   <!-- Title -->
   <text x="350" y="26" text-anchor="middle"
         font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
-        fill="#2a1a0e">Diagonalization: A = PDP⁻¹</text>
+        fill="#2a1a0e">Diagonalization: A = PDP<tspan dy="-0.5em" font-size="0.75em">-1</tspan><tspan dy="0.5em"></tspan></text>
 
   <!-- Step arrows between panels -->
   <path d="M222,200 C240,200 242,200 258,200" fill="none" stroke="#ADADAD" stroke-width="1.5"
@@ -94,7 +94,7 @@
 
   <text x="111" y="358" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
-        fill="#545454">Non-orthogonal basis b₁, b₂</text>
+        fill="#545454">Non-orthogonal basis b<tspan dy="0.3em" font-size="0.75em">1</tspan><tspan dy="-0.3em"></tspan>, b<tspan dy="0.3em" font-size="0.75em">2</tspan><tspan dy="-0.3em"></tspan></text>
   <text x="111" y="371" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
         fill="#545454">Matrix A couples all components</text>
@@ -164,7 +164,7 @@
   <!-- Scale tick at ~85% of e1 -->
   <line x1="638" y1="276" x2="638" y2="284" stroke="#ADADAD" stroke-width="1.5"/>
   <text x="635" y="298" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="9" fill="#545454">λ₁</text>
+        font-size="9" fill="#545454">λ<tspan dy="0.3em" font-size="0.75em">1</tspan><tspan dy="-0.3em"></tspan></text>
 
   <!-- e2 vertical with scale tick λ₂ -->
   <line x1="582" y1="280" x2="582" y2="168" stroke="#2a1a0e" stroke-width="2"
@@ -172,17 +172,17 @@
   <!-- Scale tick at ~75% of e2 -->
   <line x1="578" y1="197" x2="586" y2="197" stroke="#ADADAD" stroke-width="1.5"/>
   <text x="565" y="200" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="9" fill="#545454">λ₂</text>
+        font-size="9" fill="#545454">λ<tspan dy="0.3em" font-size="0.75em">2</tspan><tspan dy="-0.3em"></tspan></text>
 
   <!-- Right-angle square -->
   <path d="M582,272 L590,272 L590,280" fill="none" stroke="#2a1a0e" stroke-width="1"/>
 
   <text x="582" y="358" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
-        fill="#545454">D = P⁻¹AP: off-diagonal cells drain to zero</text>
+        fill="#545454">D = P<tspan dy="-0.5em" font-size="0.75em">-1</tspan><tspan dy="0.5em"></tspan>AP: off-diagonal cells drain to zero</text>
   <text x="582" y="371" text-anchor="middle"
         font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10"
-        fill="#545454">Operator stretches along each axis by λᵢ</text>
+        fill="#545454">Operator stretches along each axis by λ<tspan dy="0.3em" font-size="0.75em">i</tspan><tspan dy="-0.3em"></tspan></text>
 
   <!-- Bottom caption -->
   <text x="350" y="398" text-anchor="middle"

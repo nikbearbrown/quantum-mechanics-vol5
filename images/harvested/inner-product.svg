@@ -1,0 +1,31 @@
+<svg role="img" aria-labelledby="t-ip" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-ip">Vector space and inner product: projection</title>
+  <desc>Two vectors u and v in a vector space, with the orthogonal projection of v onto u shown in red and the perpendicular residual that defines the inner product geometrically.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-ip" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+    <marker id="arR-ip" markerWidth="10" markerHeight="10" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#C8102E"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">Inner Product and Projection</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <!-- origin at 110,300 -->
+  <line x1="80" y1="300" x2="500" y2="300" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="110" y1="330" x2="110" y2="70" stroke="#D4D4D4" stroke-width="1"/>
+  <!-- u vector along to (430,300) horizontal-ish, actually angled -->
+  <line x1="110" y1="300" x2="450" y2="230" stroke="#2a1a0e" stroke-width="2" marker-end="url(#ar-ip)"/>
+  <text x="455" y="226" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">u</text>
+  <!-- v vector up-right to (320,110) -->
+  <line x1="110" y1="300" x2="320" y2="110" stroke="#2a1a0e" stroke-width="2" marker-end="url(#ar-ip)"/>
+  <text x="300" y="104" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">v</text>
+  <!-- projection of v onto u: u dir = (340,-70)/sqrt = unit (0.979,-0.2016). v=(210,-190). proj scalar = 210*0.979 + (-190)*(-0.2016)=205.6+38.3=243.9; foot=origin+243.9*unit = (110+238.8,300-49.2)=(348.8,250.8) -->
+  <line x1="110" y1="300" x2="349" y2="251" stroke="#C8102E" stroke-width="2.4" marker-end="url(#arR-ip)"/>
+  <text x="200" y="288" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#C8102E">proj_u v</text>
+  <!-- residual dashed from v tip (320,110) to foot (349,251) -->
+  <line x1="320" y1="110" x2="349" y2="251" stroke="#545454" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <!-- right angle marker at foot -->
+  <path d="M337,251 L339,239 L351,241" fill="none" stroke="#545454" stroke-width="1"/>
+  <circle cx="110" cy="300" r="3" fill="#2a1a0e"/>
+  <text x="60" y="334" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">⟨u|v⟩ = Σ uᵢ* vᵢ      proj_u v = (⟨u|v⟩ / ⟨u|u⟩) u</text>
+  
+</svg>

@@ -6,7 +6,7 @@
   Date:    2026-06-06
   Author:  Humanitarians AI Incorporated
   ============================================================ -->
-<svg viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg"
+<svg viewBox="0 0 700 450.64" xmlns="http://www.w3.org/2000/svg"
      role="img" aria-labelledby="fig-title-c18-03">
   <title id="fig-title-c18-03">Group velocity versus phase velocity: carrier wave and beat envelope at two times</title>
   <desc>Two stacked snapshots of a matter-wave packet showing the fast carrier wave cos(kx) (ink, fine oscillations) and its slow beat envelope |cos(dk/2 * x)| (red, broad shape). Between the top panel at t=0 and the bottom panel at later time, the envelope peak (group velocity arrow, longer) has advanced twice as far as the carrier phase pattern (phase velocity arrow, shorter), with a vertical dashed reference line at the initial envelope peak position making the differential displacement explicit. For de Broglie matter waves v_g = 2*v_ph = v_particle.</desc>
@@ -26,7 +26,7 @@
     <marker id="arw18b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <polygon points="0 0,8 3,0 6" fill="#C8102E"/></marker>
   </defs>
-  <rect width="700" height="440" fill="#FFFFFF"/>
+  <rect width="700" height="450.64" fill="#FFFFFF"/>
 
   <text x="350" y="24" text-anchor="middle"
         font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">

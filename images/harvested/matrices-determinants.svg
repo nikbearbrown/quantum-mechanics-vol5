@@ -1,0 +1,30 @@
+<svg role="img" aria-labelledby="t-mat" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-mat">Matrices, determinants, and linear systems</title>
+  <desc>A 2x2 matrix shown acting on the unit square; the determinant equals the signed area of the transformed parallelogram, highlighted in red, and a linear system Ax = b is given.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-mat" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">Matrices, Determinants, Linear Systems</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <!-- origin 120,290 -->
+  <line x1="70" y1="290" x2="470" y2="290" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="120" y1="320" x2="120" y2="80" stroke="#D4D4D4" stroke-width="1"/>
+  <!-- unit square grey -->
+  <rect x="120" y="220" width="70" height="70" fill="#ADADAD" fill-opacity="0.3" stroke="#787878" stroke-width="1.2"/>
+  <text x="135" y="312" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#787878">unit square</text>
+  <!-- transformed parallelogram red: columns of A = (2,0.5),(1,2). map e1->(140,-35),e2->(70,-140) px (70px/unit) -->
+  <!-- origin(120,290); e1 tip (260,255); e2 tip (190,150); e1+e2 (330,115) -->
+  <polygon points="120,290 260,255 330,115 190,150" fill="#C8102E" fill-opacity="0.16" stroke="#C8102E" stroke-width="1.8"/>
+  <line x1="120" y1="290" x2="260" y2="255" stroke="#2a1a0e" stroke-width="1.6" marker-end="url(#ar-mat)"/>
+  <line x1="120" y1="290" x2="190" y2="150" stroke="#2a1a0e" stroke-width="1.6" marker-end="url(#ar-mat)"/>
+  <text x="162" y="238" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#C8102E">area<tspan x="162" dy="16">= det A</tspan></text>
+  <circle cx="120" cy="290" r="3" fill="#2a1a0e"/>
+  <!-- matrix + system -->
+  <text x="350" y="120" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">A = [a b]</text>
+  <text x="350" y="138" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">    [c d]</text>
+  <text x="350" y="162" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">det A = ad − bc</text>
+  <text x="70" y="334" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">Ax = b  solvable uniquely ⇔ det A ≠ 0  (A invertible)</text>
+  
+</svg>

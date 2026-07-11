@@ -50,11 +50,11 @@
 <path d="M 159.1,349.1 A 30,30 0 0,0 147.1,325.1" fill="none" stroke="#C8860E" stroke-width="1"/>
 
 <!-- Labels -->
-<text x="276.4" y="369.1" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#787878" text-anchor="middle" font-style="italic">A₁ = 3</text>
-<text x="437.6" y="225.5" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#C8860E" font-style="italic">A₂ = 4</text>
+<text x="276.4" y="369.1" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#787878" text-anchor="middle" font-style="italic">A<tspan dy="0.3em" font-size="0.75em">1</tspan><tspan dy="-0.3em"></tspan> = 3</text>
+<text x="437.6" y="225.5" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#C8860E" font-style="italic">A<tspan dy="0.3em" font-size="0.75em">2</tspan><tspan dy="-0.3em"></tspan> = 4</text>
 <text x="248.4" y="225.5" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#C8102E" font-style="italic">R = 5</text>
 <text x="169.1" y="337.1" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="13" fill="#C8860E" font-style="italic">θ = 53.1°</text>
 
 <!-- Figure title -->
-<text x="350" y="410" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">Phasor addition: A₁ + A₂ = R, with |R|² = |A₁|² + |A₂|²</text>
+<text x="350" y="410" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" fill="#2a1a0e">Phasor addition: A<tspan dy="0.3em" font-size="0.75em">1</tspan><tspan dy="-0.3em"></tspan> + A<tspan dy="0.3em" font-size="0.75em">2</tspan><tspan dy="-0.3em"></tspan> = R, with |R|<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> = |A<tspan dy="0.3em" font-size="0.75em">1</tspan><tspan dy="-0.3em"></tspan>|<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> + |A<tspan dy="0.3em" font-size="0.75em">2</tspan><tspan dy="-0.3em"></tspan>|<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan></text>
 </svg>

@@ -142,7 +142,7 @@
   <!-- Collinearity: no rotation arc — both along same line -->
   <!-- Small alignment tick perpendicular to the direction at midpoint -->
   <text x="628" y="196" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="10" fill="#545454">λ₁ &gt;1</text>
+        font-size="10" fill="#545454">λ<tspan dy="0.3em" font-size="0.75em">1</tspan><tspan dy="-0.3em"></tspan> &gt;1</text>
 
   <!-- Eigenvector 2: direction ~-50° (pointing down-right), eigenvalue 0 < λ₂ < 1 (shrink) -->
   <!-- input: length 80 → (525+51,250+61)=(576,311) -->
@@ -156,7 +156,7 @@
         stroke-dasharray="none" opacity="0.4"/>
   <line x1="562" y1="295" x2="566" y2="299" stroke="#ADADAD" stroke-width="1.2"/>
   <text x="580" y="320" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="10" fill="#545454">0&lt;λ₂&lt;1</text>
+        font-size="10" fill="#545454">0&lt;λ<tspan dy="0.3em" font-size="0.75em">2</tspan><tspan dy="-0.3em"></tspan>&lt;1</text>
 
   <!-- Collinearity markers — small perpendicular ticks on both eigenvectors -->
   <!-- For eigenvec 1, at midpoint of output ~(572,223): direction of vec is (93,-54)/|..|

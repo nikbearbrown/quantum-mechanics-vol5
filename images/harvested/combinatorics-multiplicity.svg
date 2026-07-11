@@ -1,0 +1,38 @@
+<svg role="img" aria-labelledby="t-com" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-com">Combinatorics and multiplicity: counting states</title>
+  <desc>The multiplicity Ω of arrangements of indistinguishable quanta among states, shown as a binomial distribution peaking sharply at the most probable macrostate, with that peak macrostate marked in red.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-com" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">Combinatorics and Multiplicity</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <line x1="70" y1="300" x2="500" y2="300" stroke="#2a1a0e" stroke-width="1.2" marker-end="url(#ar-com)"/>
+  <line x1="70" y1="320" x2="70" y2="70" stroke="#2a1a0e" stroke-width="1.2" marker-end="url(#ar-com)"/>
+  <text x="498" y="288" text-anchor="end" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">n (state)</text>
+  <text x="56" y="80" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">Ω</text>
+  <!-- binomial C(12,n) bars; max at n=6 (924). scale heights -->
+  <!-- positions: 13 bars across width 420 -> 30px each, bar width 22 -->
+  <g fill="#787878">
+    <rect x="78" y="298" width="22" height="2"/>
+    <rect x="108" y="293" width="22" height="7"/>
+    <rect x="138" y="278" width="22" height="22"/>
+    <rect x="168" y="246" width="22" height="54"/>
+    <rect x="198" y="200" width="22" height="100"/>
+    <rect x="228" y="158" width="22" height="142"/>
+  </g>
+  <!-- peak bar red at n=6 -->
+  <rect x="258" y="138" width="22" height="162" fill="#C8102E"/>
+  <g fill="#787878">
+    <rect x="288" y="158" width="22" height="142"/>
+    <rect x="318" y="200" width="22" height="100"/>
+    <rect x="348" y="246" width="22" height="54"/>
+    <rect x="378" y="278" width="22" height="22"/>
+    <rect x="408" y="293" width="22" height="7"/>
+    <rect x="438" y="298" width="22" height="2"/>
+  </g>
+  <text x="248" y="128" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#C8102E">Ω_max</text>
+  <text x="70" y="334" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">Ω(n) = C(N,n) = N! / [n!(N−n)!]   S = k_B ln Ω</text>
+  
+</svg>

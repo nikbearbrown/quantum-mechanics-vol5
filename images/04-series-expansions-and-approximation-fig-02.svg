@@ -20,6 +20,6 @@
 <text x="478" y="92" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#545454" font-style="italic">harmonic approx. (parabola)</text>
 <rect x="450" y="100" width="16" height="12" fill="#D4D4D4" fill-opacity="0.45"/>
 <text x="470" y="111" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#545454" font-style="italic">agreement region</text>
-<text x="337.2" y="396.0" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#2a1a0e" font-style="italic">V′′(x₀) = kₑₑ</text>
-<text x="350" y="414" text-anchor="middle" font-family="'EB Garamond',Georgia,serif" font-size="13" fill="#2a1a0e">Near any smooth minimum, V(x) &#x2248; V(x₀) + ½ kₑₑ(x−x₀)&#xB2; — the QHO is universal</text>
+<text x="337.2" y="396.0" font-family="'EB Garamond',Georgia,serif" font-size="11" fill="#2a1a0e" font-style="italic">V′′(x<tspan dy="0.3em" font-size="0.75em">0</tspan><tspan dy="-0.3em"></tspan>) = kₑₑ</text>
+<text x="350" y="414" text-anchor="middle" font-family="'EB Garamond',Georgia,serif" font-size="13" fill="#2a1a0e">Near any smooth minimum, V(x) &#x2248; V(x<tspan dy="0.3em" font-size="0.75em">0</tspan><tspan dy="-0.3em"></tspan>) + ½ kₑₑ(x−x<tspan dy="0.3em" font-size="0.75em">0</tspan><tspan dy="-0.3em"></tspan>)&#xB2; — the QHO is universal</text>
 </svg>

@@ -47,9 +47,9 @@
   ══════════════════════════════════════════════════ -->
 
   <!-- Left panel border -->
-  <rect x="60" y="40" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="60" y="40" width="270" height="161.98" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
   <!-- Right panel border -->
-  <rect x="370" y="40" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="370" y="40" width="270" height="161.98" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
 
   <!-- Column labels -->
   <text x="195" y="36" text-anchor="middle"
@@ -83,9 +83,9 @@
   ══════════════════════════════════════════════════ -->
 
   <!-- Left panel border -->
-  <rect x="60" y="230" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="60" y="230" width="270" height="161.98000000000002" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
   <!-- Right panel border -->
-  <rect x="370" y="230" width="270" height="150" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <rect x="370" y="230" width="270" height="161.98000000000002" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
 
   <!-- Row label: log/semi-log axes -->
   <text x="32" y="310" text-anchor="middle" transform="rotate(-90,32,310)"

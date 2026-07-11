@@ -1,0 +1,32 @@
+<svg role="img" aria-labelledby="t-eig" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-eig">Eigenvalues and diagonalization: change of basis</title>
+  <desc>A matrix A acting on a generic vector rotates and stretches it, but along the eigenvector directions it merely scales; the eigenvector that is preserved in direction and scaled by its eigenvalue is shown in red.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-eig" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+    <marker id="arR-eig" markerWidth="10" markerHeight="10" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#C8102E"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">Eigenvalues and Diagonalization</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <!-- origin 180,290 -->
+  <line x1="60" y1="290" x2="500" y2="290" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="180" y1="330" x2="180" y2="70" stroke="#D4D4D4" stroke-width="1"/>
+  <circle cx="180" cy="290" r="3" fill="#2a1a0e"/>
+  <!-- generic vector x grey -->
+  <line x1="180" y1="290" x2="300" y2="200" stroke="#787878" stroke-width="1.8" marker-end="url(#ar-eig)"/>
+  <text x="246" y="232" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#787878">x</text>
+  <!-- Ax (rotated + stretched) grey dashed -->
+  <line x1="180" y1="290" x2="280" y2="120" stroke="#545454" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#ar-eig)"/>
+  <text x="232" y="150" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">Ax</text>
+  <!-- eigenvector v1 red: direction preserved -->
+  <line x1="180" y1="290" x2="320" y2="290" stroke="#C8102E" stroke-width="1.6" marker-end="url(#arR-eig)"/>
+  <!-- A v1 = lambda v1 same direction longer -->
+  <line x1="320" y1="290" x2="445" y2="290" stroke="#C8102E" stroke-width="2.6" marker-end="url(#arR-eig)"/>
+  <text x="240" y="284" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#C8102E">v</text>
+  <text x="370" y="284" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#C8102E">Av = λv</text>
+  <!-- second eigenvector v2 grey direction preserved (vertical) -->
+  <line x1="180" y1="290" x2="180" y2="200" stroke="#ADADAD" stroke-width="1.4" marker-end="url(#ar-eig)"/>
+  <text x="60" y="328" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">A = PDP⁻¹,   D = diag(λ₁, λ₂),   det(A − λI) = 0</text>
+  
+</svg>

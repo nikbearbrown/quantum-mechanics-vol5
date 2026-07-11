@@ -1,0 +1,26 @@
+<svg role="img" aria-labelledby="t-ode" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-ode">ODE solution families: exponential decay and oscillation</title>
+  <desc>Three solution families of linear ODEs: pure exponential decay, undamped oscillation, and damped oscillation (the underdamped case) shown in red.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-ode" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">ODE Solution Families</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <line x1="60" y1="200" x2="500" y2="200" stroke="#2a1a0e" stroke-width="1.2" marker-end="url(#ar-ode)"/>
+  <line x1="70" y1="338" x2="70" y2="62" stroke="#2a1a0e" stroke-width="1.2" marker-end="url(#ar-ode)"/>
+  <text x="505" y="204" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">t</text>
+  <text x="48" y="74" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">y</text>
+  <!-- exponential decay y=120 e^{-t/3}, x 70..500, peak at 80 -->
+  <path d="M70,80 C140,140 220,178 300,192 C380,198 460,200 500,200" fill="none" stroke="#787878" stroke-width="1.6"/>
+  <text x="200" y="186" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">e^{-γt}</text>
+  <!-- undamped oscillation amplitude 70 grey -->
+  <path d="M70,200 Q95,130 120,200 T170,200 T220,200 T270,200 T320,200 T370,200 T420,200 T470,200 T500,200" fill="none" stroke="#ADADAD" stroke-width="1.4"/>
+  <text x="420" y="138" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#787878">cos ωt</text>
+  <!-- damped oscillation red: decaying envelope * cos -->
+  <path d="M70,90 C82,90 90,200 105,200 C118,200 124,128 138,128 C152,128 160,200 173,200 C186,200 192,150 206,150 C220,150 227,200 240,200 C253,200 260,168 274,168 C288,168 294,200 308,200 C322,200 328,180 342,180 C356,180 362,200 376,200 C390,200 395,189 409,189 C423,189 428,200 442,200 L500,200" fill="none" stroke="#C8102E" stroke-width="1.8"/>
+  <text x="120" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#C8102E">e^{-γt} cos ωt</text>
+  <text x="60" y="368" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#2a1a0e">y'' + 2γy' + ω₀²y = 0   →   roots r = -γ ± √(γ²-ω₀²)</text>
+  
+</svg>

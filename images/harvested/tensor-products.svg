@@ -1,0 +1,38 @@
+<svg role="img" aria-labelledby="t-ten" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-ten">Tensor products and composite systems</title>
+  <desc>Two two-dimensional subsystem state spaces combine into a four-dimensional composite space by the tensor product; the entangled state that cannot be written as a single product is highlighted in red.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-ten" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">Tensor Products and Composite Systems</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <!-- subsystem A basis -->
+  <text x="70" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">ℋ_A</text>
+  <rect x="68" y="112" width="56" height="56" fill="none" stroke="#787878" stroke-width="1.2"/>
+  <text x="78" y="135" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">|0⟩</text>
+  <text x="78" y="158" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">|1⟩</text>
+  <text x="135" y="148" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="16" fill="#2a1a0e">⊗</text>
+  <!-- subsystem B basis -->
+  <text x="160" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">ℋ_B</text>
+  <rect x="158" y="112" width="56" height="56" fill="none" stroke="#787878" stroke-width="1.2"/>
+  <text x="168" y="135" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">|0⟩</text>
+  <text x="168" y="158" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">|1⟩</text>
+  <!-- arrow to composite -->
+  <line x1="226" y1="140" x2="280" y2="140" stroke="#2a1a0e" stroke-width="1.2" marker-end="url(#ar-ten)"/>
+  <text x="232" y="130" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">dim 2×2=4</text>
+  <!-- composite 2x2 grid of basis -->
+  <text x="300" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">ℋ_A ⊗ ℋ_B</text>
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">
+    <rect x="300" y="112" width="80" height="40" fill="none" stroke="#787878" stroke-width="1.1"/><text x="312" y="137">|00⟩</text>
+    <rect x="380" y="112" width="80" height="40" fill="none" stroke="#787878" stroke-width="1.1"/><text x="392" y="137">|01⟩</text>
+    <rect x="300" y="152" width="80" height="40" fill="none" stroke="#787878" stroke-width="1.1"/><text x="312" y="177">|10⟩</text>
+    <rect x="380" y="152" width="80" height="40" fill="none" stroke="#787878" stroke-width="1.1"/><text x="392" y="177">|11⟩</text>
+  </g>
+  <!-- entangled state red -->
+  <text x="70" y="244" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">product:   |ψ⟩ = |a⟩ ⊗ |b⟩</text>
+  <text x="70" y="276" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13" fill="#C8102E">entangled:  |Φ⁺⟩ = (|00⟩ + |11⟩)/√2  ≠ |a⟩⊗|b⟩</text>
+  <text x="70" y="312" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">The composite space is larger than the set of product states.</text>
+  
+</svg>

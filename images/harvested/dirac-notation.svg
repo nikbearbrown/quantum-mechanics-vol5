@@ -1,0 +1,31 @@
+<svg role="img" aria-labelledby="t-dir" viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="t-dir">Operators and Dirac notation: bra, ket, and inner product</title>
+  <desc>A schematic of Dirac notation: the ket |ψ⟩ as a column vector, the bra ⟨φ| as a row vector, their contraction into the scalar inner product ⟨φ|ψ⟩ shown in red, and an operator acting on a ket.</desc>
+  <metadata><provenance>CANDIDATE · CAJAL PALETTE · QM VOL 5</provenance></metadata>
+  <defs>
+    <marker id="ar-dir" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2a1a0e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="20" y="28" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="16" fill="#2a1a0e">Dirac Notation: Bras, Kets, Operators</text>
+  <rect x="40" y="48" width="480" height="300" fill="#F5F5F5"/>
+  <!-- ket column -->
+  <text x="70" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13" fill="#2a1a0e">|ψ⟩</text>
+  <rect x="110" y="78" width="48" height="100" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <text x="126" y="106" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#545454">c₁</text>
+  <text x="126" y="132" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#545454">c₂</text>
+  <text x="130" y="158" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#545454">⋮</text>
+  <text x="100" y="200" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">ket (column)</text>
+  <!-- bra row -->
+  <text x="240" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="13" fill="#2a1a0e">⟨φ|</text>
+  <rect x="282" y="84" width="150" height="34" fill="none" stroke="#2a1a0e" stroke-width="1.2"/>
+  <text x="296" y="106" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#545454">d₁*  d₂*  ⋯</text>
+  <text x="300" y="200" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">bra (row, conjugated)</text>
+  <!-- contraction to scalar red -->
+  <line x1="180" y1="240" x2="270" y2="240" stroke="#2a1a0e" stroke-width="1.1" marker-end="url(#ar-dir)"/>
+  <text x="60" y="244" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">⟨φ| · |ψ⟩ →</text>
+  <text x="285" y="246" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="14" fill="#C8102E">⟨φ|ψ⟩ = Σ dᵢ* cᵢ   (a scalar)</text>
+  <!-- operator -->
+  <text x="60" y="296" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">Â|ψ⟩ = |ψ'⟩      ⟨φ|Â|ψ⟩ = matrix element</text>
+  <text x="60" y="320" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="12" fill="#2a1a0e">Â = Σ_n λ_n |n⟩⟨n|   (spectral / outer product)</text>
+  
+</svg>

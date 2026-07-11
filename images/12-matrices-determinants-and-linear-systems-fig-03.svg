@@ -11,7 +11,7 @@
      Generated   : 2026-06-06
      Source      : pantry/12-matrices-determinants-and-linear-systems-cajal.md
      ============================================================ -->
-<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg"
+<svg viewBox="0 0 700 430.42" xmlns="http://www.w3.org/2000/svg"
      role="img" aria-labelledby="fig-title-12-03">
   <title id="fig-title-12-03">Pauli matrix commutation cycle</title>
   <desc>Equilateral triangle layout with three circular nodes representing the three Pauli operators differentiated by color only: orange for σₓ (lower-left), green for σᵧ (lower-right), red for σᵤ (top). Three clockwise curved arrows in dark red connect σₓ→σᵧ→σᵤ→σₓ, representing the cyclic commutation relation [σᵢ,σⱼ] = 2iεᵢⱼₖσₖ.</desc>
@@ -39,12 +39,12 @@
     </marker>
   </defs>
 
-  <rect width="700" height="420" fill="#FFFFFF"/>
+  <rect width="700" height="430.42" fill="#FFFFFF"/>
 
   <!-- Title -->
   <text x="350" y="22" text-anchor="middle"
         font-family="'EB Garamond','Garamond',Georgia,serif" font-size="14" font-weight="400"
-        fill="#2a1a0e">Pauli commutation cycle: [σᵢ,σⱼ] = 2iεᵢⱼₖσₖ</text>
+        fill="#2a1a0e">Pauli commutation cycle: [σ<tspan dy="0.3em" font-size="0.75em">i</tspan><tspan dy="-0.3em"></tspan>,σ<tspan dy="0.3em" font-size="0.75em">j</tspan><tspan dy="-0.3em"></tspan>] = 2iε<tspan dy="0.3em" font-size="0.75em">ijk</tspan><tspan dy="-0.3em"></tspan>σ<tspan dy="0.3em" font-size="0.75em">k</tspan><tspan dy="-0.3em"></tspan></text>
 
   <!-- Triangle geometry:
        Equilateral triangle inscribed in circle of radius R=135, centered at (350,230)
@@ -131,9 +131,9 @@
   <text x="554" y="84" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" fill="#2a1a0e">General rule:</text>
   <text x="554" y="100" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="10" fill="#C8102E">[σᵢ,σⱼ] = 2iεᵢⱼₖσₖ</text>
+        font-size="10" fill="#C8102E">[σ<tspan dy="0.3em" font-size="0.75em">i</tspan><tspan dy="-0.3em"></tspan>,σ<tspan dy="0.3em" font-size="0.75em">j</tspan><tspan dy="-0.3em"></tspan>] = 2iε<tspan dy="0.3em" font-size="0.75em">ijk</tspan><tspan dy="-0.3em"></tspan>σ<tspan dy="0.3em" font-size="0.75em">k</tspan><tspan dy="-0.3em"></tspan></text>
   <text x="554" y="116" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
-        font-size="10" fill="#545454">Levi-Civita εᵢⱼₖ = ±1</text>
+        font-size="10" fill="#545454">Levi-Civita ε<tspan dy="0.3em" font-size="0.75em">ijk</tspan><tspan dy="-0.3em"></tspan> = ±1</text>
   <text x="554" y="130" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" fill="#545454">for cyclic permutations</text>
 
@@ -142,7 +142,7 @@
   <text x="554" y="162" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" fill="#2a1a0e">Anticommutation:</text>
   <text x="554" y="178" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="10" fill="#545454">{σᵢ,σⱼ} = 2δᵢⱼI</text>
+        font-size="10" fill="#545454">{σ<tspan dy="0.3em" font-size="0.75em">i</tspan><tspan dy="-0.3em"></tspan>,σ<tspan dy="0.3em" font-size="0.75em">j</tspan><tspan dy="-0.3em"></tspan>} = 2δ<tspan dy="0.3em" font-size="0.75em">ij</tspan><tspan dy="-0.3em"></tspan>I</text>
   <text x="554" y="194" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" fill="#545454">(not shown here)</text>
 
@@ -151,7 +151,7 @@
   <text x="554" y="226" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif"
         font-size="10" fill="#2a1a0e">Each σ squares to I:</text>
   <text x="554" y="242" font-family="'JetBrains Mono','Fira Code','Courier New',monospace"
-        font-size="10" fill="#545454">σₓ² = σᵧ² = σᵤ² = I</text>
+        font-size="10" fill="#545454">σₓ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> = σᵧ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> = σᵤ<tspan dy="-0.5em" font-size="0.75em">2</tspan><tspan dy="0.5em"></tspan> = I</text>
 
   <line x1="554" y1="256" x2="672" y2="256" stroke="#D4D4D4" stroke-width="0.5"/>
 

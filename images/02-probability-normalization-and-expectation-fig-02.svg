@@ -8,7 +8,7 @@
     <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
   </marker>
 </defs>
-<rect x="50" y="30" width="290" height="350" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+<rect x="50" y="30" width="290" height="362.64" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
 <rect x="360" y="30" width="290" height="350" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
 <text x="195" y="24" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">Symmetric</text>
 <text x="505" y="24" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">Right-skewed</text>
