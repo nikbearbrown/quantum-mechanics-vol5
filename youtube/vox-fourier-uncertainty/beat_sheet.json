@@ -141,13 +141,14 @@
         "source": "ai",
         "motion": "hold",
         "remotion": {
-          "pattern": "SlateCard",
-          "provenance": "proven-core/SlateCard",
+          "pattern": "FormACard",
+          "provenance": "proven-core/FormACard",
           "version": "1",
           "props": {
-            "headline": "The uncertainty principle applies to sound, light, and radar — any…",
-            "eyebrow": "THE IMPLICATION",
-            "topic": "QUANTUM MECHANICS"
+            "lines": [
+              "The uncertainty principle applies to sound, light, and radar — any…"
+            ],
+            "dark": false
           },
           "rendered": {
             "out": "media/B08.mp4",

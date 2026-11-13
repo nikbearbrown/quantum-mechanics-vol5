@@ -141,13 +141,14 @@
         "source": "ai",
         "motion": "hold",
         "remotion": {
-          "pattern": "SlateCard",
-          "provenance": "proven-core/SlateCard",
+          "pattern": "FormACard",
+          "provenance": "proven-core/FormACard",
           "version": "1",
           "props": {
-            "headline": "Stationary does not mean frozen in the complex plane. It means…",
-            "eyebrow": "THE IMPLICATION",
-            "topic": "QUANTUM MECHANICS"
+            "lines": [
+              "Stationary does not mean frozen in the complex plane. It means…"
+            ],
+            "dark": false
           },
           "rendered": {
             "out": "media/B08.mp4",
